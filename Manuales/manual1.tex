@@ -99,8 +99,6 @@ Ahora existe una posibilidad de que tu compilador automaticamente detecte que su
 
 Entonces para asegurar que esto nunca pase, siempre debes de tener la costumbre de inicializar tus variables a menos de que seran sobreescritos por otro valor o leidos desde la consola usando $cin$.
 
-\subsection{Ciclos infinitos}
-
 \subsection{Ciclos con otras variables}
 Este error pasa muy seguido cuando se utilizan ciclos for anidados y cuando uno olvida que haya declarado una variable antes.
 
@@ -211,12 +209,70 @@ Si sigues imprimiendo mas números, veras que se vuelven a hacer positivos y neg
 Para solucionar esto, debes reemplazar int por otro tipo de dato que pueda guardar numeros mas grandes, como long long int o double.
 
 \subsection{Errores de redondeo}
+Este error pasa cuando se dividen dos enteros.
+
+Sabes que $\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + ... = 1$ y quisieras comprobarlo creando un programa. Lo implementas con el siguiente codigo:
+
+\begin{lstlisting}[language=C++, caption=Error de redondeo]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int suma = 0;
+    int potencia = 2;
+    for(int i = 1; i < 30; i++) {
+        suma += 1 / potencia;
+        potencia *= 2;
+    }
+    cout << suma << endl;
+}
+\end{lstlisting}
+
+Pero cuando lo corres, te dice que tu suma es cero. Revisas la variable de potencia y te das cuenta que esta bien, pero la variable se suma se queda en cero.
+
+Esto ocurre debido a que 1 y potencia estan siendo guardados como enteros, y cuando se dividen dos enteros el resultado siempre sera otro entero redondeado para abajo. Es decir si hago $5 / 2$, esto me dara $2$ porque el valor de $2.5$ fue redondeado para abajo. Como potencia siempre es mayor que 1, esta division siempre se redondeara para abajo y dará cero.
+
+Para corregir esto, se debe cambiar la variables de potencia y de suma de enteros a un tipo de dato flotante, es decir un número que permite puntos decimales.
 
 \subsection{Faltas de memoria}
+Esto sucede cuando tu programa ocupa demasiado espacio continuo y ocasiona un error.
+
+A veces sucede que tienes que crear un arreglo con 10 millones de valores (es verdad, si vas a ocupar algo asi!) y te das cuenta que tu programa deja de funcionar.
+
+\begin{lstlisting}[language=C++, caption=Faltas de memoria]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int arreglo[10000000];
+    for(int i = 0; i < 10000000; i++) {
+        arreglo[i] = i;
+    }
+    cout << "Arreglo llenado" << endl;
+}
+\end{lstlisting}
+
+Por suerte, esto se puede arreglar. Si cuentas los bytes, te daras cuenta que son 4 millones de bytes o 4 megabytes, y computadoras modernas tienden a tener hasta 16 gigabytes de espacio, asi que no debe haber problema para conseguir 4 megabytes de memoria.
+
+El problema viene del hecho que a la hora de crear un arreglo, el sistema busca 4 megabytes de espacio que esten libres y juntos dentro de la memoria del programa. Esto se puede arreglar preguntandole a tu sistema si puedes guardar estos 4 megabytes en una area especial extra de memoria llamado el heap, que viene siendo una area publica con muchisimo espacio, en lugar del espacio limitado que fue asignado a tu programa.
+
+Para hacer que el programa busque dentro del heap, debes cambiar el arreglo a un puntero y utilizar malloc, new o alguna funcion que te permite obtener espacio del heap.
 
 \section{Tipos de datos}
 
-No mezclar enteros con flotantes!
+\subsection{Signed y unsigned}
+
+\subsection{Numericos}
+
+\subsection{Caracteres y cadenas}
+
+\subsection{Booleanos}
+
+\subsection{Long long}
+
+\subsection{Arreglos}
 
 \section{Funciones}
 

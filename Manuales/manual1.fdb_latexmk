@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1560644038 "/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.tex" "/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.pdf" "manual1" 1560644039
-  "/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.aux" 1560644039 2613 b84ce78f723c3b1a23e7ede97c69da5e ""
-  "/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.tex" 1560642511 10447 129a877932b2874ce7fda78368d4fe8d ""
+["pdflatex"] 1560648862 "/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.tex" "/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.pdf" "manual1" 1560648864
+  "/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.aux" 1560648864 3336 2360dc71996a6fb79e967f09b3ed899c ""
+  "/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.tex" 1560648860 13108 263df9a9976d4e5581b927a37c29b1f0 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1550406775 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1550406775 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1550406775 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -61,15 +61,15 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1560643323 3106252 d5255ed7fd6ec6ea7699581e9a54cb46 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1560643287 7919196 b90eac826c1b8a76911e7526d9952fa1 ""
   "CodeBlocks.png" 1560643981 50937 4ba53df8db0c92e41d22b76430d44142 ""
-  "manual1.aux" 1560644039 2613 b84ce78f723c3b1a23e7ede97c69da5e ""
-  "manual1.tex" 1560642511 10447 129a877932b2874ce7fda78368d4fe8d ""
+  "manual1.aux" 1560648864 3336 2360dc71996a6fb79e967f09b3ed899c ""
+  "manual1.tex" 1560648860 13108 263df9a9976d4e5581b927a37c29b1f0 ""
   "newblack.png" 1548686138 362789 e4d5cc3e65ec959c7d6641092516663b ""
   "replit.png" 1560643996 50164 0f1e35ca0e7b409c4a21737c2e1b6964 ""
   "vscode.png" 1560643985 35625 142adad0a7c7c02842a0e482b42ba111 ""
   "vscommunity.png" 1560643989 353342 2e1ec323c1d3c60391d48f2814763cec ""
   (generated)
-  "/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.pdf"
-  "/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.log"
   "manual1.aux"
+  "/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.pdf"
   "manual1.pdf"
+  "/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.log"
   "manual1.log"

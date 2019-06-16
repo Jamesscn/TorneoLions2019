@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.6.15)  15 JUN 2019 19:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.6.15)  15 JUN 2019 20:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -232,34 +232,34 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 81.
  [4] [5]
-Overfull \hbox (141.00494pt too wide) in paragraph at lines 164--165
+Overfull \hbox (141.00494pt too wide) in paragraph at lines 162--163
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (57.00409pt too wide) in paragraph at lines 171--172
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 169--170
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [6]
-Overfull \hbox (5.91742pt too wide) in paragraph at lines 207--208
+Overfull \hbox (5.91742pt too wide) in paragraph at lines 205--206
 \OT1/cmr/m/n/10 guardo el valor de 2,147,483,649 en un int, me guardara en re-al-i-dad -2,147,483,647. 
  []
 
-[7] [8] (/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.aux) ) 
+[7] [8] [9] (/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.aux) ) 
 Here is how much of TeX's memory you used:
- 3880 strings out of 492616
- 52842 string characters out of 6135177
- 325367 words of memory out of 5000000
- 7746 multiletter control sequences out of 15000+600000
+ 3884 strings out of 492616
+ 52892 string characters out of 6135177
+ 324367 words of memory out of 5000000
+ 7750 multiletter control sequences out of 15000+600000
  7895 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,60p,438b,1582s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,6n,60p,490b,1580s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.pdf (8 pages, 834506 bytes).
+Output written on /home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.pdf (9 pages, 838847 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
