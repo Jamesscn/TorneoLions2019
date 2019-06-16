@@ -4,21 +4,23 @@
 \BOOKMARK [2][-]{subsection.2.2}{Repl.it [P\341gina web]}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{Visual Studio Community [Windows y Mac]}{section.2}% 5
 \BOOKMARK [2][-]{subsection.2.4}{Visual Studio Code + Terminal [Mac y Linux]}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{Mi primer programa?}{}% 7
-\BOOKMARK [1][-]{section.4}{Leyendo y escribiendo}{}% 8
-\BOOKMARK [1][-]{section.5}{Errores comunes}{}% 9
-\BOOKMARK [2][-]{subsection.5.1}{Falta de inicializaci\363n}{section.5}% 10
-\BOOKMARK [2][-]{subsection.5.2}{Ciclos con otras variables}{section.5}% 11
-\BOOKMARK [2][-]{subsection.5.3}{Error por uno}{section.5}% 12
-\BOOKMARK [2][-]{subsection.5.4}{Segmentation fault}{section.5}% 13
-\BOOKMARK [2][-]{subsection.5.5}{Sobreflujos}{section.5}% 14
-\BOOKMARK [2][-]{subsection.5.6}{Errores de redondeo}{section.5}% 15
-\BOOKMARK [2][-]{subsection.5.7}{Faltas de memoria}{section.5}% 16
-\BOOKMARK [1][-]{section.6}{Tipos de datos}{}% 17
-\BOOKMARK [2][-]{subsection.6.1}{Signed y unsigned}{section.6}% 18
-\BOOKMARK [2][-]{subsection.6.2}{Numericos}{section.6}% 19
-\BOOKMARK [2][-]{subsection.6.3}{Caracteres y cadenas}{section.6}% 20
-\BOOKMARK [2][-]{subsection.6.4}{Booleanos}{section.6}% 21
-\BOOKMARK [2][-]{subsection.6.5}{Long long}{section.6}% 22
-\BOOKMARK [2][-]{subsection.6.6}{Arreglos}{section.6}% 23
-\BOOKMARK [1][-]{section.7}{Funciones}{}% 24
+\BOOKMARK [1][-]{section.3}{\277Mi primer programa?}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Donde empezar}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Comentarios}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Leyendo y escribiendo}{}% 10
+\BOOKMARK [1][-]{section.5}{Errores comunes}{}% 11
+\BOOKMARK [2][-]{subsection.5.1}{Falta de inicializaci\363n}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.2}{Ciclos con otras variables}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.3}{Error por uno}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.4}{Segmentation fault}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.5}{Sobreflujos}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.6}{Errores de redondeo}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.7}{Faltas de memoria}{section.5}% 18
+\BOOKMARK [1][-]{section.6}{Tipos de datos}{}% 19
+\BOOKMARK [2][-]{subsection.6.1}{Signed y unsigned}{section.6}% 20
+\BOOKMARK [2][-]{subsection.6.2}{Numericos}{section.6}% 21
+\BOOKMARK [2][-]{subsection.6.3}{Caracteres y cadenas}{section.6}% 22
+\BOOKMARK [2][-]{subsection.6.4}{Booleanos}{section.6}% 23
+\BOOKMARK [2][-]{subsection.6.5}{Long long}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.6}{Arreglos}{section.6}% 25
+\BOOKMARK [1][-]{section.7}{Funciones}{}% 26

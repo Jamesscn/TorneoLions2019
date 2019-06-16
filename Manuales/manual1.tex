@@ -72,9 +72,211 @@ Si estas usando Mac o Linux, puedes compilar un programa de C++ desde la termina
     \includegraphics[width=0.5\paperwidth]{vscode}
 \end{figure}
 
-\section{Mi primer programa?}
+\section{¿Mi primer programa?}
+
+\subsection{Donde empezar}
+
+Antes de crear un programa, debes asegurarte que sabes lo que quieres que haga. Pero esto es algo muy dificil si vas empezando, ¡porque no tienes idea ni que puedes hacer con un programa!
+
+Asi que durante estos proximos seis semanas, les daremos problemas de programación similares a los que aparecen en competencias más dificiles para que puedan aprender como crear sus propios programas para resolver problemas reales.
+
+El programa más sencillo es uno que no hace nada; se abre y se cierra instantaneamente. Pero eso es aburrido y no tiene sentido. ¿Para qué quiero un programa que no hace nada?
+
+Tu tienes que decirle al programa que quieras que haga, y el programa seguira tus instrucciones sin cuestionarlos, de tal grado que a veces cometera errores porque tu no esperabas que fuera a hacer todo al pie de la letra de como le dijiste.
+
+Vamos a intentar construir un programa que sume dos números. Antes de empezar tu programa tendras que escribir cuatro lineas muy importantes. Si quitas alguno de estos cuatro lineas, tu programa dejara de funcionar y te arrojara un error, y ahorita es muy temprano para poder decirles exactamente lo que hacen estas lineas. Cuando tengan más experiencia, podrán cambiarlos a su gusto.
+
+\begin{lstlisting}[language=C++, caption=Las cuatro lineas esenciales]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+}
+\end{lstlisting}
+
+Ahí esta su primer programa, él que les dije que se abre y se cierra sin hacer nada. Por ahora, todo su código debe ir entre los dos corchetes.
+
+Tenemos que decirle a nuestro programa que queremos dos números enteros, los cuales seran sumados después. Para cada número entero que queremos, tenemos que asignarle un nombre.
+
+Para hacer esto, escribimos una linea para cada variable con int seguido por el nombre de la variable después (sin espacios y sin caracteres especiales). Finalmente, le ponemos un punto y coma después de cada linea para decirle que eso es lo unico que queremos hacer en esa linea.
+
+\begin{lstlisting}[language=C++, caption=Dos variables]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a;
+    int b;
+}
+\end{lstlisting}
+
+Y asi tenemos dos números. Podemos nombrarlos como queramos, por ejemplo: numeroA y numeroB, alfa y beta, n1 y n2, etc. Si corremos el código, no pasa nada. Esto es porque no le hemos dicho al programa que queremos que haga con estos dos números, ni le hemos dicho que valores tienen.
+
+En una linea, podemos escribir a = 5; para decirle que queremos que la variable a valga 5. Tambien es valido modificar la linea int b; para que sea int b = 2;
+
+\begin{lstlisting}[language=C++, caption=Guardando valores]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a;
+    a = 5;
+    int b = 2;
+}
+\end{lstlisting}
+
+Es de gran importancia saber que el programa lee el código desde arriba hacia abajo, asi que no podemos poner la linea que dice a = 5; antes de int a; porque no sabra que a es una variable que definimos.
+
+Ahora solo falta decirle que queremos que sume a y b.
+
+\begin{lstlisting}[language=C++, caption=Guardando valores]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a;
+    a = 5;
+    int b = 2;
+    a + b;
+}
+\end{lstlisting}
+
+Este nuevo programa parece sumarlos, pero si se corre tampoco pasa nada. Esto es porque tenemos que decirle al programa que además de sumarlos, queremos ver esta suma. Si no, calculará a + b, no sabrá que hacer con esa suma y lo descartará.
+
+Para hacer que nos muestre este dato, tenemos que utilizar algo llamado cout, que no es nada mas que un comando que nos muestre datos.
+
+Para usar cout, se debe escribir cout $<<$ valor; donde valor es lo que quieres ver.
+
+\begin{lstlisting}[language=C++, caption=Tu primer programa]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a;
+    a = 5;
+    int b = 2;
+    cout << a + b;
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Mi-primer-programa}{Liga al código}\\
+
+Y de esa manera, tenemos nuestro primer programa. Hay miles de maneras de hacer este mismo código, y todos son iguales de validos. Aqui mostraremos algunos ejemplos:
+
+\begin{lstlisting}[language=C++, caption=¿El mismo programa?]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a = 5, b = 2;
+    cout << a + b;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[language=C++, caption=¿El mismo programa?]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a;
+    int b;
+    int c;
+    a = 5;
+    b = 2;
+    c = a + b;
+    cout << c;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[language=C++, caption=¿El mismo programa?]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << 2 + 5;
+}
+\end{lstlisting}
+
+\subsection{Comentarios}
+
+Una cosa muy util es que tu puedes escribir comentarios en medio de tu código y estos pueden servir para describir lo que hace cierto código, para recordarte de hacer algo en cierta parte o para mantener tu código ordenado.
+
+El tipo de comentario mas popular es el de una sola linea, Estos se inician con dos $//$ seguidos por tu nota.
+
+\begin{lstlisting}[language=C++, caption=Comentario]
+#include <iostream>
+
+using namespace std;
+
+//Los comentarios pueden ir en lineas separadas
+int main() {
+    //En cualquier parte del codigo
+    int a; //Incluso aqui!
+    int b; 
+    int c; //Esta variable es la suma de a y b
+    a = 5;
+    b = 2;
+    c = a + b; //Aqui se hace la suma
+    cout << c; //Aqui se imprime el resultado
+}
+\end{lstlisting}
+
+Tambien existen los comentarios de multiples lineas, estos se deben iniciar con $/*$ y se deben terminar con $*/$
+
+\begin{lstlisting}[language=C++, caption=Comentario]
+#include <iostream>
+
+using namespace std;
+
+/*  Esto es un comentario de multiples lineas
+    Puedes escribir cuantas lineas quieras aqui
+    Tambien sirve para temporalmente deshabilitar codigo
+*/
+int main() {
+    int a; /* Tambien debes saber que pueden ocupar una sola linea */
+    int b; 
+    int c;
+    a = 5;
+    b = 2;
+    c = a + b;
+    cout << c;
+}
+\end{lstlisting}
 
 \section{Leyendo y escribiendo}
+
+A la hora de compilar y ejecutar tu programa, seguramente notaste que se abre una consola con todo lo que decidiste ver. Esto es porque C++ corre dentro de esa consola (Tu compilador ejecuta comandos para abrir el programa sin que tu veas).
+
+Esto te permite leer y escribir datos mientras que tu programa corre. Ya se ha visto que para escribir datos, se puede utilizar cout (que significa c + out o output de C) seguido por la variable que quieres "imprimir" a la consola.
+
+Para leer datos, se ocupa tener una variable para almacenar ese dato de entrada, luego se debe utilizar cin (que significa c + in o input de C) seguido por esa variable.
+
+Estas dos herramientas te permiten crear programas generales que resuelven problemas especificos.
+
+Digamos que queremos crear un programa que lee dos números enteros (sin importar cuales sean) y que imprime su suma. Podemos crear este programa utilizando cin y cout para que el usuario diga cuales dos números quiere que sume.
+
+\begin{lstlisting}[language=C++, caption=Suma]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    cout << a + b << endl;
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Suma}{Liga al código}\\
+
+Cuando ejecutas tu código, veras que la consola esta esperando una entrada. Puedes ingresar dos numeros separados por espacios y picarle enter o poner el primer numero, picar enter, poner el segundo y picarle enter denuevo. Al terminar de hacer eso, veras que tu programa hace la suma instantaneamente y que lo despliega debajo de los numeros que le diste.
 
 \section{Errores comunes}
 
@@ -106,7 +308,7 @@ Esto ocurre debido a que nunca inicializamos o le damos un valor inicial a la va
 
 La razón por la que siempre cambia es porque la memoria siempre esta siendo utilizado por otros procesos (Google Chrome, Word, etc.) y cada vez que corre el programa agarrara el primer espacio libre que encuentra para la variable suma, que no siempre será la misma.
 
-Existe una posibilidad de que tu compilador automaticamente detecte que suma no fue inicializado y le asigna el valor de cero despues, esto puede provocar que el programa funcione en tu computadora pero a la hora de probarlo en otra falla.
+Existe una posibilidad de que tu compilador automaticamente detecte que suma no fue inicializado y le asigna el valor de cero después, esto puede provocar que el programa funcione en tu computadora pero a la hora de probarlo en otra falla.
 
 Entonces para asegurar que esto nunca pase, siempre debes de tener la costumbre de inicializar tus variables a menos que sabes que serán sobreescritos por otro valor o leidos desde la consola usando $cin$.
 
@@ -308,7 +510,7 @@ Un ejemplo sencillo es una función que suma dos números enteros A y B y que re
 
 Como se puede ver, se inicia una funcion con un tipo de dato que corresponde a el tipo de dato de la salida. Como int va antes que el nombre de la función (suma), nos dice que queremos que regrese un entero.
 
-Luego, sigue el nombre de la función y dos parentesis. Dentro de los parentesis van las variables de entrada separadas por comas. Como tenemos un entero a y otro entero b, estamos diciendo que para correr esta función el usuario debe dar dos numeros en ese orden, los cuales serán guardados en a y b.
+Luego, sigue el nombre de la función y dos parentesis. Dentro de los parentesis van las variables de entrada separadas por comas. Como tenemos un entero a y otro entero b, estamos diciendo que para correr esta función el usuario debe dar dos números en ese orden, los cuales serán guardados en a y b.
 
 Luego, siguen corchetes que encapsulan el código de la función. Aqui es donde hacemos nuestros cálculos con nuestras variables y regresamos el valor de la salida.
 
@@ -349,7 +551,7 @@ Ahora, podemos llamar nuestra función dentro de main dandole los parametros que
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Funciones}{Liga al código}\\
 
-Al ejecutar este codigo, nos despliegara un 8.
+Al ejecutar este código, nos despliegara un 8.
 
 Otro ejemplo es una función que regresa la división de dos enteros:
 

@@ -127,6 +127,7 @@ INPUT /usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.aux
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.out
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.out
@@ -138,3 +139,4 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
