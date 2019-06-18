@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.6.15)  16 JUN 2019 17:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.6.15)  17 JUN 2019 20:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -263,47 +263,47 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 23.
-<newblack.png, id=108, 2982.14125pt x 2994.18625pt>
+<newblack.png, id=116, 2982.14125pt x 2994.18625pt>
 File: newblack.png Graphic file (type png)
 <use newblack.png>
 Package pdftex.def Info: newblack.png  used on input line 26.
 (pdftex.def)             Requested size: 122.85712pt x 123.31068pt.
 
-Overfull \hbox (6.53787pt too wide) in paragraph at lines 31--31
+Overfull \hbox (6.53787pt too wide) in paragraph at lines 29--29
 []\OT1/cmr/bx/n/14.4 Instalaci^^Son de IDE para ed-i-tar y com-pi-lar C++ 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 34.
+(Font)              <7> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 34.
-<CodeBlocks.png, id=111, 1039.885pt x 674.52pt>
+(Font)              <5> on input line 32.
+<CodeBlocks.png, id=119, 1039.885pt x 674.52pt>
 File: CodeBlocks.png Graphic file (type png)
 <use CodeBlocks.png>
-Package pdftex.def Info: CodeBlocks.png  used on input line 40.
+Package pdftex.def Info: CodeBlocks.png  used on input line 38.
 (pdftex.def)             Requested size: 307.14749pt x 199.22868pt.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/james/Documents/Lions/TorneoLions2019/Manuales/newblack.png>]
-Overfull \hbox (9.55617pt too wide) in paragraph at lines 44--45
+Overfull \hbox (9.55617pt too wide) in paragraph at lines 42--43
 \OT1/cmr/m/n/10 Repl.it es una p^^Sagina web que te per-mite pro-bar c^^Sodigo desde cualquier plataforma,
  []
 
-<replit.png, id=123, 1370.11874pt x 601.24625pt>
+<replit.png, id=131, 1370.11874pt x 601.24625pt>
 File: replit.png Graphic file (type png)
 <use replit.png>
-Package pdftex.def Info: replit.png  used on input line 48.
+Package pdftex.def Info: replit.png  used on input line 46.
 (pdftex.def)             Requested size: 307.14749pt x 134.77914pt.
 [2 </home/james/Documents/Lions/TorneoLions2019/Manuales/CodeBlocks.png (PNG copy)> </home/james/Documents/Lions/TorneoLions2019/Manuales/replit.png>]
-<vscommunity.png, id=132, 1028.34187pt x 578.16pt>
+<vscommunity.png, id=140, 1028.34187pt x 578.16pt>
 File: vscommunity.png Graphic file (type png)
 <use vscommunity.png>
-Package pdftex.def Info: vscommunity.png  used on input line 60.
+Package pdftex.def Info: vscommunity.png  used on input line 58.
 (pdftex.def)             Requested size: 307.14749pt x 172.69064pt.
-<vscode.png, id=133, 434.62375pt x 202.7575pt>
+<vscode.png, id=141, 434.62375pt x 202.7575pt>
 File: vscode.png Graphic file (type png)
 <use vscode.png>
-Package pdftex.def Info: vscode.png  used on input line 72.
+Package pdftex.def Info: vscode.png  used on input line 70.
 (pdftex.def)             Requested size: 307.14749pt x 143.29675pt.
  [3 </home/james/Documents/Lions/TorneoLions2019/Manuales/vscommunity.png> </home/james/Documents/Lions/TorneoLions2019/Manuales/vscode.png>] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2018/09/02 1.7 listings language file
@@ -312,114 +312,125 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 ) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 )
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 90.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 88.
  (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 90.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 94.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 88.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 92.
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 94.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 92.
  [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
 [6] [7]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 239.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 237.
 
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 244--245
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 242--243
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
-
+Overfull \hbox (17.61185pt too wide) in paragraph at lines 293--294
+\OT1/cmr/m/n/10 ca-paz de guardar n^^Sumeros muchisimo m^^Sas grandes (desde -9,223,372,036,854,775,808
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 334--335
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
-
+[9] [10]
+Overfull \hbox (2.01901pt too wide) in paragraph at lines 354--355
+[]\OT1/cmr/m/n/10 Luego, sigue el nom-bre de la funci^^Son y dos par^^Sentesis. Den-tro de los par^^Sentesis
  []
 
 [11]
-Overfull \hbox (141.00494pt too wide) in paragraph at lines 377--378
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (57.00409pt too wide) in paragraph at lines 384--385
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
+Underfull \hbox (badness 10000) in paragraph at lines 469--470
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 474--475
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
 
  []
 
-[14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 552--553
+[15]
+Overfull \hbox (141.00494pt too wide) in paragraph at lines 512--513
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 519--520
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 571--572
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 575.
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
+
+ []
+
 [17]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 575.
+Underfull \hbox (badness 10000) in paragraph at lines 609--610
+
+ []
+
+[18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 641.
+ [19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 641.
  (/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 575.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 575.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 641.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 641.
 Package rerunfilecheck Info: File `manual1.out' has not changed.
-(rerunfilecheck)             Checksum: AE222E70FFAF3261FD4956C2079E38AB;1691.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 575.
+(rerunfilecheck)             Checksum: 51CA63B59F96852875ED901F22D5F31B;1855.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 641.
  ) 
 Here is how much of TeX's memory you used:
- 7789 strings out of 492616
- 111404 string characters out of 6135177
- 403911 words of memory out of 5000000
- 11326 multiletter control sequences out of 15000+600000
+ 7795 strings out of 492616
+ 111478 string characters out of 6135177
+ 403920 words of memory out of 5000000
+ 11328 multiletter control sequences out of 15000+600000
  8241 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,6n,60p,500b,1821s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,6n,60p,541b,1821s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on /home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.pdf (17 pages, 878821 bytes).
+Output written on /home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.pdf (19 pages, 889335 bytes).
 PDF statistics:
- 574 PDF objects out of 1000 (max. 8388607)
- 534 compressed objects within 6 object streams
- 306 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 596 PDF objects out of 1000 (max. 8388607)
+ 554 compressed objects within 6 object streams
+ 310 named destinations out of 1000 (max. 500000)
+ 250 words of extra memory for PDF output out of 10000 (max. 10000000)
 

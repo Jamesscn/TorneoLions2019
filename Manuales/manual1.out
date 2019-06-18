@@ -1,26 +1,28 @@
-\BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
-\BOOKMARK [1][-]{section.2}{Instalaci\363n de IDE para editar y compilar C++}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Code::Blocks [Windows]}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Repl.it [P\341gina web]}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Visual Studio Community [Windows y Mac]}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Visual Studio Code + Terminal [Mac y Linux]}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{\277Mi primer programa?}{}% 7
-\BOOKMARK [2][-]{subsection.3.1}{Donde empezar}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.2}{Comentarios}{section.3}% 9
-\BOOKMARK [1][-]{section.4}{Leyendo y escribiendo}{}% 10
-\BOOKMARK [1][-]{section.5}{Errores comunes}{}% 11
-\BOOKMARK [2][-]{subsection.5.1}{Falta de inicializaci\363n}{section.5}% 12
-\BOOKMARK [2][-]{subsection.5.2}{Ciclos con otras variables}{section.5}% 13
-\BOOKMARK [2][-]{subsection.5.3}{Error por uno}{section.5}% 14
-\BOOKMARK [2][-]{subsection.5.4}{Segmentation fault}{section.5}% 15
-\BOOKMARK [2][-]{subsection.5.5}{Sobreflujos}{section.5}% 16
-\BOOKMARK [2][-]{subsection.5.6}{Errores de redondeo}{section.5}% 17
-\BOOKMARK [2][-]{subsection.5.7}{Faltas de memoria}{section.5}% 18
-\BOOKMARK [1][-]{section.6}{Tipos de datos}{}% 19
-\BOOKMARK [2][-]{subsection.6.1}{Signed y unsigned}{section.6}% 20
-\BOOKMARK [2][-]{subsection.6.2}{Numericos}{section.6}% 21
-\BOOKMARK [2][-]{subsection.6.3}{Caracteres y cadenas}{section.6}% 22
-\BOOKMARK [2][-]{subsection.6.4}{Booleanos}{section.6}% 23
-\BOOKMARK [2][-]{subsection.6.5}{Long long}{section.6}% 24
-\BOOKMARK [2][-]{subsection.6.6}{Arreglos}{section.6}% 25
-\BOOKMARK [1][-]{section.7}{Funciones}{}% 26
+\BOOKMARK [1][-]{section.1}{Instalaci\363n de IDE para editar y compilar C++}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Code::Blocks [Windows]}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Repl.it [P\341gina web]}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Visual Studio Community [Windows y Mac]}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Visual Studio Code + Terminal [Mac y Linux]}{section.1}% 5
+\BOOKMARK [1][-]{section.2}{\277Mi primer programa?}{}% 6
+\BOOKMARK [2][-]{subsection.2.1}{Donde empezar}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.2}{Comentarios}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Leyendo y escribiendo}{}% 9
+\BOOKMARK [1][-]{section.4}{Tipos de datos}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{N\372mericos}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Signed y unsigned}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.3}{Caracteres y cadenas}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.4}{Booleanos}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.5}{Arreglos}{section.4}% 15
+\BOOKMARK [1][-]{section.5}{Funciones}{}% 16
+\BOOKMARK [1][-]{section.6}{Errores comunes}{}% 17
+\BOOKMARK [2][-]{subsection.6.1}{Falta de inicializaci\363n}{section.6}% 18
+\BOOKMARK [2][-]{subsection.6.2}{Ciclos con otras variables}{section.6}% 19
+\BOOKMARK [2][-]{subsection.6.3}{Error por uno}{section.6}% 20
+\BOOKMARK [2][-]{subsection.6.4}{Segmentation fault}{section.6}% 21
+\BOOKMARK [2][-]{subsection.6.5}{Sobreflujos}{section.6}% 22
+\BOOKMARK [2][-]{subsection.6.6}{Errores de redondeo}{section.6}% 23
+\BOOKMARK [2][-]{subsection.6.7}{Faltas de memoria}{section.6}% 24
+\BOOKMARK [1][-]{section.7}{Otros materiales}{}% 25
+\BOOKMARK [2][-]{subsection.7.1}{TutorialsPoint [Ingl\351s]}{section.7}% 26
+\BOOKMARK [2][-]{subsection.7.2}{HackerRank [Ingl\351s]}{section.7}% 27
+\BOOKMARK [2][-]{subsection.7.3}{CPlusPlus [Ingl\351s]}{section.7}% 28

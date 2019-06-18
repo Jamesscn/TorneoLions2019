@@ -26,8 +26,6 @@
     \includegraphics[width=0.2\paperwidth]{newblack}
 \end{figure}
 
-\section{Introducción}
-
 \section{Instalación de IDE para editar y compilar C++}
 
 \subsection{Code::Blocks [Windows]}
@@ -53,7 +51,7 @@ Esta es la versión gratis del software famoso de Microsoft llamado Visual Studi
 
 Se puede descargar en la página oficial \url{https://visualstudio.microsoft.com/vs/community/} y te permite usarlo siempre y cuando estes ingresado con una cuenta de Microsoft. Si no tienes una cuenta de Microsoft y quisiera utilizar este programa, puedes registrarte en \url{https://account.microsoft.com/account?lang=es-MX}
 
-A pesar de que esta instalación es más tardado, es una opción bastante profesional y bueno si estas interesado en programar cosas más grandes.
+A pesar de que esta instalación es más tardado, es una opción bastante profesional y buena si estas interesado en programar cosas más adelante.
 
 \begin{figure}[H]
     \centering
@@ -63,7 +61,7 @@ A pesar de que esta instalación es más tardado, es una opción bastante profes
 \subsection{Visual Studio Code + Terminal [Mac y Linux]}
 El programa de Visual Studio Code es muy popular para la programación, tiene soporte para todos los lenguajes y es completamente gratis, con la desventaja de que no puede compilar código.
 
-Si estas en Windows, puedes utilizar este programa pero debes instalar algún emulador de terminal de sistemás Unix como mingw para compilar código.
+Si estas en Windows, puedes utilizar este programa pero debes instalar algún emulador de terminal de sistemás Unix como mingw para poder compilar tu código.
 
 Si estas usando Mac o Linux, puedes compilar un programa de C++ desde la terminal. Para hacer esto, debes asegurarte de tener instalado el paquete $gcc$ y debes generar un archivo ejecutable a partir del código con el comando $c++$
 
@@ -84,9 +82,9 @@ El programa más sencillo es uno que no hace nada; se abre y se cierra instantan
 
 Tú tienes que decirle al programa que quieras que haga, y el programa seguira tus instrucciones sin cuestionarlas, de tal grado que a veces cometera errores porque tú no esperabas que fuera a hacer todo al pie de la letra de como le dijiste.
 
-Vamos a intentar construir un programa que sume dos números. Antes de empezar tu programa tendras que escribir cuatro lineas muy importantes. Si quitas alguno de estos cuatro lineas, tu programa dejara de funcionar y te arrojara un error, y ahorita es muy temprano para poder decirles exactamente lo que hacen estas lineas. Cuando tengan más experiencia, podrán cambiarlos a su gusto.
+Vamos a intentar construir un programa que sume dos números. Antes de empezar tu programa tendras que escribir cuatro líneas muy importantes. Si quitas alguno de estos cuatro líneas, tu programa dejara de funcionar y te arrojara un error, y ahorita es muy temprano para poder decirles exactamente lo que hacen estas líneas. Cuando tengan más experiencia, podrán cambiarlos a su gusto.
 
-\begin{lstlisting}[language=C++, caption=Las cuatro lineas esenciales]
+\begin{lstlisting}[language=C++, caption=Las cuatro líneas esenciales]
 #include <iostream>
 
 using namespace std;
@@ -96,11 +94,11 @@ int main() {
 }
 \end{lstlisting}
 
-Ahí esta su primer programa, él que les dije que se abre y se cierra sin hacer nada. Por ahora, todo su código debe ir entre los dos corchetes.
+Ahí esta su primer programa, él que les dije que se abre y se cierra sin hacer nada. Por ahora, todo su código debe ir entre los dos llaves.
 
 Tenemos que decirle a nuestro programa que queremos dos números enteros, los cuales seran sumados después. Para cada número entero que queremos, tenemos que asignarle un nombre.
 
-Para hacer esto, escribimos una linea para cada variable con int seguido por el nombre de la variable después (sin espacios y sin caracteres especiales). Finalmente, le ponemos un punto y coma después de cada linea para decirle que eso es lo unico que queremos hacer en esa linea.
+Para hacer esto, escribimos una línea para cada variable con int seguido por el nombre de la variable después (sin espacios y sin caracteres especiales). Finalmente, le ponemos un punto y coma después de cada línea para decirle que eso es lo unico que queremos hacer en esa línea.
 
 \begin{lstlisting}[language=C++, caption=Dos variables]
 #include <iostream>
@@ -115,7 +113,7 @@ int main() {
 
 Y asi tenemos dos números. Podemos nombrarlos como queramos, por ejemplo: numeroA y numeroB, alfa y beta, n1 y n2, etc. Si corremos el código, no pasa nada. Esto es porque no le hemos dicho al programa que queremos que haga con estos dos números, ni le hemos dicho que valores tienen.
 
-En una linea, podemos escribir a = 5; para decirle que queremos que la variable a valga 5. Tambien es valido modificar la linea int b; para que sea int b = 2;
+En una línea, podemos escribir a = 5; para decirle que queremos que la variable a valga 5. Tambien es valido modificar la línea int b; para que sea int b = 2;
 
 \begin{lstlisting}[language=C++, caption=Guardando valores]
 #include <iostream>
@@ -129,7 +127,7 @@ int main() {
 }
 \end{lstlisting}
 
-Es de gran importancia saber que el programa lee el código desde arriba hacia abajo, asi que no podemos poner la linea que dice a = 5; antes de int a; porque no sabra que a es una variable que definimos.
+Es de gran importancia saber que el programa lee el código desde arriba hacia abajo, asi que no podemos poner la línea que dice a = 5; antes de int a; porque no sabra que a es una variable que definimos.
 
 Ahora solo falta decirle que queremos que sume a y b.
 
@@ -209,7 +207,7 @@ int main() {
 
 C++ te permite escribir comentarios en medio de tu código y estos pueden servir para describir lo que hace cierto código, para recordarte de hacer algo en cierta parte o para mantener tu código ordenado.
 
-El tipo de comentario más popular es el de una sola linea, Estos se inician con dos $//$ seguidos por tu nota.
+El tipo de comentario más popular es el de una sola línea, Estos se inician con dos $//$ seguidos por tu nota.
 
 \begin{lstlisting}[language=C++, caption=Comentario]
 #include <iostream>
@@ -229,7 +227,7 @@ int main() {
 }
 \end{lstlisting}
 
-Tambien existen los comentarios de multiples lineas, estos se deben iniciar con $/*$ y se deben terminar con $*/$
+Tambien existen los comentarios de multiples líneas, estos se deben iniciar con $/*$ y se deben terminar con $*/$
 
 \begin{lstlisting}[language=C++, caption=Comentario]
 #include <iostream>
@@ -276,12 +274,149 @@ int main() {
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Suma}{Liga al código}\\
 
-Cuando ejecutas tu código, veras que la consola esta esperando una entrada. Puedes ingresar dos numeros separados por espacios y picarle enter o poner el primer numero, picar enter, poner el segundo y picarle enter denuevo. Al terminar de hacer eso, veras que tu programa hace la suma instantaneamente y que lo despliega debajo de los numeros que le diste.
+Cuando ejecutas tu código, verás que la consola esta esperando una entrada. Puedes ingresar dos números separados por espacios y picarle enter o poner el primer número, picar enter, poner el segundo y picarle enter denuevo. Al terminar de hacer eso, verás que tu programa hace la suma instantaneamente y que lo despliega debajo de los números que le diste.
+
+\section{Tipos de datos}
+
+A comparación de otros lenguajes de programación, en C++ tútienes que definir que tipo de dato quieres guardar en una variable.
+
+\subsection{Númericos}
+
+En C++, los números enteros y los números decimales se guardan en dos tipos de variables distintos. Esto es porque las variables que manejan números decimales no son completamente precisos (tienen un margen de error), mientras que los datos enteros sí lo son. Además, los números decimales estan representados de una manera completamente distinta en binario que los enteros, y esto tiene sus ventajas y desventajas.
+
+Los números enteros se conocen como \textbf{int} o integers, y son capaces de guardar cualquier número desde -2,147,483,648 hasta 2,147,483,647.
+
+Los números decimales se conocen como \textbf{float} o números flotantes, en teoria son capaces de guardar números hasta $3.4028235*10^{38}$, con la única desventaja que el error incrementa dependiendo del tamaño del número.
+
+También existe una variante de \textbf{float} conocido como \textbf{double}, que tiene el doble de precisión y es capaz de guardar números hasta $10^{308}$
+
+Estos son los tipos de datos númericos más comunes, pero existen más con distintos propositos. Tambien existe \textbf{long long int}, una variante de \textbf{int} que es capaz de guardar números muchisimo más grandes (desde -9,223,372,036,854,775,808 hasta 9,223,372,036,854,775,807), a cambio que ocupa el doble de memoria.
+
+Tambien existe \textbf{long long double}, con más precisión que un \textbf{double}.
+
+Raramente, tendrás que hacer cálculos con números más grandes que los permitidos por estos datos, o con mayor precisión. Existen librerias externas que pueden ser utilizados para manejar números de escala inmensa.
+
+\subsection{Signed y unsigned}
+
+Existe una posibilidad que trabajarás con tipos de datos que son signed y unsigned, y estos definen si una variable puede guardar números negativos o solo positivos.
+
+Todos los tipos de datos númericos empiezan como signed a menos que defines lo contrario. Esto significa que puede guardar números negativos y números positivos. Si quisieras convertir un tipo de dato en unsigned para que solo maneje números positivos, entonces puedes escribir unsigned antes del tipo de dato. Por ejemplo: \textbf{unsigned int a = 5;}
+
+A la hora de hacer una variable unsigned, el máximo se convierte en el doble de lo que era antes. Esto es porque la mitad de los números fueron utilizados para representar los números negativos en la representación signed, y esa mitad se junta con la otra mitad para hacer el doble. Es decir, si el mayor número que se puede guardar en un \textbf{int} es 2,147,483,647, el mayor número que se puede guardar en un \textbf{unsigned int} es 4,294,967,295.
+
+Esto se tiende a usar para manejar datos que se saben que nunca seran negativos, como temperaturas.
+
+\subsection{Caracteres y cadenas}
+
+C++ es capaz de guardar texto letra por letra en variables que se llaman caracteres y cuerdas. Un carácter o \textbf{char} es una variable que contiene una sola letra o simbolo conforme al estandar ASCII, mientras que una cuerda o un \textbf{string} es una variable que guarda mensajes completos.
+
+Para asignar un valor a un carácter, se debe colocar una sola comilla antes y después de la letra: \textbf{char estrella = '*';}
+
+Para asignar un valor a un string, se debe utilizar doble comilla antes y después del texto: \textbf{string mensaje = "Hola mundo!";}
+
+\subsection{Booleanos}
+
+Estos tipos de datos son muy utiles porque solo guardan dos valores: verdadero o \textbf{true} y falso o \textbf{false}.
+
+Para asignar un booleano, se utiliza el termino \textbf{bool}. Por ejemplo: \textbf{bool decirMentira = false;}
+
+\subsection{Arreglos}
+
+Cuando estamos trabajando con muchas variables a la vez, las cosas se pueden complicar y se puede requerir guardar un número grande de cosas. Para no tener que escribir cientos de variables para una sola tarea, se pueden crear arreglos, que guardan una cantidad predeterminada de datos.
+
+Se pueden hacer arreglos de cualquier tipo de dato y su nomenclatura consiste en poner dos corchetes $[$ después del nombre con el número de elementos que se desea tener en ese arreglo.
+
+Digamos que queremos un arreglo de 100 enteros, eso se podría definir como \textbf{int valores[100];}
+
+Luego, para modificar o leer uno de estos valores, se puede llamar \textbf{valores[N]} donde N es el indice del elemento.
+
+Es muy importante mencionar que el primer elemento tiene indice 0 y el ultimo elemento tendría indice 99. Los arreglos siempre empiezan desde cero y incrementan hasta el valor del tamaño menos uno. Si se intenta guardar o ver un valor que no esta en este rango, podrá causar errores en su programa.
+
+Las cuerdas funcionan como arreglos, y se puede ver el carácter en la posición N utilizando el mismo sintaxis.
+
+\section{Funciones}
+
+Las funciones son muy utiles para cuando tienes que repitir código similar muchas veces. Estos son similares a funciones matemáticas, reciben cuantas variables de entrada quieres que tengan, haran una operación con estas entradas y regresará una sola variable de salida.
+
+Para una función, se dice que se "regresa" su salida porque para indicar que se quiere terminar la función, se utiliza el operador $return$ seguido por el valor de la variable de salida.
+
+Un ejemplo sencillo es una función que suma dos números enteros A y B y que regresa otro entero C, la suma. Esto lo podemos implementar de la siguiente manera:
+
+\begin{lstlisting}[language=C++, caption=Función de suma]
+    int suma(int a, int b) {
+        int c = a + b;
+        return c;
+    }
+\end{lstlisting}
+
+Como se puede ver, se inicia una función con un tipo de dato que corresponde al tipo de dato de la salida. Como int va antes que el nombre de la función (suma), nos dice que queremos que regrese un entero.
+
+Luego, sigue el nombre de la función y dos paréntesis. Dentro de los paréntesis van las variables de entrada separadas por comas. Como tenemos un entero a y otro entero b, estamos diciendo que para correr esta función el usuario debe dar dos números en ese orden, los cuales serán guardados en a y b.
+
+Luego, siguen llaves que encapsulan el código de la función. Aqui es donde hacemos nuestros cálculos con nuestras variables y regresamos el valor de la salida.
+
+Declaramos otro entero c y le asignamos la suma de a y b, luego lo regresamos, es decir estamos diciendo que queremos que c sea nuestra salida.
+
+Todas las funciones tienen que estar colocados antes de main de tal manera:
+
+\begin{lstlisting}[language=C++, caption=Función de suma]
+    #include <iostream>
+
+    using namespace std;
+    
+    int suma(int a, int b) {
+        int c = a + b;
+        return c;
+    }
+
+    int main() {
+
+    }
+\end{lstlisting}
+
+Ahora, podemos llamar nuestra función dentro de main dandole los parametros que queremos:
+
+\begin{lstlisting}[language=C++, caption=Función de suma]
+    #include <iostream>
+
+    using namespace std;
+    
+    int suma(int a, int b) {
+        int c = a + b;
+        return c;
+    }
+
+    int main() {
+        cout << suma(3, 5) << endl;
+    }
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Funciones}{Liga al código}\\
+
+Al ejecutar este código, nos despliegara un 8.
+
+Otro ejemplo es una función que regresa la división de dos enteros:
+
+\begin{lstlisting}[language=C++, caption=Función de división]
+    #include <iostream>
+
+    using namespace std;
+    
+    float divide(int a, int b) {
+        return (float)a / b;
+    }
+
+    int main() {
+        cout << divide(5, 2) << endl;
+    }
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Funciones}{Liga al código}\\
+
+Este código imprime 2.5, lo que hace es que recibe dos enteros a y b, y luego regresa su división como si fuera un número flotante. El (float) antes del a significa que quieres convertir la división en un número flotante antes de que redondea.
 
 \section{Errores comunes}
 
 \subsection{Falta de inicialización}
-Este error es uno de los más graves y más dificiles de detectar debido a que la lógica puede estar completamente correcta, el programa se compila sin errores y en algunos casos tus variables te podran dar los resultados correctos.
+Este error es uno de los más graves y más dificiles de detectar debido a que la lógica puede estar completamente correcta, el programa se compila sin errores y en algunos casos tus variables te podrán dar los resultados correctos.
 
 Esto pasa cuando defines una variable pero no le das un valor inicial. Por ejemplo:
 
@@ -315,7 +450,7 @@ Entonces para asegurar que esto nunca pase, siempre debes de tener la costumbre 
 \subsection{Ciclos con otras variables}
 Este error pasa muy seguido cuando se utilizan ciclos for anidados y cuando uno olvida que haya declarado una variable antes.
 
-Digamos que vas tan mal en matemáticas que se te olvidaron las tablas multiplicativas por completo, y tu quieres crear un programa que los genera. Puedes hacer esto con dos ciclos for anidados, uno que calcule las filas y otra que calcule las columnas.
+Digamos que vas tan mal en matemáticas que se te olvidaron las tablas multiplicativas por completo, y túquieres crear un programa que los genera. Puedes hacer esto con dos ciclos for anidados, uno que calcule las filas y otra que calcule las columnas.
 
 \begin{lstlisting}[language=C++, caption=Ciclos con otras variables]
 #include <iostream>
@@ -333,7 +468,7 @@ int main() {
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Tablas-de-Falsedad}{Liga al código}\\
 
-Al parecer este código esta bien, pero si miras fijamente verás que en el segundo ciclo estamos modificando i en lugar de j. El compilador asume que sabes lo que estas haciendo, asi que no te arrojá ningun error al tener distintos variables en un solo ciclo.
+Al parecer este código esta bien, pero si miras fijamente verás que en el segundo ciclo estamos modificando i en lugar de j. El compilador asume que sabes lo que estas haciendo, asi que no te arroja ningun error al tener distintos variables en un solo ciclo.
 
 Para asegurar que esto no pase, siempre debes asegurarte de que solo estes modificando una variable por ciclo y que no hayas usado una variable con ese mismo nombre antes.
 
@@ -394,7 +529,7 @@ Esto ocurre porque estas intentando accesar el elemento 25565 de un arreglo que 
 El 95\% de las veces que verás un segmentation fault, será porque estas intentando modificar o ver un valor que esta fuera de un arreglo. Siempre debes asegurarte que un arreglo tiene suficiente espacio para guardar todos los posibles valores que ocupes.
 
 \subsection{Sobreflujos}
-Este error pasa cuando tienes un valor que es demásiado grande para una variable.
+Este error pasa cuando tienes un valor que es demasiado grande para una variable.
 
 Ahora vamos a mejorar el código que habiamos hecho del factorial. En lugar de guardar los primeros 10 valores en un arreglo, vamos a generar cada valor con un ciclo.
 
@@ -417,7 +552,7 @@ int main() {
 
 Corres este código y te topas con una sorpresa, 17! es aparentemente -288522240. ¿Cómo fue que un factorial te dio un número negativo si siempre incrementa?
 
-Lo que esta pasando es que el valor de 17! es demásiado grande para ser guardado en un valor de tipo int, si buscas en linea encontraras que un int solo puede guardar valores de -2,147,483,648 a 2,147,483,647, y 17! tiene un valor de 355,687,428,096,000.
+Lo que esta pasando es que el valor de 17! es demasiado grande para ser guardado en un valor de tipo int, si buscas en línea encontraras que un int solo puede guardar valores de -2,147,483,648 a 2,147,483,647, y 17! tiene un valor de 355,687,428,096,000.
 
 El programa no te arroja ningun error, simplemente lo que hace es que cuando un número es más grande del valor máximo de 2,147,483,647, se traslapa a -2,147,483,648 y sigue sumando desde ese valor. Eso significa que si quiero guardo el valor de 2,147,483,649 en un int, me guardará en realidad el valor -2,147,483,647.
 
@@ -449,12 +584,12 @@ int main() {
 
 Pero cuando lo corres, te dice que tu suma es cero. Revisas la variable de potencia y te das cuenta que ese sí esta bien, pero la variable de suma se queda en cero.
 
-Esto ocurre debido a que 1 y potencia estan siendo guardados como enteros, y cuando se dividen dos enteros el resultado siempre será otro entero redondeado para abajo. Es decir si hago $5 / 2$, esto me dará $2$ porque el valor de $2.5$ fue redondeado hacia abajo. Como potencia siempre es mayor que 1, esta division siempre se redondeara para abajo y dará cero.
+Esto ocurre debido a que 1 y potencia estan siendo guardados como enteros, y cuando se dividen dos enteros el resultado siempre será otro entero redondeado para abajo. Es decir si hago $5 / 2$, esto me dará $2$ porque el valor de $2.5$ fue redondeado hacia abajo. Como potencia siempre es mayor que 1, esta división siempre se redondeara para abajo y dará cero.
 
 Para corregir esto, se deben cambiar las variables de potencia y de suma de enteros a un tipo de dato flotante, es decir un número que permite puntos decimales.
 
 \subsection{Faltas de memoria}
-Esto sucede cuando tu programa ocupa demásiado espacio continuo y ocasiona un error.
+Esto sucede cuando tu programa ocupa demasiado espacio continuo y ocasiona un error.
 
 A veces sucede que tienes que crear un arreglo con 10 millones de valores (es verdad, sí vas a ocupar algo asi!) y te darás cuenta que tu programa deja de funcionar.
 
@@ -477,100 +612,30 @@ Por suerte, esto se puede arreglar. Si cuentas los bytes, te darás cuenta que s
 
 El problema viene del hecho que a la hora de crear un arreglo, el sistema busca 4 megabytes de espacio que estén libres y juntos dentro de la memoria del programa. Esto se puede arreglar preguntandole a tu sistema si puedes guardar estos 4 megabytes en una area especial extra de memoria llamado el heap, que viene siendo una area publica con muchisimo espacio, en lugar del espacio limitado que fue asignado a tu programa.
 
-Para hacer que el programa busque dentro del heap, debes cambiar el arreglo a un puntero y utilizar malloc, new o alguna funcion que te permite obtener espacio del heap.
+Para hacer que el programa busque dentro del heap, debes cambiar el arreglo a un puntero y utilizar \textbf{malloc}, \textbf{new} o alguna función que te permite obtener espacio del heap.
 
-\section{Tipos de datos}
+\section{Otros materiales}
 
-\subsection{Signed y unsigned}
+Si quisieras saber más acerca de como programar en C++, existen muchas páginas y canales de Youtube que explican sus temas a detalle. Aqui mencionaremos algunos ejemplos que nos han servido:
 
-\subsection{Numericos}
+\subsection{TutorialsPoint [Inglés]}
 
-\subsection{Caracteres y cadenas}
+Esta página es bastante buena porque condensa muchos detalles en pequeñas páginas detalladas.
 
-\subsection{Booleanos}
+\url{https://www.tutorialspoint.com/cplusplus/}
 
-\subsection{Long long}
+\subsection{HackerRank [Inglés]}
 
-\subsection{Arreglos}
+Es un canal de Youtube con un playlist de algoritmos y otro playlist de estructuras de datos bastante buena debido a la manera gráfica en la que enseñan las temas.
 
-\section{Funciones}
+\href{https://www.youtube.com/playlist?list=PLI1t_8YX-ApvMthLj56t1Rf-Buio5Y8KL}{HackerRank - Algoritmos}
 
-Las funciones son muy utiles para cuando tienes que repitir código similar muchas veces. Estos son similares a funciones matemáticas, reciben cuantas variables de entrada quieres que tengan, haran una operación con estas entradas y regresará una sola variable de salida.
+\href{https://www.youtube.com/playlist?list=PLI1t_8YX-Apv-UiRlnZwqqrRT8D1RhriX}{HackerRank - Estructuras de Datos}
 
-Para una función, se dice que se "regresa" su salida porque para indicar que se quiere terminar la función, se utiliza el operador $return$ seguido por el valor de la variable de salida.
+\subsection{CPlusPlus [Inglés]}
 
-Un ejemplo sencillo es una función que suma dos números enteros A y B y que regresa otro entero C, la suma. Esto lo podemos implementar de la siguiente manera:
+Esta es una página dedicada a documentar todo lo que se relaciona con el lenguaje de C++ y sirve como una referencia avanzada que describe detalles desconocidos por la mayoria de sus usuarios. Además tiene documentación completa de todas las funciones, librerias y tipos de datos.
 
-\begin{lstlisting}[language=C++, caption=Función de suma]
-    int suma(int a, int b) {
-        int c = a + b;
-        return c;
-    }
-\end{lstlisting}
-
-Como se puede ver, se inicia una funcion con un tipo de dato que corresponde a el tipo de dato de la salida. Como int va antes que el nombre de la función (suma), nos dice que queremos que regrese un entero.
-
-Luego, sigue el nombre de la función y dos parentesis. Dentro de los parentesis van las variables de entrada separadas por comas. Como tenemos un entero a y otro entero b, estamos diciendo que para correr esta función el usuario debe dar dos números en ese orden, los cuales serán guardados en a y b.
-
-Luego, siguen corchetes que encapsulan el código de la función. Aqui es donde hacemos nuestros cálculos con nuestras variables y regresamos el valor de la salida.
-
-Declaramos otro entero c y le asignamos la suma de a y b, luego lo regresamos, es decir estamos diciendo que queremos que c sea nuestra salida.
-
-Todas las funciones tienen que estar colocados antes de main de tal manera:
-
-\begin{lstlisting}[language=C++, caption=Función de suma]
-    #include <iostream>
-
-    using namespace std;
-    
-    int suma(int a, int b) {
-        int c = a + b;
-        return c;
-    }
-
-    int main() {
-
-    }
-\end{lstlisting}
-
-Ahora, podemos llamar nuestra función dentro de main dandole los parametros que queremos:
-
-\begin{lstlisting}[language=C++, caption=Función de suma]
-    #include <iostream>
-
-    using namespace std;
-    
-    int suma(int a, int b) {
-        int c = a + b;
-        return c;
-    }
-
-    int main() {
-        cout << suma(3, 5) << endl;
-    }
-\end{lstlisting}
-\href{https://repl.it/@Jamesscn/Funciones}{Liga al código}\\
-
-Al ejecutar este código, nos despliegara un 8.
-
-Otro ejemplo es una función que regresa la división de dos enteros:
-
-\begin{lstlisting}[language=C++, caption=Función de división]
-    #include <iostream>
-
-    using namespace std;
-    
-    float divide(int a, int b) {
-        return (float)a / b;
-    }
-
-    int main() {
-        cout << divide(5, 2) << endl;
-    }
-\end{lstlisting}
-\href{https://repl.it/@Jamesscn/Funciones}{Liga al código}\\
-
-Este código imprime 2.5, lo que hace es que recibe dos enteros a y b, y luego regresa su división como si fuera un número flotante. El (float) antes del a significa que quieres convertir la división en un número flotante antes de que redondea.
+\url{http://www.cplusplus.com/doc/tutorial/}
 
 \end{document}
-
