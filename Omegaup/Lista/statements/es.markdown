@@ -4,7 +4,9 @@ Dado un set de números, quieres determinar cuántos números son mayores a cada
 
 # Entrada
 
-Un número **N**, el número de valores en el arreglo, seguido por **N** valores $i_n$, el valor de cada elemento del arreglo
+Un número **N**, el número de valores en el arreglo, seguido por **N** valores $i_n$, el valor de cada elemento del arreglo.
+
+**Nota importante**: los números se pueden repetir.
 
 # Salida
 

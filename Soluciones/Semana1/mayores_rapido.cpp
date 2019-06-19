@@ -5,7 +5,7 @@
 using namespace std;
 
 /*
- * Esta implementación no es la más sencilla, pero sí es la mas eficiente
+ * Esta implementación no es la más sencilla, pero sí es la más eficiente
  * Complejidad de tiempo: O(N log N)
  */
 
@@ -38,8 +38,13 @@ int main() {
 		valores[i].indice = i;
 	}
 	sort(valores, valores + n, ordenaValor);
-	for(int i = 0; i < n; i++) {
-		valores[i].mayores = n - i - 1;
+	int index = n - 1;
+	valores[n - 1].mayores = 0;
+	for(int i = n - 2; i >= 0; i--) {
+		if(valores[i].valor != valores[i + 1].valor) {
+			index = i;
+		}
+		valores[i].mayores = n - index - 1;
 	}
 	sort(valores, valores + n, ordenaIndice);
 	for(int i = 0; i < n; i++) {
