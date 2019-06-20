@@ -7,22 +7,25 @@
 \BOOKMARK [2][-]{subsection.2.1}{Donde empezar}{section.2}% 7
 \BOOKMARK [2][-]{subsection.2.2}{Comentarios}{section.2}% 8
 \BOOKMARK [1][-]{section.3}{Leyendo y escribiendo}{}% 9
-\BOOKMARK [1][-]{section.4}{Tipos de datos}{}% 10
-\BOOKMARK [2][-]{subsection.4.1}{N\372mericos}{section.4}% 11
-\BOOKMARK [2][-]{subsection.4.2}{Signed y unsigned}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.3}{Caracteres y cadenas}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.4}{Booleanos}{section.4}% 14
-\BOOKMARK [2][-]{subsection.4.5}{Arreglos}{section.4}% 15
-\BOOKMARK [1][-]{section.5}{Funciones}{}% 16
-\BOOKMARK [1][-]{section.6}{Errores comunes}{}% 17
-\BOOKMARK [2][-]{subsection.6.1}{Falta de inicializaci\363n}{section.6}% 18
-\BOOKMARK [2][-]{subsection.6.2}{Ciclos con otras variables}{section.6}% 19
-\BOOKMARK [2][-]{subsection.6.3}{Error por uno}{section.6}% 20
-\BOOKMARK [2][-]{subsection.6.4}{Segmentation fault}{section.6}% 21
-\BOOKMARK [2][-]{subsection.6.5}{Sobreflujos}{section.6}% 22
-\BOOKMARK [2][-]{subsection.6.6}{Errores de redondeo}{section.6}% 23
-\BOOKMARK [2][-]{subsection.6.7}{Faltas de memoria}{section.6}% 24
-\BOOKMARK [1][-]{section.7}{Otros materiales}{}% 25
-\BOOKMARK [2][-]{subsection.7.1}{TutorialsPoint [Ingl\351s]}{section.7}% 26
-\BOOKMARK [2][-]{subsection.7.2}{HackerRank [Ingl\351s]}{section.7}% 27
-\BOOKMARK [2][-]{subsection.7.3}{CPlusPlus [Ingl\351s]}{section.7}% 28
+\BOOKMARK [1][-]{section.4}{Operaciones b\341sicas}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Suma, resta, multiplicaci\363n, divisi\363n}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Modulaci\363n}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Tipos de datos}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{N\372mericos}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Signed y unsigned}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.3}{Caracteres y cadenas}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.4}{Booleanos}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.5}{Arreglos}{section.5}% 18
+\BOOKMARK [1][-]{section.6}{Funciones}{}% 19
+\BOOKMARK [1][-]{section.7}{Errores comunes}{}% 20
+\BOOKMARK [2][-]{subsection.7.1}{Falta de inicializaci\363n}{section.7}% 21
+\BOOKMARK [2][-]{subsection.7.2}{Ciclos con otras variables}{section.7}% 22
+\BOOKMARK [2][-]{subsection.7.3}{Error por uno}{section.7}% 23
+\BOOKMARK [2][-]{subsection.7.4}{Segmentation fault}{section.7}% 24
+\BOOKMARK [2][-]{subsection.7.5}{Sobreflujos}{section.7}% 25
+\BOOKMARK [2][-]{subsection.7.6}{Errores de redondeo}{section.7}% 26
+\BOOKMARK [2][-]{subsection.7.7}{Faltas de memoria}{section.7}% 27
+\BOOKMARK [1][-]{section.8}{Otros materiales}{}% 28
+\BOOKMARK [2][-]{subsection.8.1}{TutorialsPoint [Ingl\351s]}{section.8}% 29
+\BOOKMARK [2][-]{subsection.8.2}{HackerRank [Ingl\351s]}{section.8}% 30
+\BOOKMARK [2][-]{subsection.8.3}{CPlusPlus [Ingl\351s]}{section.8}% 31

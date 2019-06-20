@@ -10,7 +10,7 @@ Como Blanca ya está desesperada porque Edison se está tardando mucho contando 
 
 # Entrada
 
-Dos números enteros **N**: $1 \le N \le 10000$ y **M**: $1 \le M \le 10000$ las dimensiones del rancho
+Dos números enteros **N**: $1 \le N \le 34$ y **M**: $1 \le M \le 34$ las dimensiones del rancho
 
 # Salida
 
