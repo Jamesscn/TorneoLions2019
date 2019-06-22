@@ -17,15 +17,22 @@
 \BOOKMARK [2][-]{subsection.5.4}{Booleanos}{section.5}% 17
 \BOOKMARK [2][-]{subsection.5.5}{Arreglos}{section.5}% 18
 \BOOKMARK [1][-]{section.6}{Funciones}{}% 19
-\BOOKMARK [1][-]{section.7}{Errores comunes}{}% 20
-\BOOKMARK [2][-]{subsection.7.1}{Falta de inicializaci\363n}{section.7}% 21
-\BOOKMARK [2][-]{subsection.7.2}{Ciclos con otras variables}{section.7}% 22
-\BOOKMARK [2][-]{subsection.7.3}{Error por uno}{section.7}% 23
-\BOOKMARK [2][-]{subsection.7.4}{Segmentation fault}{section.7}% 24
-\BOOKMARK [2][-]{subsection.7.5}{Sobreflujos}{section.7}% 25
-\BOOKMARK [2][-]{subsection.7.6}{Errores de redondeo}{section.7}% 26
-\BOOKMARK [2][-]{subsection.7.7}{Faltas de memoria}{section.7}% 27
-\BOOKMARK [1][-]{section.8}{Otros materiales}{}% 28
-\BOOKMARK [2][-]{subsection.8.1}{TutorialsPoint [Ingl\351s]}{section.8}% 29
-\BOOKMARK [2][-]{subsection.8.2}{HackerRank [Ingl\351s]}{section.8}% 30
-\BOOKMARK [2][-]{subsection.8.3}{CPlusPlus [Ingl\351s]}{section.8}% 31
+\BOOKMARK [1][-]{section.7}{Flujo de datos}{}% 20
+\BOOKMARK [2][-]{subsection.7.1}{Condicional if}{section.7}% 21
+\BOOKMARK [2][-]{subsection.7.2}{Condiciones}{section.7}% 22
+\BOOKMARK [2][-]{subsection.7.3}{Ciclo for}{section.7}% 23
+\BOOKMARK [2][-]{subsection.7.4}{Ciclo while}{section.7}% 24
+\BOOKMARK [2][-]{subsection.7.5}{Break}{section.7}% 25
+\BOOKMARK [2][-]{subsection.7.6}{Continue}{section.7}% 26
+\BOOKMARK [1][-]{section.8}{Errores comunes}{}% 27
+\BOOKMARK [2][-]{subsection.8.1}{Falta de inicializaci\363n}{section.8}% 28
+\BOOKMARK [2][-]{subsection.8.2}{Ciclos con otras variables}{section.8}% 29
+\BOOKMARK [2][-]{subsection.8.3}{Error por uno}{section.8}% 30
+\BOOKMARK [2][-]{subsection.8.4}{Segmentation fault}{section.8}% 31
+\BOOKMARK [2][-]{subsection.8.5}{Sobreflujos}{section.8}% 32
+\BOOKMARK [2][-]{subsection.8.6}{Errores de redondeo}{section.8}% 33
+\BOOKMARK [2][-]{subsection.8.7}{Faltas de memoria}{section.8}% 34
+\BOOKMARK [1][-]{section.9}{Otros materiales}{}% 35
+\BOOKMARK [2][-]{subsection.9.1}{TutorialsPoint [Ingl\351s]}{section.9}% 36
+\BOOKMARK [2][-]{subsection.9.2}{HackerRank [Ingl\351s]}{section.9}% 37
+\BOOKMARK [2][-]{subsection.9.3}{CPlusPlus [Ingl\351s]}{section.9}% 38

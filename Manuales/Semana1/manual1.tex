@@ -443,6 +443,331 @@ Otro ejemplo es una función que regresa la división de dos enteros:
 
 Este código imprime 2.5, lo que hace es que recibe dos enteros a y b, y luego regresa su división como si fuera un número flotante. El (float) antes del a significa que quieres convertir la división en un número flotante antes de que redondea.
 
+\section{Flujo de datos}
+
+La pieza fundamental detrás de cualquier programa es su lógica, y no puede haber lógica sin flujo de datos. El flujo de datos consiste en correr ciertos piezas de código bajo ciertas condiciones. Por ejemplo, si queremos saber si un número es par el código debe de tener dos secciones, uno que corre cuando sí es par y otro que corre cuando no es par.
+
+\subsection{Condicional if}
+
+La manera mas sencilla de comparar datos es con el condicional \textbf{if}. Este es capaz de correr código solo cuando se cumple cierta condición. Para utilizar este, se debe iniciar escribiendo \textbf{if} y se debe incluir una condición entre paréntesis, luego el código que se desea correr entre llaves.
+
+\begin{lstlisting}[language=C++, caption=Condiciones]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    if(a + b > 5) {
+        cout << "La suma es mayor a cinco" << endl;
+    }
+}
+\end{lstlisting}
+
+Aqui, tenemos una condición que checa si la suma de A y B es mayor a 5. En el caso de que sí se cumple, se imprimirá "La suma es mayor a cinco" y en caso que no, no se imprimirá nada.
+
+Ahora modificaremos el código para que se imprima "La suma es menor o igual que cinco" cuando no se cumple la primera condición.
+
+\begin{lstlisting}[language=C++, caption=Condiciones]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    if(a + b > 5) {
+        cout << "La suma es mayor a cinco" << endl;
+    }
+    if(a + b <= 5) {
+        cout << "La suma es menor o igual a cinco" << endl;
+    }
+}
+\end{lstlisting}
+
+Podemos simplificar este código con el condicional \textbf{else}, que se ejecuta cuando una condición \textbf{if} NO se cumple. Este se puede agregar después de la ultima llave y deberá tener otro par de llaves después.
+
+\begin{lstlisting}[language=C++, caption=Else]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    if(a + b > 5) {
+        cout << "La suma es mayor a cinco" << endl;
+    } else {
+        cout << "La suma es menor o igual a cinco" << endl;
+    }
+}
+\end{lstlisting}
+
+Digamos que ahora queremos checar si la suma es menor, igual o mayor que cinco. Se puede agregar un tercer condicional \textbf{else if} que ocurre cuando la primera condición falla pero otra condición se cumple. Se puede tener varios \textbf{else if} encadenados.
+
+\begin{lstlisting}[language=C++, caption=Else if]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    if(a + b > 5) {
+        cout << "La suma es mayor a cinco" << endl;
+    } else if (a + b == 5) {
+        cout << "La suma es igual a cinco" << endl;
+    } else {
+        cout << "La suma es menor a cinco" << endl;
+    }
+}
+\end{lstlisting}
+
+En este caso, primero se checa si el número es mayor que cinco, luego se checa si es igual a cinco, y finalmente por lógica si no cumple ninguna de estas dos condiciones debe ser menor que cinco.
+
+\subsection{Condiciones}
+
+Como se ha visto, existen maneras de comparar datos para verificar condiciones. Para checar si una variable es menor que otro, se debe usar el simbolo \textbf{$<$}, mientras que para checar si es mayor, se usa el simbolo \textbf{$>$}.
+
+Tambien se puede ver cuando un valor es menor o igual a otro valor con \textbf{$<=$} y cuando es mayor o igual con \textbf{$>=$}. Nota que el signo de igual siempre va despues de la comparación de mayor o menor.
+
+Para preguntar si dos valores son iguales, se utilizan dos signos de igual \textbf{==}, ya que al utilizar solo uno se estaria asignando un valor a la variable de la izquierda. Para checar si no son iguales, se debe usar un signo de admiración seguido por un signo de igual \textbf{!=}.
+
+Finalmente, existen los operadores lógicos \textbf{\&\&} y \textbf{$||$} que pueden ser utilizados para juntar condiciones. El primero se utiliza para correr código siempre y cuando las condiciones pegadas a él sean ciertos, mientras que el segundo sirve cuando cualquiera de los dos son ciertos.
+
+\begin{lstlisting}[language=C++, caption=Condiciones]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    if(a == b) {
+        cout << "A es igual a B" << endl;
+    }
+    if(a > 5) {
+        cout << "A es mayor a 5" << endl;
+    }
+    if(b <= 10) {
+        cout << "B es menor o igual que 10" << endl;
+    }
+    if(b != -6) {
+        cout << "B no es igual a -6" << endl;
+    }
+    if(a < 1 && b > 1) {
+        cout << "A es menor que 1 y B es mayor que 1" << endl;
+    }
+    if(a == 1 || b == 1) {
+        cout << "Una de las variables A o B es igual a 1" << endl;
+    }
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Condiciones}{Liga al código}\\
+
+\subsection{Ciclo for}
+
+Digamos que quieres repetir un proceso cierta cantidad de veces pero no quieres tener que volver a escribir el código cientos de veces con cambios pequeños. Se puede automatizar este proceso con el uso de ciclos for.
+
+Un ciclo for repite código cierta cantidad de veces y tiene una variable que incrementa o decrementa con cada turno del ciclo, esta variable puede ser util porque puede indicar el ciclo actual.
+
+Digamos que ocupas saber la suma de 1 a 100. Esto se puede escribiendo cien líneas que suman cada valor o escribiendo una línea dentro de un ciclo for.
+
+Aqui les mostramos el ejemplo con cien líneas:
+
+\begin{lstlisting}[language=C++, caption=Suma línea por línea]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int suma = 0;
+    suma += 1;
+    suma += 2;
+    suma += 3;
+    ...
+    suma += 98;
+    suma += 99;
+    suma += 100;
+    cout << suma << endl;
+}
+\end{lstlisting}
+
+Y esto es la simplificación con el ciclo for:
+
+\begin{lstlisting}[language=C++, caption=Suma con ciclo for]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int suma = 0;
+    for(int i = 1; i <= 100; i++) {
+        suma += i;
+    }
+    cout << suma;
+}
+\end{lstlisting}
+
+Como se puede ver, el ciclo for ahorra muchas líneas y puedes cambiar los parametros de iteración.
+
+Se debe notar que el for tiene un sintaxis similar al if, excepto que tiene tres divisiones en la parte condicional.
+
+La primera parte corresponde a la asignación del valor inicial, aqui se debe declarar e igualar una variable al valor inicial del ciclo. A esta variable se le tiende a dar el nombre \textbf{i}, o \textbf{j} cuando existe otro ciclo que este usando \textbf{i} al mismo tiempo.
+
+Despues, sigue una condición que al no cumplirse terminará el ciclo. En este ejemplo, se utilizó \textbf{i $<=$ 100} para asegurarnos que una vez que \textbf{i} llegue a 100, se termine el ciclo.
+
+Finalmente, la tercera parte debe modificar la variable del ciclo para que progrese hasta que deje de cumplirse la condición en la segunda parte.
+
+Con esta información, podemos ver que primero se guarda 1 en la variable \textbf{i}, luego se checa en cada iteración del ciclo que no sea mayor que 100, luego se suma 1 a la variable \textbf{i}.
+
+Si queremos hacer un ciclo que nos de los números 0 a 4 en orden ascendiente, podemos modificar el código de la siguiente manera:
+
+\begin{lstlisting}[language=C++, caption=Ciclo for]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    for(int i = 0; i < 5; i++) {
+        cout << i << endl;
+    }
+}
+\end{lstlisting}
+
+Y en caso de que queremos que nos den los valores de 4 a 0 en orden descendiente, podemos modificarlo para que reste en lugar de sumar.
+
+\begin{lstlisting}[language=C++, caption=Ciclo for]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    for(int i = 4; i >= 0; i--) {
+        cout << i << endl;
+    }
+}
+\end{lstlisting}
+
+\subsection{Ciclo while}
+
+Si no te interesa la cantidad de veces que corra un ciclo y simplemente quieres repetir algo mientras que una condición sea cierto, se puede utilizar el ciclo while.
+
+Se debe de tener cuidado con los ciclos while debido a que pueden correrse infinitamente.
+
+Para crear un ciclo while, se utiliza el mismo sintaxis que el condicional if con el nombre \textbf{while}. El código dentro de las llaves seguira corriendo hasta que la condición sea falsa.
+
+\begin{lstlisting}[language=C++, caption=Ciclo while]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int potenciaDos = 1;
+    while(potenciaDos < 100) {
+        potenciaDos *= 2;
+    }
+    cout << potenciaDos << endl;
+}
+\end{lstlisting}
+
+Como se ve en este ejemplo, el código calculará todas las potencias de dos hasta llegar a uno que no sea menor a 100, en este caso 128, luego lo imprimirá en la consola.
+
+\subsection{Break}
+
+Si tienes algún ciclo y quisieras salirte de ese ciclo bajo una condición que no esta incluida en la parte donde se declara ese ciclo, se puede utilizar el termino \textbf{break}.
+
+Digamos que queremos hacer un ciclo que termine después de 100 iteraciones o después de que se encuentren tres números consecutivos que suman 20. Esto se puede implementar con un ciclo for y un break de la siguiente manera:
+
+\begin{lstlisting}[language=C++, caption=Break]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    bool existeSuma = false;
+    for(int i = 0; i < 100; i++) {
+        int suma = i + (i + 1) + (i + 2);
+        if(suma == 20) {
+            existeSuma = true;
+            cout << "La suma es: " << endl;
+            cout << i << ", " << i + 1 << ", " << i + 2 << endl;
+            break;
+        }
+    }
+    if(existeSuma == false) {
+        cout << "La suma no existe!" << endl;
+    }
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Suma-Triple}{Liga al código}\\
+
+Como se puede ver, combinamos break con un booleano para ver si se llega a cumplir la condición de la suma, y en caso de que sí se cumple imprimimos la suma y dejamos de buscar más secuencias. En el caso contrario, no modificamos el booleano e imprimimos que la suma no existe.
+
+\subsection{Continue}
+
+A veces queremos evitar correr cierto código bajo una condición, pero no queremos tener que incluir nuestro código en muchas condicionales if. En un ciclo for o while se puede utilizar \textbf{continue} cada vez que se quiere saltar al siguiente ciclo.
+
+Digamos que estamos iterando sobre todos los números menores a 100 y queremos saltarnos todos los números pares y divisibles entre 3. Esto se puede hacer de distintas maneras:
+
+En la primera se puede tener un solo caso if con dos condiciones unidos con el operador \&\&
+
+\begin{lstlisting}[language=C++, caption=Condiciones con and]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    for(int i = 0; i < 100; i++) {
+        if(i % 2 != 0 && i % 3 != 0) {
+            cout << i << endl;
+        }
+    }
+}
+\end{lstlisting}
+
+Para la segunda manera se puede tener dos ifs anidados:
+
+\begin{lstlisting}[language=C++, caption=Dos condiciones]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    for(int i = 0; i < 100; i++) {
+        if(i % 2 != 0) {
+            if(i % 3 != 0) {
+                cout << i << endl;
+            }
+        }
+    }
+}
+\end{lstlisting}
+
+Y para la tercera podemos usar dos casos if con continue:
+
+\begin{lstlisting}[language=C++, caption=Continue]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    for(int i = 0; i < 100; i++) {
+        if(i % 2 == 0) {
+            continue;
+        }
+        if(i % 3 == 0) {
+            continue;
+        }
+        cout << i << endl;
+    }
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Numeros-no-hexagonales}{Liga al código}\\
+
+Al correr estos tres códigos, se veran los mismos resultados.
+
 \section{Errores comunes}
 
 \subsection{Falta de inicialización}

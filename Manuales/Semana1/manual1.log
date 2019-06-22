@@ -1,14 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.6.15)  19 JUN 2019 20:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.22)  22 JUN 2019 16:13
 entering extended mode
- restricted \write18 enabled.
- file:line:error style messages enabled.
- %&-line parsing enabled.
-**/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.tex
-(/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.tex
+**c:/Users/James/Documents/GitHub/TorneoLions2019/Manuales/Semana1/manual1.tex
+(c:/Users/James/Documents/GitHub/TorneoLions2019/Manuales/Semana1/manual1.tex
 LaTeX2e <2018-12-01>
-(/usr/share/texmf-dist/tex/latex/base/article.cls
+("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/size10.clo
+("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
 File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -22,52 +19,58 @@ File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+) ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2018/11/13 3.27 The Babel package
- (/usr/share/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/11/13 3.27 Babel switching mechanism
-) (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+) ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty"
+Package: babel 2019/06/03 3.32 The Babel package
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.def"
+File: switch.def 2019/06/03 3.32 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\english.ldf"
 Language: english 2017/06/06 v3.3r English support from the babel system
- (/usr/share/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2018/11/13 3.27 Babel common definitions
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
+File: babel.def 2019/06/03 3.32 Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
- (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
 \bbl@dirlevel=\count89
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
-)) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+)) ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
-) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+) ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
- (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
- (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
-) (/usr/share/texmf-dist/tex/latex/float/float.sty
+) ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count90
 \float@exts=\toks17
 \float@box=\box27
 \@float@everytoks=\toks18
 \@floatcapt=\box28
-) (/usr/share/texmf-dist/tex/latex/listings/listings.sty
+) ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.sty"
 \lst@mode=\count91
 \lst@gtempboxa=\box29
 \lst@token=\toks19
@@ -80,20 +83,20 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \lst@newlines=\count95
 \lst@lineno=\count96
 \lst@maxwidth=\dimen109
- (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 \c@lstnumber=\count97
 \lst@skipnumbers=\count98
 \lst@framebox=\box30
-) (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2018/09/02 1.7 listings configuration
+) ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.cfg"
+File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
-Package: listings 2018/09/02 1.7 (Carsten Heinz)
- (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: listings 2019/02/27 1.8b (Carsten Heinz)
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
- (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
- (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -105,10 +108,6 @@ Package ifvtex Info: VTeX not detected.
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
@@ -130,23 +129,23 @@ Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-) (/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+) ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-) (/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
+) ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+) ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen110
 \Hy@linkcounter=\count99
 \Hy@pagecounter=\count100
- (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count101
- (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4519.
@@ -157,7 +156,7 @@ Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4772.
 \c@Hy@tempcnt=\count102
- (/usr/share/texmf-dist/tex/latex/url/url.sty
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -180,18 +179,18 @@ LaTeX Info: Redefining \pageref on input line 6454.
 \c@Hfootnote=\count106
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
 \Fld@listcount=\count107
 \c@bookmark@seq@number=\count108
- (/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
 )
 \Hy@SectionHShift=\skip43
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 13.
- (/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.aux)
+ (c:/Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana1\manual1.aux)
 \openout1 = `manual1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -208,7 +207,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
- (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count109
 \scratchdimen=\dimen114
@@ -221,31 +220,29 @@ LaTeX Font Info:    ... okay on input line 20.
 \MPnumerator=\count113
 \makeMPintoPDFobject=\count114
 \everyMPtoPDFconversion=\toks21
-) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
- (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
- (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
+)
 \c@lstlisting=\count115
 \AtBeginShipoutBox=\box32
- (/usr/share/texmf-dist/tex/latex/graphics/color.sty
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\color.sty"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
- (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
 Package hyperref Info: Link coloring ON on input line 20.
- (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
- (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count116
@@ -253,7 +250,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 20.
 LaTeX Info: Redefining \pageref on input line 20.
 LaTeX Info: Redefining \nameref on input line 20.
- (/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.out) (/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.out)
+ (c:/Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana1\manual1.out) (c:/Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana1\manual1.out)
 \@outlinefile=\write3
 \openout3 = `manual1.out'.
 
@@ -263,68 +260,68 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 23.
- (/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.toc
+ (c:/Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana1\manual1.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 3.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+{C:/Users/James/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `manual1.toc'.
 
-<newblack.png, id=170, 2982.14125pt x 2994.18625pt>
+<newblack.png, id=204, 2982.14125pt x 2994.18625pt>
 File: newblack.png Graphic file (type png)
 <use newblack.png>
 Package pdftex.def Info: newblack.png  used on input line 28.
 (pdftex.def)             Requested size: 122.85712pt x 123.31068pt.
 
 Overfull \hbox (6.53787pt too wide) in paragraph at lines 31--31
-[]\OT1/cmr/bx/n/14.4 Instalaci^^Son de IDE para ed-i-tar y com-pi-lar C++ 
+[]\OT1/cmr/bx/n/14.4 Instalacion de IDE para ed-i-tar y com-pi-lar C++ 
  []
 
-<CodeBlocks.png, id=173, 1039.885pt x 674.52pt>
+<CodeBlocks.png, id=207, 1039.885pt x 674.52pt>
 File: CodeBlocks.png Graphic file (type png)
 <use CodeBlocks.png>
 Package pdftex.def Info: CodeBlocks.png  used on input line 40.
 (pdftex.def)             Requested size: 307.14749pt x 199.22868pt.
-[2 </home/james/Documents/Lions/TorneoLions2019/Manuales/newblack.png>]
+[2 <c:/Users/James/Documents/GitHub/TorneoLions2019/Manuales/Semana1/newblack.png>]
 Overfull \hbox (9.55617pt too wide) in paragraph at lines 44--45
-\OT1/cmr/m/n/10 Repl.it es una p^^Sagina web que te per-mite pro-bar c^^Sodigo desde cualquier plataforma,
+\OT1/cmr/m/n/10 Repl.it es una pagina web que te per-mite pro-bar codigo desde cualquier plataforma,
  []
 
-<replit.png, id=181, 1370.11874pt x 601.24625pt>
+<replit.png, id=214, 1370.11874pt x 601.24625pt>
 File: replit.png Graphic file (type png)
 <use replit.png>
 Package pdftex.def Info: replit.png  used on input line 48.
 (pdftex.def)             Requested size: 307.14749pt x 134.77914pt.
-[3 </home/james/Documents/Lions/TorneoLions2019/Manuales/CodeBlocks.png (PNG copy)> </home/james/Documents/Lions/TorneoLions2019/Manuales/replit.png>]
-<vscommunity.png, id=190, 1028.34187pt x 578.16pt>
+[3 <c:/Users/James/Documents/GitHub/TorneoLions2019/Manuales/Semana1/CodeBlocks.png (PNG copy)> <c:/Users/James/Documents/GitHub/TorneoLions2019/Manuales/Semana1/replit.png>]
+<vscommunity.png, id=223, 1028.34187pt x 578.16pt>
 File: vscommunity.png Graphic file (type png)
 <use vscommunity.png>
 Package pdftex.def Info: vscommunity.png  used on input line 60.
 (pdftex.def)             Requested size: 307.14749pt x 172.69064pt.
-<vscode.png, id=191, 434.62375pt x 202.7575pt>
+<vscode.png, id=224, 434.62375pt x 202.7575pt>
 File: vscode.png Graphic file (type png)
 <use vscode.png>
 Package pdftex.def Info: vscode.png  used on input line 72.
 (pdftex.def)             Requested size: 307.14749pt x 143.29675pt.
- [4 </home/james/Documents/Lions/TorneoLions2019/Manuales/vscommunity.png> </home/james/Documents/Lions/TorneoLions2019/Manuales/vscode.png>] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2018/09/02 1.7 listings language file
-) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2018/09/02 1.7 listings language file
-) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+ [4 <c:/Users/James/Documents/GitHub/TorneoLions2019/Manuales/Semana1/vscommunity.png> <c:/Users/James/Documents/GitHub/TorneoLions2019/Manuales/Semana1/vscode.png>] ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+) ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+) ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 )
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 90.
- (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 90.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 94.
- (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+ ("C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
@@ -334,7 +331,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-[7] [8]
+[7]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 239.
 
@@ -342,100 +339,139 @@ Overfull \hbox (69.00421pt too wide) in paragraph at lines 244--245
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[9]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
-[10]
+[9] [10]
 Overfull \hbox (17.61185pt too wide) in paragraph at lines 323--324
-\OT1/cmr/m/n/10 ca-paz de guardar n^^Sumeros muchisimo m^^Sas grandes (desde -9,223,372,036,854,775,808
+\OT1/cmr/m/n/10 ca-paz de guardar numeros muchisimo mas grandes (desde -9,223,372,036,854,775,808
  []
 
-[11] [12]
+[11]
 Overfull \hbox (2.01901pt too wide) in paragraph at lines 384--385
-[]\OT1/cmr/m/n/10 Luego, sigue el nom-bre de la funci^^Son y dos par^^Sentesis. Den-tro de los par^^Sentesis
+[]\OT1/cmr/m/n/10 Luego, sigue el nom-bre de la funcion y dos parentesis. Den-tro de los parentesis
  []
 
-[13]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 423--424
 
  []
 
-
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 442--443
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 468--469
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
-
- []
-
-
-Overfull \hbox (141.00494pt too wide) in paragraph at lines 542--543
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (57.00409pt too wide) in paragraph at lines 549--550
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 484--485
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 553--554
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 502--503
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[15] [16]
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 560--561
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 563--564
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--568
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 581--582
+[17] [18] [19]
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 695--696
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--705
 
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 613--614
+[20] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 767--768
 
  []
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 639--640
+
+Underfull \hbox (badness 10000) in paragraph at lines 793--794
 
  []
 
-[20]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 671.
- [21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 671.
- (/home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 671.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 671.
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 824--825
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 850--851
+
+ []
+
+
+Overfull \hbox (141.00494pt too wide) in paragraph at lines 867--868
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[24]
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 874--875
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 878--879
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 906--907
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 938--939
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 964--965
+
+ []
+
+[27]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 996.
+ [28]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 996.
+ (c:/Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana1\manual1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 996.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 996.
 Package rerunfilecheck Info: File `manual1.out' has not changed.
-(rerunfilecheck)             Checksum: FD34B4064E9B453A5E86CA61ED8338D3;2069.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 671.
+(rerunfilecheck)             Checksum: 607A8023C3CE093EC6C2152B0B5EFB09;2515.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 996.
  ) 
 Here is how much of TeX's memory you used:
- 7808 strings out of 492616
- 111720 string characters out of 6135177
- 403923 words of memory out of 5000000
- 11332 multiletter control sequences out of 15000+600000
- 8241 words of font info for 29 fonts, out of 8000000 for 9000
+ 8058 strings out of 492895
+ 118098 string characters out of 3123735
+ 410468 words of memory out of 3000000
+ 11364 multiletter control sequences out of 15000+200000
+ 8241 words of font info for 29 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,6n,60p,541b,1821s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on /home/james/Documents/Lions/TorneoLions2019/Manuales/manual1.pdf (21 pages, 898229 bytes).
+ 34i,6n,60p,553b,1823s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on c:/Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana1\manual1.pdf (28 pages, 1008429 bytes).
 PDF statistics:
- 650 PDF objects out of 1000 (max. 8388607)
- 605 compressed objects within 7 object streams
- 316 named destinations out of 1000 (max. 500000)
- 274 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 959 PDF objects out of 1000 (max. 8388607)
+ 536 named destinations out of 1000 (max. 500000)
+ 330 words of extra memory for PDF output out of 10000 (max. 10000000)
 
