@@ -140,9 +140,123 @@ Se debe notar que para las funciones \textbf{insert} y \textbf{erase}, se ocupa 
 
 \subsection{Pares}
 
+A veces es conveniente guardar cosas en pares, por ejemplo se pueden guardar dos enteros en un par para representar las coordenadas \textbf{x} y \textbf{y} de un plano, o se puede guardar un caracter con un booleano indicando si es vocal. Se puede crear pares de cualquier tipo de dato y los dos tipos no tienen que ser iguales.
 
+Para crear un par, se debe incluir la libreria \textbf{utility} y para declararlo se tiene que escribir \textbf{\lstinline{pair<tipo, tipo> nombre;}}
+
+\begin{lstlisting}[language=C++, caption=Declarando pares]
+#include <iostream>
+#include <utility>
+
+using namespace std;
+
+int main() {
+    pair<int, float> miPar;
+}
+\end{lstlisting}
+
+Para modificar o ver los datos en este par, se debe llamar el elemento \textbf{first} para el primer dato (en este caso el entero) y \textbf{second} para el segundo dato.
+
+\begin{lstlisting}[language=C++, caption=Declarando pares]
+#include <iostream>
+#include <utility>
+
+using namespace std;
+
+int main() {
+    pair<int, float> miPar;
+    miPar.first = 20;
+    miPar.second = 4.472136;
+}
+\end{lstlisting}
+
+Combinado con arreglos o vectores, pueden servir para una multitud de aplicaciones. Digamos que queremos guardar todos los puntos de un triángulo en un plano para verlos después. Podemos guardar un arreglo de tres pares correspondientes a los tres puntos de ese triángulo:
+
+\begin{lstlisting}[language=C++, caption=Arreglo de pares]
+#include <iostream>
+#include <utility>
+
+using namespace std;
+
+int main() {
+    pair<int, int> triangulo[3];
+    for(int i = 0; i < 3; i++) {
+        int x, y;
+        cin >> x >> y; //Lee las coordenadas
+        pair<int, int> punto;
+        punto.first = x;
+        punto.second = y;
+        triangulo[i] = punto;
+    }
+}
+\end{lstlisting}
+
+Como se puede ver en el código, primero leemos dos números de la consola tres veces, correspondiendo a las X y las Y de los puntos del triángulo. Luego guardamos estos valores en el par \textbf{punto}, donde el primer valor es la X y el segundo valor es la Y. Finalmente, guardamos ese par en el arreglo triángulo.
 
 \subsection{Mapas}
+
+El mapa es una estructura de datos bastante util debido a que mapea un valor a otro, como indicaría el nombre. Esto te permite asociar algún valor con otro para su busqueda rápida. Puedes declarar un mapa incluyendo la libreria \textbf{map} y escribiendo \textbf{\lstinline{map<tipo, tipo> nombre;}}
+
+Digamos que quieres guardar las edades de cada uno de tus amigos. Una manera de hacer esto es tener un arreglo de pares con el nombre de tu amigo y su edad, y luego para obtener la edad de alguno de ellos tendrías que iterar sobre todos tus amigos hasta encontrar el que quieres. Una alternativa más fácil es usar un mapa que simplemente recibe el nombre de tu amigo y que te da su edad.
+
+Les mostraremos las dos opciones, empezando con la implementación de este problema con un arreglo de pares:
+
+\begin{lstlisting}[language=C++, caption=Implementación con pares]
+#include <iostream>
+#include <utility>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n; //Lee el numero de amigos
+    pair<string, int> edades[n];
+    //Guardar todos los amigos y sus edades
+    for(int i = 0; i < n; i++) {
+        string nombre;
+        int edad;
+        cin >> nombre >> edad;
+        pair<string, int> amigo;
+        amigo.first = nombre;
+        amigo.second = edad;
+        edades[i] = amigo;
+    }
+    //Buscar el amigo "Juan" y desplegar su edad
+    for(int i = 0; i < n; i++) {
+        if(edades[i].first == "Juan") {
+            cout << "Juan tiene " << edades[i].second << endl;
+            break;
+        }
+    }
+}
+\end{lstlisting}
+
+Como se puede ver, se guardaron todos los valores en un arreglo de pares y luego se tuvo que hacer una busqueda de todos los amigos hasta encontrar a Juan. Esta es la simplificación con map:
+
+\begin{lstlisting}[language=C++, caption=Implementación con map]
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n; //Lee el numero de amigos
+    map<string, int> edades;
+    for(int i = 0; i < n; i++) {
+        string nombre;
+        int edad;
+        cin >> nombre >> edad;
+        edades[nombre] = edad;
+    }
+    //Buscar el amigo "Juan" y desplegar su edad
+    cout << "Juan tiene " << edades["Juan"] << endl;
+}
+\end{lstlisting}
+
+Como se puede ver, el primer valor funciona como un estilo de índice que guarda el segundo valor, y se puede utilizar cualquier tipo de variable como este índice.
+
+Pero tambien se debe aclarar que hay dos tipos de mapa, el mapa ordenado y el mapa desordenado. Hasta ahorita, hemos estado utilizando el mapa ordenado o \textbf{map}. El mapa desordenado se llama \textbf{\lstinline{unordered_map}} y para utilizarlo debes incluir la libreria con este mismo nombre.
 
 \subsection{Sets}
 
