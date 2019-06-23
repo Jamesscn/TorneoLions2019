@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.1}{Estructuras de datos sencillos}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Vectores}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Pares}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Mapas}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Sets}{section.1}% 5
+\BOOKMARK [1][-]{section.2}{Complejidad de tiempo}{}% 6
+\BOOKMARK [1][-]{section.3}{Complejidad de memoria}{}% 7
+\BOOKMARK [1][-]{section.4}{Busquedas}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Busqueda lineal}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Busqueda binaria}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Busqueda alfabetica}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Ordenamientos}{}% 12
+\BOOKMARK [2][-]{subsection.5.1}{Ordenamiento de selecci\363n}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.2}{Ordenamiento de inserci\363n}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.3}{Ordenamiento por mezcla}{section.5}% 15
+\BOOKMARK [1][-]{section.6}{Matem\341ticas en C++}{}% 16
+\BOOKMARK [2][-]{subsection.6.1}{Libreria cmath}{section.6}% 17
+\BOOKMARK [2][-]{subsection.6.2}{Desventajas}{section.6}% 18
