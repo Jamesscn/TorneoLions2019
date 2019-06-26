@@ -60,6 +60,16 @@ INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdfte
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
 INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\manual.aux
 INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\manual.aux
 OUTPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\manual.aux
@@ -95,19 +105,24 @@ INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\manual.toc
 INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\manual.toc
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 OUTPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\manual.toc
 INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\newblack.png
 INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\newblack.png
 INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\newblack.png
 INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\newblack.png
 INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\newblack.png
-INPUT C:\Users\James\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\James\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omlcmr.fd
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omlcmr.fd
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmib10.tfm
@@ -120,6 +135,16 @@ INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmis
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
+INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\nsquared.png
+INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\nsquared.png
+INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\nsquared.png
+INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\nsquared.png
+INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\nsquared.png
+INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\nsquaredn.png
+INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\nsquaredn.png
+INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\nsquaredn.png
+INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\nsquaredn.png
+INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\nsquaredn.png
 INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\manual.aux
 INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\manual.out
 INPUT c:\Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\manual.out
@@ -129,6 +154,8 @@ INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfon
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmib10.pfb
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmib10.pfb
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
@@ -137,7 +164,11 @@ INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfon
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\James\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
