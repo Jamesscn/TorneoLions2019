@@ -6,8 +6,6 @@ Carlos trabaja en Google y ayer se corrompieron todos los archivos y las copias 
 Para este problema recibirás un diccionario y tendrás que traducir una frase utilizando ese diccionario.
 
 
-![Ejemplo][1]
-
 # Entrada
 
 

@@ -9,8 +9,6 @@ Trapezoide: Cuadrilátero que solo tiene dos lados paralelos.
 Ninguno: No cumple con los últimos descripciones.
 
 
-![Ejemplo][1]
-
 # Entrada
 
 Cuatro pares de números enteros **X**: $-10000 \le X \le 10000$ y **Y**: $-10000 \le Y \le 10000$ en distintas líneas
