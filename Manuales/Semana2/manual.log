@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.22)  26 JUN 2019 18:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.22)  26 JUN 2019 20:17
 entering extended mode
 **c:/Users/James/Documents/GitHub/TorneoLions2019/Manuales/Semana2/manual.tex
 (c:/Users/James/Documents/GitHub/TorneoLions2019/Manuales/Semana2/manual.tex
@@ -312,7 +312,7 @@ LaTeX Info: Redefining \nameref on input line 21.
 \tf@toc=\write4
 \openout4 = `manual.toc'.
 
-<newblack.png, id=43, 2982.14125pt x 2994.18625pt>
+<newblack.png, id=68, 2982.14125pt x 2994.18625pt>
 File: newblack.png Graphic file (type png)
 <use newblack.png>
 Package pdftex.def Info: newblack.png  used on input line 29.
@@ -341,7 +341,12 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
- [2] [3] [4] [5]
+ [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+[4] [5]
 Overfull \hbox (3.00354pt too wide) in paragraph at lines 218--219
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -356,18 +361,18 @@ Overfull \hbox (93.00446pt too wide) in paragraph at lines 330--331
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
+[9]
 Overfull \hbox (117.0047pt too wide) in paragraph at lines 355--356
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[9]
+
 Overfull \hbox (117.0047pt too wide) in paragraph at lines 382--383
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [10] [11]
-<nsquared.png, id=362, 125.9907pt x 125.268pt>
+<nsquared.png, id=383, 125.9907pt x 125.268pt>
 File: nsquared.png Graphic file (type png)
 <use nsquared.png>
 Package pdftex.def Info: nsquared.png  used on input line 444.
@@ -382,33 +387,44 @@ Overfull \hbox (117.0047pt too wide) in paragraph at lines 520--521
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<nsquaredn.png, id=425, 121.1727pt x 118.7637pt>
+<nsquaredn.png, id=441, 121.1727pt x 118.7637pt>
 File: nsquaredn.png Graphic file (type png)
 <use nsquaredn.png>
 Package pdftex.def Info: nsquaredn.png  used on input line 538.
 (pdftex.def)             Requested size: 184.29036pt x 180.62598pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 543.
-[15 <c:/Users/James/Documents/GitHub/TorneoLions2019/Manuales/Semana2/nsquaredn.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 543.
+[15]
+Overfull \hbox (3.41719pt too wide) in paragraph at lines 557--558
+\OT1/cmr/m/n/10 Esta es la busqueda mas sen-cilla y comun y con-siste en tener un ar-reglo cualquiera
+ []
+
+[16 <c:/Users/James/Documents/GitHub/TorneoLions2019/Manuales/Semana2/nsquaredn.png>]
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 570--571
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[17]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 595.
+ [18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 595.
  (c:/Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 543.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 543.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 595.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 595.
 Package rerunfilecheck Info: File `manual.out' has not changed.
-(rerunfilecheck)             Checksum: AC051C5C422A70891B2485932670355A;479.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 543.
+(rerunfilecheck)             Checksum: 057EBA30AF117DA9BD48258DC7DD4BE2;800.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 595.
  ) 
 Here is how much of TeX's memory you used:
- 8457 strings out of 492895
- 122239 string characters out of 3123735
- 420581 words of memory out of 3000000
- 11940 multiletter control sequences out of 15000+200000
+ 8484 strings out of 492895
+ 122605 string characters out of 3123735
+ 418205 words of memory out of 3000000
+ 11945 multiletter control sequences out of 15000+200000
  9727 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,8n,60p,819b,1845s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,8n,60p,927b,1845s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on c:/Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\manual.pdf (15 pages, 525917 bytes).
+Output written on c:/Users\James\Documents\GitHub\TorneoLions2019\Manuales\Semana2\manual.pdf (18 pages, 539165 bytes).
 PDF statistics:
- 555 PDF objects out of 1000 (max. 8388607)
- 342 named destinations out of 1000 (max. 500000)
- 80 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 364 named destinations out of 1000 (max. 500000)
+ 120 words of extra memory for PDF output out of 10000 (max. 10000000)
 
