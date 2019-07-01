@@ -207,15 +207,172 @@ int main() {
     }
 }
 \end{lstlisting}
-\href{https://repl.it/@Jamesscn/Prioridades}{Liga al código}
+\href{https://repl.it/@Jamesscn/Prioridades}{Liga al código} \\
 
 Esta estructura es muy parecida a un heap, que guarda el dato más grande sobre los demás valores.
 
 \section{Recursividad}
 
-\subsection{Factoriales}
+Imaginemos que encontraste un código extraño que parece correr una función dentro de esa misma función. Antes de llamarse a si mismo imprimirá hola y después imprimirá mundo.
 
-\subsection{Series de Fibonacci}
+\begin{lstlisting}[language=C++, caption=Funciones]
+#include <iostream>
+
+using namespace std;
+
+void funcion() {
+    cout << "hola" << endl;
+    funcion();
+    cout << "mundo" << endl;
+}
+
+int main() {
+    funcion();
+}
+\end{lstlisting}
+
+Si piensas en la lógica de este programa, tu función correrá, imprimirá "hola" y se correrá denuevo, volviendo a repitir este proceso. Lo que estarias haciendo es crear un ciclo infinito donde tu función corre una copia de esa función que corre otra copia de esa función y nunca se parará.
+
+Si pruebas el código, verás que se imprime hola muchisimas veces hasta que el programa arroja un error. Este error pasa porque cada vez que se llama la función se esta ocupando memoria y llega a un punto donde ya no hay espacio para más funciones. También te darás cuenta que mundo nunca se imprime porque cada función que se llama nunca termina.
+
+Este funcionamiento tiene muchas aplicaciones, por ejemplo, si decidimos correr la función con un parametro entero y decidimos restarle uno a ese número hasta que llegue a 0, podemos calcular la suma de todos los enteros naturales de 1 a N:
+
+\begin{lstlisting}[language=C++, caption=Suma de enteros]
+#include <iostream>
+
+using namespace std;
+
+int suma(int n) {
+    if(n <= 0) {
+        return 0;
+    }
+    return n + suma(n - 1);
+}
+
+int main() {
+    cout << suma(100) << endl;
+}
+\end{lstlisting}
+
+Si analizamos el código, suma con una entrada N primero checará si n es menor o igual a cero, y si no cumple con estas condiciones (es positivo), entonces regresa N + suma(N - 1). Si probamos esto con N = 3, se verá que suma(3) = 3 + suma(2) = 3 + (2 + suma(1)) = 3 + (2 + (1 + suma(0))) = 3 + (2 + (1 + 0)) = 3 + 2 + 1 + 0.
+
+Podemos ver que gradualmente se van sumando los números empezando con N hasta llegar a 0, luego este se regresa en la función original. Cada llamada de suma(N) depende del valor de suma(N - 1).
+
+A esto se le llama la recursividad y es útil para resolver problemas que dependen de un estado anterior. Otro ejemplo de la recursividad es para calcular el factorial de un número; se puede empezar con un número N y multiplicarle N - 1 hasta llegar a 1.
+
+\begin{lstlisting}[language=C++, caption=Factorial recursivo]
+#include <iostream>
+
+using namespace std;
+
+long long int factorial(long long int n) {
+    if(n <= 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+int main() {
+    cout << factorial(10) << endl;
+}
+\end{lstlisting}
+
+Pero donde brilla la recursividad es en problemas de combinatoria y permutaciones. Si quisieras escribir todas las permutaciones de los caracteres "ABCD", se puede escribir un programa sencillo que explora todas las posibilidades.
+
+\begin{lstlisting}[language=C++, caption=Permutaciones]
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+void permutacion(vector<char> letras, vector<char> usadas, int largo) {
+    if(usadas.size() == largo) {
+        for(int i = 0; i < usadas.size(); i++) {
+            cout << usadas[i];
+        }
+        cout << endl;
+        return;
+    }
+    for(int i = 0; i < letras.size(); i++) {
+        usadas.push_back(letras[i]);
+        permutacion(letras, usadas, largo);
+        usadas.pop_back();
+    }
+}
+
+int main() {
+    vector<char> letras = {'a', 'b', 'c', 'd'};
+    vector<char> usadas;
+    permutacion(letras, usadas, 5);
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Permutando}{Liga al código} \\
+
+Si probamos este código, se imprimirán todas las permutaciones de abcd con 5 letras, empezando con \textbf{aaaaa} y terminando con \textbf{ddddd}. El vector letras contiene las letras que queremos permutar y el vector usadas se va llenando con todas las permutaciones.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\paperwidth]{permutacion}
+\end{figure}
+
+Tenemos un caso donde el vector usadas es igual al largo que queremos, en ese caso imprimimos las letras en ese vector, y si no lo que se hace es que se agregan todas las letras de 'a' a 'd'. Este código en cierto sentido navega un arbol de posibilidades, la primera letra tiene 4 posibilidades, y de esas 4 posibilidades hay 4 posibilidades que le siguen para la siguiente letra. Si calculamos el número total de caminos, obtenemos que es $4^5$ o 1024 permutaciones.
+
+\section{Ordenamientos}
+
+En muchos problemas verás que es más conveniente o más rápido ordenar datos. Existen varios algoritmos de ordenamiento con varias ventajas y desventajas.
+
+\subsection{Ordenamiento por selección}
+
+Este tipo de ordenamiento tiende a ser conocido como "selection sort" en íngles y es fácil de programar con la desventaja que es muy lento (tiene complejidad de tiempo O($N^2$)).
+
+Este método busca el valor más bajo y lo intercambia con el valor en el primer lugar, luego busca el siguiente valor más bajo y lo intercambia con siguiente lugar hasta que se ordena todo el arreglo.
+
+Por ejemplo, si tenemos el arreglo {5, 2, 3, 9, 6} y lo queremos ordenar con este método, intercambiaremos 2 con 5 para obtener {2, 5, 3, 9, 6}. Como sabemos que 2 era el valor más bajo, el arreglo antes del 5 esta ordenado y lo podemos ignorar. Esto significa que ahora solo tenemos que ordenar {5, 3, 9, 6}. Podemos ver que el valor más bajo es 3 y lo podemos intercambiar con el primer lugar para obtener {3, 5, 9, 6}. Nuestro arreglo original es ahora {2, 3, 5, 9, 6}.
+
+Despues solo tendriamos que ordenar {5, 9, 6}, pero como 5 ya esta en el primer lugar podemos saltarnos ese valor y ordenar {9, 6}. Al intercambiar estos valores, obtendriamos el arreglo ordenado {2, 3, 5, 6, 9}.
+
+Este método puede ser implementado con dos ciclos for, uno que va de 0 a N y otro que va del valor actual a N. El segundo ciclo buscará el valor mas bajo de los valores que faltan de ordenarse y el primer ciclo lo ira poniendo en su lugar correcto.
+
+\begin{lstlisting}[language=C++, caption=Ordenamiento por selección]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int valores[] = {5, 2, 3, 9, 6};
+    for(int i = 0; i < 5; i++) {
+        //Encuentra el valor mas pequeno de i a N
+        int indiceMinimo = i;
+        for(int j = i; j < 5; j++) {
+            if(valores[j] < valores[indiceMinimo]) {
+                indiceMinimo = j;
+            }
+        }
+        //Si el valor esta en el primer lugar, ignoralo
+        if(indiceMinimo == i) {
+            continue;
+        }
+        //Intercambia los dos valores
+        int intercambio = valores[i];
+        valores[i] = valores[indiceMinimo];
+        valores[indiceMinimo] = intercambio;
+    }
+    for(int i = 0; i < 5; i++) {
+        cout << valores[i] << endl;
+    }
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Ordenamiento-de-seleccion}{Liga al código} \\
+
+Como se puede observar, su complejidad es de O($N^2$) porque tiene dos ciclos for anidados que van de 0 a N en el peor de los casos.
+
+\subsection{Ordenamiento por mezcla}
+
+Este tipo de ordenamiento es muy rápido debido a que su complejidad es O($N log N$).
+
+\subsection{Ordenamiento estandar de C++}
+
+\subsection{Aplicaciones}
 
 \section{Programación dinámica}
 

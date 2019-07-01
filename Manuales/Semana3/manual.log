@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.6.27)  29 JUN 2019 01:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.6.27)  30 JUN 2019 23:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -311,7 +311,7 @@ LaTeX Info: Redefining \nameref on input line 21.
 \tf@toc=\write4
 \openout4 = `manual.toc'.
 
-<newblack.png, id=54, 2982.14125pt x 2994.18625pt>
+<newblack.png, id=69, 2982.14125pt x 2994.18625pt>
 File: newblack.png Graphic file (type png)
 <use newblack.png>
 Package pdftex.def Info: newblack.png  used on input line 29.
@@ -319,7 +319,7 @@ Package pdftex.def Info: newblack.png  used on input line 29.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/newblack.png>]
-<pila.png, id=68, 170.04706pt x 297.58235pt>
+<pila.png, id=83, 170.04706pt x 297.58235pt>
 File: pila.png Graphic file (type png)
 <use pila.png>
 Package pdftex.def Info: pila.png  used on input line 44.
@@ -339,18 +339,19 @@ File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 58.
+ [2 </home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/pila.png>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
- [2 </home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/pila.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-<fila.png, id=88, 170.04706pt x 348.59647pt>
+<fila.png, id=95, 170.04706pt x 348.59647pt>
 File: fila.png Graphic file (type png)
 <use fila.png>
 Package pdftex.def Info: fila.png  used on input line 91.
@@ -360,12 +361,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
-<deque.png, id=102, 170.04706pt x 348.59647pt>
+[4]
+<deque.png, id=138, 170.04706pt x 348.59647pt>
 File: deque.png Graphic file (type png)
 <use deque.png>
 Package pdftex.def Info: deque.png  used on input line 134.
 (pdftex.def)             Requested size: 61.43324pt x 125.93611pt.
-[4] [5 </home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/deque.png>]
+ [5 </home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/deque.png>]
 Overfull \hbox (3.00354pt too wide) in paragraph at lines 172--173
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -381,29 +383,53 @@ Overfull \hbox (69.00421pt too wide) in paragraph at lines 199--200
  []
 
 [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+
+ []
+
+[7] [8]
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 288--289
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+
+ []
+
+<permutacion.png, id=251, 550.52736pt x 260.03029pt>
+File: permutacion.png Graphic file (type png)
+<use permutacion.png>
+Package pdftex.def Info: permutacion.png  used on input line 315.
+(pdftex.def)             Requested size: 184.29036pt x 87.04422pt.
+[9 </home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/permutacion.png>] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 381.
+[11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 381.
  (/home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 381.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 381.
 Package rerunfilecheck Info: File `manual.out' has not changed.
-(rerunfilecheck)             Checksum: 2F6F1C270D52967AACF1738AC04CD9A6;596.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
+(rerunfilecheck)             Checksum: 26E7F484303D6D7ED10806E636D3E5F2;807.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 381.
  ) 
 Here is how much of TeX's memory you used:
- 8190 strings out of 492623
- 115551 string characters out of 6135669
- 416035 words of memory out of 5000000
- 11915 multiletter control sequences out of 15000+600000
+ 8332 strings out of 492623
+ 117412 string characters out of 6135669
+ 417493 words of memory out of 5000000
+ 11951 multiletter control sequences out of 15000+600000
  9727 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,6n,60p,548b,1952s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/manual.pdf (7 pages, 391166 bytes).
+ 34i,6n,60p,558b,1952s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/manual.pdf (11 pages, 431837 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 212 compressed objects within 3 object streams
- 98 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 399 PDF objects out of 1000 (max. 8388607)
+ 362 compressed objects within 4 object streams
+ 203 named destinations out of 1000 (max. 500000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 

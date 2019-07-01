@@ -121,8 +121,8 @@ OUTPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/manual.toc
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/newblack.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/newblack.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/newblack.png
-INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/pila.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/pila.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/pila.png
@@ -144,6 +144,9 @@ INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/deque.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/deque.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/deque.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/permutacion.png
+INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/permutacion.png
+INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/permutacion.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/manual.aux
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/manual.out
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana3/manual.out
@@ -154,5 +157,6 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb

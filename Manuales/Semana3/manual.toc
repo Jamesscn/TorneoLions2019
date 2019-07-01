@@ -1,11 +1,14 @@
 \babel@toc {english}{}
-\contentsline {section}{\numberline {1}Estructuras de datos avanzadas}{1}{section.1}% 
+\contentsline {section}{\numberline {1}Estructuras de datos avanzadas}{2}{section.1}% 
 \contentsline {subsection}{\numberline {1.1}Stack}{2}{subsection.1.1}% 
 \contentsline {subsection}{\numberline {1.2}Queue}{3}{subsection.1.2}% 
 \contentsline {subsection}{\numberline {1.3}Deque}{4}{subsection.1.3}% 
 \contentsline {subsection}{\numberline {1.4}Priority queue}{6}{subsection.1.4}% 
 \contentsline {section}{\numberline {2}Recursividad}{7}{section.2}% 
-\contentsline {subsection}{\numberline {2.1}Factoriales}{7}{subsection.2.1}% 
-\contentsline {subsection}{\numberline {2.2}Series de Fibonacci}{7}{subsection.2.2}% 
-\contentsline {section}{\numberline {3}Programaci\IeC {\'o}n din\IeC {\'a}mica}{7}{section.3}% 
-\contentsline {subsection}{\numberline {3.1}Series de Fibonacci}{7}{subsection.3.1}% 
+\contentsline {section}{\numberline {3}Ordenamientos}{10}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Ordenamiento por selecci\IeC {\'o}n}{10}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Ordenamiento por mezcla}{11}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Ordenamiento estandar de C++}{11}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}Aplicaciones}{11}{subsection.3.4}% 
+\contentsline {section}{\numberline {4}Programaci\IeC {\'o}n din\IeC {\'a}mica}{11}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Series de Fibonacci}{11}{subsection.4.1}% 
