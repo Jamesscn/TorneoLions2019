@@ -368,11 +368,158 @@ Como se puede observar, su complejidad es de O($N^2$) porque tiene dos ciclos fo
 
 \subsection{Ordenamiento por mezcla}
 
-Este tipo de ordenamiento es muy rápido debido a que su complejidad es O($N log N$).
+Támbien conocido como \textbf{merge sort} en íngles, este tipo de ordenamiento es muy rápido debido a que su complejidad es O($N log N$). Este algoritmo se basa en lo que se llama "Divide y vencerás", esencialmente convierte un problema en más problemas pequeños pero más faciles. Como sigue este modelo tiene una fase de división y parte el arreglo en mitades hasta llegar a un solo elemento. Como un solo elemento ya esta ordenado, se puede juntar con otro arreglo de tamaño uno viendo cual de los dos es más pequeño y poniendo ese primero. Cuando se hace esto, se tendran varios arreglos ordenados con dos elementos, y estos se vuelven a juntar para hacer arreglos ordenados de cuatro elementos y asi sucesivamente.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\paperwidth]{mergesort}
+\end{figure}
+
+Digamos que queremos ordenar los valores {6, 3, 19, 2, 7, 5, 4, 11}. Partimos los arreglos a la mitad y ahora nos enfocamos en ordenar {6, 3, 19, 2} y {7, 5, 4, 11}. Después decidimos partir estos a la mitad y enfocarnos en ordenar los arreglos {6, 3}, {19, 2}, {7, 5} y {4, 11}. Los partimos una última vez para tener {6}, {3}, {19}, {2}, {7}, {5}, {4}, {11}.
+
+Como habiamos partido {6, 3} para obtener {6} y {3}, podemos juntarlos para hacer un nuevo arreglo ordenado escogiendo el más pequeño de los dos primero: {3, 6}. Al repetir esto con los otros arreglos, se obtiene {3, 6}, {2, 19}, {5, 7}, {4, 11}. Como antes queríamos ordenar {6, 3, 19, 2} y tenemos los dos subarreglos {3, 6} y {2, 19}, podemos formar el arreglo ordenado de cuatro elementos volviendo a escoger el más pequeño de los dos arreglos en cada momento y poniendo ese primero. Al quedarse {2, 3, 6, 19} y {4, 5, 7, 11}, se pueden volver a juntar estos arreglos para tener el arreglo original ordenado.
+
+La manera más sencilla de implementar este algoritmo es usando la recursividad:
+
+\begin{lstlisting}[language=C++, caption=Ordenamiento por mezcla]
+#include <iostream>
+
+using namespace std;
+
+void ordenar(int* valores, int tamano) {
+    if(tamano < 2) {
+        return;
+    }
+    int mitadA = tamano / 2;
+    int mitadB = tamano - mitadA;
+    int valoresA[mitadA];
+    int valoresB[mitadB];
+    for(int i = 0; i < mitadA; i++) {
+        valoresA[i] = valores[i];
+    }
+    for(int i = 0; i < mitadB; i++) {
+        valoresB[i] = valores[i + mitadA];
+    }
+    ordenar(valoresA, mitadA);
+    ordenar(valoresB, mitadB);
+    int indiceA = 0;
+    int indiceB = 0;
+    while(indiceA < mitadA && indiceB < mitadB) {
+        if(valoresA[indiceA] < valoresB[indiceB]) {
+            valores[indiceA + indiceB] = valoresA[indiceA];
+            indiceA++;
+        } else {
+            valores[indiceA + indiceB] = valoresB[indiceB];
+            indiceB++;
+        }
+    }
+    while(indiceA < mitadA) {
+        valores[indiceA + indiceB] = valoresA[indiceA];
+        indiceA++;
+    }
+    while(indiceB < mitadB) {
+        valores[indiceA + indiceB] = valoresB[indiceB];
+        indiceB++;
+    }
+}
+
+int main() {
+    int cantidad;
+    cin >> cantidad;
+    int valores[cantidad];
+    for(int i = 0; i < cantidad; i++) {
+        cin >> valores[i];
+    }
+    ordenar(valores, cantidad);
+    for(int i = 0; i < cantidad; i++) {
+        cout << valores[i] << endl;
+    }
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Ordenamiento-de-mezcla}{Liga al código}
 
 \subsection{Ordenamiento estandar de C++}
 
-\subsection{Aplicaciones}
+Para ahorrar tiempo y evitar tener que volver a escribir ordenamientos como el de mezcla, C++ tiene una librería que incluye su propia implementación eficiente de ordenamiento. Este ordenamiento se llama \textbf{csort} y tiene complejidad de tiempo O($N log N$).
+
+Para utilizar este ordenamiento, se tiene que incluir la librería \textbf{algorithm}. Luego, se debe llamar la función \textbf{sort()} con dos parámetros, el primer lugar en memoria del arreglo y el ultimo lugar del arreglo. Para un arreglo normal, se puede dar el nombre del arreglo como el primer parámetro y el nombre del arreglo sumado con su tamaño como el segundo parámetro.
+
+\begin{lstlisting}[language=C++, caption=Ordenamiento estandar para un arreglo]
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    int valores[] = {6, 3, 19, 2, 7, 5, 4, 11};
+    sort(valores, valores + 8);
+    for(int i = 0; i < 8; i++) {
+        cout << valores[i] << endl;
+    }
+}
+\end{lstlisting}
+
+Para vectores y otras estructuras definidas en librerias, se debe usar las funciones \textbf{begin()} y \textbf{end()}
+
+\begin{lstlisting}[language=C++, caption=Ordenamiento estandar para un vector]
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    vector<int> valores = {6, 3, 19, 2, 7, 5, 4, 11};
+    sort(valores.begin(), valores.end());
+    for(int i = 0; i < valores.size(); i++) {
+        cout << valores[i] << endl;
+    }
+}
+\end{lstlisting}
+
+Si se desea ordenar un arreglo de una manera especial como ordenar pares por su primer valor, se puede crear una función que maneja el ordenamiento y se le puede pasar como tercer parámetro a la función \textbf{sort}.
+
+Esta función debe ser de tipo booleano y debe tener dos parámetros que son del mismo tipo que el arreglo o vector que se desea ordenar. La función debe regresar verdadero si se quiere ordenar el primer parámetro antes que el segundo o falso en caso contrario.
+
+\begin{lstlisting}[language=C++, caption=Ordenamiento estandar sobrecargada]
+#include <iostream>
+#include <algorithm>
+#include <pair>
+
+using namespace std;
+
+//Ordena de manera ascendiente los primeros valores del par
+bool ordenaPrimero(pair<int, int> a, pair<int, int> b) {
+    if(a.first < b.first) {
+        return true;
+    }
+    return false;
+}
+
+//Ordena de manera ascendiente los segundos valores del par
+bool ordenaPrimero(pair<int, int> a, pair<int, int> b) {
+    if(a.second < b.second) {
+        return true;
+    }
+    return false;
+}
+
+int main() {
+    vector<pair<int, int>> pares;
+    pares.push_back(make_pair(6, 3));
+    pares.push_back(make_pair(19, 2));
+    pares.push_back(make_pair(7, 5));
+    pares.push_back(make_pair(4, 11));
+    sort(pares.begin(), pares.end(), ordenaPrimero);
+    for(int i = 0; i < pares.size(); i++) {
+        cout << pares[i].first << " " << pares[i].second << endl;
+    }
+    sort(pares.begin(), pares.end(), ordenaSegundo);
+    for(int i = 0; i < pares.size(); i++) {
+        cout << pares[i].first << " " << pares[i].second << endl;
+    }
+}
+\end{lstlisting}
 
 \section{Programación dinámica}
 
