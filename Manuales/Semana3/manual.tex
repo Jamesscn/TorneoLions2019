@@ -523,6 +523,68 @@ int main() {
 
 \section{Programación dinámica}
 
-\subsection{Series de Fibonacci}
+La programación dinámica consiste en guardar datos previos para ahorrar tiempo que normalmente se desperdiciaría recalculando la misma cosa multiples veces.
+
+Vamos a analizar un programa que calcula la serie de fibonacci con la recursividad.
+
+\begin{lstlisting}[language=C++, caption=Fibonacci]
+#include <iostream>
+
+using namespace std;
+
+long long int fibonacci(int valor) {
+    if(valor == 0) {
+        return 0;
+    }
+    if(valor == 1) {
+        return 1;
+    }
+    return fibonacci(valor - 1) + fibonacci(valor - 2);
+}
+
+int main() {
+    cout << fibonacci(50);
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Fibonacci}{Liga al código} \\
+
+Si vemos el programa anterior, tenemos una función fibonacci que calcula un termino deseado. Si corremos el código con un valor bajo, por ejemplo 5 o 6 podemos ver que funciona correctamente, pero si intentamos calcular el valor número 50 el programa nunca parece querer terminar e incluso podríamos calcular ese valor más rapido a mano.
+
+Si ponemos todas las llamadas a fibonacci(6) en una gráfica, podemos ver porque es ineficiente:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\paperwidth]{fibonacci}
+\end{figure}
+
+Se puede observar que el tamaño de fibonacci(N - 1) no es tán lejano del tamaño de fibonacci(N), asi que al sumarle uno a N, estariamos casi duplicando el número de calculos necesarios. Esto significa que nuestra complejidad de tiempo es exponencial cuando debería ser lineal. En realidad, esta función tiene una complejidad de O($1.618^N$).
+
+Para hacer esta función de complejidad lineal O($N$), debemos evitar la recursividad y guardar los valores de cada número de fibonacci en un vector mientras que los vayamos calculando. Si queremos calcular un valor de la serie que ya fue calculado, debemos regresar ese valor.
+
+Esta sería la implementación con programación dinámica:
+
+\begin{lstlisting}[language=C++, caption=Programación dinámica]
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector<long long int> serie;
+
+long long int fibonacci(int valor) {
+    while(serie.size() <= valor) {
+        serie.push_back(serie[serie.size() - 1] + serie[serie.size() - 2]);
+    }
+    return serie[valor];
+}
+
+int main() {
+    serie.push_back(0);
+    serie.push_back(1);
+    cout << fibonacci(50);
+}
+\end{lstlisting}
+
+Como se puede observar, nuestro programa ahora encuentra el termino número 50 en menos de un segundo.
 
 \end{document}
