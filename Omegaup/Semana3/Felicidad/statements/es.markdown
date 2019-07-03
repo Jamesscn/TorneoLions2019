@@ -5,7 +5,7 @@ Ayuda a Domene a calcular cual es la racha más larga de días consecutivos sin 
 
 # Entradas
 
-**N**, El numero de días en la lista de Domene
+**N**, El número de días en la lista de Domene seguido por otra línea con **N** días con felicidad **M**.
 
 # Salidas
 
@@ -22,4 +22,6 @@ La racha más larga de días sin que la felicidad bajara.
 
 # Límites
 
-$1 \le N \le 1000000000$
+$1 \le N \le 10^6$
+
+$1 \le M \le 10^9$
