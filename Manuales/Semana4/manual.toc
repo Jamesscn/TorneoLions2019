@@ -1,13 +1,16 @@
 \babel@toc {english}{}
-\contentsline {section}{\numberline {1}Arreglos multidimensionales}{1}{section.1}% 
+\contentsline {section}{\numberline {1}Arreglos multidimensionales}{2}{section.1}% 
 \contentsline {section}{\numberline {2}Structs}{2}{section.2}% 
 \contentsline {section}{\numberline {3}Grafos}{5}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}Nodos, ramas, hojas y ra\IeC {\'\i }ces}{5}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}Grafos dirigidos y no dirigidos}{5}{subsection.3.2}% 
-\contentsline {subsection}{\numberline {3.3}Grafos c\IeC {\'\i }clicos y ac\IeC {\'\i }clicos}{5}{subsection.3.3}% 
-\contentsline {section}{\numberline {4}Algoritmos de busqueda}{5}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}Busqueda en anchura}{5}{subsection.4.1}% 
-\contentsline {subsection}{\numberline {4.2}Busqueda en profundidad}{5}{subsection.4.2}% 
-\contentsline {subsection}{\numberline {4.3}Algoritmo de Dijsktra}{5}{subsection.4.3}% 
-\contentsline {subsection}{\numberline {4.4}Algoritmos heuristicos}{5}{subsection.4.4}% 
-\contentsline {subsection}{\numberline {4.5}A*}{5}{subsection.4.5}% 
+\contentsline {subsection}{\numberline {3.2}Grafos dirigidos y c\IeC {\'\i }clicos}{7}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Grafos con pesos}{7}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}Creando grafos}{8}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5}Arboles binarios}{8}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.6}Aplicaciones}{8}{subsection.3.6}% 
+\contentsline {section}{\numberline {4}Algoritmos de busqueda}{8}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Busqueda en anchura}{8}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Busqueda en profundidad}{8}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Algoritmo de Dijsktra}{8}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.4}Algoritmos heuristicos}{8}{subsection.4.4}% 
+\contentsline {subsection}{\numberline {4.5}A*}{8}{subsection.4.5}% 
