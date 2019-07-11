@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.6.27)  9 JUL 2019 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.6.27)  10 JUL 2019 19:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -395,29 +395,106 @@ File: ciudades.png Graphic file (type png)
 Package pdftex.def Info: ciudades.png  used on input line 233.
 (pdftex.def)             Requested size: 122.85712pt x 126.78607pt.
  [7 </home/james/Documents/Lions/TorneoLions2019/Manuales/Semana4/dirigido.png> </home/james/Documents/Lions/TorneoLions2019/Manuales/Semana4/ciudades.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
+File: arbolbinario.png Graphic file (type png)
+<use arbolbinario.png>
+Package pdftex.def Info: arbolbinario.png  used on input line 256.
+(pdftex.def)             Requested size: 184.29036pt x 154.20456pt.
  [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 272--273
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 290--291
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 300--301
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[9]
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 307--308
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 311--312
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 318--319
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<grafo2d.png, id=284, 636.87938pt x 636.87938pt>
+File: grafo2d.png Graphic file (type png)
+<use grafo2d.png>
+Package pdftex.def Info: grafo2d.png  used on input line 334.
+(pdftex.def)             Requested size: 122.85712pt x 122.85475pt.
+[10 </home/james/Documents/Lions/TorneoLions2019/Manuales/Semana4/grafo2d.png>]
+<greedy.png, id=309, 636.87938pt x 636.87938pt>
+File: greedy.png Graphic file (type png)
+<use greedy.png>
+Package pdftex.def Info: greedy.png  used on input line 353.
+(pdftex.def)             Requested size: 122.85712pt x 122.85475pt.
+ [11 </home/james/Documents/Lions/TorneoLions2019/Manuales/Semana4/greedy.png>]
+Overfull \hbox (213.00568pt too wide) in paragraph at lines 382--383
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 393--394
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 402--403
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 409--410
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[12]
+<greedybueno.png, id=371, 636.87938pt x 636.87938pt>
+File: greedybueno.png Graphic file (type png)
+<use greedybueno.png>
+Package pdftex.def Info: greedybueno.png  used on input line 430.
+(pdftex.def)             Requested size: 122.85712pt x 122.85475pt.
+<greedymalo.png, id=372, 636.87938pt x 636.87938pt>
+File: greedymalo.png Graphic file (type png)
+<use greedymalo.png>
+Package pdftex.def Info: greedymalo.png  used on input line 437.
+(pdftex.def)             Requested size: 122.85712pt x 122.85475pt.
+ [13 </home/james/Documents/Lions/TorneoLions2019/Manuales/Semana4/greedybueno.png> </home/james/Documents/Lions/TorneoLions2019/Manuales/Semana4/greedymalo.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 456.
+ [14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 456.
  (/home/james/Documents/Lions/TorneoLions2019/Manuales/Semana4/manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 456.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 456.
 Package rerunfilecheck Info: File `manual.out' has not changed.
-(rerunfilecheck)             Checksum: C9FAC5E78A31B92C7E0509DAD16078EA;953.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 260.
+(rerunfilecheck)             Checksum: 25770338FF7E221BEFF21FA87320C53F;952.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 456.
  ) 
 Here is how much of TeX's memory you used:
- 8204 strings out of 492623
- 115926 string characters out of 6135669
- 424475 words of memory out of 5000000
- 11900 multiletter control sequences out of 15000+600000
+ 8389 strings out of 492623
+ 118408 string characters out of 6135669
+ 432475 words of memory out of 5000000
+ 11960 multiletter control sequences out of 15000+600000
  9023 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,6n,60p,526b,1841s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana4/manual.pdf (8 pages, 475132 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana4/manual.pdf (14 pages, 556456 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 260 compressed objects within 3 object streams
- 127 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 481 PDF objects out of 1000 (max. 8388607)
+ 430 compressed objects within 5 object streams
+ 248 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

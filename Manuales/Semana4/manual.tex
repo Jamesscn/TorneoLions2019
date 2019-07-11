@@ -239,13 +239,209 @@ Existen muchas posibles maneras de irse de la ciudad E y llegar a la ciudad D, p
 
 La siguiente sección cubre maneras de poder encontrar este camino más óptimo dado cualquier grafo.
 
-\subsection{Creando grafos}
-
 \subsection{Arboles binarios}
 
-\subsection{Aplicaciones}
+Un arbol es un tipo de grafo que tiene una raíz en la parte de arriba que crece hacia abajo. Un arbol binario es una especie de arbol donde cada nodo tiene máximo dos hijos, el hijo izquierdo y el hijo derecho.
+
+Este tipo de grafo es popular debido a que se pueden hacer operaciones eficientes sobre sus datos. Se puede implementar este tipo de grafo con un arreglo de tamaño $2^M$ donde M es la profundidad del arbol.
+
+Para guardar un arbol en un arreglo, el primer elemento debe ser la raíz, luego los siguientes 2 elementos deben ser los hijos izquierdo y derecho de la raíz, luego los siguientes 4 elementos deben ser los hijos de esos hijos. Se debe repitir este proceso para llenar el arbol.
+
+En caso de tener un nodo sin un hijo, se puede representar ese hijo con un valor especial.
+
+Si tenemos un nodo en el índice $i$ del arreglo, sabemos que su hijo izquierdo tendría que estar en $2i + 1$ y su hijo derecho estaría en $2i + 2$. También sabemos que el padre de cualquier nodo siempre estará en el índice $\frac{i - 1}{2}$. Esta implementación simplifica la busqueda de nodos.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\paperwidth]{arbolbinario}
+\end{figure}
+
+Si quisieramos guardar el arbol de arriba en un arreglo de 10 elementos, tendríamos que definir un arreglo de $2^5$ elementos porque su profundidad es de 5. Si suponemos que cada espacio libre tiene valor -1, podemos representar este arbol con el siguiente arreglo: (1, 2, 3, 4, 5, 6, -1, 7, 8, -1, -1, -1, 10, -1, -1, 9).
+
+Si queremos saber el hijo derecho del elemento en el índice 1 (nodo 2), podemos encontrarlo con la formula y se obtiene 2*1 + 2 = 4. Este elemento es el nodo 5 y se puede ver en la gráfica que el nodo 5 sí es el hijo derecho del nodo 2.
+
+Podemos hacer busquedas de nodos con el siguiente código:
+
+\begin{lstlisting}[language=C++, caption=Arbol de binario]
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    vector<int> arbol = {1, 2, 3, 4, 5, 6, -1, 7, 8, -1, -1
+    -1, 10, -1, -1, 9};
+    cout << "Ingresa el numero de un nodo:" << endl;
+    int nodoDeInteres;
+    cin >> nodoDeInteres;
+    int indice = -1;
+    for(int i = 0; i < arbol.size(); i++) {
+        if(nodoDeInteres == arbol[i]) {
+            indice = i;
+            break;
+        }
+    }
+    if(indice == -1) {
+        cout << "El nodo " << nodoDeInteres << " no es
+        miembro de este arbol" << endl;
+        return -1;
+    }
+    if(indice == 0) {
+        cout << "Este nodo es la raiz, lo que significa que
+        no tiene padre" << endl;
+    } else {
+        cout << "El padre del nodo " << nodoDeInteres <<
+        "es el nodo " << arbol[(indice - 1) / 2] << endl;
+    }
+    int hijoIzquierdo = 2 * indice + 1;
+    int hijoDerecho = 2 * indice + 2;
+    if(hijoIzquierdo < arbol.size()) {
+        if(arbol[hijoIzquierdo] != -1) {
+            cout << "Su hijo izquierdo es el nodo " << arbol
+            [hijoIzquierdo] << endl;
+        } else {
+            cout << "Este nodo no tiene hijo izquierdo"
+            << endl;
+        }
+    } else {
+        cout << "Este nodo no tiene hijo izquierdo" << endl;
+    }
+    if(hijoDerecho < arbol.size()) {
+        if(arbol[hijoDerecho] != -1) {
+            cout << "Su hijo derecho es el nodo " << arbol
+            [hijoDerecho] << endl;
+        } else {
+            cout << "Este nodo no tiene hijo derecho"
+            << endl;
+        }
+    } else {
+        cout << "Este nodo no tiene hijo derecho" << endl;
+    }
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Arboles-Binarios}{Liga al código}
+
+\subsection{Grafos con arreglos 2D}
+
+Los problemas de grafos más comunes y más faciles tienden a ser esos que ocurren en un plano 2D y que pueden ser representados sobre un arreglo 2D.
+
+Un ejemplo común es pensar en un plano como la vista superficial de un laberinto, y construir un arreglo bidimensional de booleanos donde 1 es una pared u obstaculo y 0 es un camino libre.
+
+Aqui hay un ejemplo donde cada 1 se ha pintado de negro y cada 0 se ha dejado en blanco:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\paperwidth]{grafo2d}
+\end{figure}
+
+Si asumimos que somos una persona que esta resolviendo este laberinto y queremos encontrar un camino desde la esquina superior izquierda a la esquina inferior derecha, y solo podemos movernos en cuatro direcciones (arriba, abajo, izquierda o derecha), entonces podemos pensar en este problema como un especie de grafo que podemos resolver.
+
+Ahora hablaremos de como resolver este tipo de problema.
 
 \section{Algoritmos de busqueda}
+
+Los algoritmos de busqueda son métodos especiales de encontrar el camino más corto entre dos nodos de un grafo. Esto tiene muchas aplicaciones, como encontrar la ruta más rapida entre dos ciudades o encontrar la solución a un laberinto.
+
+\subsection{Algoritmos heuristicos o greedy}
+
+Se le denota algoritmo greedy a cualquier tipo de algoritmo que toma la decisión más conveniente en todos los pasos de un conjunto de decisiones.
+
+Podemos demostrar este concepto facilmente con el siguiente laberinto:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\paperwidth]{greedy}
+\end{figure}
+
+Como sabemos que la salida del laberinto siempre estará a nuestra derecha y hacia abajo, entonces un algoritmo greedy nos dirá que siempre debemos mover en una de estas dos direcciones dependiendo de donde estemos.
+
+Primero iniciamos en el primer espacio y solo podemos movernos abajo asi que tomamos esa ruta, luego en el segundo espacio podemos movernos para arriba denuevo o abajo. Decidimos movernos para abajo porque sabemos que la salida está más abajo.
+
+Seguimos esto hasta llegar a la esquina inferior izquierda, y entonces nos empezamos a mover hacia la derecha en lugar de arriba o denuevo a la izquierda porque sabemos que la meta sigue estando a la derecha.
+
+Podemos hacer un programa que prioritiza moverse hacia abajo cuando la meta esta más para abajo que a la izquierda y que prioritiza moverse más para la derecha en caso contrario.
+
+\begin{lstlisting}[language=C++, caption=Camino greedy]
+#include <iostream>
+#include <utility>
+
+using namespace std;
+
+int main() {
+    bool mapa[][7] = {
+        {1, 0, 1, 1, 1, 1, 1},
+        {1, 0, 1, 0, 0, 0, 1},
+        {1, 0, 1, 0, 1, 0, 1},
+        {1, 0, 1, 0, 1, 0, 1},
+        {1, 0, 1, 0, 1, 1, 1},
+        {1, 0, 0, 0, 0, 0, 1},
+        {1, 1, 1, 1, 1, 0, 1}};
+    pair<int, int> puntoActual = make_pair(1, 0);
+    pair<int, int> puntoFinal = make_pair(5, 6);
+    int iteracion = 0;
+    while(puntoActual.first != puntoFinal.first || puntoActual.second != puntoFinal.second) {
+        int x = puntoActual.first;
+        int y = puntoActual.second;
+        int distanciaX = puntoFinal.first - x;
+        int distanciaY = puntoFinal.second - y;
+        if(distanciaX > distanciaY) {
+            if(mapa[y][x + 1] == 0) {
+                puntoActual = make_pair(x + 1, y);
+            } else if (mapa[y + 1][x] == 0) {
+                puntoActual = make_pair(x, y + 1);
+            } else {
+                cout << "No se pudo llegar a la meta" << endl;
+                return 0;
+            }
+        } else {
+            if(mapa[y + 1][x] == 0) {
+                puntoActual = make_pair(x, y + 1);
+            } else if (mapa[y][x + 1] == 0) {
+                puntoActual = make_pair(x + 1, y);
+            } else {
+                cout << "No se pudo llegar a la meta" << endl;
+                return 0;
+            }
+        }
+        cout << "Iteracion #" << iteracion << endl;
+        for(int j = 0; j < 7; j++) {
+            for(int i = 0; i < 7; i++) {
+                if(i == puntoActual.first && j == puntoActual.second) {
+                    cout << "x";
+                } else if (mapa[j][i] == 1) {
+                    cout << "#";
+                } else {
+                    cout << " ";
+                }
+            }
+            cout << endl;
+        }
+        cout << endl;
+        iteracion++;
+    }
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Algoritmos-Greedy}{Liga al código}
+
+Si corremos el código, podemos ver que se encuentra una solución señalada en la grafica de abajo en azúl:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\paperwidth]{greedybueno}
+\end{figure}
+
+Pero existen varias desventajas con los algoritmos greedy, particularmente cuando hay caminos que no van a ningun lado. Si hacemos una pequeña modificación al mapa, podemos ver que el algoritmo se atora y no llega a la meta:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\paperwidth]{greedymalo}
+\end{figure}
+
+Esto es porque cuando el algoritmo llegó al cuarto espacio tuvo una decisión de moverse hacia abajo o hacia la derecha. Como el algoritmo piensa que es mejor irse moviendo a la derecha porque la meta esta más a la derecha que abajo, toma un camino falso y se atora.
+
+Se debe observar que en este caso no lo hemos programado para que siga moviendose en caso de haber pared abajo y a la derecha. Esto es porque podría atorarse en un ciclo infinito donde parece que se esta avanzando a la meta pero nunca llega.
+
+Este concepto de heuristica donde se sigue el "instinto" de programa es bueno en ciertos casos, pero no se debe tomar puras decisiones basados en instinto.
 
 \subsection{Busqueda en anchura}
 
@@ -253,8 +449,8 @@ La siguiente sección cubre maneras de poder encontrar este camino más óptimo 
 
 \subsection{Algoritmo de Dijsktra}
 
-\subsection{Algoritmos heuristicos}
-
 \subsection{A*}
+
+\section{Punteros}
 
 \end{document}
