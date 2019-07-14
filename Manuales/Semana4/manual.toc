@@ -6,11 +6,11 @@
 \contentsline {subsection}{\numberline {3.2}Grafos dirigidos y c\IeC {\'\i }clicos}{7}{subsection.3.2}% 
 \contentsline {subsection}{\numberline {3.3}Grafos con pesos}{7}{subsection.3.3}% 
 \contentsline {subsection}{\numberline {3.4}Arboles binarios}{8}{subsection.3.4}% 
-\contentsline {subsection}{\numberline {3.5}Grafos con arreglos 2D}{10}{subsection.3.5}% 
-\contentsline {section}{\numberline {4}Algoritmos de busqueda}{11}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}Algoritmos heuristicos o greedy}{11}{subsection.4.1}% 
-\contentsline {subsection}{\numberline {4.2}Busqueda en anchura}{14}{subsection.4.2}% 
-\contentsline {subsection}{\numberline {4.3}Busqueda en profundidad}{14}{subsection.4.3}% 
-\contentsline {subsection}{\numberline {4.4}Algoritmo de Dijsktra}{14}{subsection.4.4}% 
-\contentsline {subsection}{\numberline {4.5}A*}{14}{subsection.4.5}% 
-\contentsline {section}{\numberline {5}Punteros}{14}{section.5}% 
+\contentsline {subsection}{\numberline {3.5}Listas y matrices de adyacencia}{10}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.6}Grafos con arreglos 2D}{12}{subsection.3.6}% 
+\contentsline {section}{\numberline {4}Algoritmos de b\IeC {\'u}squeda}{13}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Algoritmos heuristicos o greedy}{13}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}B\IeC {\'u}squeda en anchura}{16}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}B\IeC {\'u}squeda en profundidad}{20}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.4}Algoritmo de Dijsktra}{23}{subsection.4.4}% 
+\contentsline {subsection}{\numberline {4.5}A*}{26}{subsection.4.5}% 

@@ -5,11 +5,11 @@
 \BOOKMARK [2][-]{subsection.3.2}{Grafos dirigidos y c\355clicos}{section.3}% 5
 \BOOKMARK [2][-]{subsection.3.3}{Grafos con pesos}{section.3}% 6
 \BOOKMARK [2][-]{subsection.3.4}{Arboles binarios}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.5}{Grafos con arreglos 2D}{section.3}% 8
-\BOOKMARK [1][-]{section.4}{Algoritmos de busqueda}{}% 9
-\BOOKMARK [2][-]{subsection.4.1}{Algoritmos heuristicos o greedy}{section.4}% 10
-\BOOKMARK [2][-]{subsection.4.2}{Busqueda en anchura}{section.4}% 11
-\BOOKMARK [2][-]{subsection.4.3}{Busqueda en profundidad}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.4}{Algoritmo de Dijsktra}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.5}{A*}{section.4}% 14
-\BOOKMARK [1][-]{section.5}{Punteros}{}% 15
+\BOOKMARK [2][-]{subsection.3.5}{Listas y matrices de adyacencia}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.6}{Grafos con arreglos 2D}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Algoritmos de b\372squeda}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Algoritmos heuristicos o greedy}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{B\372squeda en anchura}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.3}{B\372squeda en profundidad}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.4}{Algoritmo de Dijsktra}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.5}{A*}{section.4}% 15
