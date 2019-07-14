@@ -1,0 +1,20 @@
+\BOOKMARK [1][-]{section.1}{Programaci\363n oriendado a objetos}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Structs}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Union}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Clases}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Punteros}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Referencias}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Asignaci\363n de memoria}{}% 7
+\BOOKMARK [1][-]{section.4}{Estructuras y grafos con punteros}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Listas encadenadas, dobles y c\355clicas}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Arboles de binario}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{Trucos de programaci\363n competitiva}{}% 11
+\BOOKMARK [2][-]{subsection.5.1}{Arboles de segmentos}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.2}{Tablas hash}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.3}{N\372meros grandes}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{Enums}{}% 15
+\BOOKMARK [1][-]{section.7}{Manipulaci\363n de bits}{}% 16
+\BOOKMARK [1][-]{section.8}{Matem\341ticas modulares}{}% 17
+\BOOKMARK [2][-]{subsection.8.1}{Adici\363n}{section.8}% 18
+\BOOKMARK [2][-]{subsection.8.2}{Multiplicaci\363n}{section.8}% 19
+\BOOKMARK [2][-]{subsection.8.3}{Exponenciaci\363n}{section.8}% 20

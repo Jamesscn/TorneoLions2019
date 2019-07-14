@@ -56,3 +56,18 @@
 \BOOKMARK [2][-]{subsection.14.2}{Ordenamiento por mezcla}{section.14}% 56
 \BOOKMARK [2][-]{subsection.14.3}{Ordenamiento estandar de C++}{section.14}% 57
 \BOOKMARK [1][-]{section.15}{Programaci\363n din\341mica}{}% 58
+\BOOKMARK [1][-]{section.16}{Arreglos multidimensionales}{}% 59
+\BOOKMARK [1][-]{section.17}{Structs}{}% 60
+\BOOKMARK [1][-]{section.18}{Grafos}{}% 61
+\BOOKMARK [2][-]{subsection.18.1}{Nodos, ramas, hojas y ra\355ces}{section.18}% 62
+\BOOKMARK [2][-]{subsection.18.2}{Grafos dirigidos y c\355clicos}{section.18}% 63
+\BOOKMARK [2][-]{subsection.18.3}{Grafos con pesos}{section.18}% 64
+\BOOKMARK [2][-]{subsection.18.4}{Arboles binarios}{section.18}% 65
+\BOOKMARK [2][-]{subsection.18.5}{Listas y matrices de adyacencia}{section.18}% 66
+\BOOKMARK [2][-]{subsection.18.6}{Grafos con arreglos 2D}{section.18}% 67
+\BOOKMARK [1][-]{section.19}{Algoritmos de b\372squeda}{}% 68
+\BOOKMARK [2][-]{subsection.19.1}{Algoritmos heuristicos o greedy}{section.19}% 69
+\BOOKMARK [2][-]{subsection.19.2}{B\372squeda en anchura}{section.19}% 70
+\BOOKMARK [2][-]{subsection.19.3}{B\372squeda en profundidad}{section.19}% 71
+\BOOKMARK [2][-]{subsection.19.4}{Algoritmo de Dijsktra}{section.19}% 72
+\BOOKMARK [2][-]{subsection.19.5}{A*}{section.19}% 73
