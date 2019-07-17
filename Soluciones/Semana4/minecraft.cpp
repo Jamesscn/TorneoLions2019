@@ -22,22 +22,23 @@ int main() {
         string str;
         cin >> str;
         for(int x = 0; x < n; x++) {
-            mapa[x][y].x = x;
-            mapa[x][y].y = y;
+            mapa[y][x].x = x;
+            mapa[y][x].y = y;
             if(str[x] == '#') {
-                mapa[x][y].pared = true;
+                mapa[y][x].pared = true;
             } else {
-                mapa[x][y].pared = mapa[x][y].visitado = false;
+                mapa[y][x].pared = mapa[y][x].visitado = false;
                 if(str[x] == 'X') {
-                    inicial = mapa[x][y];
+                    inicial = mapa[y][x];
+                    mapa[y][x].visitado = true;
                 } else if(str[x] == 'H') {
-                    final = mapa[x][y];
+                    final = mapa[y][x];
                 }
             }
         }
     }
     queue<Bloque> busqueda;
-    busqueda.push(inicial);
+    busqueda.push(mapa[inicial.y][inicial.x]);
     while(busqueda.size() > 0) {
         Bloque actual = busqueda.front();
         busqueda.pop();
@@ -47,40 +48,40 @@ int main() {
         int x = actual.x;
         int y = actual.y;
         if(x - 1 >= 0) {
-            if(!mapa[x - 1][y].pared && !mapa[x - 1][y].visitado) {
-                mapa[x - 1][y].xPrevio = x;
-                mapa[x - 1][y].yPrevio = y;
-                mapa[x - 1][y].visitado = true;
-                busqueda.push(mapa[x - 1][y]);
+            if(!mapa[y][x - 1].pared && !mapa[y][x - 1].visitado) {
+                mapa[y][x - 1].xPrevio = x;
+                mapa[y][x - 1].yPrevio = y;
+                mapa[y][x - 1].visitado = true;
+                busqueda.push(mapa[y][x - 1]);
             }
         }
         if(x + 1 < n) {
-            if(!mapa[x + 1][y].pared && !mapa[x + 1][y].visitado) {
-                mapa[x + 1][y].xPrevio = x;
-                mapa[x + 1][y].yPrevio = y;
-                mapa[x + 1][y].visitado = true;
-                busqueda.push(mapa[x + 1][y]);
+            if(!mapa[y][x + 1].pared && !mapa[y][x + 1].visitado) {
+                mapa[y][x + 1].xPrevio = x;
+                mapa[y][x + 1].yPrevio = y;
+                mapa[y][x + 1].visitado = true;
+                busqueda.push(mapa[y][x + 1]);
             }
         }
         if(y - 1 >= 0) {
-            if(!mapa[x][y - 1].pared && !mapa[x][y - 1].visitado) {
-                mapa[x][y - 1].xPrevio = x;
-                mapa[x][y - 1].yPrevio = y;
-                mapa[x][y - 1].visitado = true;
-                busqueda.push(mapa[x][y - 1]);
+            if(!mapa[y - 1][x].pared && !mapa[y - 1][x].visitado) {
+                mapa[y - 1][x].xPrevio = x;
+                mapa[y - 1][x].yPrevio = y;
+                mapa[y - 1][x].visitado = true;
+                busqueda.push(mapa[y - 1][x]);
             }
         }
         if(y + 1 < n) {
-            if(!mapa[x][y + 1].pared && !mapa[x][y + 1].visitado) {
-                mapa[x][y + 1].xPrevio = x;
-                mapa[x][y + 1].yPrevio = y;
-                mapa[x][y + 1].visitado = true;
-                busqueda.push(mapa[x][y + 1]);
+            if(!mapa[y + 1][x].pared && !mapa[y + 1][x].visitado) {
+                mapa[y + 1][x].xPrevio = x;
+                mapa[y + 1][x].yPrevio = y;
+                mapa[y + 1][x].visitado = true;
+                busqueda.push(mapa[y + 1][x]);
             }
         }
     }
     queue<Bloque> camino;
-    camino.push(final);
+    camino.push(mapa[final.y][final.x]);
     stack<string> comandos;
     while(camino.size() > 0) {
         Bloque actual = camino.front();
@@ -89,16 +90,16 @@ int main() {
             break;
         }
         if(actual.xPrevio == actual.x - 1) {
-            camino.push(mapa[actual.x - 1][actual.y]);
+            camino.push(mapa[actual.y][actual.x - 1]);
             comandos.push("DERECHA");
         } else if (actual.xPrevio == actual.x + 1) {
-            camino.push(mapa[actual.x + 1][actual.y]);
+            camino.push(mapa[actual.y][actual.x + 1]);
             comandos.push("IZQUIERDA");
         } else if (actual.yPrevio == actual.y - 1) {
-            camino.push(mapa[actual.x][actual.y - 1]);
+            camino.push(mapa[actual.y - 1][actual.x]);
             comandos.push("ABAJO");
         } else {
-            camino.push(mapa[actual.x][actual.y + 1]);
+            camino.push(mapa[actual.y + 1][actual.x]);
             comandos.push("ARRIBA");
         }
     }
