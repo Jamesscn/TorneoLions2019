@@ -1,0 +1,7 @@
+move();
+pickBeeper();
+turnLeft();
+turnLeft();
+move();
+move();
+pickBeeper();

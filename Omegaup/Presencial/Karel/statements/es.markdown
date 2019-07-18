@@ -14,11 +14,11 @@ Dos enteros **X** y **Y** representando las coordenadas de Karel, una cuerda **N
 
 En las siguientes **N** líneas habrá dos enteros **Xb** y **Yb** representando las coordenadas X y Y de cada beeper.
 
-Se puede asumir que siempre habrá una lista más corta que los demás.
+Se puede asumir que siempre habrá una lista más corta que los demás y que nunca habrá más de un beeper sobre un espacio.
 
 # Salida
 
-La lista más corta de comandos que recoge todos los beepers. Inmediatamente después de colocarse sobre un beeper, se debe llamar **pickBeeper();**
+La lista más corta de comandos que recoge todos los beepers. Inmediatamente después de colocarse sobre un beeper, se debe llamar **pickBeeper();** para recoger ese beeper.
 
 # Ejemplo
 
@@ -42,6 +42,6 @@ pickBeeper();
 
 # Límites
 
-$1 \le N \le 1000$
+$1 \le N \le 100$
 
 $-1,000,000 \le X, X_b, Y, Y_b \le 1,000,000$
