@@ -40,4 +40,5 @@ Paco trabaja en Google
 
 #Limites
 $2 \le N \le 100000$
-$1 \le M \le n$
+
+$1 \le K \le N$
