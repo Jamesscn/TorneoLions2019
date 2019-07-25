@@ -134,9 +134,17 @@ INPUT /usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/memoria.png
+INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/memoria.png
+INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/memoria.png
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
+INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/puntero.png
+INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/puntero.png
+INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/puntero.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/manual.aux
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/manual.out
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/manual.out
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb

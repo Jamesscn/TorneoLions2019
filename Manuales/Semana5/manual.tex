@@ -535,15 +535,183 @@ int main() {
 
 Si corremos este ejemplo se imprimirán que hay 4 puntos porque el constructor de cada punto le sumó 1 a la variable puntosMarcados.
 
-\section{Punteros}
+\section{Referencias y punteros}
+
+Cada variable que se utiliza en C++ tiene un lugar o dirección en la memoria de la computadora donde se corre y estos lugares tienden a ser manejados en hexadecimal con cada lugar representando un byte de espacio. Si decidimos crear un entero este ocupará 4 bytes de espacio y ocupará una dirección que no conocemos. Por ejemplo, el entero podria ocupar las direcciones 0x7fff138c53e4, 0x7fff138c53e5, 0x7fff138c53e6 y 0x7fff138c53e7.
+
+Abajo se muestra una figura donde se puede ver la variable señalada en rojo en la memoria ocupando 4 bytes de espacio.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\paperwidth]{memoria}
+\end{figure}
+
+Para ver la dirección de memoria de cierta variable se le debe colocar un signo de \lstinline{&} antes de esa variable. Esto se llama la referencia de una variable y en el siguiente ejemplo desplegamos la referencia de un entero:
+
+\begin{lstlisting}[language=C++, caption=Referencias]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int x = 5;
+	cout << &x << endl;
+}
+\end{lstlisting}
+
+\subsection{Punteros}
+
+Los punteros son variables especiales que guardan estas direcciones o referencias para diversas aplicaciones. Es recomendable indicarle a un puntero el tipo de variable que se encuentra en la posicion de memoria que guardará.
+
+Para declarar un puntero se debe escribir el tipo de variable que se referenciará, una estrella y el nombre de ese puntero: \textbf{\lstinline{tipo* nombre;}}
+
+Los punteros son utiles porque te permiten modificar el contenido de la variable en ese lugar de memoria sin tener a la variable original. Para hacer esta modificación se debe de "dereferenciar" el puntero. Para dereferenciar algún puntero se debe colocar una estrella antes del nombre del puntero: \textbf{\lstinline{*puntero}}
+
+En el siguiente ejemplo se crea una variable x y se modifica su contenido para que sea 20 en lugar de 5:
+
+\begin{lstlisting}[language=C++, caption=Referencias]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int x = 5;
+
+    //guarda la direccion de x
+    int* punteroX = &x;
+
+    //modifica el contenido de la direccion en el puntero
+    *punteroX *= 4;
+
+    cout << x << endl;
+}
+\end{lstlisting}
+
+Como se puede ver en ningún momento modificamos x directamente. La siguiente figura muestra como el puntero guarda la dirección del entero x:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\paperwidth]{puntero}
+\end{figure}
+
+Una aplicación de un puntero es permitir que las funciones modifiquen las variables que se pasen como parámetros ya que normalmente esto no será posible porque los contenidos de las variables se copian. Por ejemplo se puede crear una función que intercambia los valores de sus dos parámetros:
+
+\begin{lstlisting}[language=C++, caption=Funciones con punteros]
+#include <iostream>
+
+using namespace std;
+
+void intercambiar(int x, int y) {
+    int temp = x;
+    x = y;
+    y = temp;
+}
+
+void intercambiarConPunteros(int* x, int* y) {
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+int main() {
+    int a = 5;
+    int b = 7;
+    intercambiar(a, b);
+    cout << a << " " << b << endl;
+    intercambiarConPunteros(&a, &b);
+    cout << a << " " << b << endl;
+}
+\end{lstlisting}
+
+Si corremos el código podemos ver que la función intercambiar no modifico las variables originales pero la función intercambiarConPunteros sí lo logró hacer.
 
 \subsection{Referencias}
 
+Otra manera de modificar los parámetros originales de una función es declarando los parámetros como referencias. Esto se puede hacer escribiendo un \lstinline{&} en lugar de un * despues del tipo de dato. Esto automaticamente le indica a la función que quieres que ese variable sea la original y no una copia.
+
+\begin{lstlisting}[language=C++, caption=Funciones con referencias]
+#include <iostream>
+
+using namespace std;
+
+void intercambiarConReferencias(int& x, int& y) {
+    int temp = x;
+    x = y;
+    y = temp;
+}
+
+int main() {
+    int a = 5;
+    int b = 7;
+    intercambiarConReferencias(a, b);
+    cout << a << " " << b << endl;
+}
+\end{lstlisting}
+
 \subsection{Punteros a objetos}
+
+Cuando se crea un puntero a un objeto como un struct o una clase se pueden acesar los miembros o variables de esas estructuras utilizando los cáracteres \lstinline{->} en lugar de un punto.
+
+Digamos que tenemos un puntero a un struct que representa una comida y quisieramos guardar esta comida en un puntero. Si quisieramos ver el nombre de esta comida (un string), entonces en lugar de dereferenciar el objeto utilizamos la notación flecha:
+
+\begin{lstlisting}[language=C++, caption=Punteros a objetos]
+#include <iostream>
+
+using namespace std;
+
+struct Comida {
+    string nombre;
+    int calorias;
+};
+
+int main() {
+    Comida pizza;
+    pizza.nombre = "Pizza";
+    pizza.calorias = 1184;
+    Comida* punteroAComida;
+    punteroAComida = &pizza;
+    cout << punteroAComida->nombre << " tiene " <<
+    punteroAComida->calorias << " calorias" << endl;
+}    
+\end{lstlisting}
+
+Con esta misma notación podemos modificar el contenido de la estructura.
 
 \subsection{Puntero this}
 
+El puntero this es un puntero especial que existe dentro de las clases que tiene una referencia a esa misma clase. Este puntero es util porque permite la distinción entre las variables que estan dentro de una clase y otras variables externas con el mismo nombre.
+
+Un ejemplo sería tener una clase Punto que contiene una variable X y Y. Si creamos un constructor que tiene parametros con los mismos nombres no podemos modificar las variables internas de la clase a menos de que se usará el puntero this:
+
+\begin{lstlisting}[language=C++, caption=Puntero this]
+#include <iostream>
+
+using namespace std;
+
+class Punto {
+    public:
+    int x;
+    int y;
+
+    Punto(int x, int y) {	
+        this->x = x;
+        this->y = y;
+    }
+
+    void imprimePunto() {
+        cout << "(" << x << ", " << y << ")" << endl;
+    }
+};
+
+int main() {
+    Punto a(6, 3);
+    a.imprimePunto();
+}    
+\end{lstlisting}
+
 \section{Asignación de memoria}
+
+\subsection{Función sizeof}
 
 \section{Estructuras y grafos con punteros}
 

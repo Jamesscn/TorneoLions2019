@@ -1,31 +1,33 @@
 \babel@toc {english}{}
 \contentsline {section}{\numberline {1}Programaci\IeC {\'o}n oriendado a objetos}{2}{section.1}% 
 \contentsline {subsection}{\numberline {1.1}Uniones}{2}{subsection.1.1}% 
-\contentsline {subsection}{\numberline {1.2}Clases}{3}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.2}Clases}{4}{subsection.1.2}% 
 \contentsline {subsection}{\numberline {1.3}Constructores y destructores}{6}{subsection.1.3}% 
 \contentsline {subsection}{\numberline {1.4}Sobrecargamiento}{9}{subsection.1.4}% 
 \contentsline {subsection}{\numberline {1.5}Sobrecargamiento de operadores}{11}{subsection.1.5}% 
 \contentsline {subsection}{\numberline {1.6}Clases heredadas}{12}{subsection.1.6}% 
-\contentsline {subsection}{\numberline {1.7}Variables est\IeC {\'a}ticas}{13}{subsection.1.7}% 
-\contentsline {section}{\numberline {2}Punteros}{15}{section.2}% 
-\contentsline {subsection}{\numberline {2.1}Referencias}{15}{subsection.2.1}% 
-\contentsline {subsection}{\numberline {2.2}Punteros a objetos}{15}{subsection.2.2}% 
-\contentsline {subsection}{\numberline {2.3}Puntero this}{15}{subsection.2.3}% 
-\contentsline {section}{\numberline {3}Asignaci\IeC {\'o}n de memoria}{15}{section.3}% 
-\contentsline {section}{\numberline {4}Estructuras y grafos con punteros}{15}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}Listas encadenadas, dobles y c\IeC {\'\i }clicas}{15}{subsection.4.1}% 
-\contentsline {subsection}{\numberline {4.2}Arboles de binario}{15}{subsection.4.2}% 
-\contentsline {subsection}{\numberline {4.3}Algoritmo de Kruskal}{15}{subsection.4.3}% 
-\contentsline {subsection}{\numberline {4.4}Algoritmo de Prim}{15}{subsection.4.4}% 
-\contentsline {subsection}{\numberline {4.5}Arboles de expansi\IeC {\'o}n}{15}{subsection.4.5}% 
-\contentsline {section}{\numberline {5}Trucos de programaci\IeC {\'o}n competitiva}{15}{section.5}% 
-\contentsline {subsection}{\numberline {5.1}Arboles de segmentos}{15}{subsection.5.1}% 
-\contentsline {subsection}{\numberline {5.2}Tablas hash}{15}{subsection.5.2}% 
-\contentsline {subsection}{\numberline {5.3}N\IeC {\'u}meros grandes}{15}{subsection.5.3}% 
-\contentsline {subsection}{\numberline {5.4}Conversiones de bases}{15}{subsection.5.4}% 
-\contentsline {section}{\numberline {6}Enums}{15}{section.6}% 
-\contentsline {section}{\numberline {7}Manipulaci\IeC {\'o}n de bits}{15}{section.7}% 
-\contentsline {section}{\numberline {8}Matem\IeC {\'a}ticas modulares}{15}{section.8}% 
-\contentsline {subsection}{\numberline {8.1}Adici\IeC {\'o}n}{15}{subsection.8.1}% 
-\contentsline {subsection}{\numberline {8.2}Multiplicaci\IeC {\'o}n}{15}{subsection.8.2}% 
-\contentsline {subsection}{\numberline {8.3}Exponenciaci\IeC {\'o}n}{15}{subsection.8.3}% 
+\contentsline {subsection}{\numberline {1.7}Variables est\IeC {\'a}ticas}{14}{subsection.1.7}% 
+\contentsline {section}{\numberline {2}Referencias y punteros}{14}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Punteros}{15}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Referencias}{17}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Punteros a objetos}{18}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}Puntero this}{18}{subsection.2.4}% 
+\contentsline {section}{\numberline {3}Asignaci\IeC {\'o}n de memoria}{20}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Funci\IeC {\'o}n sizeof}{20}{subsection.3.1}% 
+\contentsline {section}{\numberline {4}Estructuras y grafos con punteros}{20}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Listas encadenadas, dobles y c\IeC {\'\i }clicas}{20}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Arboles de binario}{20}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Algoritmo de Kruskal}{20}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.4}Algoritmo de Prim}{20}{subsection.4.4}% 
+\contentsline {subsection}{\numberline {4.5}Arboles de expansi\IeC {\'o}n}{20}{subsection.4.5}% 
+\contentsline {section}{\numberline {5}Trucos de programaci\IeC {\'o}n competitiva}{20}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Arboles de segmentos}{20}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.2}Tablas hash}{20}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.3}N\IeC {\'u}meros grandes}{20}{subsection.5.3}% 
+\contentsline {subsection}{\numberline {5.4}Conversiones de bases}{20}{subsection.5.4}% 
+\contentsline {section}{\numberline {6}Enums}{20}{section.6}% 
+\contentsline {section}{\numberline {7}Manipulaci\IeC {\'o}n de bits}{20}{section.7}% 
+\contentsline {section}{\numberline {8}Matem\IeC {\'a}ticas modulares}{20}{section.8}% 
+\contentsline {subsection}{\numberline {8.1}Adici\IeC {\'o}n}{20}{subsection.8.1}% 
+\contentsline {subsection}{\numberline {8.2}Multiplicaci\IeC {\'o}n}{20}{subsection.8.2}% 
+\contentsline {subsection}{\numberline {8.3}Exponenciaci\IeC {\'o}n}{20}{subsection.8.3}% 
