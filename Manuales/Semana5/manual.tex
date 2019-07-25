@@ -310,9 +310,230 @@ int main() {
 
 \subsection{Sobrecargamiento}
 
+En tanto las funciones regulares como las funciones de clases se puede llevar a cabo el sobrecargamiento. Esto consiste en tener varias funciones con el mismo nombre pero con diferentes tipos de parámetros. Por ejemplo, si quisieramos tener una función suma que es capaz de sumar dos números o dos dígitos en forma de cáracteres ('5' + '6' nos daría 11), entonces podemos hacer dos funciones que se sobrecargan:
+
+\begin{lstlisting}[language=C++, caption=Sobrecargamiento]
+#include <iostream>
+
+using namespace std;
+
+int suma(int a, int b) {
+    return a + b;
+}
+
+int suma(char a, char b) {
+    return (a - '0') + (b - '0');
+}
+
+int main() {
+    cout << suma(5, 6) << endl;
+    cout << suma('5', '6') << endl;
+    cout << suma('9', '7') << endl;
+}
+\end{lstlisting}
+
+Aqui podemos ver que la función suma es sobrecargada y que la primera vez que se llama utiliza la función de arriba porque sabe que los parámetros son dos enteros, mientras que las otras dos veces corre la función de abajo porque los parámetros son cáracteres.
+
+El sobrecargamiento tambien permite la llamada de la misma función, asi que se puede crear una función general que es llamada por las funciones que sobrecargan:
+
+\begin{lstlisting}[language=C++, caption=Sobrecargamiento]
+#include <iostream>
+
+using namespace std;
+
+int potencia(int a, int b) {
+    int resultado = 1;
+    for(int i = 0; i < b; i++) {
+        resultado *= a;
+    }
+    return resultado;
+}
+
+int potencia(char a, char b) {
+    return potencia(a - '0', b - '0');
+}
+
+int main() {
+    cout << potencia(5, 6) << endl;
+    cout << potencia('5', '6') << endl;
+    cout << potencia('9', '7') << endl;
+}
+\end{lstlisting}
+
+Para una clase el sobrecargamiento es exactamente igual:
+
+\begin{lstlisting}[language=C++, caption=Sobrecargamiento de clases]
+#include <iostream>
+
+using namespace std;
+
+class Cliente {
+    public:
+        string nombre;
+        float dinero;
+
+        Cliente(string nombreInicial) {
+            nombre = nombreInicial;
+            dinero = 0;
+        }
+
+        Cliente(string nombreInicial, float dineroInicial) {
+            nombre = nombreInicial;
+            dinero = dineroInicial;
+        }
+};
+
+int main() {
+    Cliente pablo("Pablo");
+    Cliente jorge("Jorge", 121.35);
+}
+\end{lstlisting}
+
+\subsection{Sobrecargamiento de operadores}
+
+Se pueden sobrecargar los operadores principales (+, -, =, ...) para que puedan manipular las instancias de dos clases. Digamos que tenemos una clase que sirve como un punto bidimensional y quisieramos que se sumarán dos puntos con el operador +, entonces se puede sobrecargar este operador en nuestra clase de la siguiente manera:
+
+\begin{lstlisting}[language=C++, caption=Sobrecargamiento de operadores]
+#include <iostream>
+
+using namespace std;
+
+class Punto {
+    public:
+        int x;
+        int y;
+
+        Punto(int xInicial, int yInicial) {
+            x = xInicial;
+            y = yInicial;
+        }
+        
+        void imprimePunto() {
+            cout << "(" << x << ", " << y << ")" << endl;
+        }
+
+        Punto operator+(const Punto& p) {
+            Punto suma(x + p.x, y + p.y);
+            return suma;
+        }
+};
+
+int main() {
+    Punto a(6, 11);
+    Punto b(-3, 25);
+    Punto c = a + b;
+    c.imprimePunto();
+}
+\end{lstlisting}
+
+Se debe crear una función con nombre operator\textbf{(signo)} y este debe regresar o modificar la clase que se esta utilizando, como parámetro debe recibir un \textbf{\lstinline{const tipo& nombre}} donde esta variable es la otra variable que se esta sumando, restando o modificando.
+
 \subsection{Clases heredadas}
 
-\subsection{Variables estaticas}
+Suele suceder que ocupas crear varias clases especificas con diferencias pequeñas. Para evitar tener que copiar el mismo código muchas veces se puede crear una clase general que contiene variables y funciones que se comparten entre otras clases especificas que "heredan" esta clase general.
+
+Para heredar una clase se debe escribir dos puntos, public y el nombre de la clase general despues de la clase que hereda estas propiedades. Para llamar el constructor de una clase heredada se debe hacer algo parecido donde se pone dos puntos, el nombre del constructor de la clase que hereda y las variables que se desean pasar a ese constructor original.
+
+Aqui podemos ver un ejemplo de un código donde se tiene dos clases, la clase Miembro contiene todas las funciones y variables de la clase Cliente, pero le hacemos unas modificaciones para que solo miembros reciben ciertas ventajas. Por ejemplo, no se puede modificar la variable puntos de un cliente porque esta clase no la tiene, pero la variable nombre si es igual para las dos clases.
+
+\begin{lstlisting}[language=C++, caption=Heredación]
+#include <iostream>
+
+using namespace std;
+
+class Cliente {
+	public:
+    string nombre;
+    double dinero;
+
+    Cliente(string nombreInicial) {
+        nombre = nombreInicial;
+        dinero = 0;
+    }
+
+    void venderArticulo(double precio) {
+        dinero += precio;
+        cout << nombre << " no recibio puntos
+        por vender un articulo porque no es
+        miembro" << endl;
+    }
+
+    void verDatos() {
+        cout << nombre << " tiene $" << dinero << endl;
+    }
+};
+
+class Miembro : public Cliente {
+	private:
+    double puntos;
+
+	public:
+    Miembro(string nombreInicial) : Cliente(nombreInicial) {
+        puntos = 0;
+    }
+
+    void venderArticulo(double precio) {
+        double puntosDeVenta = precio / 10;
+        puntos += puntosDeVenta;
+        dinero += precio;
+        cout << nombre << " obtuvo " << puntosDeVenta <<
+        " puntos por vender un articulo porque es miembro" << endl;
+    }
+
+    void verDatos() {
+        cout << nombre << " tiene $" << dinero <<
+        " y " << puntos << " puntos" << endl;
+    }
+};
+
+int main() {
+	Cliente pablo("Pablo");
+	Miembro jose("Jose");
+	pablo.venderArticulo(653.12);
+	jose.venderArticulo(653.12);
+	pablo.verDatos();
+	jose.verDatos();
+}
+\end{lstlisting}
+
+Si observamos este código podemos ver que Miembro es lo mismo que Cliente pero con otra variable y dos funciones sobrecargadas.
+
+\subsection{Variables estáticas}
+
+Las variables estáticas son especiales debido a que solo existe una instancia de ellas a la vez. Si declaramos una clase con una variable estática, esta variable siempre se inicializará en cero y sera igual para todas las clases.
+
+Para crear una variable estática se debe escribir \textbf{static} antes del nombre de la variable y se debe declarar esta variable fuera de la clase usando \textbf{Clase::nombre};
+
+\begin{lstlisting}[language=C++, caption=Variables estáticas]
+#include <iostream>
+
+using namespace std;
+
+class Punto {	
+    public:
+        static int puntosMarcados;
+        int x;
+        int y;
+
+        Punto(int xInicial, int yInicial) {
+            x = xInicial;
+            y = yInicial;
+            puntosMarcados++;
+        }
+};
+
+int Punto::puntosMarcados;
+
+int main() {
+    Punto a(3, 5);
+    Punto b(5, 9);
+    Punto c(2, 2);
+    Punto d(1, 4);
+    cout << "Hay " << Punto::puntosMarcados << " puntos" << endl;
+}    
+\end{lstlisting}
+
+Si corremos este ejemplo se imprimirán que hay 4 puntos porque el constructor de cada punto le sumó 1 a la variable puntosMarcados.
 
 \section{Punteros}
 
