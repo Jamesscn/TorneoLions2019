@@ -12,21 +12,20 @@
 \BOOKMARK [2][-]{subsection.2.3}{Punteros a objetos}{section.2}% 12
 \BOOKMARK [2][-]{subsection.2.4}{Puntero this}{section.2}% 13
 \BOOKMARK [1][-]{section.3}{Asignaci\363n de memoria}{}% 14
-\BOOKMARK [2][-]{subsection.3.1}{Funci\363n sizeof}{section.3}% 15
-\BOOKMARK [1][-]{section.4}{Estructuras y grafos con punteros}{}% 16
-\BOOKMARK [2][-]{subsection.4.1}{Listas encadenadas, dobles y c\355clicas}{section.4}% 17
-\BOOKMARK [2][-]{subsection.4.2}{Arboles de binario}{section.4}% 18
-\BOOKMARK [2][-]{subsection.4.3}{Algoritmo de Kruskal}{section.4}% 19
-\BOOKMARK [2][-]{subsection.4.4}{Algoritmo de Prim}{section.4}% 20
-\BOOKMARK [2][-]{subsection.4.5}{Arboles de expansi\363n}{section.4}% 21
-\BOOKMARK [1][-]{section.5}{Trucos de programaci\363n competitiva}{}% 22
-\BOOKMARK [2][-]{subsection.5.1}{Arboles de segmentos}{section.5}% 23
-\BOOKMARK [2][-]{subsection.5.2}{Tablas hash}{section.5}% 24
-\BOOKMARK [2][-]{subsection.5.3}{N\372meros grandes}{section.5}% 25
-\BOOKMARK [2][-]{subsection.5.4}{Conversiones de bases}{section.5}% 26
-\BOOKMARK [1][-]{section.6}{Enums}{}% 27
-\BOOKMARK [1][-]{section.7}{Manipulaci\363n de bits}{}% 28
-\BOOKMARK [1][-]{section.8}{Matem\341ticas modulares}{}% 29
-\BOOKMARK [2][-]{subsection.8.1}{Adici\363n}{section.8}% 30
-\BOOKMARK [2][-]{subsection.8.2}{Multiplicaci\363n}{section.8}% 31
-\BOOKMARK [2][-]{subsection.8.3}{Exponenciaci\363n}{section.8}% 32
+\BOOKMARK [1][-]{section.4}{Estructuras y grafos con punteros}{}% 15
+\BOOKMARK [2][-]{subsection.4.1}{Listas encadenadas, dobles y c\355clicas}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.2}{Arboles de binario}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.3}{Algoritmo de Kruskal}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.4}{Algoritmo de Prim}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.5}{Arboles de expansi\363n}{section.4}% 20
+\BOOKMARK [1][-]{section.5}{Trucos de programaci\363n competitiva}{}% 21
+\BOOKMARK [2][-]{subsection.5.1}{Arboles de segmentos}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.2}{Tablas hash}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.3}{N\372meros grandes}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.4}{Conversiones de bases}{section.5}% 25
+\BOOKMARK [1][-]{section.6}{Enums}{}% 26
+\BOOKMARK [1][-]{section.7}{Manipulaci\363n de bits}{}% 27
+\BOOKMARK [1][-]{section.8}{Matem\341ticas modulares}{}% 28
+\BOOKMARK [2][-]{subsection.8.1}{Adici\363n}{section.8}% 29
+\BOOKMARK [2][-]{subsection.8.2}{Multiplicaci\363n}{section.8}% 30
+\BOOKMARK [2][-]{subsection.8.3}{Exponenciaci\363n}{section.8}% 31
