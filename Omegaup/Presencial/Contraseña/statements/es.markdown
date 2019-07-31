@@ -22,7 +22,7 @@ Un número **C** correspondiendo a cuantas contraseñas suman a **S** consideran
 6
 ||end
 
-En este ejemplo solo hay 6 posibles contraseñas con  cáracteres que suman a 100: **d**, **04**, **40**, **13**, **31** y **22**.
+En este ejemplo solo hay 6 posibles contraseñas con cáracteres que suman a 100: **d**, **04**, **40**, **13**, **31** y **22**.
 
 ||input
 217
