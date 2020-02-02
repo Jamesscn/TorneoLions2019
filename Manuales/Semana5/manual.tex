@@ -29,7 +29,7 @@
     \includegraphics[width=0.2\paperwidth]{newblack}
 \end{figure}
 
-\section{Programación oriendado a objetos}
+\section{Programación orientado a objetos}
 
 Como hemos visto anteriormente es conveniente trabajar con grupos de datos en structs en lugar de guardar los datos en pares de pares o tenerlos sueltos. Cada instancia de un struct se puede conocer como un objeto, todos los objetos tienen la caracteristica de ser conformado por distintos datos y se pueden crear diferentes instancias de un objeto con valores distintos. Un objeto puede ser visto como una base que puede ser duplicado y que mantiene sus datos de manera estructurada.
 
@@ -711,7 +711,57 @@ int main() {
 
 \section{Asignación de memoria}
 
+Si quisieras mayor control sobre la memoria de tu programa puedes crear variables, objetos y arreglos que después podrán ser borrados para liberar espacio utilizando la asignación de memoria. Este método busca espacio en una area compartida de la memoria de la computadora llamada el heap. El heap tiende a tener muchisimo más espacio que la memoria estandar asignada a tu programa asi que la asignación de memoria te permite crear arreglos más grandes de lo normalmente permitido (arriba de un millon de variables).
 
+Para asignar una memoria se debe crear un puntero el cual guardará la ubicación de la variable que será asignado. Para asignar este dato se debe llamar \textbf{new tipo}. El siguiente código muestra un ejemplo de como se asigna un entero, un float y un arreglo con un millón de valores:
+
+\begin{lstlisting}[language=C++, caption=Asignando variables]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int enteroNormal = 19;
+    int* enteroAsignado = new int;
+    *enteroAsignado = 5;
+    float floatNormal = 13.45;
+    float* floatAsignado = new float;
+    *floatAsignado = 3.1415;
+    int* arregloGrande = new int[1000000];
+    arregloGrande[999999] = 1234;
+    cout << enteroNormal << endl;
+    cout << *enteroAsignado << endl;
+    cout << floatNormal << endl;
+    cout << *floatAsignado << endl;
+    cout << arregloGrande[999999] << endl;
+}    
+\end{lstlisting}
+
+Para liberar memoria que ya se haya utilizado entonces se debe llamar a \textbf{delete variable}. Es conveniente utilizar delete para cuando se quisiera ahorrar memoria, como en el siguiente código:
+
+\begin{lstlisting}[language=C++, caption=Borrando datos]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int* arregloLineal = new int[1000];
+    for(int i = 0; i < 1000; i++) {
+        arregloLineal[i] = 10 * i - 1;
+    }
+    cout << arregloLineal[3] << endl;
+    cout << arregloLineal[999] << endl;
+    cout << arregloLineal[800] << endl;
+    delete arregloLineal;
+    int* arregloCuadrada = new int[1000];
+    for(int i = 0; i < 1000; i++) {
+        arregloCuadrada[i] = i * i;
+    }
+    cout << arregloCuadrada[800] << endl;
+}     
+\end{lstlisting}
+
+Este código ahorra la mitad del espacio creando dos arreglos de tamaño 1000 y borrando uno despues de que haya sido utilizado.
 
 \section{Estructuras y grafos con punteros}
 
