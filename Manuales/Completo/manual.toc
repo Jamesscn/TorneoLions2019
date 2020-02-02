@@ -7,72 +7,72 @@
 \contentsline {subsection}{\numberline {2.4}Visual Studio Code + Terminal [Mac y Linux]}{5}{subsection.2.4}% 
 \contentsline {section}{\numberline {3}¿Mi primer programa?}{6}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}Donde empezar}{6}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}Comentarios}{9}{subsection.3.2}% 
-\contentsline {section}{\numberline {4}Leyendo y escribiendo}{10}{section.4}% 
-\contentsline {section}{\numberline {5}Operaciones básicas}{11}{section.5}% 
-\contentsline {subsection}{\numberline {5.1}Suma, resta, multiplicación, división}{11}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {3.2}Comentarios}{10}{subsection.3.2}% 
+\contentsline {section}{\numberline {4}Leyendo y escribiendo}{11}{section.4}% 
+\contentsline {section}{\numberline {5}Operaciones básicas}{12}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Suma, resta, multiplicación, división}{12}{subsection.5.1}% 
 \contentsline {subsection}{\numberline {5.2}Modulación}{12}{subsection.5.2}% 
 \contentsline {section}{\numberline {6}Tipos de datos}{12}{section.6}% 
 \contentsline {subsection}{\numberline {6.1}Númericos}{12}{subsection.6.1}% 
-\contentsline {subsection}{\numberline {6.2}Signed y unsigned}{12}{subsection.6.2}% 
+\contentsline {subsection}{\numberline {6.2}Signed y unsigned}{13}{subsection.6.2}% 
 \contentsline {subsection}{\numberline {6.3}Caracteres y cadenas}{13}{subsection.6.3}% 
-\contentsline {subsection}{\numberline {6.4}Booleanos}{13}{subsection.6.4}% 
-\contentsline {subsection}{\numberline {6.5}Arreglos}{13}{subsection.6.5}% 
+\contentsline {subsection}{\numberline {6.4}Booleanos}{14}{subsection.6.4}% 
+\contentsline {subsection}{\numberline {6.5}Arreglos}{14}{subsection.6.5}% 
 \contentsline {section}{\numberline {7}Funciones}{14}{section.7}% 
-\contentsline {section}{\numberline {8}Flujo de datos}{15}{section.8}% 
+\contentsline {section}{\numberline {8}Flujo de datos}{16}{section.8}% 
 \contentsline {subsection}{\numberline {8.1}Condicional if}{16}{subsection.8.1}% 
 \contentsline {subsection}{\numberline {8.2}Condiciones}{18}{subsection.8.2}% 
 \contentsline {subsection}{\numberline {8.3}Ciclo for}{19}{subsection.8.3}% 
-\contentsline {subsection}{\numberline {8.4}Ciclo while}{20}{subsection.8.4}% 
-\contentsline {subsection}{\numberline {8.5}Break}{21}{subsection.8.5}% 
+\contentsline {subsection}{\numberline {8.4}Ciclo while}{21}{subsection.8.4}% 
+\contentsline {subsection}{\numberline {8.5}Break}{22}{subsection.8.5}% 
 \contentsline {subsection}{\numberline {8.6}Continue}{22}{subsection.8.6}% 
-\contentsline {section}{\numberline {9}Errores comunes}{23}{section.9}% 
-\contentsline {subsection}{\numberline {9.1}Falta de inicialización}{23}{subsection.9.1}% 
-\contentsline {subsection}{\numberline {9.2}Ciclos con otras variables}{24}{subsection.9.2}% 
-\contentsline {subsection}{\numberline {9.3}Error por uno}{25}{subsection.9.3}% 
+\contentsline {section}{\numberline {9}Errores comunes}{24}{section.9}% 
+\contentsline {subsection}{\numberline {9.1}Falta de inicialización}{24}{subsection.9.1}% 
+\contentsline {subsection}{\numberline {9.2}Ciclos con otras variables}{25}{subsection.9.2}% 
+\contentsline {subsection}{\numberline {9.3}Error por uno}{26}{subsection.9.3}% 
 \contentsline {subsection}{\numberline {9.4}Segmentation fault}{26}{subsection.9.4}% 
-\contentsline {subsection}{\numberline {9.5}Sobreflujos}{26}{subsection.9.5}% 
-\contentsline {subsection}{\numberline {9.6}Errores de redondeo}{27}{subsection.9.6}% 
-\contentsline {subsection}{\numberline {9.7}Faltas de memoria}{28}{subsection.9.7}% 
-\contentsline {section}{\numberline {10}Estructuras de datos sencillos}{29}{section.10}% 
-\contentsline {subsection}{\numberline {10.1}Vectores}{29}{subsection.10.1}% 
+\contentsline {subsection}{\numberline {9.5}Sobreflujos}{27}{subsection.9.5}% 
+\contentsline {subsection}{\numberline {9.6}Errores de redondeo}{28}{subsection.9.6}% 
+\contentsline {subsection}{\numberline {9.7}Faltas de memoria}{29}{subsection.9.7}% 
+\contentsline {section}{\numberline {10}Estructuras de datos sencillos}{30}{section.10}% 
+\contentsline {subsection}{\numberline {10.1}Vectores}{30}{subsection.10.1}% 
 \contentsline {subsection}{\numberline {10.2}Pares}{32}{subsection.10.2}% 
-\contentsline {subsection}{\numberline {10.3}Mapas}{33}{subsection.10.3}% 
-\contentsline {subsection}{\numberline {10.4}Sets}{35}{subsection.10.4}% 
-\contentsline {section}{\numberline {11}Complejidad de tiempo}{36}{section.11}% 
-\contentsline {subsection}{\numberline {11.1}Número de operaciones}{38}{subsection.11.1}% 
-\contentsline {subsection}{\numberline {11.2}Límites}{39}{subsection.11.2}% 
-\contentsline {subsection}{\numberline {11.3}Complejidad de memoria}{43}{subsection.11.3}% 
-\contentsline {section}{\numberline {12}Busquedas}{43}{section.12}% 
+\contentsline {subsection}{\numberline {10.3}Mapas}{34}{subsection.10.3}% 
+\contentsline {subsection}{\numberline {10.4}Sets}{36}{subsection.10.4}% 
+\contentsline {section}{\numberline {11}Complejidad de tiempo}{37}{section.11}% 
+\contentsline {subsection}{\numberline {11.1}Número de operaciones}{39}{subsection.11.1}% 
+\contentsline {subsection}{\numberline {11.2}Límites}{40}{subsection.11.2}% 
+\contentsline {subsection}{\numberline {11.3}Complejidad de memoria}{44}{subsection.11.3}% 
+\contentsline {section}{\numberline {12}Busquedas}{44}{section.12}% 
 \contentsline {subsection}{\numberline {12.1}Busqueda lineal}{44}{subsection.12.1}% 
-\contentsline {subsection}{\numberline {12.2}Busqueda binaria}{44}{subsection.12.2}% 
-\contentsline {subsection}{\numberline {12.3}Busqueda alfabetica}{45}{subsection.12.3}% 
-\contentsline {section}{\numberline {13}Estructuras de datos avanzadas}{45}{section.13}% 
-\contentsline {subsection}{\numberline {13.1}Stack}{45}{subsection.13.1}% 
-\contentsline {subsection}{\numberline {13.2}Queue}{47}{subsection.13.2}% 
-\contentsline {subsection}{\numberline {13.3}Deque}{48}{subsection.13.3}% 
+\contentsline {subsection}{\numberline {12.2}Busqueda binaria}{45}{subsection.12.2}% 
+\contentsline {subsection}{\numberline {12.3}Busqueda alfabetica}{46}{subsection.12.3}% 
+\contentsline {section}{\numberline {13}Estructuras de datos avanzadas}{46}{section.13}% 
+\contentsline {subsection}{\numberline {13.1}Stack}{46}{subsection.13.1}% 
+\contentsline {subsection}{\numberline {13.2}Queue}{48}{subsection.13.2}% 
+\contentsline {subsection}{\numberline {13.3}Deque}{49}{subsection.13.3}% 
 \contentsline {subsection}{\numberline {13.4}Priority queue}{50}{subsection.13.4}% 
-\contentsline {section}{\numberline {14}Recursividad}{50}{section.14}% 
-\contentsline {section}{\numberline {15}Ordenamientos}{53}{section.15}% 
-\contentsline {subsection}{\numberline {15.1}Ordenamiento por selección}{53}{subsection.15.1}% 
+\contentsline {section}{\numberline {14}Recursividad}{51}{section.14}% 
+\contentsline {section}{\numberline {15}Ordenamientos}{54}{section.15}% 
+\contentsline {subsection}{\numberline {15.1}Ordenamiento por selección}{54}{subsection.15.1}% 
 \contentsline {subsection}{\numberline {15.2}Ordenamiento por mezcla}{55}{subsection.15.2}% 
-\contentsline {subsection}{\numberline {15.3}Ordenamiento estandar de C++}{57}{subsection.15.3}% 
-\contentsline {section}{\numberline {16}Programación dinámica}{59}{section.16}% 
-\contentsline {section}{\numberline {17}Arreglos multidimensionales}{61}{section.17}% 
-\contentsline {section}{\numberline {18}Structs}{61}{section.18}% 
-\contentsline {section}{\numberline {19}Grafos}{64}{section.19}% 
+\contentsline {subsection}{\numberline {15.3}Ordenamiento estandar de C++}{58}{subsection.15.3}% 
+\contentsline {section}{\numberline {16}Programación dinámica}{60}{section.16}% 
+\contentsline {section}{\numberline {17}Arreglos multidimensionales}{62}{section.17}% 
+\contentsline {section}{\numberline {18}Structs}{62}{section.18}% 
+\contentsline {section}{\numberline {19}Grafos}{65}{section.19}% 
 \contentsline {subsection}{\numberline {19.1}Nodos, ramas, hojas y raíces}{65}{subsection.19.1}% 
-\contentsline {subsection}{\numberline {19.2}Grafos dirigidos y cíclicos}{66}{subsection.19.2}% 
-\contentsline {subsection}{\numberline {19.3}Grafos con pesos}{66}{subsection.19.3}% 
-\contentsline {subsection}{\numberline {19.4}Arboles binarios}{67}{subsection.19.4}% 
-\contentsline {subsection}{\numberline {19.5}Listas y matrices de adyacencia}{69}{subsection.19.5}% 
+\contentsline {subsection}{\numberline {19.2}Grafos dirigidos y cíclicos}{67}{subsection.19.2}% 
+\contentsline {subsection}{\numberline {19.3}Grafos con pesos}{67}{subsection.19.3}% 
+\contentsline {subsection}{\numberline {19.4}Arboles binarios}{68}{subsection.19.4}% 
+\contentsline {subsection}{\numberline {19.5}Listas y matrices de adyacencia}{70}{subsection.19.5}% 
 \contentsline {subsection}{\numberline {19.6}Grafos con arreglos 2D}{72}{subsection.19.6}% 
-\contentsline {section}{\numberline {20}Algoritmos de búsqueda}{72}{section.20}% 
-\contentsline {subsection}{\numberline {20.1}Algoritmos heuristicos o greedy}{72}{subsection.20.1}% 
-\contentsline {subsection}{\numberline {20.2}Búsqueda en anchura}{75}{subsection.20.2}% 
-\contentsline {subsection}{\numberline {20.3}Búsqueda en profundidad}{79}{subsection.20.3}% 
-\contentsline {subsection}{\numberline {20.4}Algoritmo de Dijsktra}{82}{subsection.20.4}% 
-\contentsline {subsection}{\numberline {20.5}A*}{85}{subsection.20.5}% 
+\contentsline {section}{\numberline {20}Algoritmos de búsqueda}{73}{section.20}% 
+\contentsline {subsection}{\numberline {20.1}Algoritmos heuristicos o greedy}{73}{subsection.20.1}% 
+\contentsline {subsection}{\numberline {20.2}Búsqueda en anchura}{76}{subsection.20.2}% 
+\contentsline {subsection}{\numberline {20.3}Búsqueda en profundidad}{80}{subsection.20.3}% 
+\contentsline {subsection}{\numberline {20.4}Algoritmo de Dijsktra}{83}{subsection.20.4}% 
+\contentsline {subsection}{\numberline {20.5}A*}{86}{subsection.20.5}% 
 \contentsline {section}{\numberline {21}Notas finales}{89}{section.21}% 
 \contentsline {subsection}{\numberline {21.1}¿Dónde puedo aprender más?}{89}{subsection.21.1}% 
-\contentsline {subsection}{\numberline {21.2}¿Cómo puedo entrar a competencias de programación?}{89}{subsection.21.2}% 
+\contentsline {subsection}{\numberline {21.2}¿Cómo puedo entrar a competencias de programación?}{90}{subsection.21.2}% 

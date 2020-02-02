@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.1)  1 FEB 2020 22:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.1)  2 FEB 2020 01:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -357,659 +357,623 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 ) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 )
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 99.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 97.
  (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 99.
- [6 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/vscode.png>]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 103.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 97.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 101.
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 101.
+ [6 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/vscode.png>] [7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
-[8] [9]
+[9]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 248.
-
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 253--254
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 260.
+ [10]
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
-[11]
-Overfull \hbox (17.61185pt too wide) in paragraph at lines 332--333
+[11] [12]
+Overfull \hbox (17.61185pt too wide) in paragraph at lines 344--345
 \OT1/cmr/m/n/10 ca-paz de guardar n^^Sumeros muchisimo m^^Sas grandes (desde -9,223,372,036,854,775,808
  []
 
-[12] [13]
-Overfull \hbox (2.01901pt too wide) in paragraph at lines 393--394
+[13] [14]
+Overfull \hbox (2.01901pt too wide) in paragraph at lines 405--406
 []\OT1/cmr/m/n/10 Luego, sigue el nom-bre de la funci^^Son y dos par^^Sentesis. Den-tro de los par^^Sentesis
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 451--452
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
 
  []
 
 [15]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 493--494
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
+
  []
 
 [16]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 511--512
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 505--506
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[17]
-Overfull \hbox (27.00378pt too wide) in paragraph at lines 569--570
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 523--524
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[17] [18]
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 581--582
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 572--573
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 584--585
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 576--577
+Underfull \hbox (badness 10000) in paragraph at lines 588--589
 
  []
 
-[18] [19] [20]
-Overfull \hbox (39.0039pt too wide) in paragraph at lines 704--705
+[19] [20] [21]
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 716--717
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 713--714
+
+Underfull \hbox (badness 10000) in paragraph at lines 725--726
 
  []
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 776--777
+[22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 788--789
 
  []
 
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 802--803
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--815
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 833--834
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 859--860
+Underfull \hbox (badness 10000) in paragraph at lines 845--846
 
  []
 
 [25]
-Overfull \hbox (141.00494pt too wide) in paragraph at lines 876--877
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Underfull \hbox (badness 10000) in paragraph at lines 871--872
+
  []
 
 
-Overfull \hbox (57.00409pt too wide) in paragraph at lines 883--884
+Overfull \hbox (141.00494pt too wide) in paragraph at lines 888--889
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[26]
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 895--896
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 887--888
+Underfull \hbox (badness 10000) in paragraph at lines 899--900
 
  []
 
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 915--916
+
+Underfull \hbox (badness 10000) in paragraph at lines 927--928
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 947--948
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 973--974
+Underfull \hbox (badness 10000) in paragraph at lines 959--960
 
  []
 
 [28]
-LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 993.
- [29] [30]
-Underfull \hbox (badness 10000) in paragraph at lines 1085--1086
+Underfull \hbox (badness 10000) in paragraph at lines 985--986
 
  []
 
-[31] [32]
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 1167--1168
+[29]
+LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 1005.
+ [30] [31]
+Underfull \hbox (badness 10000) in paragraph at lines 1097--1098
+
+ []
+
+[32] [33]
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 1179--1180
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[33]
-Overfull \hbox (27.00378pt too wide) in paragraph at lines 1173--1174
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 1185--1186
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[34] [35]
-Overfull \hbox (93.00446pt too wide) in paragraph at lines 1279--1280
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[36]
-Overfull \hbox (117.0047pt too wide) in paragraph at lines 1304--1305
+[34] [35] [36]
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 1291--1292
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [37]
-Overfull \hbox (117.0047pt too wide) in paragraph at lines 1331--1332
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 1316--1317
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[38]
-<nsquared.png, id=1317, 125.9907pt x 125.268pt>
+
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 1343--1344
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[38] [39]
+<nsquared.png, id=1325, 125.9907pt x 125.268pt>
 File: nsquared.png Graphic file (type png)
 <use nsquared.png>
-Package pdftex.def Info: nsquared.png  used on input line 1393.
+Package pdftex.def Info: nsquared.png  used on input line 1405.
 (pdftex.def)             Requested size: 184.29036pt x 183.24144pt.
- [39] [40 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/nsquared.png>]
-Overfull \hbox (117.0047pt too wide) in paragraph at lines 1441--1442
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[41]
-Overfull \hbox (117.0047pt too wide) in paragraph at lines 1469--1470
+ [40 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/nsquared.png>] [41]
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 1453--1454
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [42]
-<nsquaredn.png, id=1402, 121.1727pt x 118.7637pt>
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 1481--1482
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<nsquaredn.png, id=1381, 121.1727pt x 118.7637pt>
 File: nsquaredn.png Graphic file (type png)
 <use nsquaredn.png>
-Package pdftex.def Info: nsquaredn.png  used on input line 1487.
+Package pdftex.def Info: nsquaredn.png  used on input line 1499.
 (pdftex.def)             Requested size: 184.29036pt x 180.62598pt.
- [43 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/nsquaredn.png>]
-Overfull \hbox (3.41719pt too wide) in paragraph at lines 1506--1507
+[43]
+Overfull \hbox (3.41719pt too wide) in paragraph at lines 1518--1519
 \OT1/cmr/m/n/10 Esta es la busqueda m^^Sas sen-cilla y com^^Sun y con-siste en tener un ar-reglo cualquiera
  []
 
-
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 1519--1520
+[44 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/nsquaredn.png>]
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 1531--1532
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[44]
-<pila.png, id=1430, 170.04706pt x 297.58235pt>
+[45]
+<pila.png, id=1434, 170.04706pt x 297.58235pt>
 File: pila.png Graphic file (type png)
 <use pila.png>
-Package pdftex.def Info: pila.png  used on input line 1556.
+Package pdftex.def Info: pila.png  used on input line 1568.
 (pdftex.def)             Requested size: 61.43324pt x 107.50644pt.
- [45]
-Underfull \hbox (badness 10000) in paragraph at lines 1587--1588
+ [46 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/pila.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1599--1600
 
  []
 
-[46 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/pila.png>]
-<fila.png, id=1458, 170.04706pt x 348.59647pt>
+[47]
+<fila.png, id=1462, 170.04706pt x 348.59647pt>
 File: fila.png Graphic file (type png)
 <use fila.png>
-Package pdftex.def Info: fila.png  used on input line 1603.
+Package pdftex.def Info: fila.png  used on input line 1615.
 (pdftex.def)             Requested size: 61.43324pt x 125.93611pt.
- [47 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/fila.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1630--1631
+
+Underfull \hbox (badness 10000) in paragraph at lines 1642--1643
 
  []
 
-<deque.png, id=1473, 170.04706pt x 348.59647pt>
+[48 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/fila.png>]
+<deque.png, id=1486, 170.04706pt x 348.59647pt>
 File: deque.png Graphic file (type png)
 <use deque.png>
-Package pdftex.def Info: deque.png  used on input line 1646.
+Package pdftex.def Info: deque.png  used on input line 1658.
 (pdftex.def)             Requested size: 61.43324pt x 125.93611pt.
-[48 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/deque.png>]
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 1684--1685
+ [49 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/deque.png>]
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 1696--1697
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 1686--1687
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 1698--1699
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[49]
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 1711--1712
+[50]
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 1723--1724
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1722--1723
+Underfull \hbox (badness 10000) in paragraph at lines 1734--1735
 
  []
 
-[50] [51]
-Overfull \hbox (81.00433pt too wide) in paragraph at lines 1800--1801
+[51] [52]
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 1812--1813
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[52]
-Underfull \hbox (badness 10000) in paragraph at lines 1821--1822
+
+Underfull \hbox (badness 10000) in paragraph at lines 1833--1834
 
  []
 
-<permutacion.png, id=1614, 550.52736pt x 260.03029pt>
+[53]
+<permutacion.png, id=1629, 550.52736pt x 260.03029pt>
 File: permutacion.png Graphic file (type png)
 <use permutacion.png>
-Package pdftex.def Info: permutacion.png  used on input line 1827.
+Package pdftex.def Info: permutacion.png  used on input line 1839.
 (pdftex.def)             Requested size: 184.29036pt x 87.04422pt.
-[53 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/permutacion.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1877--1878
+ [54 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/permutacion.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1890
 
  []
 
-[54]
-<mergesort.png, id=1664, 632.71677pt x 576.74294pt>
+[55]
+<mergesort.png, id=1669, 632.71677pt x 576.74294pt>
 File: mergesort.png Graphic file (type png)
 <use mergesort.png>
-Package pdftex.def Info: mergesort.png  used on input line 1887.
+Package pdftex.def Info: mergesort.png  used on input line 1899.
 (pdftex.def)             Requested size: 245.71425pt x 223.9784pt.
- [55 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/mergesort.png>]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1921--1922
+ [56 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/mergesort.png>]
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1933--1934
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1924--1925
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1936--1937
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-[56] [57]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 2003--2004
+[57] [58]
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 2015--2016
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 2011--2012
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 2023--2024
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[58]
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 2027--2028
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 2039--2040
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 2031--2032
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 2043--2044
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (1.72292pt too wide) in paragraph at lines 2038--2039
+[59]
+Overfull \hbox (1.72292pt too wide) in paragraph at lines 2050--2051
 \OT1/cmr/m/n/10 La pro-gra-maci^^Son din^^Samica con-siste en guardar datos pre-vios para ahor-rar tiempo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2061--2062
+Underfull \hbox (badness 10000) in paragraph at lines 2073--2074
 
  []
 
-[59]
-<fibonacci.png, id=1828, 1120.185pt x 597.99883pt>
+<fibonacci.png, id=1805, 1120.185pt x 597.99883pt>
 File: fibonacci.png Graphic file (type png)
 <use fibonacci.png>
-Package pdftex.def Info: fibonacci.png  used on input line 2069.
+Package pdftex.def Info: fibonacci.png  used on input line 2081.
 (pdftex.def)             Requested size: 245.71425pt x 131.16779pt.
-
-Overfull \hbox (105.00458pt too wide) in paragraph at lines 2088--2089
+[60]
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 2100--2101
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[60 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/fibonacci.png>]
-Overfull \hbox (27.00378pt too wide) in paragraph at lines 2114--2115
+[61 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/fibonacci.png>]
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 2126--2127
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[61] [62]
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 2186--2187
+[62] [63]
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 2198--2199
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 2191--2192
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 2203--2204
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[63]
-Overfull \hbox (111.00464pt too wide) in paragraph at lines 2229--2230
+[64]
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 2241--2242
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 2231--2232
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 2243--2244
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2237--2238
+Underfull \hbox (badness 10000) in paragraph at lines 2249--2250
 
  []
 
-<grafo.png, id=1951, 357.7365pt x 345.08925pt>
+<grafo.png, id=1964, 357.7365pt x 345.08925pt>
 File: grafo.png Graphic file (type png)
 <use grafo.png>
-Package pdftex.def Info: grafo.png  used on input line 2247.
+Package pdftex.def Info: grafo.png  used on input line 2259.
 (pdftex.def)             Requested size: 92.14049pt x 88.87859pt.
-[64 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/grafo.png>]
-<expansivo.png, id=1977, 734.44388pt x 747.9945pt>
+[65 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/grafo.png>]
+<expansivo.png, id=1981, 734.44388pt x 747.9945pt>
 File: expansivo.png Graphic file (type png)
 <use expansivo.png>
-Package pdftex.def Info: expansivo.png  used on input line 2264.
+Package pdftex.def Info: expansivo.png  used on input line 2276.
 (pdftex.def)             Requested size: 153.57375pt x 156.39867pt.
-<arbolbinario.png, id=1978, 874.467pt x 731.73375pt>
+<arbolbinario.png, id=1982, 874.467pt x 731.73375pt>
 File: arbolbinario.png Graphic file (type png)
 <use arbolbinario.png>
-Package pdftex.def Info: arbolbinario.png  used on input line 2269.
+Package pdftex.def Info: arbolbinario.png  used on input line 2281.
 (pdftex.def)             Requested size: 184.29036pt x 154.20456pt.
- [65 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/expansivo.png> </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/arbolbinario.png>]
-<dirigido.png, id=1985, 315.27788pt x 313.47113pt>
+<dirigido.png, id=1983, 315.27788pt x 313.47113pt>
 File: dirigido.png Graphic file (type png)
 <use dirigido.png>
-Package pdftex.def Info: dirigido.png  used on input line 2284.
+Package pdftex.def Info: dirigido.png  used on input line 2296.
 (pdftex.def)             Requested size: 92.14049pt x 91.6122pt.
-<ciudades.png, id=1986, 508.60013pt x 524.86087pt>
+ [66 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/expansivo.png> </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/arbolbinario.png>]
+<ciudades.png, id=1990, 508.60013pt x 524.86087pt>
 File: ciudades.png Graphic file (type png)
 <use ciudades.png>
-Package pdftex.def Info: ciudades.png  used on input line 2303.
+Package pdftex.def Info: ciudades.png  used on input line 2315.
 (pdftex.def)             Requested size: 122.85712pt x 126.78607pt.
- [66 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/dirigido.png>]
+ [67 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/dirigido.png> </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/ciudades.png>]
 File: arbolbinario.png Graphic file (type png)
 <use arbolbinario.png>
-Package pdftex.def Info: arbolbinario.png  used on input line 2326.
+Package pdftex.def Info: arbolbinario.png  used on input line 2338.
 (pdftex.def)             Requested size: 184.29036pt x 154.20456pt.
- [67 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/ciudades.png>]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 2342--2343
+ [68]
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 2354--2355
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[68]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 2360--2361
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 2372--2373
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (15.00366pt too wide) in paragraph at lines 2370--2371
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 2382--2383
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[69]
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 2389--2390
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (15.00366pt too wide) in paragraph at lines 2377--2378
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 2393--2394
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 2381--2382
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 2400--2401
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 2388--2389
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-<lista.png, id=2025, 916.92563pt x 822.07124pt>
+<lista.png, id=2045, 916.92563pt x 822.07124pt>
 File: lista.png Graphic file (type png)
 <use lista.png>
-Package pdftex.def Info: lista.png  used on input line 2402.
+Package pdftex.def Info: lista.png  used on input line 2414.
 (pdftex.def)             Requested size: 196.57889pt x 176.24011pt.
-[69] [70 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/lista.png>]
-Overfull \hbox (7.445pt too wide) in paragraph at lines 2443--2444
+[70 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/lista.png>]
+Overfull \hbox (7.445pt too wide) in paragraph at lines 2455--2456
 []\OT1/cmr/m/n/10 Por ejem-plo, si quisier-amos saber si las ra-mas 2 y 3 es-tan conec-ta-dos podr^^S^^Pamos
  []
 
 <dijkstra.png, id=2070, 916.92563pt x 822.07124pt>
 File: dijkstra.png Graphic file (type png)
 <use dijkstra.png>
-Package pdftex.def Info: dijkstra.png  used on input line 2451.
+Package pdftex.def Info: dijkstra.png  used on input line 2463.
 (pdftex.def)             Requested size: 196.57889pt x 176.24011pt.
-[71 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/dijkstra.png>]
-<grafo2d.png, id=2077, 636.87938pt x 636.87938pt>
+[71]
+<grafo2d.png, id=2076, 636.87938pt x 636.87938pt>
 File: grafo2d.png Graphic file (type png)
 <use grafo2d.png>
-Package pdftex.def Info: grafo2d.png  used on input line 2478.
+Package pdftex.def Info: grafo2d.png  used on input line 2490.
 (pdftex.def)             Requested size: 122.85712pt x 122.85475pt.
-<greedy.png, id=2078, 636.87938pt x 636.87938pt>
+ [72 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/dijkstra.png>]
+<greedy.png, id=2082, 636.87938pt x 636.87938pt>
 File: greedy.png Graphic file (type png)
 <use greedy.png>
-Package pdftex.def Info: greedy.png  used on input line 2497.
+Package pdftex.def Info: greedy.png  used on input line 2509.
 (pdftex.def)             Requested size: 122.85712pt x 122.85475pt.
- [72 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/grafo2d.png>]
-Overfull \hbox (213.00568pt too wide) in paragraph at lines 2526--2527
+ [73 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/grafo2d.png> </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/greedy.png>]
+Overfull \hbox (213.00568pt too wide) in paragraph at lines 2538--2539
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[73 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/greedy.png>]
-Overfull \hbox (27.00378pt too wide) in paragraph at lines 2537--2538
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 2549--2550
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[74]
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 2558--2559
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (27.00378pt too wide) in paragraph at lines 2546--2547
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (81.00433pt too wide) in paragraph at lines 2553--2554
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 2565--2566
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2568--2569
+Underfull \hbox (badness 10000) in paragraph at lines 2580--2581
 
  []
 
-<greedybueno.png, id=2111, 636.87938pt x 636.87938pt>
+<greedybueno.png, id=2130, 636.87938pt x 636.87938pt>
 File: greedybueno.png Graphic file (type png)
 <use greedybueno.png>
-Package pdftex.def Info: greedybueno.png  used on input line 2574.
+Package pdftex.def Info: greedybueno.png  used on input line 2586.
 (pdftex.def)             Requested size: 122.85712pt x 122.85475pt.
-[74]
-<greedymalo.png, id=2156, 636.87938pt x 636.87938pt>
+<greedymalo.png, id=2131, 636.87938pt x 636.87938pt>
 File: greedymalo.png Graphic file (type png)
 <use greedymalo.png>
-Package pdftex.def Info: greedymalo.png  used on input line 2581.
+Package pdftex.def Info: greedymalo.png  used on input line 2593.
 (pdftex.def)             Requested size: 122.85712pt x 122.85475pt.
- [75 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/greedybueno.png> </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/greedymalo.png>]
-<bfs.png, id=2163, 636.87938pt x 636.87938pt>
+[75 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/greedybueno.png>]
+<bfs.png, id=2162, 636.87938pt x 636.87938pt>
 File: bfs.png Graphic file (type png)
 <use bfs.png>
-Package pdftex.def Info: bfs.png  used on input line 2602.
+Package pdftex.def Info: bfs.png  used on input line 2614.
 (pdftex.def)             Requested size: 184.29036pt x 184.28214pt.
-<bfscamino.png, id=2164, 636.87938pt x 636.87938pt>
+ [76 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/greedymalo.png>]
+<bfscamino.png, id=2168, 636.87938pt x 636.87938pt>
 File: bfscamino.png Graphic file (type png)
 <use bfscamino.png>
-Package pdftex.def Info: bfscamino.png  used on input line 2613.
+Package pdftex.def Info: bfscamino.png  used on input line 2625.
 (pdftex.def)             Requested size: 184.29036pt x 184.28214pt.
- [76 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/bfs.png>] [77 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/bfscamino.png>]
-Overfull \hbox (351.00708pt too wide) in paragraph at lines 2667--2668
+ [77 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/bfs.png> </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/bfscamino.png>] [78]
+Overfull \hbox (351.00708pt too wide) in paragraph at lines 2679--2680
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (129.00482pt too wide) in paragraph at lines 2669--2670
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 2681--2682
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (129.00482pt too wide) in paragraph at lines 2677--2678
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 2689--2690
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (129.00482pt too wide) in paragraph at lines 2685--2686
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[78]
-Overfull \hbox (129.00482pt too wide) in paragraph at lines 2693--2694
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 2697--2698
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 2709--2710
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 2705--2706
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[79]
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 2721--2722
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2713--2714
+Underfull \hbox (badness 10000) in paragraph at lines 2725--2726
 
  []
 
-<dfs.png, id=2243, 636.87938pt x 636.87938pt>
+<dfs.png, id=2268, 636.87938pt x 636.87938pt>
 File: dfs.png Graphic file (type png)
 <use dfs.png>
-Package pdftex.def Info: dfs.png  used on input line 2727.
+Package pdftex.def Info: dfs.png  used on input line 2739.
 (pdftex.def)             Requested size: 184.29036pt x 184.28214pt.
-[79] [80 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/dfs.png>]
-Overfull \hbox (351.00708pt too wide) in paragraph at lines 2783--2784
+[80 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/dfs.png>] [81]
+Overfull \hbox (351.00708pt too wide) in paragraph at lines 2795--2796
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (129.00482pt too wide) in paragraph at lines 2785--2786
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 2797--2798
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (129.00482pt too wide) in paragraph at lines 2793--2794
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[81]
-Overfull \hbox (129.00482pt too wide) in paragraph at lines 2801--2802
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 2805--2806
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (129.00482pt too wide) in paragraph at lines 2809--2810
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 2813--2814
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 2825--2826
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 2821--2822
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[82]
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 2837--2838
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2829--2830
+Underfull \hbox (badness 10000) in paragraph at lines 2841--2842
 
  []
 
 File: dijkstra.png Graphic file (type png)
 <use dijkstra.png>
-Package pdftex.def Info: dijkstra.png  used on input line 2843.
+Package pdftex.def Info: dijkstra.png  used on input line 2855.
 (pdftex.def)             Requested size: 245.71425pt x 220.29387pt.
-[82]
-<dijkstracamino.png, id=2382, 1035.26775pt x 924.15262pt>
+[83]
+<dijkstracamino.png, id=2386, 1035.26775pt x 924.15262pt>
 File: dijkstracamino.png Graphic file (type png)
 <use dijkstracamino.png>
-Package pdftex.def Info: dijkstracamino.png  used on input line 2858.
+Package pdftex.def Info: dijkstracamino.png  used on input line 2870.
 (pdftex.def)             Requested size: 258.00276pt x 230.3043pt.
- [83] [84 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/dijkstracamino.png>]
-Overfull \hbox (105.00458pt too wide) in paragraph at lines 2904--2905
+ [84 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/dijkstracamino.png>]
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 2916--2917
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 2918--2919
+[85]
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 2930--2931
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2921--2922
+Underfull \hbox (badness 10000) in paragraph at lines 2933--2934
 
  []
 
-[85]
-<astrella.png, id=2455, 636.87938pt x 636.87938pt>
+<astrella.png, id=2449, 636.87938pt x 636.87938pt>
 File: astrella.png Graphic file (type png)
 <use astrella.png>
-Package pdftex.def Info: astrella.png  used on input line 2941.
+Package pdftex.def Info: astrella.png  used on input line 2953.
 (pdftex.def)             Requested size: 196.57889pt x 196.57538pt.
- [86 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/astrella.png>]
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 2992--2993
+[86] [87 </home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/astrella.png>]
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 3004--3005
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-[87]
-Overfull \hbox (63.00415pt too wide) in paragraph at lines 3007--3008
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 3019--3020
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (63.00415pt too wide) in paragraph at lines 3015--3016
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (63.00415pt too wide) in paragraph at lines 3023--3024
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (63.00415pt too wide) in paragraph at lines 3031--3032
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 3027--3028
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [88]
-Underfull \hbox (badness 10000) in paragraph at lines 3041--3042
-
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 3035--3036
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3051--3052
-
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 3043--3044
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 3053--3054
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3055--3056
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3057--3058
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3059--3060
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3061--3062
 
  []
 
@@ -1019,8 +983,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 3063--3064
  []
 
 
-Overfull \hbox (8.49168pt too wide) in paragraph at lines 3065--3065
-[]\OT1/cmr/bx/n/12 ?`C^^Somo puedo en-trar a com-pe-ten-cias de pro-gra-maci^^Son? 
+Underfull \hbox (badness 10000) in paragraph at lines 3065--3066
+
  []
 
 
@@ -1028,12 +992,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 3067--3068
 
  []
 
-
+[89]
 Underfull \hbox (badness 10000) in paragraph at lines 3069--3070
 
  []
 
-[89]
+
 Underfull \hbox (badness 10000) in paragraph at lines 3071--3072
 
  []
@@ -1043,26 +1007,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 3073--3074
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3077.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3075--3076
+
+ []
+
+
+Overfull \hbox (8.49168pt too wide) in paragraph at lines 3077--3077
+[]\OT1/cmr/bx/n/12 ?`C^^Somo puedo en-trar a com-pe-ten-cias de pro-gra-maci^^Son? 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3079--3080
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3081--3082
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3083--3084
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3085--3086
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3089.
 [90]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3077.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3089.
  (/home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3077.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3077.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3089.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3089.
 Package rerunfilecheck Info: File `manual.out' has not changed.
 (rerunfilecheck)             Checksum: F7FA2EFB87421B745B3A36AC915BCDAB;5060.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3077.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3089.
  ) 
 Here is how much of TeX's memory you used:
  10540 strings out of 492167
  148315 string characters out of 6131559
- 440301 words of memory out of 5000000
+ 440281 words of memory out of 5000000
  12971 multiletter control sequences out of 15000+600000
  9727 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,8n,62p,862b,1942s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,8n,62p,862b,1944s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on /home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/manual.pdf (90 pages, 1683288 bytes).
+Output written on /home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/manual.pdf (90 pages, 1686277 bytes).
 PDF statistics:
  3000 PDF objects out of 3580 (max. 8388607)
  2812 compressed objects within 29 object streams

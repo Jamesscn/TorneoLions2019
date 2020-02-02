@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1580616718 "manual.tex" "/home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/manual.pdf" "manual" 1580616723
-  "/home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/manual.aux" 1580616722 20162 b84a2742c490b7f92b0efa2b5cd43a5b ""
+["pdflatex"] 1580627778 "manual.tex" "/home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/manual.pdf" "manual" 1580627783
+  "/home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/manual.aux" 1580627783 20165 35e8a12cd2acc8cf0f02386a72d49231 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1572595918 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1572595918 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -100,10 +100,10 @@
   "greedybueno.png" 1562804243 5884 b362285a023b51854740c0d7e7086a5f ""
   "greedymalo.png" 1562804471 5918 a3bc7dbdd8c96cc7e57d77a45557c615 ""
   "lista.png" 1563090952 59206 daf141726e2e6f1b04f7cc6071f6fb49 ""
-  "manual.aux" 1580616722 20162 b84a2742c490b7f92b0efa2b5cd43a5b "pdflatex"
-  "manual.out" 1580616722 5060 f7fa2efb87421b745b3a36ac915bcdab "pdflatex"
-  "manual.tex" 1580616718 141177 709b359e1071fd3c0035314c5163156e ""
-  "manual.toc" 1580616722 6513 9aeb735b19d8057fa25cafc24475b4c5 "pdflatex"
+  "manual.aux" 1580627783 20165 35e8a12cd2acc8cf0f02386a72d49231 "pdflatex"
+  "manual.out" 1580627783 5060 f7fa2efb87421b745b3a36ac915bcdab "pdflatex"
+  "manual.tex" 1580627778 143407 e3104be8a01b9041fa9d95c09454b76d ""
+  "manual.toc" 1580627783 6514 76d2282e35adf36a325db01432e6b63e "pdflatex"
   "mergesort.png" 1562043815 52497 65261fed2a43d5b4c9df1b320e0f84b1 ""
   "newblack.png" 1561771045 362789 e4d5cc3e65ec959c7d6641092516663b ""
   "nsquared.png" 1561771045 30201 e5da77d1f2f1ebf778e7aefbb54ab2d3 ""
@@ -114,10 +114,10 @@
   "vscode.png" 1561771045 35625 142adad0a7c7c02842a0e482b42ba111 ""
   "vscommunity.png" 1561771045 353342 2e1ec323c1d3c60391d48f2814763cec ""
   (generated)
-  "manual.toc"
-  "manual.log"
-  "manual.out"
-  "manual.pdf"
   "manual.aux"
+  "manual.pdf"
+  "manual.out"
   "/home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/manual.pdf"
+  "manual.toc"
   "/home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/manual.log"
+  "manual.log"
