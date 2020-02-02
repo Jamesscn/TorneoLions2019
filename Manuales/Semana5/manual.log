@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.12.6)  12 DEC 2019 19:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.1)  1 FEB 2020 22:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/manual.tex
+**manual.tex
 (/home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/manual.tex
 LaTeX2e <2019-10-01> patch level 1
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -325,123 +325,123 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 ) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 )
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 49.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 51.
  (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 49.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 53.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 51.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 55.
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
  [3]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 122--123
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 124--125
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [4]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 163--164
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 165--166
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [5] [6]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 210--211
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 212--213
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 220--221
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 222--223
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [7]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 261--262
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 263--264
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (27.00378pt too wide) in paragraph at lines 268--269
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 270--271
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 274--275
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 276--277
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 278--279
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 280--281
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (75.00427pt too wide) in paragraph at lines 286--287
+Overfull \hbox (75.00427pt too wide) in paragraph at lines 288--289
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
 
  []
 
 [9]
-Overfull \hbox (15.00366pt too wide) in paragraph at lines 380--381
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 382--383
 [][][][][][][][][][][][][][][][][] 
  []
 
 [10] [11] [12]
-Overfull \hbox (15.00366pt too wide) in paragraph at lines 471--472
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 473--474
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (57.00409pt too wide) in paragraph at lines 480--481
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 482--483
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [13]
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 532--533
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 534--535
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<memoria.png, id=608, 791.3565pt x 571.83638pt>
+[14]
+<memoria.png, id=639, 791.3565pt x 571.83638pt>
 File: memoria.png Graphic file (type png)
 <use memoria.png>
-Package pdftex.def Info: memoria.png  used on input line 546.
+Package pdftex.def Info: memoria.png  used on input line 548.
 (pdftex.def)             Requested size: 245.71425pt x 177.55539pt.
-[14]
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 566.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 568.
  [15 </home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/memoria.png>]
-<puntero.png, id=657, 851.88263pt x 671.20763pt>
+<puntero.png, id=655, 851.88263pt x 671.20763pt>
 File: puntero.png Graphic file (type png)
 <use puntero.png>
-Package pdftex.def Info: puntero.png  used on input line 594.
+Package pdftex.def Info: puntero.png  used on input line 596.
 (pdftex.def)             Requested size: 245.71425pt x 193.60056pt.
- [16 </home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/puntero.png>] [17] [18] [19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 800.
- [20] [21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 800.
+ [16 </home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/puntero.png>] [17] [18] [19] [20]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 802.
+ [21]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 802.
  (/home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 800.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 800.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 802.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 802.
 Package rerunfilecheck Info: File `manual.out' has not changed.
 (rerunfilecheck)             Checksum: 36EFFCF8A8EB844D758666A3B6AADC25;2038.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 800.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 802.
  ) 
 Here is how much of TeX's memory you used:
  8915 strings out of 492167
- 125610 string characters out of 6131558
- 427493 words of memory out of 5000000
+ 125610 string characters out of 6131559
+ 426575 words of memory out of 5000000
  12585 multiletter control sequences out of 15000+600000
  9624 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,6n,62p,606b,1837s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,6n,62p,545b,1837s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/manual.pdf (21 pages, 490118 bytes).
+Output written on /home/james/Documents/Lions/TorneoLions2019/Manuales/Semana5/manual.pdf (21 pages, 490274 bytes).
 PDF statistics:
  982 PDF objects out of 1000 (max. 8388607)
  934 compressed objects within 10 object streams

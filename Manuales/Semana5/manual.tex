@@ -31,15 +31,17 @@
 
 \section{Programación orientado a objetos}
 
-Como hemos visto anteriormente es conveniente trabajar con grupos de datos en structs en lugar de guardar los datos en pares de pares o tenerlos sueltos. Cada instancia de un struct se puede conocer como un objeto, todos los objetos tienen la caracteristica de ser conformado por distintos datos y se pueden crear diferentes instancias de un objeto con valores distintos. Un objeto puede ser visto como una base que puede ser duplicado y que mantiene sus datos de manera estructurada.
+Como hemos visto anteriormente es conveniente trabajar con structs en lugar de guardar los datos en pares de pares o usar variables sueltos. El struct es algo que se conoce como un objeto; existen varios tipos de objetos y pueden ser vistos como estructuras que almacenan datos. Estos objetos son útiles porque se pueden crear varios 'instancias' o copias de ellos que actuan de manera independiente. Es decir, contienen datos distintos pero siguen la misma estructura.
 
-Como hemos visto con los structs cada objeto puede ser instancializado o destruido (esto tiende a ocurrir despues de que termina nuestro programa), y cada objeto puede ser declarado con un nombre unico.
+Como hemos visto con los structs cada objeto puede ser construido (instancializado) o destruido (esto tiende a ocurrir despues de que termina nuestro programa), y cada objeto puede ser declarado con un nombre único.
 
 \subsection{Uniones}
 
-La unión es un objeto parecido a un struct con la unica diferencia que solo permite que el usuario guarde un dato en todas sus variables en un cierto tiempo para ahorrar espacio de memoria. Esta estructura siempre ocupará el tamaño de la variable más grande de la lista de todas sus variables.
+La unión es un objeto parecido a un struct con la única diferencia siendo que solo se puede usar una sola variable de los declarados en un cierto tiempo con el fin de ahorrar memoria. Esta estructura siempre ocupará el tamaño de la variable más grande de la lista de todas sus variables.
 
-Por ejemplo, si se tiene un int, un float y un long long int en un struct este ocuparía un espacio de 16 bytes para guardar los 4 bytes del int, los 4 bytes del float y los 8 bytes del long long int, pero una union con estas tres variables solo ocupará 8 bytes porque este es el tamaño del dato mas grande (el long long int).
+Debido a la naturaleza de esta estructura, es sumamente raro encontrarlo en código real debido a que tiene pocas aplicaciones y porque el ahorro de memoria tiende a ser insignificante.
+
+Si se tiene un int, un float y un long long int en un struct este ocuparía un espacio de 16 bytes para guardar los 4 bytes del int, los 4 bytes del float y los 8 bytes del long long int, pero una union con estas tres variables solo ocupará 8 bytes porque este es el tamaño del dato mas grande (el long long int).
 
 Una desventaja de este tipo de dato es que no se puede saber cual es la variable que esta siendo guardado, asi que se debe usar otra variable o tener un contexto especifico. Debido a estas limitaciones la union es una estructura raramente usada.
 
@@ -106,7 +108,7 @@ int main() {
 }
 \end{lstlisting}
 
-Algo que habiamos mencionado es que las clases pueden tener sus propios funciones, asi que crearemos uno para ver cuanto dinero tiene cada cliente y otro para sumarle una cantidad de dinero a su cuenta:
+Algo que habiamos mencionado es que las clases pueden tener sus propias funciones, asi que crearemos uno para ver cuanto dinero tiene cada cliente y otro para sumarle una cantidad de dinero a su cuenta:
 
 \begin{lstlisting}[language=C++, caption=Funciones internas]
 #include <iostream>
