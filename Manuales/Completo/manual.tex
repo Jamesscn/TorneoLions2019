@@ -6,11 +6,24 @@
 \usepackage{listings}
 \usepackage{hyperref}
 \usepackage{amsmath}
+\usepackage{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,      
     urlcolor=cyan,
+}
+\lstset{language=C++,
+	basicstyle=\ttfamily,
+	keywordstyle=\color{blue}\ttfamily,
+	stringstyle=\color{OliveGreen}\ttfamily,
+	commentstyle=\color{darkgray}\ttfamily,
+	morecomment=[l][\color{magenta}]{\#},
+	showstringspaces=false,
+	frame=single,
+	breaklines,,
+	tabsize=2
 }
 \urlstyle{same}
 
@@ -36,6 +49,8 @@ El objetivo de este manual consiste en exponer y explicar los conceptos más fun
 Por suerte, la mayoría de los conceptos que se presentarán a continuación también pueden ser aplicados en otros lenguajes como Java o Python, y no necesariamente tienen que ser utilizados bajo el contexto de la programación competitiva.
 
 Para poder empezar a crear y probar código es necesario instalar algún software llamado IDE (Entorno de desarrollo integrado en español) que es capáz de compilar y ejecutar archivos de C++.
+
+En este documento se incluirán ejemplos de código los cuales recomendamos que prueben y modifiquen para que obtengan una idea de como programar. Además algunos de los ejemplos tendrán una liga al código, la cual les permitirá ejecutar el programa dentro de la pagina de repl.it.
 
 \section{Instalación de IDE para editar y compilar C++}
 
@@ -93,7 +108,7 @@ Esto es semejante a escribir un ensayo en un procesador de texto. El compilador 
 
 A continuación se mostrará un programa con cuatro líneas de código que no hace absolutamente nada, simplemente se abre y se cierra. Por ahora no importa tanto el significado de este código, solo es relevante saber que actuará como una base para todos los demás programas que se estarán escribiendo.
 
-\begin{lstlisting}[language=C++, caption=Las cuatro líneas esenciales]
+\begin{lstlisting}[language=C++, title=Las cuatro líneas esenciales]
 #include <iostream>
 
 using namespace std;
@@ -103,20 +118,20 @@ int main() {
 }
 \end{lstlisting}
 
-Si se puede compilar y correr este programa sin problemas entonces se ha configurado la IDE correctamente. Todo el código que se estará escribiendo en esta sección se colocará entre los dos llaves. Para mejorar la aparencia del código, se le debe agregar un espacio \textbf{tab} antes de cada línea de código dentro de estas dos llaves.
+Si se puede compilar y correr este programa sin problemas entonces se ha configurado el IDE correctamente. Todo el código que se estará escribiendo en esta sección se colocará entre los dos llaves. Para mejorar la aparencia del código, se le debe agregar un espacio \textbf{tab} antes de cada línea de código dentro de estas dos llaves.
 
 Ahora modificaremos nuestro programa para que sume dos números enteros agregandole código. Para hacer esto tendremos que primero guardar los valores dentro de la memoria del programa, hacer la suma de estos dos números y finalmente desplegar el resultado en la pantalla.
 
 Se pueden guardar datos en nuestros programas mediante el uso de variables, pero tenemos que nombrar cada variable para diferenciarlos. Para guardar nuestros dos enteros escribimos una línea para cada variable con int seguido por el nombre de la variable después (sin espacios y sin caracteres especiales). Finalmente, le ponemos un punto y coma después de cada línea para decirle que eso es lo unico que queremos hacer en esa línea.
 
-\begin{lstlisting}[language=C++, caption=Dos variables]
+\begin{lstlisting}[language=C++, title=Dos variables]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int a;
-    int b;
+	int a;
+	int b;
 }
 \end{lstlisting}
 
@@ -126,13 +141,13 @@ Ahora le hemos dicho a nuestro compilador que el programa debe administrar dos n
 
 También es válido asignarle un valor a una variable en la misma línea donde se define esa variable. Para demostrar esto, modificaremos la segunda línea del código para que quede de la siguiente manera: \textbf{int b = 2;}
 
-\begin{lstlisting}[language=C++, caption=Guardando valores]
+\begin{lstlisting}[language=C++, title=Guardando valores]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int a;
+	int a;
 	int b = 2;
 	a = 5;
 }
@@ -146,16 +161,16 @@ Se le tiene que indicar al programa que primero existe una variable \textbf{a} a
 
 Continuando con nuestro programa, se requiere hacer la suma. Se pueden sumar dos valores escribiendo una variable o un valor seguido por un signo \textbf{+} y la otra variable o el otro valor.
 
-\begin{lstlisting}[language=C++, caption=Guardando valores]
+\begin{lstlisting}[language=C++, title=Guardando valores]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int a;
-    a = 5;
-    int b = 2;
-    a + b;
+	int a;
+	a = 5;
+	int b = 2;
+	a + b;
 }
 \end{lstlisting}
 
@@ -165,16 +180,16 @@ Como el compilador sigue el código al pie de la letra se sumarán los dos valor
 
 Para desplegar un valor a la pantalla es necesario escribir cout seguido por un espacio, dos signos \textbf{<} y otro espacio. Al final de esta línea se debe colocar el valor que se desea mostrar seguido por un punto y coma.
 
-\begin{lstlisting}[language=C++, caption=Tu primer programa]
+\begin{lstlisting}[language=C++, title=Tu primer programa]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int a;
-    a = 5;
-    int b = 2;
-    cout << a + b;
+	int a;
+	a = 5;
+	int b = 2;
+	cout << a + b;
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Mi-primer-programa}{Liga al código}\\
@@ -183,7 +198,7 @@ Al hacer esta modificación se podrá ver el número 7 desplegado en la pantalla
 
 Una de las maravillas de la programación es que existen miles de maneras de escribir el mismo código. Por ejemplo, pudimos haber creado una variable c la cual pudiera haber guardado la suma, luego pudieramos haber desplegado esta variable:
 
-\begin{lstlisting}[language=C++, caption=¿El mismo programa?]
+\begin{lstlisting}[language=C++, title=¿El mismo programa?]
 #include <iostream>
 
 using namespace std;
@@ -201,26 +216,26 @@ int main() {
 
 También se pudiera haber agrupado las variables a y b en una misma línea de la siguiente manera:
 
-\begin{lstlisting}[language=C++, caption=¿El mismo programa?]
+\begin{lstlisting}[language=C++, title=¿El mismo programa?]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int a = 5, b = 2;
-    cout << a + b;
+	int a = 5, b = 2;
+	cout << a + b;
 }
 \end{lstlisting}
 
 O simplemente se pudiera haber decidido no establecer variables y desplegar la suma de dos valores directamente:
 
-\begin{lstlisting}[language=C++, caption=¿El mismo programa?]
+\begin{lstlisting}[language=C++, title=¿El mismo programa?]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    cout << 2 + 5;
+	cout << 2 + 5;
 }
 \end{lstlisting}
 
@@ -232,27 +247,27 @@ C++ te permite escribir comentarios entre el código y estos pueden servir para 
 
 El tipo de comentario más popular es el de una sola línea; se inician con dos $/$ seguidos por la nota.
 
-\begin{lstlisting}[language=C++, caption=Comentario]
+\begin{lstlisting}[language=C++, title=Comentario]
 #include <iostream>
 
 using namespace std;
 
 //Los comentarios pueden ir en lineas separadas
 int main() {
-    //En cualquier parte del codigo
-    int a; //Incluso aqui!
-    int b; 
-    int c; //Esta variable es la suma de a y b
-    a = 5;
-    b = 2;
-    c = a + b; //Aqui se hace la suma
-    cout << c; //Aqui se imprime el resultado
+	//En cualquier parte del codigo
+	int a; //Incluso aqui!
+	int b;
+	int c; //Esta variable es la suma de a y b
+	a = 5;
+	b = 2;
+	c = a + b; //Aqui se hace la suma
+	cout << c; //Aqui se imprime el resultado
 }
 \end{lstlisting}
 
 Tambien existen los comentarios de multiples líneas, estos se deben iniciar con $/*$ y se deben terminar con $*/$
 
-\begin{lstlisting}[language=C++, caption=Comentario]
+\begin{lstlisting}[language=C++, title=Comentario]
 #include <iostream>
 
 using namespace std;
@@ -262,70 +277,146 @@ using namespace std;
     Tambien sirve para temporalmente deshabilitar codigo
 */
 int main() {
-    int a; /* Tambien pueden ocupar una sola linea */
-    int b; 
-    int c;
-    a = 5;
-    b = 2;
-    c = a + b;
-    cout << c;
+	int a; /* Tambien pueden ocupar una sola linea */
+	int b;
+	int c;
+	a = 5;
+	b = 2;
+	c = a + b;
+	cout << c;
 }
 \end{lstlisting}
 
 \section{Leyendo y escribiendo}
 
-A la hora de compilar y ejecutar el programa, seguramente notaste que se abre una consola con todo lo que decidiste ver. Esto es porque C++ corre dentro de esa consola (Tu compilador ejecuta comandos para abrir el programa sin que tú veas).
+A la hora de ejecución lo más probable es que se haya abierto una ventana o consola que despliega el resultado deseado. Esto ocurre porque C++ corre dentro de esa consola, no dentro del IDE. La función del IDE es traducir el código a binario y mandarselo directamente la consola.
 
-Esto te permite leer y escribir datos mientras que tu programa corre. Ya se ha visto que para escribir datos, se puede utilizar cout (que significa c + out o output de C) seguido por la variable que quieres "imprimir" a la consola.
+La consola te permite leer y escribir datos mientras que tu programa corre. Ya se ha visto que para escribir datos, se puede utilizar cout (que significa \textbf{c} + \textbf{out} o Output de C) seguido por la variable o la expresión que quieres "imprimir" a la consola.
 
-Para leer datos, se ocupa tener una variable para almacenar ese dato de entrada, luego se debe utilizar cin (que significa c + in o input de C) seguido por esa variable.
+Para leer datos, se ocupa tener una variable para almacenar ese dato de entrada, luego se debe utilizar cin (que significa \textbf{c} + \textbf{in} o Input de C) seguido por esa variable.
 
 Estas dos herramientas te permiten crear programas generales que resuelven problemas especificos.
 
-Digamos que queremos crear un programa que lee dos números enteros (sin importar cuales sean) y que imprime su suma. Podemos crear este programa utilizando cin y cout para que el usuario diga cuales dos números quiere que sume.
+Se pueden escribir varias cosas a la consola en una misma línea usando cout, pero cada expresión debe tener dos signos < antes. Una expresión util de C++ es \textbf{endl}, que sirve como un separador de línea. Es decir, cada vez que se coloca uno de ellos lo que le sigue será escrito en una nueva línea. El siguiente código debe imprimir los números 1, 2, 3 y 4 en nuevas líneas.
 
-\begin{lstlisting}[language=C++, caption=Suma]
+\begin{lstlisting}[language=C++, title=Uno a tres]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int a, b;
-    cin >> a >> b;
-    cout << a + b << endl;
+	cout << 1 << endl << 2 << endl << 3 << endl << 4 << endl;
+}
+\end{lstlisting}
+
+Es una buena costumbre siempre colocar un endl al final de cada cout a pesar de que no le sigue nada.
+
+Para leer datos con cin se deben colocar los nombres de las variables, los cuales guardaran los datos que se desean leer, junto con dos signos > antes. Como se puede ver, cout y cin tiene sintaxis parecido solo que la dirección de la flecha cambia.
+
+Si queremos recibir dos números enteros del usuario entonces debemos definir las variables primero (en caso contrario el compilador no sabrá a que te refieres cuando le dices que quieres guardar valores ahí) y luego usar cin con las variables que queremos.
+
+\begin{lstlisting}[language=C++, title=Leyendo dos enteros]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int a;
+	int b;
+	cin >> a >> b;
+}
+\end{lstlisting}
+
+Nota que aquí no se utiliza endl ya que cin automaticamente espera a que saltes la línea hasta guardar el valor dentro de las variables.
+
+Si se compila y se ejecuta este código la consola esperará a que ingreses un valor y que saltes a la siguiente línea. Una vez que se hace eso, ese valor se guardara en la variable a. Luego esperará a que ingreses otro número y ese sera guardado en la variable b. No se podrá ver nada más en la consola debido a que no estamos imprimiendo nada con cin. Ahora crearemos un programa que lee variables y que haga algo con ellos.
+
+Digamos que queremos diseñar un programa que lea dos números enteros (sin importar cuales sean) y que imprime su suma. Podemos crear este programa utilizando cin y cout para que el usuario diga cuales dos números quiere que se sumen de la siguiente manera.
+
+\begin{lstlisting}[language=C++, title=Suma]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	cout << a + b << endl;
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Suma}{Liga al código}\\
 
-Cuando ejecutas tu código, verás que la consola esta esperando una entrada. Puedes ingresar dos números separados por espacios y picarle enter o poner el primer número, picar enter, poner el segundo y picarle enter denuevo. Al terminar de hacer eso, verás que tu programa hace la suma instantaneamente y que lo despliega debajo de los números que le diste.
+Cuando se ejecuta el código, se esperará a que se ingrese el primer número y que se de un salto de línea. Una vez que eso ocurre se debe ingresar el segundo valor y saltar la línea nuevamente. Al dar el segundo salto se debe ver la suma de manera inmediata.
+
+Esto ocurre debido a que el primer valor se guarda en a y a que el segundo valor se guarda en b. El código sumará estos dos valores y finalmente imprimirá la suma.
+
+Una manera alternativa de ingresar los números es poner los dos números separados por un espacio y saltar la línea. Si se ingresan más de dos valores, solo los primeros dos valores serán considerados.
 
 \section{Operaciones básicas}
 
 \subsection{Suma, resta, multiplicación, división}
 
-Como se sabe, puedes sumar, restar, multiplicar y dividir con los símbolos +, -, * y /.
+Además de sumar se puede restar, multiplicar y dividir expresiones con los símbolos -, * y / respectivamente. Además de esto, es posible hacer una operación y guardar el resultado en una variable combinando el signo con un signo de igual: +=, -=, *= y /=. El siguiente código muestra un ejemplo de todos estos operadores
 
-Además de estos, si quieres guardar el resultado de una operación con una variable en esa misma variable, puedes simplificar la notación utilizando los operadores +=, -=, *= y /=.
+\begin{lstlisting}[language=C++, title=Operaciones basicas]
+#include <iostream>
 
-\textbf{int x += 5;}
+using namespace std;
 
-\textbf{int x -= 8;}
+int main() {
+	cout << 3 + 5 << endl; //Hace la suma e imprime 8
+	cout << 22 - 7 << endl; //Hace la resta e imprime 15
+	cout << 8 * 8 << endl; //Hace la multiplicacion e imprime 64
+	cout << 243 / 3 << endl; //Hace la division e imprime 81
 
-\textbf{int x *= 2;}
+	int miNumero = 6;
+	miNumero += 2; //miNumero ahora vale 8
+	cout << miNumero << endl;
+	miNumero -= 1; //miNumero ahora vale 7
+	cout << miNumero << endl;
+	miNumero *= 10; //miNumero ahora vale 70
+	cout << miNumero << endl;
+	miNumero /= 5; //miNumero ahora vale 14
+	cout << miNumero << endl;
+}
+\end{lstlisting}
 
-\textbf{int x /= 6;}
+Si solo quisieras sumarle o restarle uno a una variable y guardar los cambios, entonces se pueden usar los operadores ++ para incrementar uno y -- para decrementar uno.
 
-Para sumar y restar solo uno, la notación es aun mas sencilla:
+\begin{lstlisting}[language=C++, title=Incrementos y decrementos]
+#include <iostream>
 
-\textbf{x++;}
+using namespace std;
 
-\textbf{x--;}
+int main() {
+	int x = 4;
+	x++; //x vale 5;
+	x++; //x vale 6;
+	cout << x << endl; //imprime 6
+	x--; //x vale 5;
+	cout << x << endl; //imprime 5
+	x--; //x vale 4
+	x--; //x vale 3
+	cout << x << endl; //imprime 3
+}
+\end{lstlisting}
 
 \subsection{Modulación}
 
-Una operación muy util e importante es la que se llama modulación, este se utiliza para sacar el residuo de una división con el simbolo \%.
+Una operación muy importante es la que se llama modulación, este se utiliza para sacar el residuo de una división con el simbolo \%. Los residuos son útiles para muchas razones, como asegurar que un número siempre tendrá un límite máximo y para determinar la paridad de un valor. Más adelante se explicará este concepto a detalle, pero por ahora solo se mostrará como se obtiene.
 
-Digamos que queremos el residuo de 13 dividido por 5, esto lo sacamos simplemente con \textbf{13 \% 5;}
+Por ejemplo, si dividimos 13 entre 5 sabemos que el resultado sería 2 con un residuo de 3 porque \textbf{2} * 5 + \textbf{3} nos da el valor original, 13. Para obtener el resultado de 2 en C++ podemos hacer la division \textbf{13 / 5}, pero para obtener el residuo de 3 tenemos que hacer \textbf{13 \% 5}. Podemos probar esto con el siguiente código:
+
+\begin{lstlisting}[language=C++, title=Operaciones basicas]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	cout << 13 / 5 << endl; //Esto nos da el resultado el cual es 2
+	cout << 13 % 5 << endl; //Esto nos da el residuo el cual es 3
+}
+\end{lstlisting}
 
 \section{Tipos de datos}
 
@@ -393,11 +484,11 @@ Para una función, se dice que se "regresa" su salida porque para indicar que se
 
 Un ejemplo sencillo es una función que suma dos números enteros A y B y que regresa otro entero C, la suma. Esto lo podemos implementar de la siguiente manera:
 
-\begin{lstlisting}[language=C++, caption=Función de suma]
-    int suma(int a, int b) {
-        int c = a + b;
-        return c;
-    }
+\begin{lstlisting}[language=C++, title=Función de suma]
+int suma(int a, int b) {
+	int c = a + b;
+	return c;
+}
 \end{lstlisting}
 
 Como se puede ver, se inicia una función con un tipo de dato que corresponde al tipo de dato de la salida. Como int va antes que el nombre de la función (suma), nos dice que queremos que regrese un entero.
@@ -410,36 +501,36 @@ Declaramos otro entero c y le asignamos la suma de a y b, luego lo regresamos, e
 
 Todas las funciones tienen que estar colocados antes de main de tal manera:
 
-\begin{lstlisting}[language=C++, caption=Función de suma]
-    #include <iostream>
+\begin{lstlisting}[language=C++, title=Función de suma]
+#include <iostream>
 
-    using namespace std;
-    
-    int suma(int a, int b) {
-        int c = a + b;
-        return c;
-    }
+using namespace std;
 
-    int main() {
+int suma(int a, int b) {
+	int c = a + b;
+	return c;
+}
 
-    }
+int main() {
+
+}
 \end{lstlisting}
 
 Ahora, podemos llamar nuestra función dentro de main dandole los parametros que queremos:
 
-\begin{lstlisting}[language=C++, caption=Función de suma]
-    #include <iostream>
+\begin{lstlisting}[language=C++, title=Función de suma]
+#include <iostream>
 
-    using namespace std;
-    
-    int suma(int a, int b) {
-        int c = a + b;
-        return c;
-    }
+using namespace std;
 
-    int main() {
-        cout << suma(3, 5) << endl;
-    }
+int suma(int a, int b) {
+	int c = a + b;
+	return c;
+}
+
+int main() {
+	cout << suma(3, 5) << endl;
+}
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Funciones}{Liga al código}\\
 
@@ -447,18 +538,18 @@ Al ejecutar este código, nos despliegara un 8.
 
 Otro ejemplo es una función que regresa la división de dos enteros:
 
-\begin{lstlisting}[language=C++, caption=Función de división]
-    #include <iostream>
+\begin{lstlisting}[language=C++, title=Función de división]
+#include <iostream>
 
-    using namespace std;
-    
-    float divide(int a, int b) {
-        return (float)a / b;
-    }
+using namespace std;
 
-    int main() {
-        cout << divide(5, 2) << endl;
-    }
+float divide(int a, int b) {
+	return (float)a / b;
+}
+
+int main() {
+	cout << divide(5, 2) << endl;
+}
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Funciones}{Liga al código}\\
 
@@ -472,17 +563,17 @@ La pieza fundamental detrás de cualquier programa es su lógica, y no puede hab
 
 La manera mas sencilla de comparar datos es con el condicional \textbf{if}. Este es capaz de correr código solo cuando se cumple cierta condición. Para utilizar este, se debe iniciar escribiendo \textbf{if} y se debe incluir una condición entre paréntesis, luego el código que se desea correr entre llaves.
 
-\begin{lstlisting}[language=C++, caption=Condiciones]
+\begin{lstlisting}[language=C++, title=Condiciones]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int a, b;
-    cin >> a >> b;
-    if(a + b > 5) {
-        cout << "La suma es mayor a cinco" << endl;
-    }
+	int a, b;
+	cin >> a >> b;
+	if(a + b > 5) {
+		cout << "La suma es mayor a cinco" << endl;
+	}
 }
 \end{lstlisting}
 
@@ -490,58 +581,58 @@ Aqui, tenemos una condición que checa si la suma de A y B es mayor a 5. En el c
 
 Ahora modificaremos el código para que se imprima "La suma es menor o igual que cinco" cuando no se cumple la primera condición.
 
-\begin{lstlisting}[language=C++, caption=Condiciones]
+\begin{lstlisting}[language=C++, title=Condiciones]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int a, b;
-    cin >> a >> b;
-    if(a + b > 5) {
-        cout << "La suma es mayor a cinco" << endl;
-    }
-    if(a + b <= 5) {
-        cout << "La suma es menor o igual a cinco" << endl;
-    }
+	int a, b;
+	cin >> a >> b;
+	if(a + b > 5) {
+		cout << "La suma es mayor a cinco" << endl;
+	}
+	if(a + b <= 5) {
+		cout << "La suma es menor o igual a cinco" << endl;
+	}
 }
 \end{lstlisting}
 
 Podemos simplificar este código con el condicional \textbf{else}, que se ejecuta cuando una condición \textbf{if} NO se cumple. Este se puede agregar después de la ultima llave y deberá tener otro par de llaves después.
 
-\begin{lstlisting}[language=C++, caption=Else]
+\begin{lstlisting}[language=C++, title=Else]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int a, b;
-    cin >> a >> b;
-    if(a + b > 5) {
-        cout << "La suma es mayor a cinco" << endl;
-    } else {
-        cout << "La suma es menor o igual a cinco" << endl;
-    }
+	int a, b;
+	cin >> a >> b;
+	if(a + b > 5) {
+		cout << "La suma es mayor a cinco" << endl;
+	} else {
+		cout << "La suma es menor o igual a cinco" << endl;
+	}
 }
 \end{lstlisting}
 
 Digamos que ahora queremos checar si la suma es menor, igual o mayor que cinco. Se puede agregar un tercer condicional \textbf{else if} que ocurre cuando la primera condición falla pero otra condición se cumple. Se puede tener varios \textbf{else if} encadenados.
 
-\begin{lstlisting}[language=C++, caption=Else if]
+\begin{lstlisting}[language=C++, title=Else if]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int a, b;
-    cin >> a >> b;
-    if(a + b > 5) {
-        cout << "La suma es mayor a cinco" << endl;
-    } else if (a + b == 5) {
-        cout << "La suma es igual a cinco" << endl;
-    } else {
-        cout << "La suma es menor a cinco" << endl;
-    }
+	int a, b;
+	cin >> a >> b;
+	if(a + b > 5) {
+		cout << "La suma es mayor a cinco" << endl;
+	} else if (a + b == 5) {
+		cout << "La suma es igual a cinco" << endl;
+	} else {
+		cout << "La suma es menor a cinco" << endl;
+	}
 }
 \end{lstlisting}
 
@@ -557,32 +648,32 @@ Para preguntar si dos valores son iguales, se utilizan dos signos de igual \text
 
 Finalmente, existen los operadores lógicos \textbf{\&\&} y \textbf{$||$} que pueden ser utilizados para juntar condiciones. El primero se utiliza para correr código siempre y cuando las condiciones pegadas a él sean ciertos, mientras que el segundo sirve cuando cualquiera de los dos son ciertos.
 
-\begin{lstlisting}[language=C++, caption=Condiciones]
+\begin{lstlisting}[language=C++, title=Condiciones]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int a, b;
-    cin >> a >> b;
-    if(a == b) {
-        cout << "A es igual a B" << endl;
-    }
-    if(a > 5) {
-        cout << "A es mayor a 5" << endl;
-    }
-    if(b <= 10) {
-        cout << "B es menor o igual que 10" << endl;
-    }
-    if(b != -6) {
-        cout << "B no es igual a -6" << endl;
-    }
-    if(a < 1 && b > 1) {
-        cout << "A es menor que 1 y B es mayor que 1" << endl;
-    }
-    if(a == 1 || b == 1) {
-        cout << "Una de las variables A o B es igual a 1" << endl;
-    }
+	int a, b;
+	cin >> a >> b;
+	if(a == b) {
+		cout << "A es igual a B" << endl;
+	}
+	if(a > 5) {
+		cout << "A es mayor a 5" << endl;
+	}
+	if(b <= 10) {
+		cout << "B es menor o igual que 10" << endl;
+	}
+	if(b != -6) {
+		cout << "B no es igual a -6" << endl;
+	}
+	if(a < 1 && b > 1) {
+		cout << "A es menor que 1 y B es mayor que 1" << endl;
+	}
+	if(a == 1 || b == 1) {
+		cout << "Una de las variables A o B es igual a 1" << endl;
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Condiciones}{Liga al código}\\
@@ -597,37 +688,37 @@ Digamos que ocupas saber la suma de 1 a 100. Esto se puede escribiendo cien lín
 
 Aqui les mostramos el ejemplo con cien líneas:
 
-\begin{lstlisting}[language=C++, caption=Suma línea por línea]
+\begin{lstlisting}[language=C++, title=Suma línea por línea]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int suma = 0;
-    suma += 1;
-    suma += 2;
-    suma += 3;
-    ...
-    suma += 98;
-    suma += 99;
-    suma += 100;
-    cout << suma << endl;
+	int suma = 0;
+	suma += 1;
+	suma += 2;
+	suma += 3;
+	...
+	suma += 98;
+	suma += 99;
+	suma += 100;
+	cout << suma << endl;
 }
 \end{lstlisting}
 
 Y esto es la simplificación con el ciclo for:
 
-\begin{lstlisting}[language=C++, caption=Suma con ciclo for]
+\begin{lstlisting}[language=C++, title=Suma con ciclo for]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int suma = 0;
-    for(int i = 1; i <= 100; i++) {
-        suma += i;
-    }
-    cout << suma;
+	int suma = 0;
+	for(int i = 1; i <= 100; i++) {
+		suma += i;
+	}
+	cout << suma;
 }
 \end{lstlisting}
 
@@ -645,29 +736,29 @@ Con esta información, podemos ver que primero se guarda 1 en la variable \textb
 
 Si queremos hacer un ciclo que nos de los números 0 a 4 en orden ascendiente, podemos modificar el código de la siguiente manera:
 
-\begin{lstlisting}[language=C++, caption=Ciclo for]
+\begin{lstlisting}[language=C++, title=Ciclo for]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    for(int i = 0; i < 5; i++) {
-        cout << i << endl;
-    }
+	for(int i = 0; i < 5; i++) {
+		cout << i << endl;
+	}
 }
 \end{lstlisting}
 
 Y en caso de que queremos que nos den los valores de 4 a 0 en orden descendiente, podemos modificarlo para que reste en lugar de sumar.
 
-\begin{lstlisting}[language=C++, caption=Ciclo for]
+\begin{lstlisting}[language=C++, title=Ciclo for]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    for(int i = 4; i >= 0; i--) {
-        cout << i << endl;
-    }
+	for(int i = 4; i >= 0; i--) {
+		cout << i << endl;
+	}
 }
 \end{lstlisting}
 
@@ -679,17 +770,17 @@ Se debe de tener cuidado con los ciclos while debido a que pueden correrse infin
 
 Para crear un ciclo while, se utiliza el mismo sintaxis que el condicional if con el nombre \textbf{while}. El código dentro de las llaves seguira corriendo hasta que la condición sea falsa.
 
-\begin{lstlisting}[language=C++, caption=Ciclo while]
+\begin{lstlisting}[language=C++, title=Ciclo while]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int potenciaDos = 1;
-    while(potenciaDos < 100) {
-        potenciaDos *= 2;
-    }
-    cout << potenciaDos << endl;
+	int potenciaDos = 1;
+	while(potenciaDos < 100) {
+		potenciaDos *= 2;
+	}
+	cout << potenciaDos << endl;
 }
 \end{lstlisting}
 
@@ -701,25 +792,25 @@ Si tienes algún ciclo y quisieras salirte de ese ciclo bajo una condición que 
 
 Digamos que queremos hacer un ciclo que termine después de 100 iteraciones o después de que se encuentren tres números consecutivos que suman 20. Esto se puede implementar con un ciclo for y un break de la siguiente manera:
 
-\begin{lstlisting}[language=C++, caption=Break]
+\begin{lstlisting}[language=C++, title=Break]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    bool existeSuma = false;
-    for(int i = 0; i < 100; i++) {
-        int suma = i + (i + 1) + (i + 2);
-        if(suma == 20) {
-            existeSuma = true;
-            cout << "La suma es: " << endl;
-            cout << i << ", " << i + 1 << ", " << i + 2 << endl;
-            break;
-        }
-    }
-    if(existeSuma == false) {
-        cout << "La suma no existe!" << endl;
-    }
+	bool existeSuma = false;
+	for(int i = 0; i < 100; i++) {
+		int suma = i + (i + 1) + (i + 2);
+		if(suma == 20) {
+			existeSuma = true;
+			cout << "La suma es: " << endl;
+			cout << i << ", " << i + 1 << ", " << i + 2 << endl;
+			break;
+		}
+	}
+	if(existeSuma == false) {
+		cout << "La suma no existe!" << endl;
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Suma-Triple}{Liga al código}\\
@@ -734,55 +825,55 @@ Digamos que estamos iterando sobre todos los números menores a 100 y queremos s
 
 En la primera se puede tener un solo caso if con dos condiciones unidos con el operador \&\&
 
-\begin{lstlisting}[language=C++, caption=Condiciones con and]
+\begin{lstlisting}[language=C++, title=Condiciones con and]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    for(int i = 0; i < 100; i++) {
-        if(i % 2 != 0 && i % 3 != 0) {
-            cout << i << endl;
-        }
-    }
+	for(int i = 0; i < 100; i++) {
+		if(i % 2 != 0 && i % 3 != 0) {
+			cout << i << endl;
+		}
+	}
 }
 \end{lstlisting}
 
 Para la segunda manera se puede tener dos ifs anidados:
 
-\begin{lstlisting}[language=C++, caption=Dos condiciones]
+\begin{lstlisting}[language=C++, title=Dos condiciones]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    for(int i = 0; i < 100; i++) {
-        if(i % 2 != 0) {
-            if(i % 3 != 0) {
-                cout << i << endl;
-            }
-        }
-    }
+	for(int i = 0; i < 100; i++) {
+		if(i % 2 != 0) {
+			if(i % 3 != 0) {
+				cout << i << endl;
+			}
+		}
+	}
 }
 \end{lstlisting}
 
 Y para la tercera podemos usar dos casos if con continue:
 
-\begin{lstlisting}[language=C++, caption=Continue]
+\begin{lstlisting}[language=C++, title=Continue]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    for(int i = 0; i < 100; i++) {
-        if(i % 2 == 0) {
-            continue;
-        }
-        if(i % 3 == 0) {
-            continue;
-        }
-        cout << i << endl;
-    }
+	for(int i = 0; i < 100; i++) {
+		if(i % 2 == 0) {
+			continue;
+		}
+		if(i % 3 == 0) {
+			continue;
+		}
+		cout << i << endl;
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Numeros-no-hexagonales}{Liga al código}\\
@@ -796,19 +887,19 @@ Este error es uno de los más graves y más dificiles de detectar debido a que l
 
 Esto pasa cuando defines una variable pero no le das un valor inicial. Por ejemplo:
 
-\begin{lstlisting}[language=C++, caption=Error de inicialización]
+\begin{lstlisting}[language=C++, title=Error de inicialización]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int i = 1;
-    int suma;
-    while(i <= 100) {
-        suma += i;
-        i++;
-    }
-    cout << suma << endl;
+	int i = 1;
+	int suma;
+	while(i <= 100) {
+		suma += i;
+		i++;
+	}
+	cout << suma << endl;
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Suma-Imposible}{Liga al código}\\
@@ -828,18 +919,18 @@ Este error pasa muy seguido cuando se utilizan ciclos for anidados y cuando uno 
 
 Digamos que vas tan mal en matemáticas que se te olvidaron las tablas multiplicativas por completo, y túquieres crear un programa que los genera. Puedes hacer esto con dos ciclos for anidados, uno que calcule las filas y otra que calcule las columnas.
 
-\begin{lstlisting}[language=C++, caption=Ciclos con otras variables]
+\begin{lstlisting}[language=C++, title=Ciclos con otras variables]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    for(int i = 0; i <= 12; i++) {
-        for(int j = 0; i <= 12; i++) {
-            cout << i * j << "\t";
-        }
-        cout << endl;
-    }
+	for(int i = 0; i <= 12; i++) {
+		for(int j = 0; i <= 12; i++) {
+			cout << i * j << "\t";
+		}
+		cout << endl;
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Tablas-de-Falsedad}{Liga al código}\\
@@ -853,19 +944,19 @@ Este error tiende a ser muy facil de arreglar y ocurre por fallas de lógica.
 
 Digamos que quieres encontrar la suma de todos los cuadrados $1^2 + 2^2 + 3^2 ... + n^2$, y creas un programa para calcularlo.
 
-\begin{lstlisting}[language=C++, caption=Error por uno]
+\begin{lstlisting}[language=C++, title=Error por uno]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    int suma = 0;
-    for(int i = 0; i < n; i++) {
-        suma += i * i;
-    }
-    cout << suma << endl;
+	int n;
+	cin >> n;
+	int suma = 0;
+	for(int i = 0; i < n; i++) {
+		suma += i * i;
+	}
+	cout << suma << endl;
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Sumás-Cuadrados}{Liga al código}\\
@@ -879,21 +970,21 @@ Este error es algo común y suele pasar cuando quieres sacar un valor que esta f
 
 Digamos que tenemos un código que le pregunta al usuario un valor y luego despliega el factorial de ese valor. El código asume que el usuario seleccionará un número entre 0 y 10, para luego desplegar su factorial el cual esta guardado en un arreglo.
 
-\begin{lstlisting}[language=C++, caption=Error de inicialización]
+\begin{lstlisting}[language=C++, title=Error de segmentación]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int factoriales[] = {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800};
-    cout << "Que factorial quisieras?" << endl;
-    int deseado;
-    cin >> deseado;
-    if(deseado < 0) {
-        cout << "No existe " << deseado << "!";
-    } else {
-        cout << deseado << "! es " << factoriales[deseado] << endl;
-    }
+	int factoriales[] = {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800};
+	cout << "Que factorial quisieras?" << endl;
+	int deseado;
+	cin >> deseado;
+	if(deseado < 0) {
+		cout << "No existe " << deseado << "!";
+	} else {
+		cout << deseado << "! es " << factoriales[deseado] << endl;
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Indices-Inexistentes}{Liga al código}\\
@@ -911,17 +1002,17 @@ Ahora vamos a mejorar el código que habiamos hecho del factorial. En lugar de g
 
 Para checar que todo este bien, voy a desplegar los primeros 18 factoriales.
 
-\begin{lstlisting}[language=C++, caption=Sobreflujo]
+\begin{lstlisting}[language=C++, title=Sobreflujo]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int factorial = 1;
-    for(int i = 1; i < 18; i++) {
-        factorial *= i;
-        cout << factorial << endl;
-    }
+	int factorial = 1;
+	for(int i = 1; i < 18; i++) {
+		factorial *= i;
+		cout << factorial << endl;
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Sobrefactorial}{Liga al código}\\
@@ -941,19 +1032,19 @@ Este error pasa cuando se dividen dos enteros.
 
 Sabes que $\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + ... = 1$ y quisieras comprobarlo creando un programa. Lo implementas con el siguiente código:
 
-\begin{lstlisting}[language=C++, caption=Error de redondeo]
+\begin{lstlisting}[language=C++, title=Error de redondeo]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int suma = 0;
-    int potencia = 2;
-    for(int i = 1; i < 30; i++) {
-        suma += 1 / potencia;
-        potencia *= 2;
-    }
-    cout << suma << endl;
+	int suma = 0;
+	int potencia = 2;
+	for(int i = 1; i < 30; i++) {
+		suma += 1 / potencia;
+		potencia *= 2;
+	}
+	cout << suma << endl;
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Suma-Fraccional}{Liga al código}\\
@@ -969,17 +1060,17 @@ Esto sucede cuando tu programa ocupa demasiado espacio continuo y ocasiona un er
 
 A veces sucede que tienes que crear un arreglo con 10 millones de valores (es verdad, sí vas a ocupar algo asi!) y te darás cuenta que tu programa deja de funcionar.
 
-\begin{lstlisting}[language=C++, caption=Faltas de memoria]
+\begin{lstlisting}[language=C++, title=Faltas de memoria]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int arreglo[10000000];
-    for(int i = 0; i < 10000000; i++) {
-        arreglo[i] = i;
-    }
-    cout << "Arreglo llenado" << endl;
+	int arreglo[10000000];
+	for(int i = 0; i < 10000000; i++) {
+		arreglo[i] = i;
+	}
+	cout << "Arreglo llenado" << endl;
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Arreglo-no-arreglado}{Liga al código}\\
@@ -1004,7 +1095,7 @@ Para crear un vector es necesario agregar una librería especifica de esta estru
 
 Para incluir esta librería se debe de escribir \textbf{\lstinline{\#include <vector>}} en las primeras líneas de tu programa.
 
-\begin{lstlisting}[language=C++, caption=Vectores]
+\begin{lstlisting}[language=C++, title=Vectores]
 #include <iostream>
 #include <vector>
 
@@ -1017,30 +1108,30 @@ int main() {
 
 Como un vector guarda datos al igual que un arreglo, debes definir el tipo de dato que se almacenará a la hora de declararlo. Se puede declarar el vector con el sintaxis \textbf{\lstinline{vector<tipo> nombre;}} Como se puede observar, el vector no requiere tener un tamaño predeterminado.
 
-\begin{lstlisting}[language=C++, caption=Vectores]
+\begin{lstlisting}[language=C++, title=Vectores]
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
 int main() {
-    vector<int> enteros;
+	vector<int> enteros;
 }
 \end{lstlisting}
 
 Aqui se ha declarado un vector de enteros, para agregarle elementos a este vector se debe escribir el nombre del vector seguido por un punto y la función \textbf{\lstinline{push_back()}} con el valor del elemento entre los paréntesis.
 
-\begin{lstlisting}[language=C++, caption=Agregando valores]
+\begin{lstlisting}[language=C++, title=Agregando valores]
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
 int main() {
-    vector<int> enteros;
-    enteros.push_back(1);
-    enteros.push_back(4);
-    enteros.push_back(9);
+	vector<int> enteros;
+	enteros.push_back(1);
+	enteros.push_back(4);
+	enteros.push_back(9);
 }
 \end{lstlisting}
 
@@ -1048,24 +1139,24 @@ Aqui, nuestro vector guardará los valores de 1, 4 y 9.
 
 Para ver o modificar el valor en algún índice se puede utilizar el mismo sintaxis de un arreglo. Si en el ejemplo queremos cambiar el 9 a un 7, podemos modificarlo y ver sus cambios con el siguiente código:
 
-\begin{lstlisting}[language=C++, caption=Modificando valores]
+\begin{lstlisting}[language=C++, title=Modificando valores]
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
 int main() {
-    vector<int> enteros;
-    enteros.push_back(1);
-    enteros.push_back(4);
-    enteros.push_back(9);
-    for(int i = 0; i < 3; i++) {
-        cout << enteros[i] << endl;
-    }
-    enteros[2] = 7;
-    for(int i = 0; i < 3; i++) {
-        cout << enteros[i] << endl;
-    }
+	vector<int> enteros;
+	enteros.push_back(1);
+	enteros.push_back(4);
+	enteros.push_back(9);
+	for(int i = 0; i < 3; i++) {
+		cout << enteros[i] << endl;
+	}
+	enteros[2] = 7;
+	for(int i = 0; i < 3; i++) {
+		cout << enteros[i] << endl;
+	}
 }
 \end{lstlisting}
 
@@ -1073,25 +1164,25 @@ Primero se imprimirán los valores 1, 4 y 9, luego se verán los valores 1, 4 y 
 
 Existen más funciones que modifican vectores como \textbf{\lstinline{insert()}} que inserta elementos en ciertos índices, \textbf{\lstinline{erase}} que elimina ciertos elementos, \textbf{\lstinline{clear()}} que borra todos los datos en un vector, \textbf{\lstinline{pop_back()}} que elimina el último valor y finalmente \textbf{\lstinline{size()}}, que indica el tamaño de un vector.
 
-\begin{lstlisting}[language=C++, caption=Jugando con vectores]
+\begin{lstlisting}[language=C++, title=Jugando con vectores]
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
 int main() {
-    vector<int> enteros;
-    for(int i = 0; i < 10; i++) {
-        enteros.push_back(i);
-    }
-    enteros.insert(enteros.begin() + 5, 25);
-    enteros.erase(enteros.begin() + 7);
-    cout << "Cantidad: " << enteros.size() << endl;
-    for(int i = 0; i < enteros.size(); i++) {
-        cout << enteros[i] << endl;
-    }
-    enteros.clear();
-    cout << "Cantidad: " << enteros.size() << endl;
+	vector<int> enteros;
+	for(int i = 0; i < 10; i++) {
+		enteros.push_back(i);
+	}
+	enteros.insert(enteros.begin() + 5, 25);
+	enteros.erase(enteros.begin() + 7);
+	cout << "Cantidad: " << enteros.size() << endl;
+	for(int i = 0; i < enteros.size(); i++) {
+		cout << enteros[i] << endl;
+	}
+	enteros.clear();
+	cout << "Cantidad: " << enteros.size() << endl;
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Juego-de-Vectores}{Liga al código}\\
@@ -1106,48 +1197,48 @@ A veces es conveniente guardar cosas en pares, por ejemplo se pueden guardar dos
 
 Para crear un par, se debe incluir la librería \textbf{utility} y para declararlo se tiene que escribir \textbf{\lstinline{pair<tipo, tipo> nombre;}}
 
-\begin{lstlisting}[language=C++, caption=Declarando pares]
+\begin{lstlisting}[language=C++, title=Declarando pares]
 #include <iostream>
 #include <utility>
 
 using namespace std;
 
 int main() {
-    pair<int, float> miPar;
+	pair<int, float> miPar;
 }
 \end{lstlisting}
 
 Para declarar un par, se puede utilizar la función \textbf{\lstinline{make_pair}} y para ver los datos de este par, se puede llamar el elemento \textbf{first} para el primer dato (en este caso el entero) y \textbf{second} para el segundo dato (en este caso el número flotante).
 
-\begin{lstlisting}[language=C++, caption=Declarando pares]
+\begin{lstlisting}[language=C++, title=Declarando pares]
 #include <iostream>
 #include <utility>
 
 using namespace std;
 
 int main() {
-    pair<int, float> miPar;
-    miPar = make_pair(20, 4.472136);
-    cout << miPar.first << " " << miPar.second << endl;
+	pair<int, float> miPar;
+	miPar = make_pair(20, 4.472136);
+	cout << miPar.first << " " << miPar.second << endl;
 }
 \end{lstlisting}
 
 Combinado con arreglos y vectores, pueden servir para una multitud de aplicaciones. Digamos que queremos guardar todos los puntos de un triángulo para verlos después. Podemos guardar un arreglo de tres pares correspondientes a los tres puntos de ese triángulo:
 
-\begin{lstlisting}[language=C++, caption=Arreglo de pares]
+\begin{lstlisting}[language=C++, title=Arreglo de pares]
 #include <iostream>
 #include <utility>
 
 using namespace std;
 
 int main() {
-    pair<int, int> triangulo[3];
-    for(int i = 0; i < 3; i++) {
-        int x, y;
-        cin >> x >> y; //Lee las coordenadas
-        pair<int, int> punto = make_pair(x, y);
-        triangulo[i] = punto;
-    }
+	pair<int, int> triangulo[3];
+	for(int i = 0; i < 3; i++) {
+		int x, y;
+		cin >> x >> y; //Lee las coordenadas
+		pair<int, int> punto = make_pair(x, y);
+		triangulo[i] = punto;
+	}
 }
 \end{lstlisting}
 
@@ -1161,54 +1252,54 @@ Digamos que quieres guardar las edades de cada uno de tus amigos. Una manera de 
 
 Les mostraremos las dos opciones, empezando con la implementación de este problema con un arreglo de pares:
 
-\begin{lstlisting}[language=C++, caption=Implementación con pares]
+\begin{lstlisting}[language=C++, title=Implementación con pares]
 #include <iostream>
 #include <utility>
 
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n; //Lee el numero de amigos
-    pair<string, int> edades[n];
-    //Guardar todos los amigos y sus edades
-    for(int i = 0; i < n; i++) {
-        string nombre;
-        int edad;
-        cin >> nombre >> edad;
-        pair<string, int> amigo = make_pair(nombre, edad);
-        edades[i] = amigo;
-    }
-    //Buscar el amigo "Juan" y desplegar su edad
-    for(int i = 0; i < n; i++) {
-        if(edades[i].first == "Juan") {
-            cout << "Juan tiene " << edades[i].second << endl;
-            break;
-        }
-    }
+	int n;
+	cin >> n; //Lee el numero de amigos
+	pair<string, int> edades[n];
+	//Guardar todos los amigos y sus edades
+	for(int i = 0; i < n; i++) {
+		string nombre;
+		int edad;
+		cin >> nombre >> edad;
+		pair<string, int> amigo = make_pair(nombre, edad);
+		edades[i] = amigo;
+	}
+	//Buscar el amigo "Juan" y desplegar su edad
+	for(int i = 0; i < n; i++) {
+		if(edades[i].first == "Juan") {
+			cout << "Juan tiene " << edades[i].second << endl;
+			break;
+		}
+	}
 }
 \end{lstlisting}
 
 Como se puede ver, se guardaron todos los valores en un arreglo de pares y luego se tuvo que hacer una busqueda de todos los amigos hasta encontrar a Juan. Esta es la simplificación con map:
 
-\begin{lstlisting}[language=C++, caption=Implementación con map]
+\begin{lstlisting}[language=C++, title=Implementación con map]
 #include <iostream>
 #include <map>
 
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n; //Lee el numero de amigos
-    map<string, int> edades;
-    for(int i = 0; i < n; i++) {
-        string nombre;
-        int edad;
-        cin >> nombre >> edad;
-        edades[nombre] = edad;
-    }
-    //Buscar el amigo "Juan" y desplegar su edad
-    cout << "Juan tiene " << edades["Juan"] << endl;
+	int n;
+	cin >> n; //Lee el numero de amigos
+	map<string, int> edades;
+	for(int i = 0; i < n; i++) {
+		string nombre;
+		int edad;
+		cin >> nombre >> edad;
+		edades[nombre] = edad;
+	}
+	//Buscar el amigo "Juan" y desplegar su edad
+	cout << "Juan tiene " << edades["Juan"] << endl;
 }
 \end{lstlisting}
 
@@ -1218,24 +1309,24 @@ Pero también se debe aclarar que hay dos tipos de mapa, el mapa ordenado y el m
 
 Existen varias ventajas de usar un mapa desordenado sobre uno ordenado, el aceso de datos es más rápido en un mapa desordenado, pero a la vez ocupa más memoria que un mapa ordenado. También tiene el mismo sintaxis que el mapa ordenado.
 
-\begin{lstlisting}[language=C++, caption=Mapa desordenado]
+\begin{lstlisting}[language=C++, title=Mapa desordenado]
 #include <iostream>
 #include <unordered_map>
 
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n; //Lee el numero de amigos
-    unordered_map<string, int> edades;
-    for(int i = 0; i < n; i++) {
-        string nombre;
-        int edad;
-        cin >> nombre >> edad;
-        edades[nombre] = edad;
-    }
-    //Buscar el amigo "Juan" y desplegar su edad
-    cout << "Juan tiene " << edades["Juan"] << endl;
+	int n;
+	cin >> n; //Lee el numero de amigos
+	unordered_map<string, int> edades;
+	for(int i = 0; i < n; i++) {
+		string nombre;
+		int edad;
+		cin >> nombre >> edad;
+		edades[nombre] = edad;
+	}
+	//Buscar el amigo "Juan" y desplegar su edad
+	cout << "Juan tiene " << edades["Juan"] << endl;
 }
 \end{lstlisting}
 
@@ -1247,26 +1338,26 @@ Para insertar valores en un set, es necesario utilizar la función \textbf{\lsti
 
 El siguiente código lee varios números de la consola y luego checa si 25 es uno de ellos.
 
-\begin{lstlisting}[language=C++, caption=Sets]
+\begin{lstlisting}[language=C++, title=Sets]
 #include <iostream>
 #include <set>
 
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    set<int> entradas;
-    for(int i = 0; i < n; i++) {
-        int x;
-        cin >> x;
-        entradas.insert(x);
-    }
-    if(entradas.count(25) == 0) {
-        cout << "25 no es miembro de este set" << endl;
-    } else {
-        cout << "25 si es miembro de este set" << endl;
-    }
+	int n;
+	cin >> n;
+	set<int> entradas;
+	for(int i = 0; i < n; i++) {
+		int x;
+		cin >> x;
+		entradas.insert(x);
+	}
+	if(entradas.count(25) == 0) {
+		cout << "25 no es miembro de este set" << endl;
+	} else {
+		cout << "25 si es miembro de este set" << endl;
+	}
 }
 \end{lstlisting}
 
@@ -1280,49 +1371,49 @@ Vamos a analizar un programa que obtiene todos los números primos menores a N. 
 
 Esta sería la implementación:
 
-\begin{lstlisting}[language=C++, caption=Probando si M es primo]
+\begin{lstlisting}[language=C++, title=Probando si M es primo]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int m;
-    cin >> m;
-    bool primo = true; //Asumimos que es primo hasta encontrar un divisor
-    for(int i = 2; i < m; i++) {
-        if(m % i == 0) {
-            primo = false; //M no es primo
-        }
-    }
-    if(primo) {
-        cout << m << " es primo" << endl;
-    } else {
-        cout << m << " no es primo" << endl;
-    }
+	int m;
+	cin >> m;
+	bool primo = true; //Asumimos que es primo hasta encontrar un divisor
+	for(int i = 2; i < m; i++) {
+		if(m % i == 0) {
+			primo = false; //M no es primo
+		}
+	}
+	if(primo) {
+		cout << m << " es primo" << endl;
+	} else {
+		cout << m << " no es primo" << endl;
+	}
 }
 \end{lstlisting}
 
 Si pruebas este código con números mayores o iguales a dos indicará si es o no es primo. Ahora queremos probar si todos los números de 2 a N son primos, podemos encerrar este código en otro ciclo for:
 
-\begin{lstlisting}[language=C++, caption=Encontrando primos menores que N]
+\begin{lstlisting}[language=C++, title=Encontrando primos menores que N]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    for(int m = 2; m < n; m++) {
-        bool primo = true; //Asumimos que es primo hasta encontrar un divisor
-        for(int i = 2; i < m; i++) {
-            if(m % i == 0) {
-                primo = false; //M no es primo
-            }
-        }
-        if(primo) {
-            cout << m << endl;
-        }
-    }
+	int n;
+	cin >> n;
+	for(int m = 2; m < n; m++) {
+		bool primo = true; //Asumimos que es primo hasta encontrar un divisor
+		for(int i = 2; i < m; i++) {
+			if(m % i == 0) {
+				primo = false; //M no es primo
+			}
+		}
+		if(primo) {
+			cout << m << endl;
+		}
+	}
 }
 \end{lstlisting}
 
@@ -1330,26 +1421,26 @@ Al correr este código se debera de imprimir una lista de primos después de dar
 
 Nosotros queremos optimizar este código para que pueda encontrar todos los números primos menores a 1,000,000 en muy poco tiempo. Analizando el problema, se te ocurre imprimir 2, iniciar M en 3 en lugar de 2 y saltar en incrementos de 2 para asegurar que M siempre es impar, ya que el único primo par es 2. Al saltar en incrementos de dos, solo checaras si la mitad de los números son primos y razonas que esto debe ser dos veces más rápido porque eliminas la mitad de los pruebas. Asi queda la implementación:
 
-\begin{lstlisting}[language=C++, caption=¿Optimizando?]
+\begin{lstlisting}[language=C++, title=¿Optimizando?]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    cout << 2 << endl;
-    for(int m = 3; m < n; m += 2) {
-        bool primo = true; //Asumimos que es primo hasta encontrar un divisor
-        for(int i = 2; i < m; i++) {
-            if(m % i == 0) {
-                primo = false; //M no es primo
-            }
-        }
-        if(primo) {
-            cout << m << endl;
-        }
-    }
+	int n;
+	cin >> n;
+	cout << 2 << endl;
+	for(int m = 3; m < n; m += 2) {
+		bool primo = true; //Asumimos que es primo hasta encontrar un divisor
+		for(int i = 2; i < m; i++) {
+			if(m % i == 0) {
+				primo = false; //M no es primo
+			}
+		}
+		if(primo) {
+			cout << m << endl;
+		}
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Programa-ineficiente}{Liga al código}
@@ -1413,22 +1504,22 @@ Estas expresiones que hemos estado obteniendo se llaman las complejidades de tie
 
 La manera más fácil de determinar la complejidad de tiempo de un algoritmo es dividirlo en secciones de ciclos y sumar estos términos, y descartar todo lo que no sea el término más grande. Si tenemos un programa con un solo ciclo que se repite N veces, se puede decir que tiene complejidad \textbf{O(N)} porque lo que esta dentro de ese ciclo se repite N veces, y si hay dos ciclos anidados que se repiten N veces, tiene complejidad \textbf{O($N^2$)} porque se multiplican las N iteraciones del primer ciclo con las N iteraciones del segundo. En caso de tener un programa sin ciclos, se dice que tiene complejidad constante o \textbf{O(1)}, lo que significa que siempre se tardará el mismo tiempo en correr sin importar que tan grande es su entrada. Ahora se mostrará el ejemplo de dos ciclos separados que se repiten N veces:
 
-\begin{lstlisting}[language=C++, caption=Encontrando primos menores que N]
+\begin{lstlisting}[language=C++, title=Encontrando primos menores que N]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    cout << "Los numeros de 0 a N - 1:" << endl;
-    for(int i = 0; i < n; i++) {
-        cout << i << endl;
-    }
-    cout << "Los numeros pero ahora al reves:" << endl;
-    for(int i = n - 1; i >= 0; i--) {
-        cout << i << endl;
-    }
+	int n;
+	cin >> n;
+	cout << "Los numeros de 0 a N - 1:" << endl;
+	for(int i = 0; i < n; i++) {
+		cout << i << endl;
+	}
+	cout << "Los numeros pero ahora al reves:" << endl;
+	for(int i = n - 1; i >= 0; i--) {
+		cout << i << endl;
+	}
 }
 \end{lstlisting}
 
@@ -1440,26 +1531,26 @@ Esto significa que sin importar que existen otros ciclos en el programa, el tiem
 
 Con esto, podemos explicar la razón por la que no funcionaba nuestro programa que calculaba números primos y podemos elaborar una manera más eficiente de hacerlo.
 
-\begin{lstlisting}[language=C++, caption=¿Optimizando?]
+\begin{lstlisting}[language=C++, title=¿Optimizando?]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    cout << 2 << endl;
-    for(int m = 3; m < n; m += 2) {
-        bool primo = true; //Asumimos que es primo hasta encontrar un divisor
-        for(int i = 2; i < m; i++) {
-            if(m % i == 0) {
-                primo = false; //M no es primo
-            }
-        }
-        if(primo) {
-            cout << m << endl;
-        }
-    }
+	int n;
+	cin >> n;
+	cout << 2 << endl;
+	for(int m = 3; m < n; m += 2) {
+		bool primo = true; //Asumimos que es primo hasta encontrar un divisor
+		for(int i = 2; i < m; i++) {
+			if(m % i == 0) {
+				primo = false; //M no es primo
+			}
+		}
+		if(primo) {
+			cout << m << endl;
+		}
+	}
 }
 \end{lstlisting}
 
@@ -1467,28 +1558,28 @@ Como podemos ver, hay un ciclo con complejidad O(N/2) y hay otro ciclo adentro d
 
 Una propiedad de los números que no son primos es que todos sus divisores estan en pares excepto la raíz cuadrada en caso de que sea un número cuadrático. Asi que si no se han encontrado pares cuando se llega a la raíz de un número, se puede determinar que ese número no tiene divisores después de su raíz cuadrada y entonces debe ser primo. Esto nos dice que podemos reducir nuestra busqueda de divisores de 2 hasta la raíz cuadrada de M.
 
-\begin{lstlisting}[language=C++, caption=¿Optimizando?]
+\begin{lstlisting}[language=C++, title=Código optimizando]
 #include <iostream>
 #include <cmath>
 
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    cout << 2 << endl;
-    for(int m = 3; m < n; m += 2) {
-        bool primo = true; //Asumimos que es primo hasta encontrar un divisor
-        for(int i = 2; i <= sqrt(m); i++) {
-            if(m % i == 0) {
-                primo = false; //M no es primo
-                break;
-            }
-        }
-        if(primo) {
-            cout << m << endl;
-        }
-    }
+	int n;
+	cin >> n;
+	cout << 2 << endl;
+	for(int m = 3; m < n; m += 2) {
+		bool primo = true; //Asumimos que es primo hasta encontrar un divisor
+		for(int i = 2; i <= sqrt(m); i++) {
+			if(m % i == 0) {
+				primo = false; //M no es primo
+				break;
+			}
+		}
+		if(primo) {
+			cout << m << endl;
+		}
+	}
 }
 \end{lstlisting}
 
@@ -1519,19 +1610,19 @@ Esta es la busqueda más sencilla y común y consiste en tener un arreglo cualqu
 
 Para hacer esto, podemos hacer un ciclo for desde el primer valor hasta el último valor y podemos parar el ciclo cuando ya encontramos el valor. En este caso, comparariamos 5, 7 y 9 hasta finalmente llegar al 1. Su implementación es muy sencilla:
 
-\begin{lstlisting}[language=C++, caption=¿Optimizando?]
+\begin{lstlisting}[language=C++, title=Busqueda lineal]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int valores[] = {5, 7, 9, 1, 2};
-    for(int i = 0; i < 5; i++) {
-        if(valores[i] == 1) {
-            cout << "1 fue encontrado en el lugar " << i << endl;
-            break;
-        }
-    }
+	int valores[] = {5, 7, 9, 1, 2};
+	for(int i = 0; i < 5; i++) {
+		if(valores[i] == 1) {
+			cout << "1 fue encontrado en el lugar " << i << endl;
+			break;
+		}
+	}
 }
 \end{lstlisting}
 
@@ -1578,22 +1669,22 @@ Para agregar objetos a una pila, se puede utilizar la función \textbf{push(valo
 
 Vamos a crear un programa que invierte los valores que originalmente habiamos visto:
 
-\begin{lstlisting}[language=C++, caption=Pilas]
+\begin{lstlisting}[language=C++, title=Pilas]
 #include <iostream>
 #include <stack>
 
 using namespace std;
 
 int main() {
-    stack<int> pila;
-    int valores[] = {6, 5, 2, 9, 3};
-    for(int i = 0; i < 5; i++) {
-        pila.push(valores[i]);
-    }
-    while(pila.size() > 0) {
-        cout << pila.top() << endl;
-        pila.pop();
-    }
+	stack<int> pila;
+	int valores[] = {6, 5, 2, 9, 3};
+	for(int i = 0; i < 5; i++) {
+		pila.push(valores[i]);
+	}
+	while(pila.size() > 0) {
+		cout << pila.top() << endl;
+		pila.pop();
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Cargando-pilas}{Liga al código} \\
@@ -1621,22 +1712,22 @@ Para implementarlo, se debe incluir la librería \textbf{queue} y se debe declar
 
 Las funciones de esta estructura son algo distintos a las de la pila. Para insertar y quitar datos, se puede utilizar \textbf{push(valor)} y \textbf{pop()} respectivamente, pero para ver el valor que esta hasta en frente se debe llamar \textbf{front()}. Como támbien tiene una parte de atrás, este se puede ver con \textbf{back()}.
 
-\begin{lstlisting}[language=C++, caption=Filas]
+\begin{lstlisting}[language=C++, title=Filas]
 #include <iostream>
 #include <queue>
 
 using namespace std;
 
 int main() {
-    queue<int> fila;
-    int valores[] = {6, 5, 2, 9, 3};
-    for(int i = 0; i < 5; i++) {
-        fila.push(valores[i]);
-    }
-    while(fila.size() > 0) {
-        cout << fila.front() << endl;
-        fila.pop();
-    }
+	queue<int> fila;
+	int valores[] = {6, 5, 2, 9, 3};
+	for(int i = 0; i < 5; i++) {
+		fila.push(valores[i]);
+	}
+	while(fila.size() > 0) {
+		cout << fila.front() << endl;
+		fila.pop();
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Haciendo-filas}{Liga al código} \\
@@ -1670,33 +1761,33 @@ Para ver o modificar algún valor se puede usar el sintaxis de un arreglo, como 
 
 Un ejemplo práctico del deque es para determinar si una palabra es palindromo. Se puede insertar la palabra en el deque y luego se puede comparar el carácter de enfrente con el de atrás e irlos sacando de dos en dos hasta que quede cero o un valor en el deque.
 
-\begin{lstlisting}[language=C++, caption=Deques]
+\begin{lstlisting}[language=C++, title=Deques]
 #include <iostream>
 #include <deque>
 
 using namespace std;
 
 int main() {
-    string palindromo = "aibofobia";
-    deque<char> dobleFila;
-    //insertar a la fila
-    for(int i = 0; i < palindromo.length(); i++) {
-        dobleFila.push_back(palindromo[i]);
-    }
-    bool valido = true;
-    while(dobleFila.size() > 1) {
-        if(dobleFila.front() != dobleFila.back()) {
-            valido = false;
-            break;
-        }
-        dobleFila.pop_front();
-        dobleFila.pop_back();
-    }
-    if(valido) {
-        cout << palindromo << " es un palindromo" << endl;
-    } else {
-        cout << palindromo << " no es un palindromo" << endl;
-    }
+	string palindromo = "aibofobia";
+	deque<char> dobleFila;
+	//insertar a la fila
+	for(int i = 0; i < palindromo.length(); i++) {
+		dobleFila.push_back(palindromo[i]);
+	}
+	bool valido = true;
+	while(dobleFila.size() > 1) {
+		if(dobleFila.front() != dobleFila.back()) {
+			valido = false;
+			break;
+		}
+		dobleFila.pop_front();
+		dobleFila.pop_back();
+	}
+	if(valido) {
+		cout << palindromo << " es un palindromo" << endl;
+	} else {
+		cout << palindromo << " no es un palindromo" << endl;
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Deque}{Liga al código}
@@ -1713,22 +1804,22 @@ Las funciones de este tipo son \textbf{push(valor)} y \textbf{pop()} para agrega
 
 Un ejemplo de estos sería un programa que ordena un arreglo de números flotantes.
 
-\begin{lstlisting}[language=C++, caption=Filas de prioridad]
+\begin{lstlisting}[language=C++, title=Filas de prioridad]
 #include <iostream>
 #include <queue>
 
 using namespace std;
 
 int main() {
-    float valores[] = {2.22, 3.56, 1.9, 9.52, 3.42, 6.78, 0.11, 4.5};
-    priority_queue<float> fila;
-    for(int i = 0; i < 8; i++) {
-        fila.push(valores[i]);
-    }
-    for(int i = 0; i < 8; i++) {
-        cout << fila.top() << endl;
-        fila.pop();
-    }
+	float valores[] = {2.22, 3.56, 1.9, 9.52, 3.42, 6.78, 0.11, 4.5};
+	priority_queue<float> fila;
+	for(int i = 0; i < 8; i++) {
+		fila.push(valores[i]);
+	}
+	for(int i = 0; i < 8; i++) {
+		cout << fila.top() << endl;
+		fila.pop();
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Prioridades}{Liga al código} \\
@@ -1739,19 +1830,19 @@ Esta estructura es muy parecida a un heap, que guarda el dato más grande sobre 
 
 Imaginemos que encontraste un código extraño que parece correr una función dentro de esa misma función. Antes de llamarse a si mismo imprimirá hola y después imprimirá mundo.
 
-\begin{lstlisting}[language=C++, caption=Funciones]
+\begin{lstlisting}[language=C++, title=Funciones]
 #include <iostream>
 
 using namespace std;
 
 void funcion() {
-    cout << "hola" << endl;
-    funcion();
-    cout << "mundo" << endl;
+	cout << "hola" << endl;
+	funcion();
+	cout << "mundo" << endl;
 }
 
 int main() {
-    funcion();
+	funcion();
 }
 \end{lstlisting}
 
@@ -1761,20 +1852,20 @@ Si pruebas el código, verás que se imprime hola muchisimas veces hasta que el 
 
 Este funcionamiento tiene muchas aplicaciones, por ejemplo, si decidimos correr la función con un parametro entero y decidimos restarle uno a ese número hasta que llegue a 0, podemos calcular la suma de todos los enteros naturales de 1 a N:
 
-\begin{lstlisting}[language=C++, caption=Suma de enteros]
+\begin{lstlisting}[language=C++, title=Suma de enteros]
 #include <iostream>
 
 using namespace std;
 
 int suma(int n) {
-    if(n <= 0) {
-        return 0;
-    }
-    return n + suma(n - 1);
+	if(n <= 0) {
+		return 0;
+	}
+	return n + suma(n - 1);
 }
 
 int main() {
-    cout << suma(100) << endl;
+	cout << suma(100) << endl;
 }
 \end{lstlisting}
 
@@ -1784,50 +1875,50 @@ Podemos ver que gradualmente se van sumando los números empezando con N hasta l
 
 A esto se le llama la recursividad y es útil para resolver problemas que dependen de un estado anterior. Otro ejemplo de la recursividad es para calcular el factorial de un número; se puede empezar con un número N y multiplicarle N - 1 hasta llegar a 1.
 
-\begin{lstlisting}[language=C++, caption=Factorial recursivo]
+\begin{lstlisting}[language=C++, title=Factorial recursivo]
 #include <iostream>
 
 using namespace std;
 
 long long int factorial(long long int n) {
-    if(n <= 1) {
-        return 1;
-    }
-    return n * factorial(n - 1);
+	if(n <= 1) {
+		return 1;
+	}
+	return n * factorial(n - 1);
 }
 
 int main() {
-    cout << factorial(10) << endl;
+	cout << factorial(10) << endl;
 }
 \end{lstlisting}
 
 Pero donde brilla la recursividad es en problemas de combinatoria y permutaciones. Si quisieras escribir todas las permutaciones de los caracteres "ABCD", se puede escribir un programa sencillo que explora todas las posibilidades.
 
-\begin{lstlisting}[language=C++, caption=Permutaciones]
+\begin{lstlisting}[language=C++, title=Permutaciones]
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
 void permutacion(vector<char> letras, vector<char> usadas, int largo) {
-    if(usadas.size() == largo) {
-        for(int i = 0; i < usadas.size(); i++) {
-            cout << usadas[i];
-        }
-        cout << endl;
-        return;
-    }
-    for(int i = 0; i < letras.size(); i++) {
-        usadas.push_back(letras[i]);
-        permutacion(letras, usadas, largo);
-        usadas.pop_back();
-    }
+	if(usadas.size() == largo) {
+		for(int i = 0; i < usadas.size(); i++) {
+			cout << usadas[i];
+		}
+		cout << endl;
+		return;
+	}
+	for(int i = 0; i < letras.size(); i++) {
+		usadas.push_back(letras[i]);
+		permutacion(letras, usadas, largo);
+		usadas.pop_back();
+	}
 }
 
 int main() {
-    vector<char> letras = {'a', 'b', 'c', 'd'};
-    vector<char> usadas;
-    permutacion(letras, usadas, 5);
+	vector<char> letras = {'a', 'b', 'c', 'd'};
+	vector<char> usadas;
+	permutacion(letras, usadas, 5);
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Permutando}{Liga al código} \\
@@ -1857,33 +1948,33 @@ Despues solo tendriamos que ordenar {5, 9, 6}, pero como 5 ya esta en el primer 
 
 Este método puede ser implementado con dos ciclos for, uno que va de 0 a N y otro que va del valor actual a N. El segundo ciclo buscará el valor mas bajo de los valores que faltan de ordenarse y el primer ciclo lo ira poniendo en su lugar correcto.
 
-\begin{lstlisting}[language=C++, caption=Ordenamiento por selección]
+\begin{lstlisting}[language=C++, title=Ordenamiento por selección]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int valores[] = {5, 2, 3, 9, 6};
-    for(int i = 0; i < 5; i++) {
-        //Encuentra el valor mas pequeno de i a N
-        int indiceMinimo = i;
-        for(int j = i; j < 5; j++) {
-            if(valores[j] < valores[indiceMinimo]) {
-                indiceMinimo = j;
-            }
-        }
-        //Si el valor esta en el primer lugar, ignoralo
-        if(indiceMinimo == i) {
-            continue;
-        }
-        //Intercambia los dos valores
-        int intercambio = valores[i];
-        valores[i] = valores[indiceMinimo];
-        valores[indiceMinimo] = intercambio;
-    }
-    for(int i = 0; i < 5; i++) {
-        cout << valores[i] << endl;
-    }
+	int valores[] = {5, 2, 3, 9, 6};
+	for(int i = 0; i < 5; i++) {
+		//Encuentra el valor mas pequeno de i a N
+		int indiceMinimo = i;
+		for(int j = i; j < 5; j++) {
+			if(valores[j] < valores[indiceMinimo]) {
+				indiceMinimo = j;
+			}
+		}
+		//Si el valor esta en el primer lugar, ignoralo
+		if(indiceMinimo == i) {
+			continue;
+		}
+		//Intercambia los dos valores
+		int intercambio = valores[i];
+		valores[i] = valores[indiceMinimo];
+		valores[indiceMinimo] = intercambio;
+	}
+	for(int i = 0; i < 5; i++) {
+		cout << valores[i] << endl;
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Ordenamiento-de-seleccion}{Liga al código} \\
@@ -1905,59 +1996,59 @@ Como habiamos partido {6, 3} para obtener {6} y {3}, podemos juntarlos para hace
 
 La manera más sencilla de implementar este algoritmo es usando la recursividad:
 
-\begin{lstlisting}[language=C++, caption=Ordenamiento por mezcla]
+\begin{lstlisting}[language=C++, title=Ordenamiento por mezcla]
 #include <iostream>
 
 using namespace std;
 
 void ordenar(int* valores, int tamano) {
-    if(tamano < 2) {
-        return;
-    }
-    int mitadA = tamano / 2;
-    int mitadB = tamano - mitadA;
-    int valoresA[mitadA];
-    int valoresB[mitadB];
-    for(int i = 0; i < mitadA; i++) {
-        valoresA[i] = valores[i];
-    }
-    for(int i = 0; i < mitadB; i++) {
-        valoresB[i] = valores[i + mitadA];
-    }
-    ordenar(valoresA, mitadA);
-    ordenar(valoresB, mitadB);
-    int indiceA = 0;
-    int indiceB = 0;
-    while(indiceA < mitadA && indiceB < mitadB) {
-        if(valoresA[indiceA] < valoresB[indiceB]) {
-            valores[indiceA + indiceB] = valoresA[indiceA];
-            indiceA++;
-        } else {
-            valores[indiceA + indiceB] = valoresB[indiceB];
-            indiceB++;
-        }
-    }
-    while(indiceA < mitadA) {
-        valores[indiceA + indiceB] = valoresA[indiceA];
-        indiceA++;
-    }
-    while(indiceB < mitadB) {
-        valores[indiceA + indiceB] = valoresB[indiceB];
-        indiceB++;
-    }
+	if(tamano < 2) {
+		return;
+	}
+	int mitadA = tamano / 2;
+	int mitadB = tamano - mitadA;
+	int valoresA[mitadA];
+	int valoresB[mitadB];
+	for(int i = 0; i < mitadA; i++) {
+		valoresA[i] = valores[i];
+	}
+	for(int i = 0; i < mitadB; i++) {
+		valoresB[i] = valores[i + mitadA];
+	}
+	ordenar(valoresA, mitadA);
+	ordenar(valoresB, mitadB);
+	int indiceA = 0;
+	int indiceB = 0;
+	while(indiceA < mitadA && indiceB < mitadB) {
+		if(valoresA[indiceA] < valoresB[indiceB]) {
+			valores[indiceA + indiceB] = valoresA[indiceA];
+			indiceA++;
+		} else {
+			valores[indiceA + indiceB] = valoresB[indiceB];
+		indiceB++;
+		}
+	}
+	while(indiceA < mitadA) {
+		valores[indiceA + indiceB] = valoresA[indiceA];
+		indiceA++;
+	}
+	while(indiceB < mitadB) {
+		valores[indiceA + indiceB] = valoresB[indiceB];
+		indiceB++;
+	}
 }
 
 int main() {
-    int cantidad;
-    cin >> cantidad;
-    int valores[cantidad];
-    for(int i = 0; i < cantidad; i++) {
-        cin >> valores[i];
-    }
-    ordenar(valores, cantidad);
-    for(int i = 0; i < cantidad; i++) {
-        cout << valores[i] << endl;
-    }
+	int cantidad;
+	cin >> cantidad;
+	int valores[cantidad];
+	for(int i = 0; i < cantidad; i++) {
+		cin >> valores[i];
+	}
+	ordenar(valores, cantidad);
+	for(int i = 0; i < cantidad; i++) {
+		cout << valores[i] << endl;
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Ordenamiento-de-mezcla}{Liga al código}
@@ -1968,24 +2059,24 @@ Para ahorrar tiempo y evitar tener que volver a escribir ordenamientos como el d
 
 Para utilizar este ordenamiento, se tiene que incluir la librería \textbf{algorithm}. Luego, se debe llamar la función \textbf{sort()} con dos parámetros, el primer lugar en memoria del arreglo y el ultimo lugar del arreglo. Para un arreglo normal, se puede dar el nombre del arreglo como el primer parámetro y el nombre del arreglo sumado con su tamaño como el segundo parámetro.
 
-\begin{lstlisting}[language=C++, caption=Ordenamiento estandar para un arreglo]
+\begin{lstlisting}[language=C++, title=Ordenamiento estandar para un arreglo]
 #include <iostream>
 #include <algorithm>
 
 using namespace std;
 
 int main() {
-    int valores[] = {6, 3, 19, 2, 7, 5, 4, 11};
-    sort(valores, valores + 8);
-    for(int i = 0; i < 8; i++) {
-        cout << valores[i] << endl;
-    }
+	int valores[] = {6, 3, 19, 2, 7, 5, 4, 11};
+	sort(valores, valores + 8);
+	for(int i = 0; i < 8; i++) {
+		cout << valores[i] << endl;
+	}
 }
 \end{lstlisting}
 
 Para vectores y otras estructuras definidas en librerias, se debe usar las funciones \textbf{begin()} y \textbf{end()}
 
-\begin{lstlisting}[language=C++, caption=Ordenamiento estandar para un vector]
+\begin{lstlisting}[language=C++, title=Ordenamiento estandar para un vector]
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -1993,11 +2084,11 @@ Para vectores y otras estructuras definidas en librerias, se debe usar las funci
 using namespace std;
 
 int main() {
-    vector<int> valores = {6, 3, 19, 2, 7, 5, 4, 11};
-    sort(valores.begin(), valores.end());
-    for(int i = 0; i < valores.size(); i++) {
-        cout << valores[i] << endl;
-    }
+	vector<int> valores = {6, 3, 19, 2, 7, 5, 4, 11};
+	sort(valores.begin(), valores.end());
+	for(int i = 0; i < valores.size(); i++) {
+		cout << valores[i] << endl;
+	}
 }
 \end{lstlisting}
 
@@ -2005,7 +2096,7 @@ Si se desea ordenar un arreglo de una manera especial como ordenar pares por su 
 
 Esta función debe ser de tipo booleano y debe tener dos parámetros que son del mismo tipo que el arreglo o vector que se desea ordenar. La función debe regresar verdadero si se quiere ordenar el primer parámetro antes que el segundo o falso en caso contrario.
 
-\begin{lstlisting}[language=C++, caption=Ordenamiento estandar sobrecargada]
+\begin{lstlisting}[language=C++, title=Ordenamiento estandar sobrecargada]
 #include <iostream>
 #include <algorithm>
 #include <pair>
@@ -2014,34 +2105,34 @@ using namespace std;
 
 //Ordena de manera ascendiente los primeros valores del par
 bool ordenaPrimero(pair<int, int> a, pair<int, int> b) {
-    if(a.first < b.first) {
-        return true;
-    }
-    return false;
+	if(a.first < b.first) {
+		return true;
+	}
+	return false;
 }
 
 //Ordena de manera ascendiente los segundos valores del par
 bool ordenaPrimero(pair<int, int> a, pair<int, int> b) {
-    if(a.second < b.second) {
-        return true;
-    }
-    return false;
+	if(a.second < b.second) {
+		return true;
+	}
+	return false;
 }
 
 int main() {
-    vector<pair<int, int>> pares;
-    pares.push_back(make_pair(6, 3));
-    pares.push_back(make_pair(19, 2));
-    pares.push_back(make_pair(7, 5));
-    pares.push_back(make_pair(4, 11));
-    sort(pares.begin(), pares.end(), ordenaPrimero);
-    for(int i = 0; i < pares.size(); i++) {
-        cout << pares[i].first << " " << pares[i].second << endl;
-    }
-    sort(pares.begin(), pares.end(), ordenaSegundo);
-    for(int i = 0; i < pares.size(); i++) {
-        cout << pares[i].first << " " << pares[i].second << endl;
-    }
+	vector<pair<int, int>> pares;
+	pares.push_back(make_pair(6, 3));
+	pares.push_back(make_pair(19, 2));
+	pares.push_back(make_pair(7, 5));
+	pares.push_back(make_pair(4, 11));
+	sort(pares.begin(), pares.end(), ordenaPrimero);
+	for(int i = 0; i < pares.size(); i++) {
+		cout << pares[i].first << " " << pares[i].second << endl;
+	}
+	sort(pares.begin(), pares.end(), ordenaSegundo);
+	for(int i = 0; i < pares.size(); i++) {
+		cout << pares[i].first << " " << pares[i].second << endl;
+	}
 }
 \end{lstlisting}
 
@@ -2051,23 +2142,23 @@ La programación dinámica consiste en guardar datos previos para ahorrar tiempo
 
 Vamos a analizar un programa que calcula la serie de fibonacci con la recursividad.
 
-\begin{lstlisting}[language=C++, caption=Fibonacci]
+\begin{lstlisting}[language=C++, title=Fibonacci]
 #include <iostream>
 
 using namespace std;
 
 long long int fibonacci(int valor) {
-    if(valor == 0) {
-        return 0;
-    }
-    if(valor == 1) {
-        return 1;
-    }
-    return fibonacci(valor - 1) + fibonacci(valor - 2);
+	if(valor == 0) {
+		return 0;
+	}
+	if(valor == 1) {
+		return 1;
+	}
+	return fibonacci(valor - 1) + fibonacci(valor - 2);
 }
 
 int main() {
-    cout << fibonacci(50);
+	cout << fibonacci(50);
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Fibonacci}{Liga al código} \\
@@ -2087,7 +2178,7 @@ Para hacer esta función de complejidad lineal O($N$), debemos evitar la recursi
 
 Esta sería la implementación con programación dinámica:
 
-\begin{lstlisting}[language=C++, caption=Programación dinámica]
+\begin{lstlisting}[language=C++, title=Programación dinámica]
 #include <iostream>
 #include <vector>
 
@@ -2096,16 +2187,16 @@ using namespace std;
 vector<long long int> serie;
 
 long long int fibonacci(int valor) {
-    while(serie.size() <= valor) {
-        serie.push_back(serie[serie.size() - 1] + serie[serie.size() - 2]);
-    }
-    return serie[valor];
+	while(serie.size() <= valor) {
+		serie.push_back(serie[serie.size() - 1] + serie[serie.size() - 2]);
+	}
+	return serie[valor];
 }
 
 int main() {
-    serie.push_back(0);
-    serie.push_back(1);
-    cout << fibonacci(50);
+	serie.push_back(0);
+	serie.push_back(1);
+	cout << fibonacci(50);
 }
 \end{lstlisting}
 
@@ -2117,14 +2208,13 @@ A veces es conveniente manejar datos como si fueran a estar en una matriz de má
 
 Para definir un arreglo de dimensión N, se debe escribir el tipo de dato, el nombre del arreglo y N corchetes \textbf{[]}. Si queremos un arreglo de 7 x 3 x 3 enteros, podemos definirlo con \textbf{int miArreglo[7][3][3];}. También se pueden definir los datos iniciales de este arreglo utilizando multiples llaves anidados:
 
-\begin{lstlisting}[language=C++, caption=Asignando valores]
+\begin{lstlisting}[language=C++, title=Asignando valores]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int cuboide[2][3][3] = {{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}},
-    {{10, 11, 12}, {13, 14, 15}, {16, 17, 18}}};
+	int cuboide[2][3][3] = {{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}, {{10, 11, 12}, {13, 14, 15}, {16, 17, 18}}};
 }
 \end{lstlisting}
 
@@ -2138,16 +2228,16 @@ Por ejemplo, digamos que trabajas para un banco y quisieras guardar los datos im
 
 Usando structs, podemos definir un struct por cada cliente con estos tipos de datos y crear un solo arreglo o vector de clientes. No se requiere ninguna librería para definir un struct y se puede crear de la siguiente manera:
 
-\begin{lstlisting}[language=C++, caption=Definición de un struct]
+\begin{lstlisting}[language=C++, title=Definición de un struct]
 #include <iostream>
 
 using namespace std;
 
 struct Cliente {
-    string nombre;
-    string apellido;
-    int tarjeta[16];
-    float dinero;
+	string nombre;
+	string apellido;
+	int tarjeta[16];
+	float dinero;
 };
 
 int main() {
@@ -2159,91 +2249,91 @@ Como se puede ver, los structs siempre deben ir antes de nuestra función main y
 
 Para crear una instancia de un struct, se debe poner el nombre del struct como el tipo de dato seguido por el nombre especifico de esa instancia:
 
-\begin{lstlisting}[language=C++, caption=Instanciamiento]
+\begin{lstlisting}[language=C++, title=Instanciamiento]
 #include <iostream>
 
 using namespace std;
 
 struct Cliente {
-    string nombre;
-    string apellido;
-    int tarjeta[16];
-    float dinero;
+	string nombre;
+	string apellido;
+	int tarjeta[16];
+	float dinero;
 };
 
 int main() {
-    Cliente jorge;
-    Cliente pablo;
+	Cliente jorge;
+	Cliente pablo;
 }
 \end{lstlisting}
 
 Como se puede observar, se crearon dos clientes, \textbf{jorge} y \textbf{pablo}. Podemos modificar sus datos escribiendo el nombre de cada variable despues de un punto:
 
-\begin{lstlisting}[language=C++, caption=Modificando valores]
+\begin{lstlisting}[language=C++, title=Modificando valores]
 #include <iostream>
 
 using namespace std;
 
 struct Cliente {
-    string nombre;
-    string apellido;
-    int tarjeta[16];
-    float dinero;
+	string nombre;
+	string apellido;
+	int tarjeta[16];
+	float dinero;
 };
 
 int main() {
-    Cliente jorge;
-    jorge.nombre = "Jorge";
-    jorge.apellido = "Velazquez";
-    jorge.tarjeta = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5};
-    jorge.dinero = 50726.35;
-    Cliente pablo;
-    pablo.nombre = "Pablo";
-    pablo.apellido = "Cesar"
-    pablo.tarjeta = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9, 2};
-    pablo.dinero = 999999999.9999;
+	Cliente jorge;
+	jorge.nombre = "Jorge";
+	jorge.apellido = "Velazquez";
+	jorge.tarjeta = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5};
+	jorge.dinero = 50726.35;
+	Cliente pablo;
+	pablo.nombre = "Pablo";
+	pablo.apellido = "Cesar"
+	pablo.tarjeta = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9, 2};
+	pablo.dinero = 999999999.9999;
 }
 \end{lstlisting}
 
 Para simplificar este proceso, es más facil guardar las estructuras en un arreglo o vector:
 
-\begin{lstlisting}[language=C++, caption=Clientes bancarios]
+\begin{lstlisting}[language=C++, title=Clientes bancarios]
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
 struct Cliente {
-    string nombre;
-    string apellido;
-    int tarjeta[16];
-    float dinero;
+	string nombre;
+	string apellido;
+	int tarjeta[16];
+	float dinero;
 };
 
 int main() {
-    int numeroDeClientes = 3;
-    vector<Cliente> clientes;
-    for(int i = 0; i < numeroDeClientes; i++) {
-        Cliente nuevo;
-        cout << "Nombre del cliente: " << endl;
-        cin >> nuevo.nombre;
-        cout << "Apellido del cliente: " << endl;
-        cin >> nuevo.apellido;
-        string tarjeta;
-        cout << "Tarjeta del cliente: " << endl;
-        cin >> tarjeta;
-        for(int i = 0; i < 16; i++) {
-            nuevo.tarjeta[i] = tarjeta[i] - '0';
-        }
-        cout << "Dinero: " << endl;
-        cin >> tarjeta;
-        clientes.push_back(nuevo);
-        cout << "Cliente " << nuevo.nombre << " guardado con exito" << endl;
-    }
-    cout << clientes.size() << " clientes guardados" << endl;
-    for(int i = 0; i < clientes.size(); i++) {
-        cout << clientes[i].nombre << endl;
-    }
+	int numeroDeClientes = 3;
+	vector<Cliente> clientes;
+	for(int i = 0; i < numeroDeClientes; i++) {
+		Cliente nuevo;
+		cout << "Nombre del cliente: " << endl;
+		cin >> nuevo.nombre;
+		cout << "Apellido del cliente: " << endl;
+		cin >> nuevo.apellido;
+		string tarjeta;
+		cout << "Tarjeta del cliente: " << endl;
+		cin >> tarjeta;
+		for(int i = 0; i < 16; i++) {
+			nuevo.tarjeta[i] = tarjeta[i] - '0';
+		}
+		cout << "Dinero: " << endl;
+		cin >> tarjeta;
+		clientes.push_back(nuevo);
+		cout << "Cliente " << nuevo.nombre << " guardado con exito" << endl;
+	}
+	cout << clientes.size() << " clientes guardados" << endl;
+	for(int i = 0; i < clientes.size(); i++) {
+		cout << clientes[i].nombre << endl;
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Structs}{Liga al código} \\
@@ -2344,61 +2434,53 @@ Si queremos saber el hijo derecho del elemento en el índice 1 (nodo 2), podemos
 
 Podemos hacer búsquedas de nodos con el siguiente código:
 
-\begin{lstlisting}[language=C++, caption=Arbol de binario]
+\begin{lstlisting}[language=C++, title=Arbol de binario]
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
 int main() {
-    vector<int> arbol = {1, 2, 3, 4, 5, 6, -1, 7, 8, -1, -1
-    -1, 10, -1, -1, 9};
-    cout << "Ingresa el numero de un nodo:" << endl;
-    int nodoDeInteres;
-    cin >> nodoDeInteres;
-    int indice = -1;
-    for(int i = 0; i < arbol.size(); i++) {
-        if(nodoDeInteres == arbol[i]) {
-            indice = i;
-            break;
-        }
-    }
-    if(indice == -1) {
-        cout << "El nodo " << nodoDeInteres << " no es
-        miembro de este arbol" << endl;
-        return -1;
-    }
-    if(indice == 0) {
-        cout << "Este nodo es la raiz, lo que significa que
-        no tiene padre" << endl;
-    } else {
-        cout << "El padre del nodo " << nodoDeInteres <<
-        "es el nodo " << arbol[(indice - 1) / 2] << endl;
-    }
-    int hijoIzquierdo = 2 * indice + 1;
-    int hijoDerecho = 2 * indice + 2;
-    if(hijoIzquierdo < arbol.size()) {
-        if(arbol[hijoIzquierdo] != -1) {
-            cout << "Su hijo izquierdo es el nodo " << arbol
-            [hijoIzquierdo] << endl;
-        } else {
-            cout << "Este nodo no tiene hijo izquierdo"
-            << endl;
-        }
-    } else {
-        cout << "Este nodo no tiene hijo izquierdo" << endl;
-    }
-    if(hijoDerecho < arbol.size()) {
-        if(arbol[hijoDerecho] != -1) {
-            cout << "Su hijo derecho es el nodo " << arbol
-            [hijoDerecho] << endl;
-        } else {
-            cout << "Este nodo no tiene hijo derecho"
-            << endl;
-        }
-    } else {
-        cout << "Este nodo no tiene hijo derecho" << endl;
-    }
+	vector<int> arbol = {1, 2, 3, 4, 5, 6, -1, 7, 8, -1, -1, -1, 10, -1, -1, 9};
+	cout << "Ingresa el numero de un nodo:" << endl;
+	int nodoDeInteres;
+	cin >> nodoDeInteres;
+	int indice = -1;
+	for(int i = 0; i < arbol.size(); i++) {
+		if(nodoDeInteres == arbol[i]) {
+			indice = i;
+			break;
+		}
+	}
+	if(indice == -1) {
+		cout << "El nodo " << nodoDeInteres << " no es miembro de este arbol" << endl;
+		return -1;
+	}
+	if(indice == 0) {
+		cout << "Este nodo es la raiz, lo que significa que no tiene padre" << endl;
+	} else {
+		cout << "El padre del nodo " << nodoDeInteres << "es el nodo " << arbol[(indice - 1) / 2] << endl;
+	}
+	int hijoIzquierdo = 2 * indice + 1;
+	int hijoDerecho = 2 * indice + 2;
+	if(hijoIzquierdo < arbol.size()) {
+		if(arbol[hijoIzquierdo] != -1) {
+			cout << "Su hijo izquierdo es el nodo " << arbol[hijoIzquierdo] << endl;
+		} else {
+			cout << "Este nodo no tiene hijo izquierdo" << endl;
+		}
+	} else {
+		cout << "Este nodo no tiene hijo izquierdo" << endl;
+	}
+	if(hijoDerecho < arbol.size()) {
+		if(arbol[hijoDerecho] != -1) {
+			cout << "Su hijo derecho es el nodo " << arbol[hijoDerecho] << endl;
+		} else {
+			cout << "Este nodo no tiene hijo derecho" << endl;
+		}
+	} else {
+		cout << "Este nodo no tiene hijo derecho" << endl;
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Arboles-Binarios}{Liga al código}
@@ -2517,64 +2599,64 @@ Seguimos esto hasta llegar a la esquina inferior izquierda, y entonces nos empez
 
 Podemos hacer un programa que prioritiza moverse hacia abajo cuando la meta esta más para abajo que a la izquierda y que prioritiza moverse más para la derecha en caso contrario.
 
-\begin{lstlisting}[language=C++, caption=Camino greedy]
+\begin{lstlisting}[language=C++, title=Camino greedy]
 #include <iostream>
 #include <utility>
 
 using namespace std;
 
 int main() {
-    bool mapa[][7] = {
-        {1, 0, 1, 1, 1, 1, 1},
-        {1, 0, 1, 0, 0, 0, 1},
-        {1, 0, 1, 0, 1, 0, 1},
-        {1, 0, 1, 0, 1, 0, 1},
-        {1, 0, 1, 0, 1, 1, 1},
-        {1, 0, 0, 0, 0, 0, 1},
-        {1, 1, 1, 1, 1, 0, 1}};
-    pair<int, int> puntoActual = make_pair(1, 0);
-    pair<int, int> puntoFinal = make_pair(5, 6);
-    int iteracion = 0;
-    while(puntoActual.first != puntoFinal.first || puntoActual.second != puntoFinal.second) {
-        int x = puntoActual.first;
-        int y = puntoActual.second;
-        int distanciaX = puntoFinal.first - x;
-        int distanciaY = puntoFinal.second - y;
-        if(distanciaX > distanciaY) {
-            if(mapa[y][x + 1] == 0) {
-                puntoActual = make_pair(x + 1, y);
-            } else if (mapa[y + 1][x] == 0) {
-                puntoActual = make_pair(x, y + 1);
-            } else {
-                cout << "No se pudo llegar a la meta" << endl;
-                return 0;
-            }
-        } else {
-            if(mapa[y + 1][x] == 0) {
-                puntoActual = make_pair(x, y + 1);
-            } else if (mapa[y][x + 1] == 0) {
-                puntoActual = make_pair(x + 1, y);
-            } else {
-                cout << "No se pudo llegar a la meta" << endl;
-                return 0;
-            }
-        }
-        cout << "Iteracion #" << iteracion << endl;
-        for(int j = 0; j < 7; j++) {
-            for(int i = 0; i < 7; i++) {
-                if(i == puntoActual.first && j == puntoActual.second) {
-                    cout << "x";
-                } else if (mapa[j][i] == 1) {
-                    cout << "#";
-                } else {
-                    cout << " ";
-                }
-            }
-            cout << endl;
-        }
-        cout << endl;
-        iteracion++;
-    }
+	bool mapa[][7] = {
+		{1, 0, 1, 1, 1, 1, 1},
+		{1, 0, 1, 0, 0, 0, 1},
+		{1, 0, 1, 0, 1, 0, 1},
+		{1, 0, 1, 0, 1, 0, 1},
+		{1, 0, 1, 0, 1, 1, 1},
+		{1, 0, 0, 0, 0, 0, 1},
+		{1, 1, 1, 1, 1, 0, 1}};
+	pair<int, int> puntoActual = make_pair(1, 0);
+	pair<int, int> puntoFinal = make_pair(5, 6);
+	int iteracion = 0;
+	while(puntoActual.first != puntoFinal.first || puntoActual.second != puntoFinal.second) {
+		int x = puntoActual.first;
+		int y = puntoActual.second;
+		int distanciaX = puntoFinal.first - x;
+		int distanciaY = puntoFinal.second - y;
+		if(distanciaX > distanciaY) {
+			if(mapa[y][x + 1] == 0) {
+				puntoActual = make_pair(x + 1, y);
+			} else if (mapa[y + 1][x] == 0) {
+				puntoActual = make_pair(x, y + 1);
+			} else {
+				cout << "No se pudo llegar a la meta" << endl;
+				return 0;
+			}
+		} else {
+			if(mapa[y + 1][x] == 0) {
+				puntoActual = make_pair(x, y + 1);
+			} else if (mapa[y][x + 1] == 0) {
+				puntoActual = make_pair(x + 1, y);
+			} else {
+				cout << "No se pudo llegar a la meta" << endl;
+				return 0;
+			}
+		}
+		cout << "Iteracion #" << iteracion << endl;
+		for(int j = 0; j < 7; j++) {
+			for(int i = 0; i < 7; i++) {
+				if(i == puntoActual.first && j == puntoActual.second) {
+					cout << "x";
+				} else if (mapa[j][i] == 1) {
+					cout << "#";
+				} else {
+					cout << " ";
+				}
+			}
+			cout << endl;
+		}
+		cout << endl;
+		iteracion++;
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Algoritmos-Greedy}{Liga al código} \\
@@ -2631,7 +2713,7 @@ Para implementar este algoritmo se pueden usar structs para guardar los datos de
 
 Después de cada iteración, se debe eliminar el último lugar que fue visitado de la fila y se deben agregar todos los lugares adjacentes que no se han visitado. Esta es la implementación:
 
-\begin{lstlisting}[language=C++, caption=Búsqueda en anchura]
+\begin{lstlisting}[language=C++, title=Búsqueda en anchura]
 #include <iostream>
 #include <queue>
 #include <vector>
@@ -2639,87 +2721,87 @@ Después de cada iteración, se debe eliminar el último lugar que fue visitado 
 using namespace std;
 
 struct Punto {
-    int x;
-    int y;
-    int ultimoX;
-    int ultimoY;
-    bool visitado;
+	int x;
+	int y;
+	int ultimoX;
+	int ultimoY;
+	bool visitado;
 };
 
 int main() {
-    bool mapa[][7] = {
-        {1, 0, 1, 1, 1, 1, 1},
-        {1, 0, 0, 0, 0, 0, 1},
-        {1, 0, 0, 1, 1, 0, 1},
-        {1, 0, 0, 1, 0, 0, 1},
-        {1, 0, 1, 1, 0, 1, 1},
-        {1, 0, 1, 0, 0, 0, 1},
-        {1, 1, 1, 1, 1, 0, 1}};
-    Punto puntos[7][7];
-    for(int y = 0; y < 7; y++) {
-        for(int x = 0; x < 7; x++) {
-            puntos[y][x].x = x;
-            puntos[y][x].y = y;
-            puntos[y][x].visitado = false;
-        }
-    }
-    int xInicial = 1;
-    int yInicial = 0;
-    int xFinal = 5;
-    int yFinal = 6;
-    //Iniciar la busqueda con el punto inicial
-    queue<Punto> bfs;
-    bfs.push(puntos[yInicial][xInicial]);
-    puntos[yInicial][xInicial].visitado = true;
-    while(bfs.size() > 0) {
-        Punto actual = bfs.front();
-        bfs.pop();
-        int x = actual.x;
-        int y = actual.y;
-        //Checar si los puntos adyacentes no estan fuera del arreglo y agregarlos a la fila si no han sido visitados
-        if(x + 1 < 7) {
-            if(puntos[y][x + 1].visitado == false && mapa[y][x + 1] == false) {
-                bfs.push(puntos[y][x + 1]);
-                puntos[y][x + 1].visitado = true;
-                puntos[y][x + 1].ultimoX = x;
-                puntos[y][x + 1].ultimoY = y;
-            }
-        }
-        if(x - 1 >= 0) {
-            if(puntos[y][x - 1].visitado == false && mapa[y][x - 1] == false) {
-                bfs.push(puntos[y][x - 1]);
-                puntos[y][x - 1].visitado = true;
-                puntos[y][x - 1].ultimoX = x;
-                puntos[y][x - 1].ultimoY = y;
-            }
-        }
-        if(y + 1 < 7) {
-            if(puntos[y + 1][x].visitado == false && mapa[y + 1][x] == false) {
-                bfs.push(puntos[y + 1][x]);
-                puntos[y + 1][x].visitado = true;
-                puntos[y + 1][x].ultimoX = x;
-                puntos[y + 1][x].ultimoY = y;
-            }
-        }
-        if(y - 1 >= 0) {
-            if(puntos[y - 1][x].visitado == false && mapa[y - 1][x] == false) {
-                bfs.push(puntos[y - 1][x]);
-                puntos[y - 1][x].visitado = true;
-                puntos[y - 1][x].ultimoX = x;
-                puntos[y - 1][x].ultimoY = y;
-            }
-        }
-    }
-    vector<Punto> camino;
-    Punto actual = puntos[yFinal][xFinal];
-    while(actual.x != xInicial || actual.y != yInicial) {
-        camino.push_back(actual);
-        actual = puntos[actual.ultimoY][actual.ultimoX];
-    }
-    cout << "El camino es: " << endl;
-    for(int i = camino.size() - 1; i >= 0; i--) {
-        cout << camino[i].x << ", " << camino[i].y << endl;
-    }
+	bool mapa[][7] = {
+		{1, 0, 1, 1, 1, 1, 1},
+		{1, 0, 0, 0, 0, 0, 1},
+		{1, 0, 0, 1, 1, 0, 1},
+		{1, 0, 0, 1, 0, 0, 1},
+		{1, 0, 1, 1, 0, 1, 1},
+		{1, 0, 1, 0, 0, 0, 1},
+		{1, 1, 1, 1, 1, 0, 1}};
+	Punto puntos[7][7];
+	for(int y = 0; y < 7; y++) {
+		for(int x = 0; x < 7; x++) {
+			puntos[y][x].x = x;
+			puntos[y][x].y = y;
+			puntos[y][x].visitado = false;
+		}
+	}
+	int xInicial = 1;
+	int yInicial = 0;
+	int xFinal = 5;
+	int yFinal = 6;
+	//Iniciar la busqueda con el punto inicial
+	queue<Punto> bfs;
+	bfs.push(puntos[yInicial][xInicial]);
+	puntos[yInicial][xInicial].visitado = true;
+	while(bfs.size() > 0) {
+		Punto actual = bfs.front();
+		bfs.pop();
+		int x = actual.x;
+		int y = actual.y;
+		//Checar si los puntos adyacentes no estan fuera del arreglo y agregarlos a la fila si no han sido visitados
+		if(x + 1 < 7) {
+			if(puntos[y][x + 1].visitado == false && mapa[y][x + 1] == false) {
+				bfs.push(puntos[y][x + 1]);
+				puntos[y][x + 1].visitado = true;
+				puntos[y][x + 1].ultimoX = x;
+				puntos[y][x + 1].ultimoY = y;
+			}
+		}
+		if(x - 1 >= 0) {
+			if(puntos[y][x - 1].visitado == false && mapa[y][x - 1] == false) {
+				bfs.push(puntos[y][x - 1]);
+				puntos[y][x - 1].visitado = true;
+				puntos[y][x - 1].ultimoX = x;
+				puntos[y][x - 1].ultimoY = y;
+			}
+		}
+		if(y + 1 < 7) {
+			if(puntos[y + 1][x].visitado == false && mapa[y + 1][x] == false) {
+				bfs.push(puntos[y + 1][x]);
+				puntos[y + 1][x].visitado = true;
+				puntos[y + 1][x].ultimoX = x;
+				puntos[y + 1][x].ultimoY = y;
+			}
+		}
+		if(y - 1 >= 0) {
+			if(puntos[y - 1][x].visitado == false && mapa[y - 1][x] == false) {
+				bfs.push(puntos[y - 1][x]);
+				puntos[y - 1][x].visitado = true;
+				puntos[y - 1][x].ultimoX = x;
+				puntos[y - 1][x].ultimoY = y;
+			}
+		}
+	}
+	vector<Punto> camino;
+	Punto actual = puntos[yFinal][xFinal];
+	while(actual.x != xInicial || actual.y != yInicial) {
+		camino.push_back(actual);
+		actual = puntos[actual.ultimoY][actual.ultimoX];
+	}
+	cout << "El camino es: " << endl;
+	for(int i = camino.size() - 1; i >= 0; i--) {
+		cout << camino[i].x << ", " << camino[i].y << endl;
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Busqueda-en-Anchura}{Liga al código} \\
@@ -2747,7 +2829,7 @@ Si queremos implementar este algoritmo, debemos guardar cada posición que se de
 
 Si vemos la implementación de este algoritmo podemos observar que es exactamente igual al código de BFS con el único cambio de que ahora se esta usando un stack en lugar de un queue:
 
-\begin{lstlisting}[language=C++, caption=Búsqueda en anchura]
+\begin{lstlisting}[language=C++, title=Búsqueda en anchura]
 #include <iostream>
 #include <stack>
 #include <vector>
@@ -2755,87 +2837,87 @@ Si vemos la implementación de este algoritmo podemos observar que es exactament
 using namespace std;
 
 struct Punto {
-    int x;
-    int y;
-    int ultimoX;
-    int ultimoY;
-    bool visitado;
+	int x;
+	int y;
+	int ultimoX;
+	int ultimoY;
+	bool visitado;
 };
 
 int main() {
-    bool mapa[][7] = {
-        {1, 0, 1, 1, 1, 1, 1},
-        {1, 0, 0, 0, 0, 0, 1},
-        {1, 0, 0, 1, 1, 0, 1},
-        {1, 0, 0, 1, 0, 0, 1},
-        {1, 0, 1, 1, 0, 1, 1},
-        {1, 0, 1, 0, 0, 0, 1},
-        {1, 1, 1, 1, 1, 0, 1}};
-    Punto puntos[7][7];
-    for(int y = 0; y < 7; y++) {
-        for(int x = 0; x < 7; x++) {
-            puntos[y][x].x = x;
-            puntos[y][x].y = y;
-            puntos[y][x].visitado = false;
-        }
-    }
-    int xInicial = 1;
-    int yInicial = 0;
-    int xFinal = 5;
-    int yFinal = 6;
-    //Iniciar la busqueda con el punto inicial
-    stack<Punto> dfs;
-    dfs.push(puntos[yInicial][xInicial]);
-    puntos[yInicial][xInicial].visitado = true;
-    while(dfs.size() > 0) {
-        Punto actual = dfs.top();
-        dfs.pop();
-        int x = actual.x;
-        int y = actual.y;
-        //Checar si los puntos adyacentes no estan fuera del arreglo y agregarlos a la fila si no han sido visitados
-        if(x + 1 < 7) {
-            if(puntos[y][x + 1].visitado == false && mapa[y][x + 1] == false) {
-                dfs.push(puntos[y][x + 1]);
-                puntos[y][x + 1].visitado = true;
-                puntos[y][x + 1].ultimoX = x;
-                puntos[y][x + 1].ultimoY = y;
-            }
-        }
-        if(x - 1 >= 0) {
-            if(puntos[y][x - 1].visitado == false && mapa[y][x - 1] == false) {
-                dfs.push(puntos[y][x - 1]);
-                puntos[y][x - 1].visitado = true;
-                puntos[y][x - 1].ultimoX = x;
-                puntos[y][x - 1].ultimoY = y;
-            }
-        }
-        if(y + 1 < 7) {
-            if(puntos[y + 1][x].visitado == false && mapa[y + 1][x] == false) {
-                dfs.push(puntos[y + 1][x]);
-                puntos[y + 1][x].visitado = true;
-                puntos[y + 1][x].ultimoX = x;
-                puntos[y + 1][x].ultimoY = y;
-            }
-        }
-        if(y - 1 >= 0) {
-            if(puntos[y - 1][x].visitado == false && mapa[y - 1][x] == false) {
-                dfs.push(puntos[y - 1][x]);
-                puntos[y - 1][x].visitado = true;
-                puntos[y - 1][x].ultimoX = x;
-                puntos[y - 1][x].ultimoY = y;
-            }
-        }
-    }
-    vector<Punto> camino;
-    Punto actual = puntos[yFinal][xFinal];
-    while(actual.x != xInicial || actual.y != yInicial) {
-        camino.push_back(actual);
-        actual = puntos[actual.ultimoY][actual.ultimoX];
-    }
-    cout << "El camino es: " << endl;
-    for(int i = camino.size() - 1; i >= 0; i--) {
-        cout << camino[i].x << ", " << camino[i].y << endl;
-    }
+	bool mapa[][7] = {
+		{1, 0, 1, 1, 1, 1, 1},
+		{1, 0, 0, 0, 0, 0, 1},
+		{1, 0, 0, 1, 1, 0, 1},
+		{1, 0, 0, 1, 0, 0, 1},
+		{1, 0, 1, 1, 0, 1, 1},
+		{1, 0, 1, 0, 0, 0, 1},
+		{1, 1, 1, 1, 1, 0, 1}};
+	Punto puntos[7][7];
+	for(int y = 0; y < 7; y++) {
+		for(int x = 0; x < 7; x++) {
+			puntos[y][x].x = x;
+			puntos[y][x].y = y;
+			puntos[y][x].visitado = false;
+		}
+	}
+	int xInicial = 1;
+	int yInicial = 0;
+	int xFinal = 5;
+	int yFinal = 6;
+	//Iniciar la busqueda con el punto inicial
+	stack<Punto> dfs;
+	dfs.push(puntos[yInicial][xInicial]);
+	puntos[yInicial][xInicial].visitado = true;
+	while(dfs.size() > 0) {
+		Punto actual = dfs.top();
+		dfs.pop();
+		int x = actual.x;
+		int y = actual.y;
+		//Checar si los puntos adyacentes no estan fuera del arreglo y agregarlos a la fila si no han sido visitados
+		if(x + 1 < 7) {
+			if(puntos[y][x + 1].visitado == false && mapa[y][x + 1] == false) {
+				dfs.push(puntos[y][x + 1]);
+				puntos[y][x + 1].visitado = true;
+				puntos[y][x + 1].ultimoX = x;
+				puntos[y][x + 1].ultimoY = y;
+			}
+		}
+		if(x - 1 >= 0) {
+			if(puntos[y][x - 1].visitado == false && mapa[y][x - 1] == false) {
+				dfs.push(puntos[y][x - 1]);
+				puntos[y][x - 1].visitado = true;
+				puntos[y][x - 1].ultimoX = x;
+				puntos[y][x - 1].ultimoY = y;
+			}
+		}
+		if(y + 1 < 7) {
+			if(puntos[y + 1][x].visitado == false && mapa[y + 1][x] == false) {
+				dfs.push(puntos[y + 1][x]);
+				puntos[y + 1][x].visitado = true;
+				puntos[y + 1][x].ultimoX = x;
+				puntos[y + 1][x].ultimoY = y;
+			}
+		}
+		if(y - 1 >= 0) {
+			if(puntos[y - 1][x].visitado == false && mapa[y - 1][x] == false) {
+				dfs.push(puntos[y - 1][x]);
+				puntos[y - 1][x].visitado = true;
+				puntos[y - 1][x].ultimoX = x;
+				puntos[y - 1][x].ultimoY = y;
+			}
+		}
+	}
+	vector<Punto> camino;
+	Punto actual = puntos[yFinal][xFinal];
+	while(actual.x != xInicial || actual.y != yInicial) {
+		camino.push_back(actual);
+		actual = puntos[actual.ultimoY][actual.ultimoX];
+	}
+	cout << "El camino es: " << endl;
+	for(int i = camino.size() - 1; i >= 0; i--) {
+		cout << camino[i].x << ", " << camino[i].y << endl;
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Busqueda-en-Profundidad}{Liga al código} \\
@@ -2872,62 +2954,62 @@ Se ha marcado la siguiente gráfica con el camino menos pesado en rojo y las dis
 
 El siguiente código implementa el algoritmo para resolver este caso considerando que 2147483647 es infinito:
 
-\begin{lstlisting}[language=C++, caption=Algoritmo de Dijkstra]
+\begin{lstlisting}[language=C++, title=Algoritmo de Dijkstra]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int grafo[][7] = {{-1,  2,  5, 17, -1, -1, -1},
-                        { 2, -1, -1,  3, 10, -1, -1},
-                        { 5, -1, -1,  8, -1,  6, -1},
-                        {17,  3,  8, -1,  7,  7, -1},
-                        {-1, 10, -1,  7, -1, -1,  4},
-                        {-1, -1,  6,  7, -1, -1,  9},
-                        {-1, -1, -1, -1,  4,  9, -1}};
-    int distancias[7];
-    int previo[7];
-    bool marcados[7];
-    distancias[0] = 0;
-    marcados[0] = false;
-    for(int i = 1; i < 7; i++) {
-        distancias[i] = 2147483647;
-        marcados[i] = false;
-    }
-    while(true) {
-        int minimo = -1;
-        for(int i = 0; i < 7; i++) {
-            if(!marcados[i]) {
-                if(minimo == -1) {
-                    minimo = i;
-                }
-                if(distancias[i] < distancias[minimo] &&
-                distancias[i] != 2147483647) {
-                    minimo = i;
-                }
-            }
-        }
-        if(minimo == -1) {
-            break;
-        }
-        marcados[minimo] = true;
-        for(int i = 0; i < 7; i++) {
-            if(!marcados[i] && grafo[minimo][i] != -1) {
-                int distanciaNueva = distancias[minimo] + grafo[minimo][i];
-                if(distanciaNueva < distancias[i]) {
-                    distancias[i] = distanciaNueva;
-                    previo[i] = minimo;
-                }
-            }
-        }
-    }
-    int actual = 6;
-    while(actual != 0) {
-        cout << actual + 1 << " <=> ";
-        actual = previo[actual];
-    }
-    cout << 1 << endl;
-    cout << "Distancia minima: " << distancias[6] << endl;
+	int grafo[][7] = {
+		{-1,  2,  5, 17, -1, -1, -1},
+		{ 2, -1, -1,  3, 10, -1, -1},
+		{ 5, -1, -1,  8, -1,  6, -1},
+		{17,  3,  8, -1,  7,  7, -1},
+		{-1, 10, -1,  7, -1, -1,  4},
+		{-1, -1,  6,  7, -1, -1,  9},
+		{-1, -1, -1, -1,  4,  9, -1}};
+	int distancias[7];
+	int previo[7];
+	bool marcados[7];
+	distancias[0] = 0;
+	marcados[0] = false;
+	for(int i = 1; i < 7; i++) {
+		distancias[i] = 2147483647;
+		marcados[i] = false;
+	}
+	while(true) {
+		int minimo = -1;
+		for(int i = 0; i < 7; i++) {
+			if(!marcados[i]) {
+				if(minimo == -1) {
+					minimo = i;
+				}
+				if(distancias[i] < distancias[minimo] && distancias[i] != 2147483647) {
+					minimo = i;
+				}
+			}
+		}
+		if(minimo == -1) {
+			break;
+		}
+		marcados[minimo] = true;
+		for(int i = 0; i < 7; i++) {
+			if(!marcados[i] && grafo[minimo][i] != -1) {
+				int distanciaNueva = distancias[minimo] + grafo[minimo][i];
+				if(distanciaNueva < distancias[i]) {
+					distancias[i] = distanciaNueva;
+					previo[i] = minimo;
+				}
+			}
+		}
+	}
+	int actual = 6;
+	while(actual != 0) {
+		cout << actual + 1 << " <=> ";
+		actual = previo[actual];
+	}
+	cout << 1 << endl;
+	cout << "Distancia minima: " << distancias[6] << endl;
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Algoritmo-de-Dijkstra}{Liga al código} \\
@@ -2959,7 +3041,7 @@ Luego se debe marcar el último nodo que fue visitado al igual que todos los dem
 
 Si deseamos verlo en C++, podemos usar una fila de prioridad para obtener el punto con menos distancia que se ha buscado:
 
-\begin{lstlisting}[language=C++, caption=A*]
+\begin{lstlisting}[language=C++, title=A*]
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -2968,86 +3050,83 @@ Si deseamos verlo en C++, podemos usar una fila de prioridad para obtener el pun
 using namespace std;
 
 struct Punto {
-    int x;
-    int y;
-    int distancia;
-    bool visitado;
+	int x;
+	int y;
+	int distancia;
+	bool visitado;
 };
 
 //Es necesario para ordenar los datos en la fila
 struct ComparaDistancia {
-    bool operator()(Punto const& p1, Punto const& p2) {
-        return p1.distancia > p2.distancia;
-    }
+	bool operator()(Punto const& p1, Punto const& p2) {
+		return p1.distancia > p2.distancia;
+	}
 };
 
 int main() {
-    int grafo[][7] = {{1, 1, 1, 1, 1, 0, 1},
-                        {1, 0, 1, 0, 1, 0, 1},
-                        {1, 0, 1, 0, 1, 0, 1},
-                        {1, 0, 0, 0, 0, 0, 1},
-                        {1, 0, 1, 0, 1, 1, 1},
-                        {1, 0, 1, 0, 0, 0, 1},
-                        {1, 1, 1, 1, 1, 0, 1}};
-    Punto puntos[7][7];
-    for(int y = 0; y < 7; y++) {
-        for(int x = 0; x < 7; x++) {
-            puntos[y][x].x = x;
-            puntos[y][x].y = y;
-            puntos[y][x].visitado = false;
-        }
-    }
-    int xInicial = 5;
-    int yInicial = 0;
-    int xFinal = 5;
-    int yFinal = 6;
-    priority_queue<Punto, vector<Punto>, ComparaDistancia> camino;
-    Punto inicial = puntos[yInicial][xInicial];
-    inicial.distancia = 6;
-    inicial.visitado = true;
-    camino.push(inicial);
-    while(camino.size() > 0) {
-        Punto actual = camino.top();
-        camino.pop();
-        int x = actual.x;
-        int y = actual.y;
-        cout << x << ", " << y << endl;
-        if(x == xFinal && y == yFinal) {
-            break;
-        }
-        if(x - 1 >= 0) {
-            if(!puntos[y][x - 1].visitado && grafo[y][x - 1] == 0) {
-                puntos[y][x - 1].distancia =
-                abs(y - yFinal) + abs((x - 1) - xFinal);
-                puntos[y][x - 1].visitado = true;
-                camino.push(puntos[y][x - 1]);
-            }
-        }
-        if(x + 1 < 7) {
-            if(!puntos[y][x + 1].visitado && grafo[y][x + 1] == 0) {
-                puntos[y][x + 1].distancia =
-                abs(y - yFinal) + abs((x + 1) - xFinal);
-                puntos[y][x + 1].visitado = true;
-                camino.push(puntos[y][x + 1]);
-            }
-        }
-        if(y - 1 >= 0) {
-            if(!puntos[y - 1][x].visitado && grafo[y - 1][x] == 0) {
-                puntos[y - 1][x].distancia =
-                abs((y - 1) - yFinal) + abs(x - xFinal);
-                puntos[y - 1][x].visitado = true;
-                camino.push(puntos[y - 1][x]);
-            }
-        }
-        if(y + 1 < 7) {
-            if(!puntos[y + 1][x].visitado && grafo[y + 1][x] == 0) {
-                puntos[y + 1][x].distancia =
-                abs((y + 1) - yFinal) + abs(x - xFinal);
-                puntos[y + 1][x].visitado = true;
-                camino.push(puntos[y + 1][x]);
-            }
-        }
-    }
+	int grafo[][7] = {
+		{1, 1, 1, 1, 1, 0, 1},
+		{1, 0, 1, 0, 1, 0, 1},
+		{1, 0, 1, 0, 1, 0, 1},
+		{1, 0, 0, 0, 0, 0, 1},
+		{1, 0, 1, 0, 1, 1, 1},
+		{1, 0, 1, 0, 0, 0, 1},
+		{1, 1, 1, 1, 1, 0, 1}};
+	Punto puntos[7][7];
+	for(int y = 0; y < 7; y++) {
+		for(int x = 0; x < 7; x++) {
+			puntos[y][x].x = x;
+			puntos[y][x].y = y;
+			puntos[y][x].visitado = false;
+		}
+	}
+	int xInicial = 5;
+	int yInicial = 0;
+	int xFinal = 5;
+	int yFinal = 6;
+	priority_queue<Punto, vector<Punto>, ComparaDistancia> camino;
+	Punto inicial = puntos[yInicial][xInicial];
+	inicial.distancia = 6;
+	inicial.visitado = true;
+	camino.push(inicial);
+	while(camino.size() > 0) {
+		Punto actual = camino.top();
+		camino.pop();
+		int x = actual.x;
+		int y = actual.y;
+		cout << x << ", " << y << endl;
+		if(x == xFinal && y == yFinal) {
+			break;
+		}
+		if(x - 1 >= 0) {
+			if(!puntos[y][x - 1].visitado && grafo[y][x - 1] == 0) {
+				puntos[y][x - 1].distancia = abs(y - yFinal) + abs((x - 1) - xFinal);
+				puntos[y][x - 1].visitado = true;
+				camino.push(puntos[y][x - 1]);
+			}
+		}
+		if(x + 1 < 7) {
+			if(!puntos[y][x + 1].visitado && grafo[y][x + 1] == 0) {
+				puntos[y][x + 1].distancia = abs(y - yFinal) + abs((x + 1) - xFinal);
+				puntos[y][x + 1].visitado = true;
+				camino.push(puntos[y][x + 1]);
+			}
+		}
+		if(y - 1 >= 0) {
+			if(!puntos[y - 1][x].visitado && grafo[y - 1][x] == 0) {
+				puntos[y - 1][x].distancia = abs((y - 1) - yFinal) + abs(x - xFinal);
+				puntos[y - 1][x].visitado = true;
+				camino.push(puntos[y - 1][x]);
+			}
+		}
+		if(y + 1 < 7) {
+			if(!puntos[y + 1][x].visitado && grafo[y + 1][x] == 0) {
+				puntos[y + 1][x].distancia = abs((y + 1) - yFinal) + abs(x - xFinal);
+				puntos[y + 1][x].visitado = true;
+				camino.push(puntos[y + 1][x]);
+			}
+		}
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/A}{Liga al código} \\
@@ -3072,39 +3151,39 @@ Una desventaja de este tipo de dato es que no se puede saber cual es la variable
 
 Aqui se presenta el ejemplo de un código que almacena una dirección (arriba, abajo, izquierda o derecha). Como siempre se tendran dos arreglos distintos con uno para guardar direcciones horizontales y uno que guarda direcciones verticales, entonces se puede crear una union que guarda arriba o abajo en un booleano o derecha o izquierda en otra:
 
-\begin{lstlisting}[language=C++, caption=Uniones]
+\begin{lstlisting}[language=C++, title=Uniones]
 #include <iostream>
 
 using namespace std;
 
 union Direccion {
-    bool arriba;
-    bool derecha;
+	bool arriba;
+	bool derecha;
 };
 
 int main() {
-    Direccion verticales[4];
-    Direccion horizontales[4];
-    for(int i = 0; i < 4; i++) {
-        cin >> verticales[i].arriba;
-    }
-    for(int i = 0; i < 4; i++) {
-        cin >> horizontales[i].derecha;
-    }
-    for(int i = 0; i < 4; i++) {
-        if(verticales[i].arriba) {
-            cout << "arriba" << endl;
-        } else {
-            cout << "abajo" << endl;
-        }
-    }
-    for(int i = 0; i < 4; i++) {
-        if(horizontales[i].derecha) {
-            cout << "derecha" << endl;
-        } else {
-            cout << "izquierda" << endl;
-        }
-    }
+	Direccion verticales[4];
+	Direccion horizontales[4];
+	for(int i = 0; i < 4; i++) {
+		cin >> verticales[i].arriba;
+	}
+	for(int i = 0; i < 4; i++) {
+		cin >> horizontales[i].derecha;
+	}
+	for(int i = 0; i < 4; i++) {
+		if(verticales[i].arriba) {
+			cout << "arriba" << endl;
+		} else {
+			cout << "abajo" << endl;
+		}
+	}
+	for(int i = 0; i < 4; i++) {
+		if(horizontales[i].derecha) {
+			cout << "derecha" << endl;
+		} else {
+			cout << "izquierda" << endl;
+		}
+	}
 }
 \end{lstlisting}
 
@@ -3114,57 +3193,57 @@ Las clases son objetos especiales que te permiten guardar datos como un struct, 
 
 Por ahora solo crearemos una clase con variables públicas utilizando una estructura parecida a un struct:
 
-\begin{lstlisting}[language=C++, caption=Declarando clases]
+\begin{lstlisting}[language=C++, title=Declarando clases]
 #include <iostream>
 
 using namespace std;
 
 class Cliente {
-    public:
-        string nombre;
-        float dinero;
+	public:
+		string nombre;
+		float dinero;
 };
 
 int main() {
-    Cliente pablo;
-    pablo.nombre = "Pablo Cesar";
-    pablo.dinero = 12.1;
-    cout << pablo.nombre << " tiene $" << pablo.dinero;
+	Cliente pablo;
+	pablo.nombre = "Pablo Cesar";
+	pablo.dinero = 12.1;
+	cout << pablo.nombre << " tiene $" << pablo.dinero;
 }
 \end{lstlisting}
 
 Algo que habiamos mencionado es que las clases pueden tener sus propias funciones, asi que crearemos uno para ver cuanto dinero tiene cada cliente y otro para sumarle una cantidad de dinero a su cuenta:
 
-\begin{lstlisting}[language=C++, caption=Funciones internas]
+\begin{lstlisting}[language=C++, title=Funciones internas]
 #include <iostream>
 
 using namespace std;
 
 class Cliente {
-    public:
-        string nombre;
-        float dinero;
+	public:
+		string nombre;
+		float dinero;
 
-        void imprimeSaldo() {
-            cout << nombre << " tiene $" << dinero << endl;
-        }
+		void imprimeSaldo() {
+			cout << nombre << " tiene $" << dinero << endl;
+		}
 
-        void deposita(float cantidad) {
-            dinero += cantidad;
-        }
+		void deposita(float cantidad) {
+			dinero += cantidad;
+		}
 };
 
 int main() {
-    Cliente pablo;
-    pablo.nombre = "Pablo Cesar";
-    pablo.dinero = 12.1;
-    Cliente jose;
-    jose.nombre = "Jose Miguel";
-    jose.dinero = 135.23;
-    jose.imprimeSaldo();
-    pablo.imprimeSaldo();
-    pablo.deposita(300);
-    pablo.imprimeSaldo();
+	Cliente pablo;
+	pablo.nombre = "Pablo Cesar";
+	pablo.dinero = 12.1;
+	Cliente jose;
+	jose.nombre = "Jose Miguel";
+	jose.dinero = 135.23;
+	jose.imprimeSaldo();
+	pablo.imprimeSaldo();
+	pablo.deposita(300);
+	pablo.imprimeSaldo();
 }
 \end{lstlisting}
 
@@ -3174,42 +3253,42 @@ La razón por la que existen las variables privadas es para asegurar que esta va
 
 Este concepto se llama la abstracción de datos debido a que estamos protegiendolos de uso equivocado o indeseado. Si intentamos leer o modificar la variable dinero desde main se nos arrojará un error, mientras que en cualquiera de las funciones de nuestra clase no habrá problema. Nuestro código quedará de la siguiente manera:
 
-\begin{lstlisting}[language=C++, caption=Abstracción de datos]
+\begin{lstlisting}[language=C++, title=Abstracción de datos]
 #include <iostream>
 
 using namespace std;
 
 class Cliente {
-    private:
-        float dinero;
+	private:
+		float dinero;
 
-    public:
-        string nombre;
+	public:
+		string nombre;
 
-        void imprimeSaldo() {
-            cout << nombre << " tiene $" << dinero << endl;
-        }
+		void imprimeSaldo() {
+			cout << nombre << " tiene $" << dinero << endl;
+		}
 
-        void deposita(float cantidad) {
-            if(cantidad <= 0) {
-                cout << "Deposito invalido" << endl;
-            } else {
-                dinero += cantidad;
-            }
-        }
+		void deposita(float cantidad) {
+			if(cantidad <= 0) {
+				cout << "Deposito invalido" << endl;
+			} else {
+				dinero += cantidad;
+			}
+		}
 };
 
 int main() {
-    Cliente pablo;
-    pablo.nombre = "Pablo Cesar";
-    pablo.deposita(12.1);
-    Cliente jose;
-    jose.nombre = "Jose Miguel";
-    jose.deposita(135.23);
-    jose.imprimeSaldo();
-    pablo.imprimeSaldo();
-    pablo.deposita(-300);
-    pablo.imprimeSaldo();
+	Cliente pablo;
+	pablo.nombre = "Pablo Cesar";
+	pablo.deposita(12.1);
+	Cliente jose;
+	jose.nombre = "Jose Miguel";
+	jose.deposita(135.23);
+	jose.imprimeSaldo();
+	pablo.imprimeSaldo();
+	pablo.deposita(-300);
+	pablo.imprimeSaldo();
 }
 \end{lstlisting}
 
@@ -3221,48 +3300,48 @@ Existe una función especial llamada el constructor que puede recibir varios par
 
 El constructor siempre tiene el mismo nombre que el nombre de la clase y es una función sin tipo. En esta función es recomendable inicializar todas las variables de una clase:
 
-\begin{lstlisting}[language=C++, caption=Constructores]
+\begin{lstlisting}[language=C++, title=Constructores]
 #include <iostream>
 
 using namespace std;
 
 class Cliente {
-    private:
-        float dinero;
+	private:
+		float dinero;
 
-    public:
-        string nombre;
+	public:
+		string nombre;
 
-        //constructor
-        Cliente(string nombreInicial, float saldoInicial) {
-            nombre = nombreInicial;
-            if(saldoInicial < 0) {
-                dinero = 0;
-            } else {
-                dinero = saldoInicial;
-            }
-        }
+		//constructor
+		Cliente(string nombreInicial, float saldoInicial) {
+			nombre = nombreInicial;
+			if(saldoInicial < 0) {
+				dinero = 0;
+			} else {
+				dinero = saldoInicial;
+			}
+		}
 
-        void imprimeSaldo() {
-            cout << nombre << " tiene $" << dinero << endl;
-        }
+		void imprimeSaldo() {
+			cout << nombre << " tiene $" << dinero << endl;
+		}
 
-        void deposita(float cantidad) {
-            if(cantidad <= 0) {
-                cout << "Deposito invalido" << endl;
-            } else {
-                dinero += cantidad;
-            }
-        }
+		void deposita(float cantidad) {
+			if(cantidad <= 0) {
+				cout << "Deposito invalido" << endl;
+			} else {
+				dinero += cantidad;
+			}
+		}
 };
 
 int main() {
-    Cliente pablo("Pablo Cesar", -22.37);
-    Cliente jose("Jose Miguel", 135.23);
-    jose.imprimeSaldo();
-    pablo.imprimeSaldo();
-    pablo.deposita(12.1);
-    pablo.imprimeSaldo();
+	Cliente pablo("Pablo Cesar", -22.37);
+	Cliente jose("Jose Miguel", 135.23);
+	jose.imprimeSaldo();
+	pablo.imprimeSaldo();
+	pablo.deposita(12.1);
+	pablo.imprimeSaldo();
 }
 \end{lstlisting}
 
@@ -3272,65 +3351,65 @@ Tambien existen los destructores que son funciones especiales que se corren a la
 
 Para declarar el destructor se debe escribir una función sin parametros y sin tipos con un tilde seguido por el nombre de la clase.
 
-\begin{lstlisting}[language=C++, caption=Destructores]
+\begin{lstlisting}[language=C++, title=Destructores]
 #include <iostream>
 
 using namespace std;
 
 class Cliente {
-    private:
-        float dinero;
+	private:
+		float dinero;
 
-    public:
-        string nombre;
+	public:
+		string nombre;
 
-        //constructor
-        Cliente(string nombreInicial, float saldoInicial) {
-            nombre = nombreInicial;
-            if(saldoInicial < 0) {
-                dinero = 0;
-            } else {
-                dinero = saldoInicial;
-            }
-            cout << "Cliente " << nombre << " creado" << endl;
-            imprimeSaldo();
-        }
+		//constructor
+		Cliente(string nombreInicial, float saldoInicial) {
+			nombre = nombreInicial;
+			if(saldoInicial < 0) {
+				dinero = 0;
+			} else {
+				dinero = saldoInicial;
+			}
+			cout << "Cliente " << nombre << " creado" << endl;
+			imprimeSaldo();
+		}
 
-        //destructor
-        ~Cliente() {
-            cout << "Cliente " << nombre << " eliminado" << endl;
-        }
+		//destructor
+		~Cliente() {
+			cout << "Cliente " << nombre << " eliminado" << endl;
+		}
 
-        void imprimeSaldo() {
-            cout << nombre << " tiene $" << dinero << endl;
-        }
+		void imprimeSaldo() {
+			cout << nombre << " tiene $" << dinero << endl;
+		}
 
-        void deposita(float cantidad) {
-            if(cantidad <= 0) {
-                cout << "Deposito invalido" << endl;
-            } else {
-                dinero += cantidad;
-                cout << nombre << " ha recibido " << cantidad << endl;
-            }
-        }
+		void deposita(float cantidad) {
+			if(cantidad <= 0) {
+				cout << "Deposito invalido" << endl;
+			} else {
+				dinero += cantidad;
+				cout << nombre << " ha recibido " << cantidad << endl;
+			}
+		}
 };
 
 int main() {
-    for(int i = 0; i < 3; i++) {
-        string nombre;
-        float saldo;
-        cout << "Nombre del cliente: " << endl;
-        cin >> nombre;
-        cout << "Saldo inicial: " << endl;
-        cin >> saldo;
-        Cliente temporal(nombre, saldo);
-        float deposito;
-        cout << "Dinero a depositar: " << endl;
-        cin >> deposito;
-        temporal.deposita(deposito);
-        temporal.imprimeSaldo();
-        cout << endl;
-    }
+	for(int i = 0; i < 3; i++) {
+		string nombre;
+		float saldo;
+		cout << "Nombre del cliente: " << endl;
+		cin >> nombre;
+		cout << "Saldo inicial: " << endl;
+		cin >> saldo;
+		Cliente temporal(nombre, saldo);
+		float deposito;
+		cout << "Dinero a depositar: " << endl;
+		cin >> deposito;
+		temporal.deposita(deposito);
+		temporal.imprimeSaldo();
+		cout << endl;
+	}
 }
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Clases}{Liga al código} \\
@@ -3339,23 +3418,23 @@ int main() {
 
 En tanto las funciones regulares como las funciones de clases se puede llevar a cabo el sobrecargamiento. Esto consiste en tener varias funciones con el mismo nombre pero con diferentes tipos de parámetros. Por ejemplo, si quisieramos tener una función suma que es capaz de sumar dos números o dos dígitos en forma de cáracteres ('5' + '6' nos daría 11), entonces podemos hacer dos funciones que se sobrecargan:
 
-\begin{lstlisting}[language=C++, caption=Sobrecargamiento]
+\begin{lstlisting}[language=C++, title=Sobrecargamiento]
 #include <iostream>
 
 using namespace std;
 
 int suma(int a, int b) {
-    return a + b;
+	return a + b;
 }
 
 int suma(char a, char b) {
-    return (a - '0') + (b - '0');
+	return (a - '0') + (b - '0');
 }
 
 int main() {
-    cout << suma(5, 6) << endl;
-    cout << suma('5', '6') << endl;
-    cout << suma('9', '7') << endl;
+	cout << suma(5, 6) << endl;
+	cout << suma('5', '6') << endl;
+	cout << suma('9', '7') << endl;
 }
 \end{lstlisting}
 
@@ -3363,56 +3442,56 @@ Aqui podemos ver que la función suma es sobrecargada y que la primera vez que s
 
 El sobrecargamiento tambien permite la llamada de la misma función, asi que se puede crear una función general que es llamada por las funciones que sobrecargan:
 
-\begin{lstlisting}[language=C++, caption=Sobrecargamiento]
+\begin{lstlisting}[language=C++, title=Sobrecargamiento]
 #include <iostream>
 
 using namespace std;
 
 int potencia(int a, int b) {
-    int resultado = 1;
-    for(int i = 0; i < b; i++) {
-        resultado *= a;
-    }
-    return resultado;
+	int resultado = 1;
+	for(int i = 0; i < b; i++) {
+		resultado *= a;
+	}
+	return resultado;
 }
 
 int potencia(char a, char b) {
-    return potencia(a - '0', b - '0');
+	return potencia(a - '0', b - '0');
 }
 
 int main() {
-    cout << potencia(5, 6) << endl;
-    cout << potencia('5', '6') << endl;
-    cout << potencia('9', '7') << endl;
+	cout << potencia(5, 6) << endl;
+	cout << potencia('5', '6') << endl;
+	cout << potencia('9', '7') << endl;
 }
 \end{lstlisting}
 
 Para una clase el sobrecargamiento es exactamente igual:
 
-\begin{lstlisting}[language=C++, caption=Sobrecargamiento de clases]
+\begin{lstlisting}[language=C++, title=Sobrecargamiento de clases]
 #include <iostream>
 
 using namespace std;
 
 class Cliente {
-    public:
-        string nombre;
-        float dinero;
+	public:
+		string nombre;
+		float dinero;
 
-        Cliente(string nombreInicial) {
-            nombre = nombreInicial;
-            dinero = 0;
-        }
+		Cliente(string nombreInicial) {
+			nombre = nombreInicial;
+			dinero = 0;
+		}
 
-        Cliente(string nombreInicial, float dineroInicial) {
-            nombre = nombreInicial;
-            dinero = dineroInicial;
-        }
+		Cliente(string nombreInicial, float dineroInicial) {
+			nombre = nombreInicial;
+			dinero = dineroInicial;
+		}
 };
 
 int main() {
-    Cliente pablo("Pablo");
-    Cliente jorge("Jorge", 121.35);
+	Cliente pablo("Pablo");
+	Cliente jorge("Jorge", 121.35);
 }
 \end{lstlisting}
 
@@ -3420,36 +3499,36 @@ int main() {
 
 Se pueden sobrecargar los operadores principales (+, -, =, ...) para que puedan manipular las instancias de dos clases. Digamos que tenemos una clase que sirve como un punto bidimensional y quisieramos que se sumarán dos puntos con el operador +, entonces se puede sobrecargar este operador en nuestra clase de la siguiente manera:
 
-\begin{lstlisting}[language=C++, caption=Sobrecargamiento de operadores]
+\begin{lstlisting}[language=C++, title=Sobrecargamiento de operadores]
 #include <iostream>
 
 using namespace std;
 
 class Punto {
-    public:
-        int x;
-        int y;
+	public:
+		int x;
+		int y;
 
-        Punto(int xInicial, int yInicial) {
-            x = xInicial;
-            y = yInicial;
-        }
-        
-        void imprimePunto() {
-            cout << "(" << x << ", " << y << ")" << endl;
-        }
+		Punto(int xInicial, int yInicial) {
+			x = xInicial;
+			y = yInicial;
+		}
 
-        Punto operator+(const Punto& p) {
-            Punto suma(x + p.x, y + p.y);
-            return suma;
-        }
+		void imprimePunto() {
+			cout << "(" << x << ", " << y << ")" << endl;
+		}
+
+		Punto operator+(const Punto& p) {
+			Punto suma(x + p.x, y + p.y);
+			return suma;
+		}
 };
 
 int main() {
-    Punto a(6, 11);
-    Punto b(-3, 25);
-    Punto c = a + b;
-    c.imprimePunto();
+	Punto a(6, 11);
+	Punto b(-3, 25);
+	Punto c = a + b;
+	c.imprimePunto();
 }
 \end{lstlisting}
 
@@ -3463,54 +3542,50 @@ Para heredar una clase se debe escribir dos puntos, public y el nombre de la cla
 
 Aqui podemos ver un ejemplo de un código donde se tiene dos clases, la clase Miembro contiene todas las funciones y variables de la clase Cliente, pero le hacemos unas modificaciones para que solo miembros reciben ciertas ventajas. Por ejemplo, no se puede modificar la variable puntos de un cliente porque esta clase no la tiene, pero la variable nombre si es igual para las dos clases.
 
-\begin{lstlisting}[language=C++, caption=Heredación]
+\begin{lstlisting}[language=C++, title=Heredación]
 #include <iostream>
 
 using namespace std;
 
 class Cliente {
 	public:
-    string nombre;
-    double dinero;
+		string nombre;
+		double dinero;
 
-    Cliente(string nombreInicial) {
-        nombre = nombreInicial;
-        dinero = 0;
-    }
+		Cliente(string nombreInicial) {
+			nombre = nombreInicial;
+			dinero = 0;
+		}
 
-    void venderArticulo(double precio) {
-        dinero += precio;
-        cout << nombre << " no recibio puntos
-        por vender un articulo porque no es
-        miembro" << endl;
-    }
+		void venderArticulo(double precio) {
+			dinero += precio;
+			cout << nombre << " no recibio puntos por vender un articulo porque no es miembro" << endl;
+		}
 
-    void verDatos() {
-        cout << nombre << " tiene $" << dinero << endl;
-    }
+		void verDatos() {
+			cout << nombre << " tiene $" << dinero << endl;
+		}
 };
 
 class Miembro : public Cliente {
 	private:
-    double puntos;
+		double puntos;
 
 	public:
-    Miembro(string nombreInicial) : Cliente(nombreInicial) {
-        puntos = 0;
-    }
+		Miembro(string nombreInicial) : Cliente(nombreInicial) {
+			puntos = 0;
+		}
 
-    void venderArticulo(double precio) {
-        double puntosDeVenta = precio / 10;
-        puntos += puntosDeVenta;
-        dinero += precio;
-        cout << nombre << " obtuvo " << puntosDeVenta <<
-        " puntos por vender un articulo porque es miembro" << endl;
-    }
+		void venderArticulo(double precio) {
+			double puntosDeVenta = precio / 10;
+			puntos += puntosDeVenta;
+			dinero += precio;
+			cout << nombre << " obtuvo " << puntosDeVenta << " puntos por vender un articulo porque es miembro" << endl;
+		}
 
-    void verDatos() {
-        cout << nombre << " tiene $" << dinero <<
-        " y " << puntos << " puntos" << endl;
-    }
+		void verDatos() {
+			cout << nombre << " tiene $" << dinero << " y " << puntos << " puntos" << endl;
+		}
 };
 
 int main() {
@@ -3531,32 +3606,32 @@ Las variables estáticas son especiales debido a que solo existe una instancia d
 
 Para crear una variable estática se debe escribir \textbf{static} antes del nombre de la variable y se debe declarar esta variable fuera de la clase usando \textbf{Clase::nombre};
 
-\begin{lstlisting}[language=C++, caption=Variables estáticas]
+\begin{lstlisting}[language=C++, title=Variables estáticas]
 #include <iostream>
 
 using namespace std;
 
 class Punto {	
-    public:
-        static int puntosMarcados;
-        int x;
-        int y;
+	public:
+		static int puntosMarcados;
+		int x;
+		int y;
 
-        Punto(int xInicial, int yInicial) {
-            x = xInicial;
-            y = yInicial;
-            puntosMarcados++;
-        }
+		Punto(int xInicial, int yInicial) {
+			x = xInicial;
+			y = yInicial;
+			puntosMarcados++;
+		}
 };
 
 int Punto::puntosMarcados;
 
 int main() {
-    Punto a(3, 5);
-    Punto b(5, 9);
-    Punto c(2, 2);
-    Punto d(1, 4);
-    cout << "Hay " << Punto::puntosMarcados << " puntos" << endl;
+	Punto a(3, 5);
+	Punto b(5, 9);
+	Punto c(2, 2);
+	Punto d(1, 4);
+	cout << "Hay " << Punto::puntosMarcados << " puntos" << endl;
 }    
 \end{lstlisting}
 
@@ -3575,7 +3650,7 @@ Abajo se muestra una figura donde se puede ver la variable señalada en rojo en 
 
 Para ver la dirección de memoria de cierta variable se le debe colocar un signo de \lstinline{&} antes de esa variable. Esto se llama la referencia de una variable y en el siguiente ejemplo desplegamos la referencia de un entero:
 
-\begin{lstlisting}[language=C++, caption=Referencias]
+\begin{lstlisting}[language=C++, title=Referencias]
 #include <iostream>
 
 using namespace std;
@@ -3596,21 +3671,21 @@ Los punteros son utiles porque te permiten modificar el contenido de la variable
 
 En el siguiente ejemplo se crea una variable x y se modifica su contenido para que sea 20 en lugar de 5:
 
-\begin{lstlisting}[language=C++, caption=Referencias]
+\begin{lstlisting}[language=C++, title=Referencias]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int x = 5;
+	int x = 5;
 
-    //guarda la direccion de x
-    int* punteroX = &x;
+	//guarda la direccion de x
+	int* punteroX = &x;
 
-    //modifica el contenido de la direccion en el puntero
-    *punteroX *= 4;
+	//modifica el contenido de la direccion en el puntero
+	*punteroX *= 4;
 
-    cout << x << endl;
+	cout << x << endl;
 }
 \end{lstlisting}
 
@@ -3623,30 +3698,30 @@ Como se puede ver en ningún momento modificamos x directamente. La siguiente fi
 
 Una aplicación de un puntero es permitir que las funciones modifiquen las variables que se pasen como parámetros ya que normalmente esto no será posible porque los contenidos de las variables se copian. Por ejemplo se puede crear una función que intercambia los valores de sus dos parámetros:
 
-\begin{lstlisting}[language=C++, caption=Funciones con punteros]
+\begin{lstlisting}[language=C++, title=Funciones con punteros]
 #include <iostream>
 
 using namespace std;
 
 void intercambiar(int x, int y) {
-    int temp = x;
-    x = y;
-    y = temp;
+	int temp = x;
+	x = y;
+	y = temp;
 }
 
 void intercambiarConPunteros(int* x, int* y) {
-    int temp = *x;
-    *x = *y;
-    *y = temp;
+	int temp = *x;
+	*x = *y;
+	*y = temp;
 }
 
 int main() {
-    int a = 5;
-    int b = 7;
-    intercambiar(a, b);
-    cout << a << " " << b << endl;
-    intercambiarConPunteros(&a, &b);
-    cout << a << " " << b << endl;
+	int a = 5;
+	int b = 7;
+	intercambiar(a, b);
+	cout << a << " " << b << endl;
+	intercambiarConPunteros(&a, &b);
+	cout << a << " " << b << endl;
 }
 \end{lstlisting}
 
@@ -3656,22 +3731,22 @@ Si corremos el código podemos ver que la función intercambiar no modifico las 
 
 Otra manera de modificar los parámetros originales de una función es declarando los parámetros como referencias. Esto se puede hacer escribiendo un \lstinline{&} en lugar de un * despues del tipo de dato. Esto automaticamente le indica a la función que quieres que ese variable sea la original y no una copia.
 
-\begin{lstlisting}[language=C++, caption=Funciones con referencias]
+\begin{lstlisting}[language=C++, title=Funciones con referencias]
 #include <iostream>
 
 using namespace std;
 
 void intercambiarConReferencias(int& x, int& y) {
-    int temp = x;
-    x = y;
-    y = temp;
+	int temp = x;
+	x = y;
+	y = temp;
 }
 
 int main() {
-    int a = 5;
-    int b = 7;
-    intercambiarConReferencias(a, b);
-    cout << a << " " << b << endl;
+	int a = 5;
+	int b = 7;
+	intercambiarConReferencias(a, b);
+	cout << a << " " << b << endl;
 }
 \end{lstlisting}
 
@@ -3681,24 +3756,24 @@ Cuando se crea un puntero a un objeto como un struct o una clase se pueden acesa
 
 Digamos que tenemos un puntero a un struct que representa una comida y quisieramos guardar esta comida en un puntero. Si quisieramos ver el nombre de esta comida (un string), entonces en lugar de dereferenciar el objeto utilizamos la notación flecha:
 
-\begin{lstlisting}[language=C++, caption=Punteros a objetos]
+\begin{lstlisting}[language=C++, title=Punteros a objetos]
 #include <iostream>
 
 using namespace std;
 
 struct Comida {
-    string nombre;
-    int calorias;
+	string nombre;
+	int calorias;
 };
 
 int main() {
-    Comida pizza;
-    pizza.nombre = "Pizza";
-    pizza.calorias = 1184;
-    Comida* punteroAComida;
-    punteroAComida = &pizza;
-    cout << punteroAComida->nombre << " tiene " <<
-    punteroAComida->calorias << " calorias" << endl;
+	Comida pizza;
+	pizza.nombre = "Pizza";
+	pizza.calorias = 1184;
+	Comida* punteroAComida;
+	punteroAComida = &pizza;
+	cout << punteroAComida->nombre << " tiene " <<
+	punteroAComida->calorias << " calorias" << endl;
 }    
 \end{lstlisting}
 
@@ -3710,29 +3785,29 @@ El puntero this es un puntero especial que existe dentro de las clases que tiene
 
 Un ejemplo sería tener una clase Punto que contiene una variable X y Y. Si creamos un constructor que tiene parametros con los mismos nombres no podemos modificar las variables internas de la clase a menos de que se usará el puntero this:
 
-\begin{lstlisting}[language=C++, caption=Puntero this]
+\begin{lstlisting}[language=C++, title=Puntero this]
 #include <iostream>
 
 using namespace std;
 
 class Punto {
-    public:
-    int x;
-    int y;
+	public:
+		int x;
+		int y;
 
-    Punto(int x, int y) {	
-        this->x = x;
-        this->y = y;
-    }
+		Punto(int x, int y) {	
+			this->x = x;
+			this->y = y;
+		}
 
-    void imprimePunto() {
-        cout << "(" << x << ", " << y << ")" << endl;
-    }
+		void imprimePunto() {
+			cout << "(" << x << ", " << y << ")" << endl;
+		}
 };
 
 int main() {
-    Punto a(6, 3);
-    a.imprimePunto();
+	Punto a(6, 3);
+	a.imprimePunto();
 }    
 \end{lstlisting}
 
@@ -3742,49 +3817,49 @@ Si quisieras mayor control sobre la memoria de tu programa puedes crear variable
 
 Para asignar una memoria se debe crear un puntero el cual guardará la ubicación de la variable que será asignado. Para asignar este dato se debe llamar \textbf{new tipo}. El siguiente código muestra un ejemplo de como se asigna un entero, un float y un arreglo con un millón de valores:
 
-\begin{lstlisting}[language=C++, caption=Asignando variables]
+\begin{lstlisting}[language=C++, title=Asignando variables]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int enteroNormal = 19;
-    int* enteroAsignado = new int;
-    *enteroAsignado = 5;
-    float floatNormal = 13.45;
-    float* floatAsignado = new float;
-    *floatAsignado = 3.1415;
-    int* arregloGrande = new int[1000000];
-    arregloGrande[999999] = 1234;
-    cout << enteroNormal << endl;
-    cout << *enteroAsignado << endl;
-    cout << floatNormal << endl;
-    cout << *floatAsignado << endl;
-    cout << arregloGrande[999999] << endl;
+	int enteroNormal = 19;
+	int* enteroAsignado = new int;
+	*enteroAsignado = 5;
+	float floatNormal = 13.45;
+	float* floatAsignado = new float;
+	*floatAsignado = 3.1415;
+	int* arregloGrande = new int[1000000];
+	arregloGrande[999999] = 1234;
+	cout << enteroNormal << endl;
+	cout << *enteroAsignado << endl;
+	cout << floatNormal << endl;
+	cout << *floatAsignado << endl;
+	cout << arregloGrande[999999] << endl;
 }    
 \end{lstlisting}
 
 Para liberar memoria que ya se haya utilizado entonces se debe llamar a \textbf{delete variable}. Es conveniente utilizar delete para cuando se quisiera ahorrar memoria, como en el siguiente código:
 
-\begin{lstlisting}[language=C++, caption=Borrando datos]
+\begin{lstlisting}[language=C++, title=Borrando datos]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int* arregloLineal = new int[1000];
-    for(int i = 0; i < 1000; i++) {
-        arregloLineal[i] = 10 * i - 1;
-    }
-    cout << arregloLineal[3] << endl;
-    cout << arregloLineal[999] << endl;
-    cout << arregloLineal[800] << endl;
-    delete arregloLineal;
-    int* arregloCuadrada = new int[1000];
-    for(int i = 0; i < 1000; i++) {
-        arregloCuadrada[i] = i * i;
-    }
-    cout << arregloCuadrada[800] << endl;
+	int* arregloLineal = new int[1000];
+	for(int i = 0; i < 1000; i++) {
+		arregloLineal[i] = 10 * i - 1;
+	}
+	cout << arregloLineal[3] << endl;
+	cout << arregloLineal[999] << endl;
+	cout << arregloLineal[800] << endl;
+	delete arregloLineal;
+	int* arregloCuadrada = new int[1000];
+	for(int i = 0; i < 1000; i++) {
+		arregloCuadrada[i] = i * i;
+	}
+	cout << arregloCuadrada[800] << endl;
 }     
 \end{lstlisting}
 
