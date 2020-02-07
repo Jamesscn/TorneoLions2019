@@ -7,85 +7,92 @@
 \BOOKMARK [1][-]{section.3}{\277Mi primer programa?}{}% 7
 \BOOKMARK [2][-]{subsection.3.1}{Donde empezar}{section.3}% 8
 \BOOKMARK [2][-]{subsection.3.2}{Comentarios}{section.3}% 9
-\BOOKMARK [1][-]{section.4}{Leyendo y escribiendo}{}% 10
-\BOOKMARK [1][-]{section.5}{Operaciones b\341sicas}{}% 11
-\BOOKMARK [2][-]{subsection.5.1}{Suma, resta, multiplicaci\363n, divisi\363n}{section.5}% 12
-\BOOKMARK [2][-]{subsection.5.2}{Modulaci\363n}{section.5}% 13
-\BOOKMARK [1][-]{section.6}{Tipos de datos}{}% 14
-\BOOKMARK [2][-]{subsection.6.1}{N\372mericos}{section.6}% 15
-\BOOKMARK [2][-]{subsection.6.2}{Signed y unsigned}{section.6}% 16
-\BOOKMARK [2][-]{subsection.6.3}{Caracteres y cadenas}{section.6}% 17
-\BOOKMARK [2][-]{subsection.6.4}{Booleanos}{section.6}% 18
-\BOOKMARK [2][-]{subsection.6.5}{Arreglos}{section.6}% 19
-\BOOKMARK [1][-]{section.7}{Funciones}{}% 20
-\BOOKMARK [1][-]{section.8}{Flujo de datos}{}% 21
-\BOOKMARK [2][-]{subsection.8.1}{Condicional if}{section.8}% 22
-\BOOKMARK [2][-]{subsection.8.2}{Condiciones}{section.8}% 23
-\BOOKMARK [2][-]{subsection.8.3}{Ciclo for}{section.8}% 24
-\BOOKMARK [2][-]{subsection.8.4}{Ciclo while}{section.8}% 25
-\BOOKMARK [2][-]{subsection.8.5}{Break}{section.8}% 26
-\BOOKMARK [2][-]{subsection.8.6}{Continue}{section.8}% 27
-\BOOKMARK [1][-]{section.9}{Errores comunes}{}% 28
-\BOOKMARK [2][-]{subsection.9.1}{Falta de inicializaci\363n}{section.9}% 29
-\BOOKMARK [2][-]{subsection.9.2}{Ciclos con otras variables}{section.9}% 30
-\BOOKMARK [2][-]{subsection.9.3}{Error por uno}{section.9}% 31
-\BOOKMARK [2][-]{subsection.9.4}{Segmentation fault}{section.9}% 32
-\BOOKMARK [2][-]{subsection.9.5}{Sobreflujos}{section.9}% 33
-\BOOKMARK [2][-]{subsection.9.6}{Errores de redondeo}{section.9}% 34
-\BOOKMARK [2][-]{subsection.9.7}{Faltas de memoria}{section.9}% 35
-\BOOKMARK [1][-]{section.10}{Estructuras de datos sencillos}{}% 36
-\BOOKMARK [2][-]{subsection.10.1}{Vectores}{section.10}% 37
-\BOOKMARK [2][-]{subsection.10.2}{Pares}{section.10}% 38
-\BOOKMARK [2][-]{subsection.10.3}{Mapas}{section.10}% 39
-\BOOKMARK [2][-]{subsection.10.4}{Sets}{section.10}% 40
-\BOOKMARK [1][-]{section.11}{Complejidad de tiempo}{}% 41
-\BOOKMARK [2][-]{subsection.11.1}{N\372mero de operaciones}{section.11}% 42
-\BOOKMARK [2][-]{subsection.11.2}{L\355mites}{section.11}% 43
-\BOOKMARK [2][-]{subsection.11.3}{Complejidad de memoria}{section.11}% 44
-\BOOKMARK [1][-]{section.12}{Busquedas}{}% 45
-\BOOKMARK [2][-]{subsection.12.1}{Busqueda lineal}{section.12}% 46
-\BOOKMARK [2][-]{subsection.12.2}{Busqueda binaria}{section.12}% 47
-\BOOKMARK [2][-]{subsection.12.3}{Busqueda alfabetica}{section.12}% 48
-\BOOKMARK [1][-]{section.13}{Estructuras de datos avanzadas}{}% 49
-\BOOKMARK [2][-]{subsection.13.1}{Stack}{section.13}% 50
-\BOOKMARK [2][-]{subsection.13.2}{Queue}{section.13}% 51
-\BOOKMARK [2][-]{subsection.13.3}{Deque}{section.13}% 52
-\BOOKMARK [2][-]{subsection.13.4}{Priority queue}{section.13}% 53
-\BOOKMARK [1][-]{section.14}{Recursividad}{}% 54
-\BOOKMARK [1][-]{section.15}{Ordenamientos}{}% 55
-\BOOKMARK [2][-]{subsection.15.1}{Ordenamiento por selecci\363n}{section.15}% 56
-\BOOKMARK [2][-]{subsection.15.2}{Ordenamiento por mezcla}{section.15}% 57
-\BOOKMARK [2][-]{subsection.15.3}{Ordenamiento estandar de C++}{section.15}% 58
-\BOOKMARK [1][-]{section.16}{Programaci\363n din\341mica}{}% 59
-\BOOKMARK [1][-]{section.17}{Arreglos multidimensionales}{}% 60
-\BOOKMARK [1][-]{section.18}{Structs}{}% 61
-\BOOKMARK [1][-]{section.19}{Grafos}{}% 62
-\BOOKMARK [2][-]{subsection.19.1}{Nodos, ramas, hojas y ra\355ces}{section.19}% 63
-\BOOKMARK [2][-]{subsection.19.2}{Grafos dirigidos y c\355clicos}{section.19}% 64
-\BOOKMARK [2][-]{subsection.19.3}{Grafos con pesos}{section.19}% 65
-\BOOKMARK [2][-]{subsection.19.4}{Arboles binarios}{section.19}% 66
-\BOOKMARK [2][-]{subsection.19.5}{Listas y matrices de adyacencia}{section.19}% 67
-\BOOKMARK [2][-]{subsection.19.6}{Grafos con arreglos 2D}{section.19}% 68
-\BOOKMARK [1][-]{section.20}{Algoritmos de b\372squeda}{}% 69
-\BOOKMARK [2][-]{subsection.20.1}{Algoritmos heuristicos o greedy}{section.20}% 70
-\BOOKMARK [2][-]{subsection.20.2}{B\372squeda en anchura}{section.20}% 71
-\BOOKMARK [2][-]{subsection.20.3}{B\372squeda en profundidad}{section.20}% 72
-\BOOKMARK [2][-]{subsection.20.4}{Algoritmo de Dijsktra}{section.20}% 73
-\BOOKMARK [2][-]{subsection.20.5}{A*}{section.20}% 74
-\BOOKMARK [1][-]{section.21}{Programaci\363n orientado a objetos}{}% 75
-\BOOKMARK [2][-]{subsection.21.1}{Uniones}{section.21}% 76
-\BOOKMARK [2][-]{subsection.21.2}{Clases}{section.21}% 77
-\BOOKMARK [2][-]{subsection.21.3}{Constructores y destructores}{section.21}% 78
-\BOOKMARK [2][-]{subsection.21.4}{Sobrecargamiento}{section.21}% 79
-\BOOKMARK [2][-]{subsection.21.5}{Sobrecargamiento de operadores}{section.21}% 80
-\BOOKMARK [2][-]{subsection.21.6}{Clases heredadas}{section.21}% 81
-\BOOKMARK [2][-]{subsection.21.7}{Variables est\341ticas}{section.21}% 82
-\BOOKMARK [1][-]{section.22}{Referencias y punteros}{}% 83
-\BOOKMARK [2][-]{subsection.22.1}{Punteros}{section.22}% 84
-\BOOKMARK [2][-]{subsection.22.2}{Referencias}{section.22}% 85
-\BOOKMARK [2][-]{subsection.22.3}{Punteros a objetos}{section.22}% 86
-\BOOKMARK [2][-]{subsection.22.4}{Puntero this}{section.22}% 87
-\BOOKMARK [1][-]{section.23}{Asignaci\363n de memoria}{}% 88
-\BOOKMARK [1][-]{section.24}{Notas finales}{}% 89
-\BOOKMARK [2][-]{subsection.24.1}{\277D\363nde puedo aprender m\341s?}{section.24}% 90
-\BOOKMARK [2][-]{subsection.24.2}{\277C\363mo puedo entrar a competencias de programaci\363n?}{section.24}% 91
+\BOOKMARK [2][-]{subsection.3.3}{Leyendo y escribiendo}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{Operaciones b\341sicas}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Suma, resta, multiplicaci\363n, divisi\363n}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.2}{Modulaci\363n}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Tipos de datos}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{N\372mericos}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{Signed y unsigned}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.3}{Caracteres y cuerdas}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.4}{Booleanos}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.5}{Arreglos}{section.5}% 19
+\BOOKMARK [1][-]{section.6}{Flujo de datos}{}% 20
+\BOOKMARK [2][-]{subsection.6.1}{Condicional if}{section.6}% 21
+\BOOKMARK [2][-]{subsection.6.2}{Condiciones booleanas}{section.6}% 22
+\BOOKMARK [2][-]{subsection.6.3}{Variables booleanos}{section.6}% 23
+\BOOKMARK [2][-]{subsection.6.4}{Ciclo for}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.5}{Ciclo while}{section.6}% 25
+\BOOKMARK [2][-]{subsection.6.6}{Break}{section.6}% 26
+\BOOKMARK [2][-]{subsection.6.7}{Continue}{section.6}% 27
+\BOOKMARK [2][-]{subsection.6.8}{Ciclos anidados}{section.6}% 28
+\BOOKMARK [1][-]{section.7}{Funciones y \341mbitos}{}% 29
+\BOOKMARK [2][-]{subsection.7.1}{Void}{section.7}% 30
+\BOOKMARK [2][-]{subsection.7.2}{\301mbito de variables}{section.7}% 31
+\BOOKMARK [2][-]{subsection.7.3}{Variables globales}{section.7}% 32
+\BOOKMARK [2][-]{subsection.7.4}{Par\341metros}{section.7}% 33
+\BOOKMARK [2][-]{subsection.7.5}{La funci\363n main}{section.7}% 34
+\BOOKMARK [1][-]{section.8}{Estructuras de datos sencillos}{}% 35
+\BOOKMARK [2][-]{subsection.8.1}{Vectores}{section.8}% 36
+\BOOKMARK [2][-]{subsection.8.2}{Pares}{section.8}% 37
+\BOOKMARK [2][-]{subsection.8.3}{Mapas}{section.8}% 38
+\BOOKMARK [2][-]{subsection.8.4}{Sets}{section.8}% 39
+\BOOKMARK [1][-]{section.9}{Complejidad de tiempo}{}% 40
+\BOOKMARK [2][-]{subsection.9.1}{N\372mero de operaciones}{section.9}% 41
+\BOOKMARK [2][-]{subsection.9.2}{L\355mites}{section.9}% 42
+\BOOKMARK [2][-]{subsection.9.3}{Complejidad de memoria}{section.9}% 43
+\BOOKMARK [1][-]{section.10}{Busquedas}{}% 44
+\BOOKMARK [2][-]{subsection.10.1}{Busqueda lineal}{section.10}% 45
+\BOOKMARK [2][-]{subsection.10.2}{Busqueda binaria}{section.10}% 46
+\BOOKMARK [2][-]{subsection.10.3}{Busqueda alfabetica}{section.10}% 47
+\BOOKMARK [1][-]{section.11}{Estructuras de datos avanzadas}{}% 48
+\BOOKMARK [2][-]{subsection.11.1}{Stack}{section.11}% 49
+\BOOKMARK [2][-]{subsection.11.2}{Queue}{section.11}% 50
+\BOOKMARK [2][-]{subsection.11.3}{Deque}{section.11}% 51
+\BOOKMARK [2][-]{subsection.11.4}{Priority queue}{section.11}% 52
+\BOOKMARK [1][-]{section.12}{Recursividad}{}% 53
+\BOOKMARK [1][-]{section.13}{Ordenamientos}{}% 54
+\BOOKMARK [2][-]{subsection.13.1}{Ordenamiento por selecci\363n}{section.13}% 55
+\BOOKMARK [2][-]{subsection.13.2}{Ordenamiento por mezcla}{section.13}% 56
+\BOOKMARK [2][-]{subsection.13.3}{Ordenamiento estandar de C++}{section.13}% 57
+\BOOKMARK [1][-]{section.14}{Programaci\363n din\341mica}{}% 58
+\BOOKMARK [1][-]{section.15}{Arreglos multidimensionales}{}% 59
+\BOOKMARK [1][-]{section.16}{Structs}{}% 60
+\BOOKMARK [1][-]{section.17}{Grafos}{}% 61
+\BOOKMARK [2][-]{subsection.17.1}{Nodos, ramas, hojas y ra\355ces}{section.17}% 62
+\BOOKMARK [2][-]{subsection.17.2}{Grafos dirigidos y c\355clicos}{section.17}% 63
+\BOOKMARK [2][-]{subsection.17.3}{Grafos con pesos}{section.17}% 64
+\BOOKMARK [2][-]{subsection.17.4}{Arboles binarios}{section.17}% 65
+\BOOKMARK [2][-]{subsection.17.5}{Listas y matrices de adyacencia}{section.17}% 66
+\BOOKMARK [2][-]{subsection.17.6}{Grafos con arreglos 2D}{section.17}% 67
+\BOOKMARK [1][-]{section.18}{Algoritmos de b\372squeda}{}% 68
+\BOOKMARK [2][-]{subsection.18.1}{Algoritmos heuristicos o greedy}{section.18}% 69
+\BOOKMARK [2][-]{subsection.18.2}{B\372squeda en anchura}{section.18}% 70
+\BOOKMARK [2][-]{subsection.18.3}{B\372squeda en profundidad}{section.18}% 71
+\BOOKMARK [2][-]{subsection.18.4}{Algoritmo de Dijsktra}{section.18}% 72
+\BOOKMARK [2][-]{subsection.18.5}{A*}{section.18}% 73
+\BOOKMARK [1][-]{section.19}{Programaci\363n orientado a objetos}{}% 74
+\BOOKMARK [2][-]{subsection.19.1}{Uniones}{section.19}% 75
+\BOOKMARK [2][-]{subsection.19.2}{Clases}{section.19}% 76
+\BOOKMARK [2][-]{subsection.19.3}{Constructores y destructores}{section.19}% 77
+\BOOKMARK [2][-]{subsection.19.4}{Sobrecargamiento}{section.19}% 78
+\BOOKMARK [2][-]{subsection.19.5}{Sobrecargamiento de operadores}{section.19}% 79
+\BOOKMARK [2][-]{subsection.19.6}{Clases heredadas}{section.19}% 80
+\BOOKMARK [2][-]{subsection.19.7}{Variables est\341ticas}{section.19}% 81
+\BOOKMARK [1][-]{section.20}{Referencias y punteros}{}% 82
+\BOOKMARK [2][-]{subsection.20.1}{Punteros}{section.20}% 83
+\BOOKMARK [2][-]{subsection.20.2}{Referencias}{section.20}% 84
+\BOOKMARK [2][-]{subsection.20.3}{Punteros a objetos}{section.20}% 85
+\BOOKMARK [2][-]{subsection.20.4}{Puntero this}{section.20}% 86
+\BOOKMARK [1][-]{section.21}{Asignaci\363n de memoria}{}% 87
+\BOOKMARK [1][-]{section.22}{Errores comunes}{}% 88
+\BOOKMARK [2][-]{subsection.22.1}{Falta de inicializaci\363n}{section.22}% 89
+\BOOKMARK [2][-]{subsection.22.2}{Ciclos con otras variables}{section.22}% 90
+\BOOKMARK [2][-]{subsection.22.3}{Error por uno}{section.22}% 91
+\BOOKMARK [2][-]{subsection.22.4}{Segmentation fault}{section.22}% 92
+\BOOKMARK [2][-]{subsection.22.5}{Sobreflujos}{section.22}% 93
+\BOOKMARK [2][-]{subsection.22.6}{Errores de redondeo}{section.22}% 94
+\BOOKMARK [2][-]{subsection.22.7}{Faltas de memoria}{section.22}% 95
+\BOOKMARK [1][-]{section.23}{Notas finales}{}% 96
+\BOOKMARK [2][-]{subsection.23.1}{\277D\363nde puedo aprender m\341s?}{section.23}% 97
+\BOOKMARK [2][-]{subsection.23.2}{\277C\363mo puedo entrar a competencias de programaci\363n?}{section.23}% 98

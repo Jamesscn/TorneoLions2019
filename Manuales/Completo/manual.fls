@@ -12,8 +12,8 @@ INPUT /usr/share/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/share/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/share/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/share/texmf-dist/tex/generic/babel/switch.def
-INPUT /usr/share/texmf-dist/tex/generic/babel-english/english.ldf
-INPUT /usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT /usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+INPUT /usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 INPUT /usr/share/texmf-dist/tex/generic/babel/babel.def
 INPUT /usr/share/texmf-dist/tex/generic/babel/txtbabel.def
 INPUT /usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -146,6 +146,7 @@ INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/vscode.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/vscode.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/vscode.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/nsquared.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/nsquared.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/nsquared.png
@@ -239,7 +240,9 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb

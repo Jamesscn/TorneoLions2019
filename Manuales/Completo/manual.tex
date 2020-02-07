@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
+\usepackage[spanish]{babel}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{listings}
@@ -22,7 +22,7 @@
 	morecomment=[l][\color{magenta}]{\#},
 	showstringspaces=false,
 	frame=single,
-	breaklines,,
+	breaklines,
 	tabsize=2
 }
 \urlstyle{same}
@@ -48,14 +48,16 @@ El objetivo de este manual consiste en exponer y explicar los conceptos más fun
 
 Por suerte, la mayoría de los conceptos que se presentarán a continuación también pueden ser aplicados en otros lenguajes como Java o Python, y no necesariamente tienen que ser utilizados bajo el contexto de la programación competitiva.
 
-Para poder empezar a crear y probar código es necesario instalar algún software llamado IDE (Entorno de desarrollo integrado en español) que es capáz de compilar y ejecutar archivos de C++.
+Para poder empezar a crear y probar código es necesario instalar un tipo de software llamado IDE (Entorno de desarrollo integrado en español) que es capáz de compilar y ejecutar archivos de C++.
 
 En este documento se incluirán ejemplos de código los cuales recomendamos que prueben y modifiquen para que obtengan una idea de como programar. Además algunos de los ejemplos tendrán una liga al código, la cual les permitirá ejecutar el programa dentro de la pagina de repl.it.
 
 \section{Instalación de IDE para editar y compilar C++}
 
+Ya que existen muchis IDEs, hemos recompilado una lista de los que hemos probado:
+
 \subsection{Code::Blocks [Windows]}
-Si desea instalar un programa para compilar código facilmente, puede descargar Code::Blocks de la página oficial: \url{http://www.codeblocks.org/}
+Code::Blocks es uno de los IDEs más utilizados por principiantes y se puede descargar de la página oficial: \url{http://www.codeblocks.org/}
 
 Este programa permite al usuario escribir y compilar código en Windows sin tener que instalar las diversas herramientas de compilación a mano. Para descargarlo, debe ir a la sección de Downloads y escoger Binaries, y de ahí descargar la primera opción (codeblocks-xx.xx-setup.exe).
 
@@ -102,11 +104,11 @@ Si estas usando Mac o Linux, puedes compilar un programa de C++ desde la termina
 
 Antes de crear un programa uno debe tener en mente lo que se desea que haga. Sin embargo, esto puede resultar ser díficil si uno no sabe que se puede hacer en una primera instancia.
 
-Uno debe indicarle al programa que se desea hacer escribiendo código. Es importante notar que el código puede ser un arma de doble filo; todas las instrucciones serán seguidos al pie de la letra sin cuestionar si estan correctos o no. Es el trabajo del programador asegurar que su código tenga lógica, ya que el compilador solo verifica que el sintaxis del programa esta correcto.
+Uno debe indicarle al programa que se desea hacer escribiendo código. Es importante notar que el código puede ser un arma de doble filo; todas las instrucciones serán seguidos al pie de la letra sin cuestionar si estan correctas o no. Es el trabajo del programador asegurar que su código tenga lógica, ya que el compilador solo verifica si la sintaxis del programa es la  correcta.
 
-Esto es semejante a escribir un ensayo en un procesador de texto. El compilador en este caso actuará como el autocorrector, checando si cada palabra esta escrito correctamente. Sin embargo, es responsabilidad del escritor asegurar que su documento tenga sentido.
+Esto es semejante a escribir un ensayo en un procesador de texto. El compilador en este caso actuará como el autocorrector, checando si cada palabra esta escrito correctamente. Sin embargo, es responsabilidad del escritor asegurar que su documento tenga coherencia.
 
-A continuación se mostrará un programa con cuatro líneas de código que no hace absolutamente nada, simplemente se abre y se cierra. Por ahora no importa tanto el significado de este código, solo es relevante saber que actuará como una base para todos los demás programas que se estarán escribiendo.
+A continuación se mostrará un programa con cuatro líneas de código que no hace absolutamente nada, simplemente se abre y se cierra. Por ahora no importa tanto el significado de este código, solo es relevante saber que actuará como una base para todos los demás programas que se estarán escribiendo en este manual.
 
 \begin{lstlisting}[language=C++, title=Las cuatro líneas esenciales]
 #include <iostream>
@@ -118,11 +120,15 @@ int main() {
 }
 \end{lstlisting}
 
-Si se puede compilar y correr este programa sin problemas entonces se ha configurado el IDE correctamente. Todo el código que se estará escribiendo en esta sección se colocará entre los dos llaves. Para mejorar la aparencia del código, se le debe agregar un espacio \textbf{tab} antes de cada línea de código dentro de estas dos llaves.
+Si se puede compilar y correr este programa sin problemas entonces se ha configurado el IDE correctamente. Todo el código que se estará escribiendo en estas primeras secciones se colocará entre las dos llaves. Para mejorar la aparencia del código, se le debe agregar un espacio \textbf{tab} antes de cada línea de código dentro de estas dos llaves.
 
-Ahora modificaremos nuestro programa para que sume dos números enteros agregandole código. Para hacer esto tendremos que primero guardar los valores dentro de la memoria del programa, hacer la suma de estos dos números y finalmente desplegar el resultado en la pantalla.
+Ahora modificaremos nuestro programa para que sume dos números enteros. Para hacer esto tendremos que primero guardar los valores dentro de la memoria del programa, hacer la suma de estos dos números y finalmente desplegar el resultado en la pantalla.
 
-Se pueden guardar datos en nuestros programas mediante el uso de variables, pero tenemos que nombrar cada variable para diferenciarlos. Para guardar nuestros dos enteros escribimos una línea para cada variable con int seguido por el nombre de la variable después (sin espacios y sin caracteres especiales). Finalmente, le ponemos un punto y coma después de cada línea para decirle que eso es lo unico que queremos hacer en esa línea.
+Se pueden guardar datos en nuestros programas mediante el uso de variables, pero tenemos que nombrar cada variable para diferenciarlos. Para guardar nuestros dos enteros escribimos una línea para cada variable con la palabra \textbf{int} seguido por el nombre de la variable (sin espacios y sin caracteres especiales) y un signo de punto y coma.
+
+La palabra \textbf{int} es un indicador especial que dice que nuestra variable solo puede guardar números enteros. Por ahora, solo utilizaremos este tipo de variable y más adelante se explicará como guardar otras cosas.
+
+El punto y coma es un signo especial que estaremos escribiendo después de cada línea y es necesario porque le indica al compilador que es el fin de esa línea.
 
 \begin{lstlisting}[language=C++, title=Dos variables]
 #include <iostream>
@@ -135,11 +141,13 @@ int main() {
 }
 \end{lstlisting}
 
-En este caso decidimos asignarle los nombres \textbf{a} al primer entero y \textbf{b} al segundo entero. Existen incontables maneras de nombrar las variables, por ejemplo: numeroA y numeroB, alfa y beta, n1 y n2, etc.
+En este caso decidimos asignarle los nombres \textbf{a} al primer entero y \textbf{b} al segundo entero. Existen incontables maneras de nombrar las variables, por ejemplo: numeroA y numeroB, alfa y beta, n1 y n2, etc. Con estas dos líneas, se puede decir que hemos \textit{declarado} las dos variables.
 
-Ahora le hemos dicho a nuestro compilador que el programa debe administrar dos números enteros \textbf{a} y \textbf{b}, pero no tienen valores asignados. Para almacenar un valor de 5 dentro de la variable \textbf{a}, podemos agregar una nueva línea con el código \textbf{a = 5;}
+Ahora le hemos dicho a nuestro compilador que el programa debe administrar dos números enteros \textbf{a} y \textbf{b}, pero no tienen valores asignados. Para almacenar un valor de 5 dentro de la variable \textbf{a}, podemos agregar una nueva línea con el código: \lstinline{a = 5;}
 
-También es válido asignarle un valor a una variable en la misma línea donde se define esa variable. Para demostrar esto, modificaremos la segunda línea del código para que quede de la siguiente manera: \textbf{int b = 2;}
+Nota que una vez que se escribe el tipo de dato que se usará para una variable ya no se ocupará escribirlo nuevamente.
+
+También es válido asignarle un valor a una variable en la misma línea donde se declara esa variable. Para demostrar esto, modificaremos la segunda línea del código para que quede de la siguiente manera: \lstinline{int b = 2;}
 
 \begin{lstlisting}[language=C++, title=Guardando valores]
 #include <iostream>
@@ -155,13 +163,13 @@ int main() {
 
 Nuestro programa ahora tiene una variable \textbf{a} con valor de 5 y una variable \textbf{b} con valor de 2.
 
-Es de gran importancia saber que las líneas de código llevan un orden específico, pero en ciertos casos se puede modificar este orden sin perjudicar al programa. Para este programa que hemos escrito, se puede intercambiar la línea \textbf{int b = 2;} con \textbf{a = 5;}, pero no se puede intercambiar \textbf{int a;} con \textbf{a = 5;}. Esto ocurre debido a que el compilador lee el código desde arriba hasta abajo.
+Es de gran importancia saber que las líneas de código llevan un orden específico, pero en ciertos casos se puede modificar este orden sin perjudicar al programa. Para este programa que hemos escrito, se puede intercambiar la línea donde guardamos 5 dentro de \textbf{a} con la línea donde declaramos \textbf{b}, pero no podemos intercambiar la línea donde declaramos \textbf{a} con la línea donde guardamos 5 en \textbf{a}. Esto ocurre debido a que el compilador lee el código desde arriba hasta abajo.
 
 Se le tiene que indicar al programa que primero existe una variable \textbf{a} antes de que se le pueda asignar un valor, en caso contrario, no sabría donde colocar el valor de 5.
 
 Continuando con nuestro programa, se requiere hacer la suma. Se pueden sumar dos valores escribiendo una variable o un valor seguido por un signo \textbf{+} y la otra variable o el otro valor.
 
-\begin{lstlisting}[language=C++, title=Guardando valores]
+\begin{lstlisting}[language=C++, title=¿La suma?]
 #include <iostream>
 
 using namespace std;
@@ -174,13 +182,13 @@ int main() {
 }
 \end{lstlisting}
 
-Si se compila y ejecuta el código no deben aparecer errores. Como se esta sumando una variable que tiene el valor de 5 almacenado y otra variable con el valor de 2, se esperaría ver que ambos suman 7. A pesar de esto al correr el código no debe aparecer absolutamente nada. Esto ocurre debido a que no le hemos dicho al programa que queremos ver el resultado, simplemente le hemos dicho que queremos sumar los dos valores y nada más.
+Si se compila y ejecuta el código no deben aparecer errores. Como se esta sumando una variable que tiene el valor de 5 almacenado y otra variable con el valor de 2, se esperaría ver que ambos suman 7. A pesar de esto al correr el código no debe aparecer absolutamente nada. Esto ocurre debido a que no le hemos dicho al programa que queremos ver el resultado, simplemente le hemos dicho que queremos sumar los dos valores y no hacer nada con la suma.
 
-Como el compilador sigue el código al pie de la letra se sumarán los dos valores y luego se descartará este valor debido a que no le hemos indicado que haga algo con él.
+Si deseamos que el programa nos arroje algun valor, es necesario decirle explicitamente cuando queremos ver algo.
 
-Para desplegar un valor a la pantalla es necesario escribir cout seguido por un espacio, dos signos \textbf{<} y otro espacio. Al final de esta línea se debe colocar el valor que se desea mostrar seguido por un punto y coma.
+Para desplegar un valor a la pantalla es necesario escribir \textbf{cout} seguido por un espacio, dos signos \lstinline{<} y otro espacio. Al final de esta línea se debe colocar el valor que se desea mostrar seguido por el punto y coma.
 
-\begin{lstlisting}[language=C++, title=Tu primer programa]
+\begin{lstlisting}[language=C++, title=La suma]
 #include <iostream>
 
 using namespace std;
@@ -227,7 +235,9 @@ int main() {
 }
 \end{lstlisting}
 
-O simplemente se pudiera haber decidido no establecer variables y desplegar la suma de dos valores directamente:
+Este código es valido siempre y cuando se tiene más de una variable del mismo tipo, y cada variable debe ir separado por un coma.
+
+Otra opción consiste en desplegar la suma de los dos valores directamente:
 
 \begin{lstlisting}[language=C++, title=¿El mismo programa?]
 #include <iostream>
@@ -239,15 +249,15 @@ int main() {
 }
 \end{lstlisting}
 
-Siempre y cuando se despliegan valores de esta manera, se dice que se esta \textbf{imprimiendo} ese valor a la pantalla o a la consola.
+Siempre y cuando se despliegan valores de esta manera, se dice que se esta \textit{imprimiendo} ese valor a la pantalla o a la consola.
 
 \subsection{Comentarios}
 
-C++ te permite escribir comentarios entre el código y estos pueden servir para describir el funcionamiento de ciertas líneas, para tener un recordatorio de algo o para mantener el código ordenado.
+C++ te permite escribir comentarios entre el código y estos pueden servir para describir el funcionamiento de ciertas líneas, para tener un recordatorio de algo o para mantener el código ordenado. Los comentarios no son tratados como código y solo guardan texto.
 
-El tipo de comentario más popular es el de una sola línea; se inician con dos $/$ seguidos por la nota.
+El tipo de comentario más popular es el de una sola línea; se inician con dos $/$ seguidos por la nota, y ocupan toda la línea a partir de donde inician.
 
-\begin{lstlisting}[language=C++, title=Comentario]
+\begin{lstlisting}[language=C++, title=Comentarios]
 #include <iostream>
 
 using namespace std;
@@ -265,9 +275,9 @@ int main() {
 }
 \end{lstlisting}
 
-Tambien existen los comentarios de multiples líneas, estos se deben iniciar con $/*$ y se deben terminar con $*/$
+También existen los comentarios de multiples líneas, estos se deben iniciar con $/*$ y se deben terminar con $*/$
 
-\begin{lstlisting}[language=C++, title=Comentario]
+\begin{lstlisting}[language=C++, title=Comentarios]
 #include <iostream>
 
 using namespace std;
@@ -287,19 +297,21 @@ int main() {
 }
 \end{lstlisting}
 
-\section{Leyendo y escribiendo}
+En los ejemplos se incluirán muchos comentarios para explicar el funcionamiento de líneas específicas
 
-A la hora de ejecución lo más probable es que se haya abierto una ventana o consola que despliega el resultado deseado. Esto ocurre porque C++ corre dentro de esa consola, no dentro del IDE. La función del IDE es traducir el código a binario y mandarselo directamente la consola.
+\subsection{Leyendo y escribiendo}
+
+A la hora de la ejecución lo más probable es que se haya abierto una ventana o consola que despliega el resultado deseado. Esto ocurre porque C++ corre dentro de esa consola, no dentro del IDE. La función del IDE es traducir el código a binario y mandarselo directamente la consola.
 
 La consola te permite leer y escribir datos mientras que tu programa corre. Ya se ha visto que para escribir datos, se puede utilizar cout (que significa \textbf{c} + \textbf{out} o Output de C) seguido por la variable o la expresión que quieres "imprimir" a la consola.
 
 Para leer datos, se ocupa tener una variable para almacenar ese dato de entrada, luego se debe utilizar cin (que significa \textbf{c} + \textbf{in} o Input de C) seguido por esa variable.
 
-Estas dos herramientas te permiten crear programas generales que resuelven problemas especificos.
+Estas dos herramientas te permiten crear programas generales que resuelven problemas específicos.
 
-Se pueden escribir varias cosas a la consola en una misma línea usando cout, pero cada expresión debe tener dos signos < antes. Una expresión util de C++ es \textbf{endl}, que sirve como un separador de línea. Es decir, cada vez que se coloca uno de ellos lo que le sigue será escrito en una nueva línea. El siguiente código debe imprimir los números 1, 2, 3 y 4 en nuevas líneas.
+Se pueden escribir varias cosas a la consola en una misma línea usando cout, pero cada expresión debe tener dos signos \lstinline{<} antes. Una expresión útil de C++ es \textbf{endl}, que sirve como un separador de línea. Es decir, cada vez que se coloca uno de ellos lo que le sigue será escrito en una nueva línea. El siguiente código imprime los números 1, 2, 3 y 4 en nuevas líneas.
 
-\begin{lstlisting}[language=C++, title=Uno a tres]
+\begin{lstlisting}[language=C++, title=Uno a cuatro]
 #include <iostream>
 
 using namespace std;
@@ -311,9 +323,9 @@ int main() {
 
 Es una buena costumbre siempre colocar un endl al final de cada cout a pesar de que no le sigue nada.
 
-Para leer datos con cin se deben colocar los nombres de las variables, los cuales guardaran los datos que se desean leer, junto con dos signos > antes. Como se puede ver, cout y cin tiene sintaxis parecido solo que la dirección de la flecha cambia.
+Para leer datos con cin se deben colocar los nombres de las variables que guardarán los datos que se desean leer, junto con dos signos \lstinline{>} antes. Se puede notar que el simbolo de flecha de cin apunta en dirección opuesta a la flecha de cout.
 
-Si queremos recibir dos números enteros del usuario entonces debemos definir las variables primero (en caso contrario el compilador no sabrá a que te refieres cuando le dices que quieres guardar valores ahí) y luego usar cin con las variables que queremos.
+Si queremos recibir dos números enteros del usuario entonces debemos definir las variables primero (en caso contrario el compilador no sabrá a que te refieres cuando le dices que quieres guardar valores ahí) y luego usar cin sobre esas variables.
 
 \begin{lstlisting}[language=C++, title=Leyendo dos enteros]
 #include <iostream>
@@ -327,13 +339,13 @@ int main() {
 }
 \end{lstlisting}
 
-Nota que aquí no se utiliza endl ya que cin automaticamente espera a que saltes la línea hasta guardar el valor dentro de las variables.
+Nota que con cin no se utiliza endl ya que cin automaticamente espera a que pases a la siguiente línea hasta guardar el valor escrito dentro de las variables.
 
-Si se compila y se ejecuta este código la consola esperará a que ingreses un valor y que saltes a la siguiente línea. Una vez que se hace eso, ese valor se guardara en la variable a. Luego esperará a que ingreses otro número y ese sera guardado en la variable b. No se podrá ver nada más en la consola debido a que no estamos imprimiendo nada con cin. Ahora crearemos un programa que lee variables y que haga algo con ellos.
+Si se compila y se ejecuta este código la consola esperará a que ingreses un valor y que saltes a la siguiente línea. Una vez que se hace eso, ese valor se guardará en la variable a. Luego esperará a que ingreses otro número y ese sera guardado en la variable b. No se podrá ver nada más en la consola debido a que no estamos imprimiendo nada en este ejemplo. Ahora crearemos un programa que lee variables y que haga algo con ellos.
 
-Digamos que queremos diseñar un programa que lea dos números enteros (sin importar cuales sean) y que imprime su suma. Podemos crear este programa utilizando cin y cout para que el usuario diga cuales dos números quiere que se sumen de la siguiente manera.
+Digamos que queremos diseñar un programa que lee dos números enteros (sin importar cuales sean) y que imprime su suma. Podemos crear el siguiente programa utilizando cin y cout para que el usuario diga cuales dos números quiere que se sumen.
 
-\begin{lstlisting}[language=C++, title=Suma]
+\begin{lstlisting}[language=C++, title=Suma general]
 #include <iostream>
 
 using namespace std;
@@ -348,15 +360,15 @@ int main() {
 
 Cuando se ejecuta el código, se esperará a que se ingrese el primer número y que se de un salto de línea. Una vez que eso ocurre se debe ingresar el segundo valor y saltar la línea nuevamente. Al dar el segundo salto se debe ver la suma de manera inmediata.
 
-Esto ocurre debido a que el primer valor se guarda en a y a que el segundo valor se guarda en b. El código sumará estos dos valores y finalmente imprimirá la suma.
+Esto ocurre debido a que el primer valor se guarda en \textbf{a} y a que el segundo valor se guarda en \textbf{b}. El código sumará estos dos valores y finalmente imprimirá la suma.
 
-Una manera alternativa de ingresar los números es poner los dos números separados por un espacio y saltar la línea. Si se ingresan más de dos valores, solo los primeros dos valores serán considerados.
+Una manera alternativa de ingresar los números es poniendo los dos valores separados por un espacio y saltar la línea. Si se ingresan más de dos valores, solo los primeros dos valores serán considerados por el programa.
 
 \section{Operaciones básicas}
 
 \subsection{Suma, resta, multiplicación, división}
 
-Además de sumar se puede restar, multiplicar y dividir expresiones con los símbolos -, * y / respectivamente. Además de esto, es posible hacer una operación y guardar el resultado en una variable combinando el signo con un signo de igual: +=, -=, *= y /=. El siguiente código muestra un ejemplo de todos estos operadores
+A parte de sumar se pueden restar, multiplicar y dividir expresiones con los símbolos -, * y / respectivamente.
 
 \begin{lstlisting}[language=C++, title=Operaciones basicas]
 #include <iostream>
@@ -368,20 +380,40 @@ int main() {
 	cout << 22 - 7 << endl; //Hace la resta e imprime 15
 	cout << 8 * 8 << endl; //Hace la multiplicacion e imprime 64
 	cout << 243 / 3 << endl; //Hace la division e imprime 81
-
-	int miNumero = 6;
-	miNumero += 2; //miNumero ahora vale 8
-	cout << miNumero << endl;
-	miNumero -= 1; //miNumero ahora vale 7
-	cout << miNumero << endl;
-	miNumero *= 10; //miNumero ahora vale 70
-	cout << miNumero << endl;
-	miNumero /= 5; //miNumero ahora vale 14
-	cout << miNumero << endl;
 }
 \end{lstlisting}
 
-Si solo quisieras sumarle o restarle uno a una variable y guardar los cambios, entonces se pueden usar los operadores ++ para incrementar uno y -- para decrementar uno.
+Las variables sirven para almacenar datos, los cuales pueden ser modificados después con el uso de operadores basicos. El siguiente ejemplo muestra como se le puede sumar diez a una variable que ya tenia el valor cinco guardado:
+
+\begin{lstlisting}[language=C++, title=Operaciones basicas]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int alfa = 5;
+	cout << alfa << endl; //Imprime 5
+	alfa = alfa + 10;
+	cout << alfa << endl; //Imprime 5 + 10
+}
+\end{lstlisting}
+
+Existe una manera más simple de hacer esto mediante el uso de los operadores +=, -=, *= y /=, los cuales suman, restan, multiplican y dividen el valor almacenado dentro de una variable por otro valor.
+
+\begin{lstlisting}[language=C++, title=Operaciones basicas]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int alfa = 5;
+	cout << alfa << endl; //Imprime 5
+	alfa += 10;
+	cout << alfa << endl; //Imprime 5 + 10
+}
+\end{lstlisting}
+
+Si solo se desea sumarle o restarle uno al valor dentro de una variable se pueden usar los operadores \lstinline{++} para incrementar uno y \lstinline{--} para decrementar uno.
 
 \begin{lstlisting}[language=C++, title=Incrementos y decrementos]
 #include <iostream>
@@ -390,10 +422,10 @@ using namespace std;
 
 int main() {
 	int x = 4;
-	x++; //x vale 5;
-	x++; //x vale 6;
+	x++; //x vale 5
+	x++; //x vale 6
 	cout << x << endl; //imprime 6
-	x--; //x vale 5;
+	x--; //x vale 5
 	cout << x << endl; //imprime 5
 	x--; //x vale 4
 	x--; //x vale 3
@@ -403,11 +435,11 @@ int main() {
 
 \subsection{Modulación}
 
-Una operación muy importante es la que se llama modulación, este se utiliza para sacar el residuo de una división con el simbolo \%. Los residuos son útiles para muchas razones, como asegurar que un número siempre tendrá un límite máximo y para determinar la paridad de un valor. Más adelante se explicará este concepto a detalle, pero por ahora solo se mostrará como se obtiene.
+Una operación muy importante es la que se llama modulación, esta se utiliza para sacar el residuo de una división con el simbolo \%. Los residuos son útiles para muchas razones, como asegurar que un número siempre tendrá un límite máximo y para determinar la paridad de un valor. Más adelante se explicará este concepto a detalle, pero por ahora solo se mostrará como se obtiene.
 
-Por ejemplo, si dividimos 13 entre 5 sabemos que el resultado sería 2 con un residuo de 3 porque \textbf{2} * 5 + \textbf{3} nos da el valor original, 13. Para obtener el resultado de 2 en C++ podemos hacer la division \textbf{13 / 5}, pero para obtener el residuo de 3 tenemos que hacer \textbf{13 \% 5}. Podemos probar esto con el siguiente código:
+Por ejemplo, si dividimos 13 entre 5 sabemos que el resultado sería 2 con un residuo de 3 porque \textbf{2} * 5 + \textbf{3} nos da el valor original, 13. Para obtener el resultado de 2 en C++ podemos hacer la división \lstinline{13 / 5}, pero para obtener el residuo de 3 tenemos que hacer \lstinline{13 % 5}. Podemos probar esto con el siguiente código:
 
-\begin{lstlisting}[language=C++, title=Operaciones basicas]
+\begin{lstlisting}[language=C++, title=División y modulación]
 #include <iostream>
 
 using namespace std;
@@ -420,148 +452,167 @@ int main() {
 
 \section{Tipos de datos}
 
-A comparación de otros lenguajes de programación, en C++ tútienes que definir que tipo de dato quieres guardar en una variable.
+A comparación con algúnos otros lenguajes de programación, en C++ tienes que definir que tipo de dato quieres guardar en una variable.
 
 \subsection{Númericos}
 
-En C++, los números enteros y los números decimales se guardan en dos tipos de variables distintos. Esto es porque las variables que manejan números decimales no son completamente precisos (tienen un margen de error), mientras que los datos enteros sí lo son. Además, los números decimales estan representados de una manera completamente distinta en binario que los enteros, y esto tiene sus ventajas y desventajas.
+En C++, los números enteros y los números decimales se guardan en dos tipos de variables distintos. Esto es porque las variables que manejan números decimales no son completamente precisos (tienen un margen de error), mientras que los datos enteros sí lo son. Además, los números decimales tienen una representación completamente distinta en binario a los enteros, y esto tiene sus ventajas y desventajas.
 
 Los números enteros se conocen como \textbf{int} o integers, y son capaces de guardar cualquier número desde -2,147,483,648 hasta 2,147,483,647.
 
-Los números decimales se conocen como \textbf{float} o números flotantes, en teoria son capaces de guardar números hasta $3.4028235*10^{38}$, con la única desventaja que el error incrementa dependiendo del tamaño del número.
+Los números decimales se conocen como \textbf{float} o números flotantes, y en teoría son capaces de guardar números hasta $3.4028235*10^{38}$, con la única desventaja siendo que el error de precisión incrementa dependiendo del tamaño del número.
 
-También existe una variante de \textbf{float} conocido como \textbf{double}, que tiene el doble de precisión y es capaz de guardar números hasta $10^{308}$
+También existe una variante de \textbf{float} conocido como \textbf{double}, que tiene el doble de precisión y es capaz de guardar números hasta $10^{308}$.
 
-Estos son los tipos de datos númericos más comunes, pero existen más con distintos propositos. Tambien existe \textbf{long long int}, una variante de \textbf{int} que es capaz de guardar números muchisimo más grandes (desde -9,223,372,036,854,775,808 hasta 9,223,372,036,854,775,807), a cambio que ocupa el doble de memoria.
+Estos son los tipos de datos númericos más comunes, pero existen más con diferentes usos y propósitos. Otro tipo de dato es \textbf{long long int}, una variante de \textbf{int} que es capaz de guardar números muchísimo más grandes (desde -9,223,372,036,854,775,808 hasta 9,223,372,036,854,775,807), sin embargo ocupa el doble de memoria.
 
-Tambien existe \textbf{long long double}, con más precisión que un \textbf{double}.
+Además de estos, existe \textbf{long long double}, con más precisión que un \textbf{double}.
 
 Raramente, tendrás que hacer cálculos con números más grandes que los permitidos por estos datos, o con mayor precisión. Existen librerias externas que pueden ser utilizados para manejar números de escala inmensa.
 
+La razón por la cual cada variable tiene un límite es debido a que ocupan cierto espacio en la memoria. Por ejemplo, cada int ocupa 4 bytes de memoria y cada long long int ocupa 8 bytes. Como las computadoras tienen memoria finita, es necesario limitar los valores para que no ocupen demasiado memoria, ya que sin memoria el programa podría cerrarse y arrojarnos un error.
+
+Para fines prácticos se suele usar el int y el float sobre otros tipos de variables númericos, y raramente se tiende a llegar al límite de la memoria incluso con miles de variables.
+
 \subsection{Signed y unsigned}
 
-Existe una posibilidad que trabajarás con tipos de datos que son signed y unsigned, y estos definen si una variable puede guardar números negativos o solo positivos.
+Existe una posibilidad de que trabajarás con tipos de datos que son signed y unsigned, y estos definen si una variable puede guardar números negativos o solo positivos.
 
-Todos los tipos de datos númericos empiezan como signed a menos que defines lo contrario. Esto significa que puede guardar números negativos y números positivos. Si quisieras convertir un tipo de dato en unsigned para que solo maneje números positivos, entonces puedes escribir unsigned antes del tipo de dato. Por ejemplo: \textbf{unsigned int a = 5;}
+Todos los tipos de datos númericos se declaran como signed o con signo automáticamente a menos que se indique lo contrario, y las variables de este tipo pueden guardar números negativos y números positivos. Las variables de tipo unsigned a cambio solo permiten el almacenamiento de números no negativos, es decir el cero y valores positivos. Si quisieras convertir un tipo de dato en unsigned o sin signo, entonces es necesario escribir la palabra \textbf{unsigned} antes del tipo de dato. Por ejemplo: \\
 
-A la hora de hacer una variable unsigned, el máximo se convierte en el doble de lo que era antes. Esto es porque la mitad de los números fueron utilizados para representar los números negativos en la representación signed, y esa mitad se junta con la otra mitad para hacer el doble. Es decir, si el mayor número que se puede guardar en un \textbf{int} es 2,147,483,647, el mayor número que se puede guardar en un \textbf{unsigned int} es 4,294,967,295.
+\lstinline{unsigned int a = 5;} \\
 
-Esto se tiende a usar para manejar datos que se saben que nunca seran negativos, como temperaturas.
+A la hora de convertir una variable en unsigned, el máximo se hace el doble de lo que era como variable signed. Esto ocurre porque el espacio ocupado por los números negativos se reutiliza para representar a más numeros positivos. Por ejemplo, si el número más grande que se puede guardar en un \textbf{int} es 2,147,483,647, el número más grande que se puede guardar en un \textbf{unsigned int} es 4,294,967,295.
 
-\subsection{Caracteres y cadenas}
+\subsection{Caracteres y cuerdas}
 
-C++ es capaz de guardar texto letra por letra en variables que se llaman caracteres y cuerdas. Un carácter o \textbf{char} es una variable que contiene una sola letra o simbolo conforme al estandar ASCII, mientras que una cuerda o un \textbf{string} es una variable que guarda mensajes completos.
+C++ es capaz de guardar texto letra por letra en variables que se llaman caracteres y cuerdas. Un carácter o \textbf{char} es una variable que contiene una sola letra o símbolo conforme al estandar ASCII, mientras que una cuerda o un \textbf{string} es una variable que guarda mensajes completos.
 
-Para asignar un valor a un carácter, se debe colocar una sola comilla antes y después de la letra: \textbf{char estrella = '*';}
+Para asignar un valor a un carácter, se debe colocar una sola comilla antes y después de la letra. Por ejemplo, aquí se declara un char llamado estrella y se le guarda un símbolo de estrella: \\
 
-Para asignar un valor a un string, se debe utilizar doble comilla antes y después del texto: \textbf{string mensaje = "Hola mundo!";}
+\lstinline{char estrella = '*';} \\
+
+Para asignar un valor a un string, se debe utilizar doble comilla antes y después del texto. Aquí se declara un string llamado mensaje y se le guarda el texto \textbf{Hola Mundo!}: \\
+
+\lstinline{string mensaje = "Hola mundo!";} \\
+
+Más adelante se verán que los strings estan conformados por un conjunto o arreglo de chars, y se estarán trabajando con ellos. Por ahora, aquí se presenta un ejemplo de como guardar e imprimir cuerdas o strings:
+
+\begin{lstlisting}[language=C++, title=Usando strings]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	cout << "Por favor escribe tu nombre: ";
+	string nombre;
+	cin >> nombre;
+	cout << "Hola " << nombre << ", mucho gusto en saludarte.";
+}
+\end{lstlisting}
+
+En este ejemplo se le pide al usuario su nombre y este se guarda en una cuerda. Luego, se imprime junto con otras cuerdas para emitir un saludo.
 
 \subsection{Booleanos}
 
-Estos tipos de datos son muy utiles porque solo guardan dos valores: verdadero o \textbf{true} y falso o \textbf{false}.
+Estos tipos de datos son muy utiles porque solo guardan dos valores: verdadero o \textbf{true} y falso o \textbf{false}. Para asignar un booleano, se utiliza el termino \textbf{bool} seguido por el nombre. Por ejemplo: \\
 
-Para asignar un booleano, se utiliza el termino \textbf{bool}. Por ejemplo: \textbf{bool decirMentira = false;}
+\lstinline{bool laLunaEsAzul = false;} \\
+
+Estas variables serán usadas en las siguientes secciones para guardar los resultados de operaciones lógicas y condicionales.
 
 \subsection{Arreglos}
 
-Cuando estamos trabajando con muchas variables a la vez, las cosas se pueden complicar y se puede requerir guardar un número grande de cosas. Para no tener que escribir cientos de variables para una sola tarea, se pueden crear arreglos, que guardan una cantidad predeterminada de datos.
+Cuando estamos trabajando con muchas variables a la vez, las cosas se pueden complicar y podría ser necesario guardar una gran cantidad de cosas. Para no tener que escribir cientos de variables para una sola tarea, existen los arreglos, los cuales son conjuntos de variables que guardan una cantidad predeterminada de datos.
 
-Se pueden hacer arreglos de cualquier tipo de dato y su nomenclatura consiste en poner dos corchetes $[$ después del nombre con el número de elementos que se desea tener en ese arreglo.
+Se pueden hacer arreglos de cualquier tipo de dato y su nomenclatura consiste en poner un corchete de apertura $[$ después del nombre, luego el número de elementos que se desea guardar en ese arreglo, seguido por un corchete de cerradura $]$.
 
-Digamos que queremos un arreglo de 100 enteros, eso se podría definir como \textbf{int valores[100];}
+Digamos que una escuela quiere guardar los nombres de cien estudiantes en su sistema. En ese caso se podría definir un arreglo de cien cuerdas de la siguiente manera: \\
 
-Luego, para modificar o leer uno de estos valores, se puede llamar \textbf{valores[N]} donde N es el indice del elemento.
+\lstinline{string estudiantes[100];} \\
 
-Es muy importante mencionar que el primer elemento tiene indice 0 y el ultimo elemento tendría indice 99. Los arreglos siempre empiezan desde cero y incrementan hasta el valor del tamaño menos uno. Si se intenta guardar o ver un valor que no esta en este rango, podrá causar errores en su programa.
+Luego, para modificar o leer uno de estos valores se puede utilizar la expresión \lstinline{estudiantes[N]} donde N es un valor entero, y este funcionará como el nombre del alumno en la posición o índice N de nuestro arreglo.
 
-Las cuerdas funcionan como arreglos, y se puede ver el carácter en la posición N utilizando el mismo sintaxis.
+Es muy importante mencionar que en prácticamente todos los lenguajes de programación, se empieza a contar los valores desde cero, incluso en C++. En este caso el primer elemento tendrá indice 0 y el ultimo elemento tendrá indice 99. Los arreglos siempre empiezan desde cero e incrementan hasta el valor del tamaño menos uno. Si se intenta guardar o ver un valor que no esta en este rango, podrán ocurrir errores en su programa.
 
-\section{Funciones}
+Además de esto, una vez que se crea el arreglo no se podrá modificar su tamaño. Más adelante se verán métodos para almacenar cantidades variables de elementos.
 
-Las funciones son muy utiles para cuando tienes que repitir código similar muchas veces. Estos son similares a funciones matemáticas, reciben cuantas variables de entrada quieres que tengan, haran una operación con estas entradas y regresará una sola variable de salida.
+Se mostrará un ejemplo de como usar un arreglo de cuerdas:
 
-Para una función, se dice que se "regresa" su salida porque para indicar que se quiere terminar la función, se utiliza el operador $return$ seguido por el valor de la variable de salida.
-
-Un ejemplo sencillo es una función que suma dos números enteros A y B y que regresa otro entero C, la suma. Esto lo podemos implementar de la siguiente manera:
-
-\begin{lstlisting}[language=C++, title=Función de suma]
-int suma(int a, int b) {
-	int c = a + b;
-	return c;
-}
-\end{lstlisting}
-
-Como se puede ver, se inicia una función con un tipo de dato que corresponde al tipo de dato de la salida. Como int va antes que el nombre de la función (suma), nos dice que queremos que regrese un entero.
-
-Luego, sigue el nombre de la función y dos paréntesis. Dentro de los paréntesis van las variables de entrada separadas por comas. Como tenemos un entero a y otro entero b, estamos diciendo que para correr esta función el usuario debe dar dos números en ese orden, los cuales serán guardados en a y b.
-
-Luego, siguen llaves que encapsulan el código de la función. Aqui es donde hacemos nuestros cálculos con nuestras variables y regresamos el valor de la salida.
-
-Declaramos otro entero c y le asignamos la suma de a y b, luego lo regresamos, es decir estamos diciendo que queremos que c sea nuestra salida.
-
-Todas las funciones tienen que estar colocados antes de main de tal manera:
-
-\begin{lstlisting}[language=C++, title=Función de suma]
+\begin{lstlisting}[language=C++, title=Arreglo de cuerdas]
 #include <iostream>
 
 using namespace std;
 
-int suma(int a, int b) {
-	int c = a + b;
-	return c;
-}
-
 int main() {
-
+	string estudiantes[5]; //Hay 5 estudiantes en la clase
+	estudiantes[0] = "Blanca"; //Se guarda el primer valor
+	estudiantes[1] = "Omar";
+	estudiantes[2] = "Samuel";
+	estudiantes[3] = "Fernanda";
+	estudiantes[4] = "Jennifer"; //Se guarda el ultimo valor
+	cout << estudiantes[0] << endl;
+	estudiantes[0] = "Jose"; //Se cambia el primer valor
+	cout << estudiantes[0] << endl;
 }
 \end{lstlisting}
 
-Ahora, podemos llamar nuestra función dentro de main dandole los parametros que queremos:
+Si ya se sabe de antemano con que valores debe iniciar el arreglo, entonces se puede igualar el arreglo a una lista de valores separados por comas y encerrados por llaves. El compilador automaticamente contará cuantos elementos hay dentro de las llaves, asi que se debe omitir el tamaño de la declaración. El siguiente ejemplo muestra una simplificación del código anterior con esta notación:
 
-\begin{lstlisting}[language=C++, title=Función de suma]
+\begin{lstlisting}[language=C++, title=Arreglo de cuerdas]
 #include <iostream>
 
 using namespace std;
 
-int suma(int a, int b) {
-	int c = a + b;
-	return c;
-}
-
 int main() {
-	cout << suma(3, 5) << endl;
+	string estudiantes[] = {"Sergio", "Hector", "Yeimi", "Kevin", "Hugo"};
+	cout << "Ingresa el indice que desea ver: " << endl;
+	int n;
+	cin >> n;
+	cout << "El estudiante #" << n << " es " << estudiantes[n];
 }
 \end{lstlisting}
-\href{https://repl.it/@Jamesscn/Funciones}{Liga al código}\\
 
-Al ejecutar este código, nos despliegara un 8.
+Por ahora los arreglos no son muy relevantes, pero se volverán muy prácticos en la siguiente sección.
 
-Otro ejemplo es una función que regresa la división de dos enteros:
+Una sola cuerda también funciona como un arreglo, y se puede ver el carácter en la posición N utilizando la misma sintaxis:
 
-\begin{lstlisting}[language=C++, title=Función de división]
+\begin{lstlisting}[language=C++, title=Cuerdas como arreglos]
 #include <iostream>
 
 using namespace std;
 
-float divide(int a, int b) {
-	return (float)a / b;
-}
-
 int main() {
-	cout << divide(5, 2) << endl;
+	cout << "Por favor escribe tu nombre: " << endl;
+	string nombre;
+	cin >> nombre;
+	cout << "Tu nombre inicia con la letra " << nombre[0] << endl;
 }
 \end{lstlisting}
-\href{https://repl.it/@Jamesscn/Funciones}{Liga al código}\\
-
-Este código imprime 2.5, lo que hace es que recibe dos enteros a y b, y luego regresa su división como si fuera un número flotante. El (float) antes del a significa que quieres convertir la división en un número flotante antes de que redondea.
 
 \section{Flujo de datos}
 
-La pieza fundamental detrás de cualquier programa es su lógica, y no puede haber lógica sin flujo de datos. El flujo de datos consiste en correr ciertos piezas de código bajo ciertas condiciones. Por ejemplo, si queremos saber si un número es par el código debe de tener dos secciones, uno que corre cuando sí es par y otro que corre cuando no es par.
+La pieza fundamental detrás de cualquier programa es su lógica, y no puede haber lógica sin flujo de datos. El flujo de datos consiste en correr ciertas piezas de código bajo ciertas condiciones. Por ejemplo, si queremos hacer algo cuando un número es par o impar el código debe de tener dos secciones, una que corre cuando sí es par y otra que corre cuando no es par.
 
 \subsection{Condicional if}
 
-La manera mas sencilla de comparar datos es con el condicional \textbf{if}. Este es capaz de correr código solo cuando se cumple cierta condición. Para utilizar este, se debe iniciar escribiendo \textbf{if} y se debe incluir una condición entre paréntesis, luego el código que se desea correr entre llaves.
+La manera mas sencilla de comparar datos es con el condicional \textbf{if}. Este es capaz de correr código solo cuando se cumple cierta condición. Para utilizar este, se debe iniciar escribiendo \textbf{if} y se debe incluir una condición entre paréntesis, luego el código que se desea correr entre llaves en el caso que sí se cumple la condición.
+
+Las condiciones se basan en la comparación, y se puede preguntar si dos valores son iguales o distintos, si uno es mayor a otro o si uno es menor a otro con los siguientes operadores: \\
+
+El operador \lstinline{==} checa si el valor de la izquierda es igual al valor de la derecha. Se debe observar que este es distinto al operador que guarda valores \lstinline{=} porque tiene dos signos de igual en lugar de uno. \\
+
+El operador \lstinline{!=} checa si los dos valores son distintos. \\
+
+El operador \lstinline{<} checa si el valor de la izquierda es menor al valor de la derecha. \\
+
+El operador \lstinline{>} checa si el valor de la izquierda es mayor al valor de la derecha. \\
+
+El operador \lstinline{<=} checa si el valor de la izquierda es menor o igual al valor de la  derecha. \\
+
+El operador \lstinline{>=} checa si el valor de la izquierda es mayor o igual al valor de la derecha. \\
+
+El siguiente ejemplo muestra como se escribe un condicional de este tipo, el cual solo imprime "La suma es mayor a cinco" si la suma de los dos valores leidos es mayor a 5. En caso contrario, no se imprime nada.
 
 \begin{lstlisting}[language=C++, title=Condiciones]
 #include <iostream>
@@ -577,9 +628,7 @@ int main() {
 }
 \end{lstlisting}
 
-Aqui, tenemos una condición que checa si la suma de A y B es mayor a 5. En el caso de que sí se cumple, se imprimirá "La suma es mayor a cinco" y en caso que no, no se imprimirá nada.
-
-Ahora modificaremos el código para que se imprima "La suma es menor o igual que cinco" cuando no se cumple la primera condición.
+Ahora modificaremos el código para que también se imprima "La suma es menor o igual a cinco" cuando no se cumple la primera condición.
 
 \begin{lstlisting}[language=C++, title=Condiciones]
 #include <iostream>
@@ -598,7 +647,7 @@ int main() {
 }
 \end{lstlisting}
 
-Podemos simplificar este código con el condicional \textbf{else}, que se ejecuta cuando una condición \textbf{if} NO se cumple. Este se puede agregar después de la ultima llave y deberá tener otro par de llaves después.
+Podemos simplificar este código con el condicional \textbf{else}, que se ejecuta cuando una condición \textbf{if} NO se cumple. Este se tiene que agregar después de la ultima llave y deberá tener otro par de llaves después.
 
 \begin{lstlisting}[language=C++, title=Else]
 #include <iostream>
@@ -616,7 +665,7 @@ int main() {
 }
 \end{lstlisting}
 
-Digamos que ahora queremos checar si la suma es menor, igual o mayor que cinco. Se puede agregar un tercer condicional \textbf{else if} que ocurre cuando la primera condición falla pero otra condición se cumple. Se puede tener varios \textbf{else if} encadenados.
+Digamos que ahora queremos checar si la suma es menor, igual o mayor que cinco. Se puede agregar un tercer condicional \textbf{else if} que ocurre cuando la primera condición falla pero otra condición se cumple. Se pueden tener varios \textbf{else if} en sucesión, los cuales denominamos ifs \textit{encadenados}.
 
 \begin{lstlisting}[language=C++, title=Else if]
 #include <iostream>
@@ -636,19 +685,17 @@ int main() {
 }
 \end{lstlisting}
 
-En este caso, primero se checa si el número es mayor que cinco, luego se checa si es igual a cinco, y finalmente por lógica si no cumple ninguna de estas dos condiciones debe ser menor que cinco.
+Con estas modificaciones, primeramente se checa si la suma es mayor a cinco, y en caso contrario checa si la suma es igual a cinco. Si ninguna de estas condiciones se cumplen entonces se va directamente al condicional else.
 
-\subsection{Condiciones}
+Para este programa, esta garantizado que siempre se imprimirán una de las tres opciones.
 
-Como se ha visto, existen maneras de comparar datos para verificar condiciones. Para checar si una variable es menor que otro, se debe usar el simbolo \textbf{$<$}, mientras que para checar si es mayor, se usa el simbolo \textbf{$>$}.
+\subsection{Condiciones booleanas}
 
-Tambien se puede ver cuando un valor es menor o igual a otro valor con \textbf{$<=$} y cuando es mayor o igual con \textbf{$>=$}. Nota que el signo de igual siempre va despues de la comparación de mayor o menor.
+Además de las condiciones mostradas existen las condiciones booleanas AND, OR y NOT. La condición AND verifica si la condición a la izquierda \textit{y} la condición a la derecha se cumplen. La condición OR verifica si la condición a la izquierda \textit{o} la condición a la derecha se cumplen y finalmente la condición NOT invierte la condición que le sigue. Los símbolos de AND, OR y NOT son \lstinline{&&}, \lstinline{||} y \lstinline{!} respectivamente. La condición OR también se cumple cuando ambas expresiones son verdaderas, y su símbolo se conforma de dos barras verticales. La barra vertical suele encontrarse en la parte superior izquierda del teclado.
 
-Para preguntar si dos valores son iguales, se utilizan dos signos de igual \textbf{==}, ya que al utilizar solo uno se estaria asignando un valor a la variable de la izquierda. Para checar si no son iguales, se debe usar un signo de admiración seguido por un signo de igual \textbf{!=}.
+El siguiente código nos muestra un ejemplo de estos operadores:
 
-Finalmente, existen los operadores lógicos \textbf{\&\&} y \textbf{$||$} que pueden ser utilizados para juntar condiciones. El primero se utiliza para correr código siempre y cuando las condiciones pegadas a él sean ciertos, mientras que el segundo sirve cuando cualquiera de los dos son ciertos.
-
-\begin{lstlisting}[language=C++, title=Condiciones]
+\begin{lstlisting}[language=C++, title=Lógica booleana]
 #include <iostream>
 
 using namespace std;
@@ -656,37 +703,61 @@ using namespace std;
 int main() {
 	int a, b;
 	cin >> a >> b;
-	if(a == b) {
-		cout << "A es igual a B" << endl;
-	}
-	if(a > 5) {
-		cout << "A es mayor a 5" << endl;
-	}
-	if(b <= 10) {
-		cout << "B es menor o igual que 10" << endl;
-	}
-	if(b != -6) {
-		cout << "B no es igual a -6" << endl;
-	}
-	if(a < 1 && b > 1) {
+	if(a < 1 && b > 1) { //AND
 		cout << "A es menor que 1 y B es mayor que 1" << endl;
 	}
-	if(a == 1 || b == 1) {
-		cout << "Una de las variables A o B es igual a 1" << endl;
+	if(a == 1 || b == 1) { //OR
+		cout << "A o B es igual a uno" << endl;
+	}
+	if(!(a > 20)) { //NOT
+		cout << "A es menor o igual a veinte" << endl;
 	}
 }
 \end{lstlisting}
-\href{https://repl.it/@Jamesscn/Condiciones}{Liga al código}\\
+
+\subsection{Variables booleanos}
+
+Como ya se habia comentado, los booleanos son variables que guardan expresiones de verdadero y falso y pueden almacenar los resultados de condiciones. Cada vez que se cumpla una condición este guardará el valor \textbf{true} y cada vez que no se cumple guardará el valor \textbf{false}.
+
+A continuación se muestra como se guarda un valor dentro de un booleano y como se pueden utilizar los valores de true y false:
+
+\begin{lstlisting}[language=C++, title=Booleanos]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	bool aEsPositivo = false;
+	bool bEsPositivo = false;
+	if(a > 0) {
+		aEsPositivo = true;
+	}
+	if(b > 0) {
+		bEsPositivo = true;
+	}
+	if(aEsPositivo == true || bEsPositivo == true) {
+		cout << "Al menos uno de los dos valores es positivo" << endl;
+	}
+	if(aEsPositivo) { //Si solo se escribe el nombre de la variable el programa automaticamente checa si es verdadero
+		cout << "A es positivo" << endl;
+	}
+	if(!aEsPositivo) { //El operador NOT invierte la logica
+		cout << "A no es positivo" << endl;
+	}
+}
+\end{lstlisting}
 
 \subsection{Ciclo for}
 
-Digamos que quieres repetir un proceso cierta cantidad de veces pero no quieres tener que volver a escribir el código cientos de veces con cambios pequeños. Se puede automatizar este proceso con el uso de ciclos for.
+Digamos que se desea repetir un proceso sin tener que volver a escribir el mismo código miles de veces con cambios pequeños. Se pueden automatizar los procesos con el uso de ciclos.
 
-Un ciclo for repite código cierta cantidad de veces y tiene una variable que incrementa o decrementa con cada turno del ciclo, esta variable puede ser util porque puede indicar el ciclo actual.
+Un ciclo \textbf{for} repite código y contiene una variable que se incrementa o decrementa con cada turno del ciclo, la cual se mueve desde un valor inicial hasta un valor final.
 
-Digamos que ocupas saber la suma de 1 a 100. Esto se puede escribiendo cien líneas que suman cada valor o escribiendo una línea dentro de un ciclo for.
+Digamos que ocupas saber la suma de 1 a 100. Se puede elaborar un programa que determine esto escribiendo cien líneas para cada valor o alternativamente escribiendo una línea dentro de un ciclo for.
 
-Aqui les mostramos el ejemplo con cien líneas:
+Aquí se muestra el ejemplo con cien líneas, el cual se puede considerar como un caso impractico:
 
 \begin{lstlisting}[language=C++, title=Suma línea por línea]
 #include <iostream>
@@ -706,7 +777,7 @@ int main() {
 }
 \end{lstlisting}
 
-Y esto es la simplificación con el ciclo for:
+Y aquí se presenta su equivalente simplificado con el uso del ciclo for:
 
 \begin{lstlisting}[language=C++, title=Suma con ciclo for]
 #include <iostream>
@@ -722,19 +793,19 @@ int main() {
 }
 \end{lstlisting}
 
-Como se puede ver, el ciclo for ahorra muchas líneas y puedes cambiar los parametros de iteración.
+El ciclo for reduce la cantidad de líneas requeridas drásticamente y tiene muchas aplicaciones. Se debe notar que el for tiene una sintaxis similar al if, excepto que tiene tres divisiones separadas por punto y comas en la parte condicional.
 
-Se debe notar que el for tiene un sintaxis similar al if, excepto que tiene tres divisiones en la parte condicional.
+La primera parte corresponde a la asignación del valor inicial, aquí se debe declarar una variable con el valor inicial del ciclo. Una convención muy popular que se utiliza en prácticamente todos los lenguajes de programación consiste en darle a esta variable el nombre \textbf{i}. En el ejemplo anterior esta parte queda de la siguiente manera: \\
 
-La primera parte corresponde a la asignación del valor inicial, aqui se debe declarar e igualar una variable al valor inicial del ciclo. A esta variable se le tiende a dar el nombre \textbf{i}, o \textbf{j} cuando existe otro ciclo que este usando \textbf{i} al mismo tiempo.
+\lstinline{int i = 1;} \\
 
-Despues, sigue una condición que al no cumplirse terminará el ciclo. En este ejemplo, se utilizó \textbf{i $<=$ 100} para asegurarnos que una vez que \textbf{i} llegue a 100, se termine el ciclo.
+Después, sigue una condición que se realiza cada vez que se repite el ciclo. Si la condición falla, el ciclo terminará y el código después del for ejecutará. En este ejemplo, se utiliza \lstinline{i <= 100;}, el cual checa que nuestra variable i es menor o igual a 100. Una vez que i sobrepase el valor máximo de 100, el for dejará de ejecutar lo que esta dentro de sus llaves.
 
-Finalmente, la tercera parte debe modificar la variable del ciclo para que progrese hasta que deje de cumplirse la condición en la segunda parte.
+Finalmente, la tercera parte debe modificar a la variable del ciclo para que progrese hasta que deje de cumplirse la condición en la segunda parte. En el ejemplo anterior estamos aumentando la variable i por uno en cada iteración con el código \lstinline{i++}
 
-Con esta información, podemos ver que primero se guarda 1 en la variable \textbf{i}, luego se checa en cada iteración del ciclo que no sea mayor que 100, luego se suma 1 a la variable \textbf{i}.
+Con esta información, podemos ver que en cada turno primero se guarda 1 en la variable \textbf{i}, luego se checa si es menor o igual a 100, y finalmente se le suma uno.
 
-Si queremos hacer un ciclo que nos de los números 0 a 4 en orden ascendiente, podemos modificar el código de la siguiente manera:
+Si queremos hacer un ciclo que nos de los números 0 a 4 en orden ascendiente, podemos modificar el ciclo for para que inicie en cero y que termine cuando la variable \textbf{i} no sea menor a cinco:
 
 \begin{lstlisting}[language=C++, title=Ciclo for]
 #include <iostream>
@@ -748,7 +819,7 @@ int main() {
 }
 \end{lstlisting}
 
-Y en caso de que queremos que nos den los valores de 4 a 0 en orden descendiente, podemos modificarlo para que reste en lugar de sumar.
+Y en caso de que queremos que nos den los valores de 4 a 0 en orden descendiente, podemos modificarlo para que reste en lugar de sumar, iniciando en 4 y esperando a que el valor no sea mayor o igual a cero.
 
 \begin{lstlisting}[language=C++, title=Ciclo for]
 #include <iostream>
@@ -762,13 +833,25 @@ int main() {
 }
 \end{lstlisting}
 
+Finalmente, podemos escribir todas las potencias de dos menores o iguales a 128 con el siguiente código, el cual inicia en uno y multiplica el valor de i por dos en cada iteración:
+
+\begin{lstlisting}[language=C++, title=Ciclo for]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	for(int i = 1; i <= 128; i *= 2) {
+		cout << i << endl;
+	}
+}
+\end{lstlisting}
+
 \subsection{Ciclo while}
 
-Si no te interesa la cantidad de veces que corra un ciclo y simplemente quieres repetir algo mientras que una condición sea cierto, se puede utilizar el ciclo while.
+Si no te interesa la cantidad de veces que corra un ciclo y simplemente quieres repetir algo mientras que una condición sea cierto, se puede utilizar el ciclo while. Se debe de tener cuidado con los ciclos while debido a que pueden correrse infinitamente.
 
-Se debe de tener cuidado con los ciclos while debido a que pueden correrse infinitamente.
-
-Para crear un ciclo while, se utiliza el mismo sintaxis que el condicional if con el nombre \textbf{while}. El código dentro de las llaves seguira corriendo hasta que la condición sea falsa.
+Para crear un ciclo while, se utiliza la misma sintaxis que el condicional if con el nombre \textbf{while}. El código dentro de las llaves seguirá corriendo hasta que la condición sea falsa.
 
 \begin{lstlisting}[language=C++, title=Ciclo while]
 #include <iostream>
@@ -776,15 +859,15 @@ Para crear un ciclo while, se utiliza el mismo sintaxis que el condicional if co
 using namespace std;
 
 int main() {
-	int potenciaDos = 1;
-	while(potenciaDos < 100) {
-		potenciaDos *= 2;
+	int potenciaTres = 1;
+	while(potenciaTres < 1000) {
+		cout << potenciaTres << endl;
+		potenciaTres *= 3;
 	}
-	cout << potenciaDos << endl;
 }
 \end{lstlisting}
 
-Como se ve en este ejemplo, el código calculará todas las potencias de dos hasta llegar a uno que no sea menor a 100, en este caso 128, luego lo imprimirá en la consola.
+Como se ve en este ejemplo, el código calculará todas las potencias de tres hasta llegar a uno que es mayor o igual a mil.
 
 \subsection{Break}
 
@@ -803,8 +886,7 @@ int main() {
 		int suma = i + (i + 1) + (i + 2);
 		if(suma == 20) {
 			existeSuma = true;
-			cout << "La suma es: " << endl;
-			cout << i << ", " << i + 1 << ", " << i + 2 << endl;
+			cout << "La suma es: " << i << " + " << i + 1 << " + " << i + 2 << endl;
 			break;
 		}
 	}
@@ -815,17 +897,17 @@ int main() {
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Suma-Triple}{Liga al código}\\
 
-Como se puede ver, combinamos break con un booleano para ver si se llega a cumplir la condición de la suma, y en caso de que sí se cumple imprimimos la suma y dejamos de buscar más secuencias. En el caso contrario, no modificamos el booleano e imprimimos que la suma no existe.
+Como se puede ver, combinamos break con un booleano para ver si se llega a cumplir la condición de la suma, y en caso de que sí se cumpla imprimimos la suma y dejamos de buscar más secuencias. En el caso contrario, no modificamos el booleano e imprimimos que la suma no existe.
 
 \subsection{Continue}
 
-A veces queremos evitar correr cierto código bajo una condición, pero no queremos tener que incluir nuestro código en muchas condicionales if. En un ciclo for o while se puede utilizar \textbf{continue} cada vez que se quiere saltar al siguiente ciclo.
+En un ciclo for o while se puede utilizar \textbf{continue} cada vez que se quiere saltar a la siguiente iteración sin ejecutar el código que le sigue.
 
-Digamos que estamos iterando sobre todos los números menores a 100 y queremos saltarnos todos los números pares y divisibles entre 3. Esto se puede hacer de distintas maneras:
+Digamos que estamos imprimiendo números menores a 100 y queremos saltarnos todos los números pares y divisibles entre 3. Para determinar si un valor es divisible entre otro se puede checar si el residuo de la división de los dos números es igual a cero. Por ejemplo, la condición \lstinline{i % 2 == 0} regresará true cada vez que el valor i es par o divisible entre dos. La condición \lstinline{i % 3 == 0} regresará true cada vez que i es divisible entre tres.
 
-En la primera se puede tener un solo caso if con dos condiciones unidos con el operador \&\&
+Una manera de excluir estos valores consiste en tener un caso if con las dos condiciones unidos con el operador \&\&:
 
-\begin{lstlisting}[language=C++, title=Condiciones con and]
+\begin{lstlisting}[language=C++, title=Condiciones con AND]
 #include <iostream>
 
 using namespace std;
@@ -839,9 +921,9 @@ int main() {
 }
 \end{lstlisting}
 
-Para la segunda manera se puede tener dos ifs anidados:
+Otra manera consiste en tener un caso if dentro de otro caso if:
 
-\begin{lstlisting}[language=C++, title=Dos condiciones]
+\begin{lstlisting}[language=C++, title=Condiciones anidados]
 #include <iostream>
 
 using namespace std;
@@ -857,7 +939,7 @@ int main() {
 }
 \end{lstlisting}
 
-Y para la tercera podemos usar dos casos if con continue:
+Pero con continue, podemos saltarnos el ciclo cada vez que sí se cumple la condición:
 
 \begin{lstlisting}[language=C++, title=Continue]
 #include <iostream>
@@ -878,208 +960,266 @@ int main() {
 \end{lstlisting}
 \href{https://repl.it/@Jamesscn/Numeros-no-hexagonales}{Liga al código}\\
 
-Al correr estos tres códigos, se veran los mismos resultados.
+Al correr estos tres códigos, se verán los mismos resultados.
 
-\section{Errores comunes}
+\subsection{Ciclos anidados}
 
-\subsection{Falta de inicialización}
-Este error es uno de los más graves y más dificiles de detectar debido a que la lógica puede estar completamente correcta, el programa se compila sin errores y en algunos casos tus variables te podrán dar los resultados correctos.
+Cuando se incluye un ciclo dentro de otro ciclo se dice que son ciclos \textit{anidados}. Si estos ciclos son tipo for, se debe declarar una variable nueva para cada uno de estos ciclos, ya que si se modifica la variable original \textbf{i} se presentarán errores. Se acostumbra nombrar las variables anidadas \textbf{j}, \textbf{k}, \textbf{l} y así sucesivamente.
 
-Esto pasa cuando defines una variable pero no le das un valor inicial. Por ejemplo:
+El siguiente ejemplo muestra dos ciclos for anidados que imprimen la tabla multiplicativa:
 
-\begin{lstlisting}[language=C++, title=Error de inicialización]
+\begin{lstlisting}[language=C++, title=Tabla multiplicativa]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	int i = 1;
-	int suma;
-	while(i <= 100) {
-		suma += i;
-		i++;
-	}
-	cout << suma << endl;
-}
-\end{lstlisting}
-\href{https://repl.it/@Jamesscn/Suma-Imposible}{Liga al código}\\
-
-Este programa suma los números de 1 a 100 y los va guardando en la variable suma. Se esperaría que el resultado fuera 5050, pero si lo corres te despliega -1428474. Si vuelves a correr el código, ahora ves 82934. Este valor siempre cambia.
-
-Esto ocurre debido a que nunca inicializamos o le damos un valor inicial a la variable suma. A la hora de declarar la variable, le estamos asegurando un espacio en la memoria del sistema pero esto no significa que ese espacio tenga guardado un cero. Puede ser que algún proceso anterior haya tenido que usar ese espacio y que haya dejado un valor que no nos interesa ahí.
-
-La razón por la que siempre cambia es porque la memoria siempre esta siendo utilizado por otros procesos (Google Chrome, Word, etc.) y cada vez que corre el programa agarrara el primer espacio libre que encuentra para la variable suma, que no siempre será la misma.
-
-Existe una posibilidad de que tu compilador automaticamente detecte que suma no fue inicializado y le asigna el valor de cero después, esto puede provocar que el programa funcione en tu computadora pero a la hora de probarlo en otra falla.
-
-Entonces para asegurar que esto nunca pase, siempre debes de tener la costumbre de inicializar tus variables a menos que sabes que serán sobreescritos por otro valor o leidos desde la consola usando $cin$.
-
-\subsection{Ciclos con otras variables}
-Este error pasa muy seguido cuando se utilizan ciclos for anidados y cuando uno olvida que haya declarado una variable antes.
-
-Digamos que vas tan mal en matemáticas que se te olvidaron las tablas multiplicativas por completo, y túquieres crear un programa que los genera. Puedes hacer esto con dos ciclos for anidados, uno que calcule las filas y otra que calcule las columnas.
-
-\begin{lstlisting}[language=C++, title=Ciclos con otras variables]
-#include <iostream>
-
-using namespace std;
-
-int main() {
-	for(int i = 0; i <= 12; i++) {
-		for(int j = 0; i <= 12; i++) {
-			cout << i * j << "\t";
+	for(int i = 1; i <= 10; i++) {
+		for(int j = 1; j <= 10; j++) {
+			cout << i * j << " "; //Se imprime cada columna
 		}
-		cout << endl;
+		cout << endl; //Se salta la linea despues de cada renglon
 	}
 }
 \end{lstlisting}
-\href{https://repl.it/@Jamesscn/Tablas-de-Falsedad}{Liga al código}\\
 
-Al parecer este código esta bien, pero si miras fijamente verás que en el segundo ciclo estamos modificando i en lugar de j. El compilador asume que sabes lo que estas haciendo, asi que no te arroja ningun error al tener distintos variables en un solo ciclo.
+En este caso la variable i se mueve de 1 a 10 y es un indicador del renglon actual, y la variable j también se mueve de 1 a 10 pero indica la columna.
 
-Para asegurar que esto no pase, siempre debes asegurarte de que solo estes modificando una variable por ciclo y que no hayas usado una variable con ese mismo nombre antes.
+\section{Funciones y ámbitos}
 
-\subsection{Error por uno}
-Este error tiende a ser muy facil de arreglar y ocurre por fallas de lógica.
+Las funciones son muy prácticas para cuando se tiene que repetir código parecido más de una vez. Es recomendable no repetir segmentos de código debido a que es muy facil de copiar un error y porque se vuelve tedioso tener que modificar la misma cosa multiples veces. Las funciones sirven como contenedores que ejecutan código cada vez que el programador desea.
 
-Digamos que quieres encontrar la suma de todos los cuadrados $1^2 + 2^2 + 3^2 ... + n^2$, y creas un programa para calcularlo.
+En principio son similares a las funciones matemáticas, ya que reciben una entrada que consiste en una o más variables, realizan una operación a partir de estos valores y sacan una sola variable de salida.
 
-\begin{lstlisting}[language=C++, title=Error por uno]
+Esta noción de sacar algo de la función se conoce como \textit{regresar} un valor. Las funciones regresan una expresión la cual puede ser utilizada en nuestro código. Para regresar algo de una función, se tiene que usar la palabra \textbf{return} seguido por un valor.
+
+Un ejemplo básico sería una función que recibe de entrada dos números enteros A y B y que regresa su suma como un entero. Esto lo podemos implementar de la siguiente manera:
+
+\begin{lstlisting}[language=C++, title=Función de suma]
+int suma(int a, int b) {
+	return a + b;
+}
+\end{lstlisting}
+
+Para declarar una función, se tiene que iniciar escribiendo el tipo de dato que se desea regresar. En este caso queremos regresar la suma como un entero asi que escribimos int. Después, se escribe el nombre de la función, en este caso le daremos a la función el nombre \textbf{suma}. Luego se tiene que colocar una lista de variables dentro de paréntesis, las cuales van separados por comas y serán las variables de entrada. Finalmente, se debe colocar una llave de apertura, una llave de cerradura y el código dentro de estas llaves.
+
+Con esto, hemos definido una función \textbf{suma} que recibe dos enteros \textbf{a} y \textbf{b} y que luego regrese su suma como un entero. Podemos observar que nuestra función contiene una sola línea: \\
+
+\lstinline{return a + b;} \\
+
+Esta línea realiza la suma y lo regresa como el resultado de la función. Todas las funciones tienen que estar colocados antes de \textbf{main} de tal manera:
+
+\begin{lstlisting}[language=C++, title=Función de suma]
 #include <iostream>
 
 using namespace std;
 
+int suma(int a, int b) {
+	return a + b;
+}
+
 int main() {
-	int n;
-	cin >> n;
+
+}
+\end{lstlisting}
+
+Ahora, si queremos usar nuestra función lo podemos llamar desde donde tenemos nuestro código en \textbf{main}. Para llamar o ejecutar una función basta con escribir el nombre de esa función y los valores de entrada entre paréntesis.
+
+\begin{lstlisting}[language=C++, title=Función de suma]
+#include <iostream>
+
+using namespace std;
+
+int suma(int a, int b) {
+	return a + b;
+}
+
+int main() {
+	cout << suma(3, 5) << endl;
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Funciones}{Liga al código}\\
+
+Al ejecutar este código, nos despliegará un 8. Se mandan los valores de 3 y 5 a la función suma, la cual guarda esos valores dentro de las variables \textbf{a} y \textbf{b} respectivamente. Luego, la función realiza la suma y lo regresa. Regresando al código en main, el valor de la suma se manda a cout y es impreso.
+
+Ahora haremos una función que recibe un entero llamado N y que regrese la suma de todos los valores de 1 a N utilizando un ciclo for:
+
+\begin{lstlisting}[language=C++, title=Función de suma gaussiana]
+#include <iostream>
+
+using namespace std;
+
+int sumaHastaN(int N) {
 	int suma = 0;
-	for(int i = 0; i < n; i++) {
-		suma += i * i;
+	for(int i = 1; i <= N; i++) {
+		suma += i;
 	}
-	cout << suma << endl;
+	return suma;
+}
+
+int main() {
+	cout << sumaHastaN(100) << endl;
+	cout << sumaHastaN(25) << endl;
+	cout << sumaHastaN(12345) << endl;
 }
 \end{lstlisting}
-\href{https://repl.it/@Jamesscn/Sumás-Cuadrados}{Liga al código}\\
+\href{https://repl.it/@Jamesscn/Funciones}{Liga al código} \\
 
-Corres tu programa con $n = 3$, y ya sabes que $1^2 + 2^2 + 3^2 = 1 + 4 + 9 = 14$, pero te dice que es 5. Ahora corres tu programa con $n = 4$ y ahora observas que la respuesta es 14 cuando debía ser 30. Esto ocurre porque estas contando de $0$ a $n-1$ (nota que el for tiene la expresión i < n cuando debía ser i <= n).
+En este ejemplo la función sumaHastaN corre tres veces con tres entradas distintas y utiliza el código en su interior para hacer los cálculos.
 
-Esto pasó porque el for loop cuenta hasta n pero no lo incluye en la suma, y estos tipos de errores suelen ocurrir cuando se utilizan ciclos que inician desde 1 o cuando se debe incluir el ultimo valor en el proceso.
+\subsection{Void}
 
-\subsection{Segmentation fault}
-Este error es algo común y suele pasar cuando quieres sacar un valor que esta fuera de un arreglo.
+Existe un tipo de dato llamado \textbf{void} el cual no guarda nada y que sirve para crear funciones que no regresan ningún valor. Estas funciones sirven solamente para ejecutar el código que almacenan y no requieren el uso de la palabra return. Sin embargo, sí es posible escribir return (sin ningun valor) si se desea salirse de la función antes de llegar a la llave final.
 
-Digamos que tenemos un código que le pregunta al usuario un valor y luego despliega el factorial de ese valor. El código asume que el usuario seleccionará un número entre 0 y 10, para luego desplegar su factorial el cual esta guardado en un arreglo.
+El siguiente ejemplo muestra una función que recibe un string de entrada con el nombre de una persona y que no regresa nada.
 
-\begin{lstlisting}[language=C++, title=Error de segmentación]
+\begin{lstlisting}[language=C++, title=Saludo]
+#include <iostream>
+
+using namespace std;
+
+void saludar(string nombre) {
+	cout << "Buenas tardes, " << nombre << endl;
+}
+
+int main() {
+	saludar("Miguel");
+	saludar("Marvin");
+	saludar("Eduardo");
+}
+\end{lstlisting}
+
+Debido a que su único objetivo es imprimir texto podemos asignarle el tipo void a la función.
+
+\subsection{Ámbito de variables}
+
+En los ejemplos anteriores se vió que se pueden crear variables dentro de funciones. Sin embargo, se dicen que estas variables estan en el ámbito o \textit{scope} de la función. Cada set de llaves se puede visualizar como un ámbito con sus propias variables, y C++ no te permite ver ni modificar las variables que estan en un ámbito fuera de la propia.
+
+El siguiente ejemplo muestra un código que erroneamente intenta modificar una variable \textbf{x} definido dentro de una función externa. Se intenta imprimir x desde main cuando en realidad x se encuentra en un ámbito distinto, asi que el código no sabe de la existencia de la variable x en ese punto. Si se intenta compilar el programa aparecerá un error por esta razón y no se podrá ejecutar el código.
+
+\begin{lstlisting}[language=C++, title=Error de ámbito]
+#include <iostream>
+
+using namespace std;
+
+void miFuncion() {
+	int x = 3;
+}
+
+int main() {
+	miFuncion();
+	cout << x << endl;
+}
+\end{lstlisting}
+
+Lo mismo ocurre con los ciclos; si una variable se declara dentro del ámbito de un ciclo entonces solo existe dentro de ese ciclo. El siguiente código también presentará un error de compilación debido a que la variable i solo existe dentro del ciclo:
+
+\begin{lstlisting}[language=C++, title=Error de ámbito]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	int factoriales[] = {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800};
-	cout << "Que factorial quisieras?" << endl;
-	int deseado;
-	cin >> deseado;
-	if(deseado < 0) {
-		cout << "No existe " << deseado << "!";
-	} else {
-		cout << deseado << "! es " << factoriales[deseado] << endl;
+	for(int i = 0; i < 10; i++) {
+		cout << i << endl;
 	}
+	cout << i << endl;
 }
 \end{lstlisting}
-\href{https://repl.it/@Jamesscn/Indices-Inexistentes}{Liga al código}\\
 
-¿Ahora qué pasa si el usuario quiere saber el valor de 25565 factorial? Si ejecutas el código con tal valor verás que el programa se cierra inesperadamente y regresa el siguiente error: [1] 12937 segmentation fault (core dumped).
+Sin embargo si se declara la variable i en un ámbito más elevado, como el de main, entonces sí se puede modificar dentro y afuera del ciclo.
 
-Esto ocurre porque estas intentando accesar el elemento 25565 de un arreglo que solo tiene 10 valores, lo que pasa es que estas intentando ver un lugar que no existe en la memoria de tu programa.
-
-El 95\% de las veces que verás un segmentation fault, será porque estas intentando modificar o ver un valor que esta fuera de un arreglo. Siempre debes asegurarte que un arreglo tiene suficiente espacio para guardar todos los posibles valores que ocupes.
-
-\subsection{Sobreflujos}
-Este error pasa cuando tienes un valor que es demasiado grande para una variable.
-
-Ahora vamos a mejorar el código que habiamos hecho del factorial. En lugar de guardar los primeros 10 valores en un arreglo, vamos a generar cada valor con un ciclo.
-
-Para checar que todo este bien, voy a desplegar los primeros 18 factoriales.
-
-\begin{lstlisting}[language=C++, title=Sobreflujo]
+\begin{lstlisting}[language=C++, title=Programa corregido]
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	int factorial = 1;
-	for(int i = 1; i < 18; i++) {
-		factorial *= i;
-		cout << factorial << endl;
+	int i;
+	for(i = 0; i < 10; i++) {
+		cout << i << endl;
 	}
+	cout << i << endl;
 }
 \end{lstlisting}
-\href{https://repl.it/@Jamesscn/Sobrefactorial}{Liga al código}\\
 
-Corres este código y te topas con una sorpresa, 17! es aparentemente -288522240. ¿Cómo fue que un factorial te dio un número negativo si siempre incrementa?
+Debido a que las variables pueden vivir en ámbitos diferentes, es posible tener dos o más variables con el mismo nombre dentro de un programa. El siguiente código muestra que existen dos variables llamados \textbf{x} que son distintos:
 
-Lo que esta pasando es que el valor de 17! es demasiado grande para ser guardado en un valor de tipo int, si buscas en línea encontraras que un int solo puede guardar valores de -2,147,483,648 a 2,147,483,647, y 17! tiene un valor de 355,687,428,096,000.
-
-El programa no te arroja ningun error, simplemente lo que hace es que cuando un número es más grande del valor máximo de 2,147,483,647, se traslapa a -2,147,483,648 y sigue sumando desde ese valor. Eso significa que si quiero guardo el valor de 2,147,483,649 en un int, me guardará en realidad el valor -2,147,483,647.
-
-Si sigues imprimiendo más números, verás que se vuelven a hacer positivos y negativos debido a este traslape.
-
-Para solucionar esto, debes reemplazar int por otro tipo de dato que pueda guardar números más grandes, como long long int o double.
-
-\subsection{Errores de redondeo}
-Este error pasa cuando se dividen dos enteros.
-
-Sabes que $\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + ... = 1$ y quisieras comprobarlo creando un programa. Lo implementas con el siguiente código:
-
-\begin{lstlisting}[language=C++, title=Error de redondeo]
+\begin{lstlisting}[language=C++, title=Nombramiento compartido]
 #include <iostream>
 
 using namespace std;
 
+void imprimeSuma(int a, int b) {
+	int x = a + b;
+	cout << x << endl;
+}
+
 int main() {
-	int suma = 0;
-	int potencia = 2;
-	for(int i = 1; i < 30; i++) {
-		suma += 1 / potencia;
-		potencia *= 2;
-	}
-	cout << suma << endl;
+	int x = 13;
+	int y = 25;
+	imprimeSuma(x, y);
+	cout << x << endl;
 }
 \end{lstlisting}
-\href{https://repl.it/@Jamesscn/Suma-Fraccional}{Liga al código}\\
 
-Pero cuando lo corres, te dice que tu suma es cero. Revisas la variable de potencia y te das cuenta que ese sí esta bien, pero la variable de suma se queda en cero.
+\subsection{Variables globales}
 
-Esto ocurre debido a que 1 y potencia estan siendo guardados como enteros, y cuando se dividen dos enteros el resultado siempre será otro entero redondeado para abajo. Es decir si hago $5 / 2$, esto me dará $2$ porque el valor de $2.5$ fue redondeado hacia abajo. Como potencia siempre es mayor que 1, esta división siempre se redondeara para abajo y dará cero.
+Las variables globales son variables declaradas afuera de main como la variable \textbf{saldo} en el siguiente ejemplo. Cabe mencionar que el uso de variables globales es considerado como una mala costumbre, por lo tanto se recomienda minimizar su uso.
 
-Para corregir esto, se deben cambiar las variables de potencia y de suma de enteros a un tipo de dato flotante, es decir un número que permite puntos decimales.
-
-\subsection{Faltas de memoria}
-Esto sucede cuando tu programa ocupa demasiado espacio continuo y ocasiona un error.
-
-A veces sucede que tienes que crear un arreglo con 10 millones de valores (es verdad, sí vas a ocupar algo asi!) y te darás cuenta que tu programa deja de funcionar.
-
-\begin{lstlisting}[language=C++, title=Faltas de memoria]
+\begin{lstlisting}[language=C++, title=Variables globales]
 #include <iostream>
 
 using namespace std;
 
+float saldo = 0;
+
+void depositar(float cantidad) {
+	saldo += cantidad;
+}
+
+void consultarSaldo() {
+	cout << "Su saldo es de $" << saldo << endl;
+}
+
 int main() {
-	int arreglo[10000000];
-	for(int i = 0; i < 10000000; i++) {
-		arreglo[i] = i;
-	}
-	cout << "Arreglo llenado" << endl;
+	consultarSaldo();
+	depositar(100);
+	depositar(27.5);
+	consultarSaldo();
 }
 \end{lstlisting}
-\href{https://repl.it/@Jamesscn/Arreglo-no-arreglado}{Liga al código}\\
 
-Por suerte, esto se puede arreglar. Si cuentas los bytes, te darás cuenta que son 4 millones de bytes o 4 megabytes, y las computadoras modernas tienden a tener hasta 16 gigabytes de memoria RAM, asi que no debe haber problema para conseguir 4 megabytes de memoria.
+\subsection{Parámetros}
 
-El problema viene del hecho que a la hora de crear un arreglo, el sistema busca 4 megabytes de espacio que estén libres y juntos dentro de la memoria del programa. Esto se puede arreglar preguntandole a tu sistema si puedes guardar estos 4 megabytes en una area especial extra de memoria llamado el heap, que viene siendo una area publica con muchisimo espacio, en lugar del espacio limitado que fue asignado a tu programa.
+En los otros ejemplos se ha visto que cada función puede tener variables de entrada. Estas variables se llaman los parámetros de la función, y cada vez que se manda un valor a una función se crea una copia de ese valor dentro del parámetro correspondiente. Por lo tanto, las funciones no son capaces de modificar variables externos.
 
-Para hacer que el programa busque dentro del heap, debes cambiar el arreglo a un puntero y utilizar \textbf{malloc}, \textbf{new} o alguna función que te permite obtener espacio del heap.
+El siguiente ejemplo muestra una función que intenta sumarle uno a la variable \textbf{x} en main:
+
+\begin{lstlisting}[language=C++, title=Parámetros]
+#include <iostream>
+
+using namespace std;
+
+void sumarUno(int x) {
+	x++;
+	cout << "en sumarUno x=" << x << endl; //x termina como 6
+}
+
+int main() {
+	int x = 5; //x se inicia en 5
+	sumarUno(x);
+	cout << "en main x=" << x << endl; //x sigue siendo 5
+}
+\end{lstlisting}
+
+Si se ejecuta el código se verá que x aumenta a seis pero luego regresa a cinco. El truco esta en que la variable x de sumarUno es en realidad una variable distinta a la x dentro de main. La x en sumarUno aumenta mientras que la x de main nunca se modifica.
+
+\subsection{La función main}
+
+En todas nuestras programas hemos estado colocando la mayoría de nuestro código dentro de la sección llamado main. Esta sección es en realidad una función que regresa un entero, pero en ninguno de los casos anteriores se habia regresado un valor. Esto es porque si no se incluye un return dentro de main automaticamente se regresará el número cero.
+
+El número que se regresa de main es un indicador del estado final del programa; si se regresa cero entonces se asume que el programa se ejecutó con éxito. Sin embargo, podemos regresar otro valor y señalar ocurrió un error, y existen distintos números que corresponden a distintos errores. El valor que se regresa de main solo es relevante en contextos muy específicos, por lo tanto no se utilizará return dentro de main en los ejemplos de este manual.
 
 \section{Estructuras de datos sencillos}
 
@@ -1091,7 +1231,7 @@ Una solución es utilizar otras estructuras de datos, que almacenan y manejan da
 
 Un vector no es nada más que un arreglo dinámico. Esto significa que el vector no tiene un tamaño fijo y puedes agregar y quitar elementos sin problema.
 
-Para crear un vector es necesario agregar una librería especifica de esta estructura llamada \textbf{vector}.
+Para crear un vector es necesario agregar una librería específica de esta estructura llamada \textbf{vector}
 
 Para incluir esta librería se debe de escribir \textbf{\lstinline{\#include <vector>}} en las primeras líneas de tu programa.
 
@@ -1106,7 +1246,7 @@ int main() {
 }
 \end{lstlisting}
 
-Como un vector guarda datos al igual que un arreglo, debes definir el tipo de dato que se almacenará a la hora de declararlo. Se puede declarar el vector con el sintaxis \textbf{\lstinline{vector<tipo> nombre;}} Como se puede observar, el vector no requiere tener un tamaño predeterminado.
+Como un vector guarda datos al igual que un arreglo, debes definir el tipo de dato que se almacenará a la hora de declararlo. Se puede declarar el vector con la sintaxis \textbf{\lstinline{vector<tipo> nombre;}} Como se puede observar, el vector no requiere tener un tamaño predeterminado.
 
 \begin{lstlisting}[language=C++, title=Vectores]
 #include <iostream>
@@ -1119,7 +1259,7 @@ int main() {
 }
 \end{lstlisting}
 
-Aqui se ha declarado un vector de enteros, para agregarle elementos a este vector se debe escribir el nombre del vector seguido por un punto y la función \textbf{\lstinline{push_back()}} con el valor del elemento entre los paréntesis.
+Aquí se ha declarado un vector de enteros, para agregarle elementos a este vector se debe escribir el nombre del vector seguido por un punto y la función \textbf{\lstinline{push_back()}} con el valor del elemento entre los paréntesis.
 
 \begin{lstlisting}[language=C++, title=Agregando valores]
 #include <iostream>
@@ -1135,9 +1275,9 @@ int main() {
 }
 \end{lstlisting}
 
-Aqui, nuestro vector guardará los valores de 1, 4 y 9.
+Nuestro vector guardará los valores de 1, 4 y 9.
 
-Para ver o modificar el valor en algún índice se puede utilizar el mismo sintaxis de un arreglo. Si en el ejemplo queremos cambiar el 9 a un 7, podemos modificarlo y ver sus cambios con el siguiente código:
+Para ver o modificar el valor en algún índice se puede utilizar la misma sintaxis de un arreglo. Si en el ejemplo queremos cambiar el 9 a un 7, podemos modificarlo y ver sus cambios con el siguiente código:
 
 \begin{lstlisting}[language=C++, title=Modificando valores]
 #include <iostream>
@@ -1307,7 +1447,7 @@ El primer valor funciona como un estilo de índice que guarda el segundo valor, 
 
 Pero también se debe aclarar que hay dos tipos de mapa, el mapa ordenado y el mapa desordenado. Hasta ahorita, hemos estado utilizando el mapa ordenado o \textbf{map}. El mapa desordenado se llama \textbf{\lstinline{unordered_map}} y para utilizarlo debes incluir la librería con este mismo nombre.
 
-Existen varias ventajas de usar un mapa desordenado sobre uno ordenado, el aceso de datos es más rápido en un mapa desordenado, pero a la vez ocupa más memoria que un mapa ordenado. También tiene el mismo sintaxis que el mapa ordenado.
+Existen varias ventajas de usar un mapa desordenado sobre uno ordenado, el aceso de datos es más rápido en un mapa desordenado, pero a la vez ocupa más memoria que un mapa ordenado. También tiene la misma sintaxis que el mapa ordenado.
 
 \begin{lstlisting}[language=C++, title=Mapa desordenado]
 #include <iostream>
@@ -1361,7 +1501,7 @@ int main() {
 }
 \end{lstlisting}
 
-Igual que map, el set tiene una version desordenada llamada \textbf{\lstinline{unordered_set}} que tiene accesos más rápidos a costo de más memoria.
+Igual que map, el set tiene una versión desordenada llamada \textbf{\lstinline{unordered_set}} que tiene accesos más rápidos a costo de más memoria.
 
 \section{Complejidad de tiempo}
 
@@ -1453,7 +1593,7 @@ Esto puede ser explicado con complejidades de tiempo.
 
 Vamos a analizar el código anterior de los números primos. Imaginemonos que cada operación se tarda un nanosegundo en hacerse y que cada línea de código (sin incluir ciclos y funciones) cuenta como una operación. Si queremos contar el número de operaciones que nuestro programa hace cada vez que se ejecuta, podemos analizarlo línea por línea y obtener una expresión matemática.
 
-Vamos a considerar que el programa inicia justo después de leer la entrada de N de la consóla y vamos a denotar X como el número de operaciones. Podemos ver que en la siguiente línea se llama cout, asi que podemos decir que X = 1 hasta ahorita. Luego, se ingresa en el primer ciclo, que corre (N - 3) / 2 veces. En cada uno de estos ciclos, se hace una operación que declara primo como cierto, luego se corre otro ciclo for. Sabemos que el segundo ciclo for corre M - 2 veces, y que consiste de 2 lineas de código, una comparación y una igualación. Luego, se sale de ese ciclo y se hacen dos operaciónes más, otra comparación y una impresión a la consola.
+Vamos a considerar que el programa inicia justo después de leer la entrada de N de la consóla y vamos a denotar X como el número de operaciones. Podemos ver que en la siguiente línea se llama cout, asi que podemos decir que X = 1 hasta ahorita. Luego, se ingresa en el primer ciclo, que corre (N - 3) / 2 veces. En cada uno de estos ciclos, se hace una operación que declara primo como cierto, luego se corre otro ciclo for. Sabemos que el segundo ciclo for corre M - 2 veces, y que consiste de 2 líneas de código, una comparación y una igualación. Luego, se sale de ese ciclo y se hacen dos operaciónes más, otra comparación y una impresión a la consola.
 
 Fuera del primer ciclo, determinamos que hay una sola operación y el primer ciclo.
 Dentro del primer ciclo, se corren 3 líneas de código (la declaración de primo y su comparación para luego imprimir a la consola) y el segundo ciclo.
@@ -1500,7 +1640,7 @@ Esto significa que si le damos una entrada de aproximadamente 1,000,000 a A y a 
 
 Pero esto es en el peor de los casos, en el mejor de los casos, se les puede dar una entrada de 1 y ambos programas terminanarán instantaneamente. Por esa rázon, se tiende a pensar en el peor de los casos.
 
-Estas expresiones que hemos estado obteniendo se llaman las complejidades de tiempo de A y B, y existen maneras fáciles de determinar cual es la complejidad de tiempo de un algoritmo. Se tiende a referir al peor de los casos como O de cierta función, y se denota encerrando esa expresión entre parentesis. Por ejemplo, podemos decir que A tiene complejidad \textbf{O(N)} mientras que B tiene \textbf{O($N^2$)}.
+Estas expresiones que hemos estado obteniendo se llaman las complejidades de tiempo de A y B, y existen maneras fáciles de determinar cual es la complejidad de tiempo de un algoritmo. Se tiende a referir al peor de los casos como O de cierta función, y se denota encerrando esa expresión entre paréntesis. Por ejemplo, podemos decir que A tiene complejidad \textbf{O(N)} mientras que B tiene \textbf{O($N^2$)}.
 
 La manera más fácil de determinar la complejidad de tiempo de un algoritmo es dividirlo en secciones de ciclos y sumar estos términos, y descartar todo lo que no sea el término más grande. Si tenemos un programa con un solo ciclo que se repite N veces, se puede decir que tiene complejidad \textbf{O(N)} porque lo que esta dentro de ese ciclo se repite N veces, y si hay dos ciclos anidados que se repiten N veces, tiene complejidad \textbf{O($N^2$)} porque se multiplican las N iteraciones del primer ciclo con las N iteraciones del segundo. En caso de tener un programa sin ciclos, se dice que tiene complejidad constante o \textbf{O(1)}, lo que significa que siempre se tardará el mismo tiempo en correr sin importar que tan grande es su entrada. Ahora se mostrará el ejemplo de dos ciclos separados que se repiten N veces:
 
@@ -1523,7 +1663,7 @@ int main() {
 }
 \end{lstlisting}
 
-La complejidad de ambos ciclos es O(N) y si se deciden sumar estas complejidades resultarían en la expresión O(2N), pero como la complejidad es una representación de la escala de tiempo que se abarca en un programa, el dos es un constante innecesario que se debería de quitar para dar O(N) denuevo. Esto significa que si se tienen 2, 3 o incluso más ciclos for que se estan sumando aqui y que no estan anidados, no tendrán un impacto grande en el tiempo de ejecución.
+La complejidad de ambos ciclos es O(N) y si se deciden sumar estas complejidades resultarían en la expresión O(2N), pero como la complejidad es una representación de la escala de tiempo que se abarca en un programa, el dos es un constante innecesario que se debería de quitar para dar O(N) denuevo. Esto significa que si se tienen 2, 3 o incluso más ciclos for que se estan sumando aquí y que no estan anidados, no tendrán un impacto grande en el tiempo de ejecución.
 
 Si se decide combinar un ciclo de O($N$) con un ciclo de O($N^2$), al sumar los términos se obtendría O($N^2 + N$). Como $N^2$ es el término más significante, cuando N se vuelve muy grande $N$ se hará insignificante comparado con $N^2$ y no tendrá un gran impacto en el programa. Por esa razón, se debe quitar la $N$ de esa suma para dar O($N^2$).
 
@@ -1602,7 +1742,7 @@ Si se tiene un valor N de entrada y se guardan N valores en un vector o en un ar
 
 \section{Busquedas}
 
-Es conveniente realizar busquedas en arreglos para poder encontrar si ciertos datos estan guardados en ese arreglo y en que lugares. Pero tambien existen varios algoritmos o métodos que son mas rápidos que otros a costo de más trabajo.
+Es conveniente realizar busquedas en arreglos para poder encontrar si ciertos datos estan guardados en ese arreglo y en que lugares. Pero también existen varios algoritmos o métodos que son mas rápidos que otros a costo de más trabajo.
 
 \subsection{Busqueda lineal}
 
@@ -1632,7 +1772,7 @@ Este algoritmo es la más sencilla pero a la vez puede ser la más ineficiente e
 
 Este algoritmo es muchisimo más rápida que la busqueda lineal debido a que tiene una mejor complejidad de tiempo, pero requiere que el arreglo este ordenado primero. Si queremos encontrar donde esta el valor 8 en un arreglo {1, 3, 4, 5, 6, 7, 8, 9, 10} y sabemos que esta ordenado, podemos hacer una adivinación y probar el valor que esta justo en medio.
 
-Si este es menor que nuestro valor, sabemos que 8 debe estar en la segunda mitad del arreglo, pero si es mayor sabemos que 8 esta en la primera mitad. Tambien puede ser que 8 es el valor que esta justo en medio, en ese caso no se tendría que hacer nada más porque ya habríamos encontrado nuestro valor.
+Si este es menor que nuestro valor, sabemos que 8 debe estar en la segunda mitad del arreglo, pero si es mayor sabemos que 8 esta en la primera mitad. También puede ser que 8 es el valor que esta justo en medio, en ese caso no se tendría que hacer nada más porque ya habríamos encontrado nuestro valor.
 
 Vamos a probar este algoritmo con nuestro arreglo. Primero comparamos 8 con 6 y nos damos cuenta que 8 es mayor a 6, asi que podemos descartar todos los valores de la izquierda e incluyendo a 6. {1, 3, 4, 5, 6} se quedan descartados y nos sobra {7, 8, 9,  0}. Cuando el número de elementos es par, se puede escoger el número a la derecha o el número a la izquierda dependiendo de la preferencia de tu algoritmo. En este caso, escogeré el número de la derecha 9 y lo compararé con 8, y puedo determinar que todo lo que esta a la derecha de ese 9 debe ser descartado junto con el 9. {9, 10} quedan descartados y nos queda {7, 8}. Probamos el valor de la derecha y obtenemos 8, el valor que estabamos buscando en solo 3 busquedas.
 
@@ -1691,7 +1831,7 @@ int main() {
 
 Como se puede observar al correr el programa, los valores se imprimen al revés.
 
-La pila no solo sirve para invertir cosas, sino que es util para cuando quieres procesar los datos más recientes antes que las más antiguas.
+La pila no solo sirve para invertir cosas, sino que es útil para cuando quieres procesar los datos más recientes antes que las más antiguas.
 
 Digamos que estas diseñando el buzón de un red social como Facebook o Twitter y tu quieres enseñarle a tus usuarios las publicaciones más recientes, pero también quieres eliminar las publicaciones vistas por el usuario para que no tengan que desplazarse mucho para ver más contenido.
 
@@ -1757,7 +1897,7 @@ El deque fue implementado de una manera más flexible que las otras estructuras,
 
 Se debe notar que el valor en frente es la que se encuentra en la posición 0 y el valor de atrás es la que está en la posición $N - 1$.
 
-Para ver o modificar algún valor se puede usar el sintaxis de un arreglo, como \textbf{nombre[índice]}. Para ver el valor que esta hasta enfrente o hasta atrás, es recomendable utilizar \textbf{front()} y \textbf{back()}. Para insertar o eliminar valores existen las funciones \textbf{insert()} y \textbf{erase()}.
+Para ver o modificar algún valor se puede usar la sintaxis de un arreglo, como \textbf{nombre[índice]}. Para ver el valor que esta hasta enfrente o hasta atrás, es recomendable utilizar \textbf{front()} y \textbf{back()}. Para insertar o eliminar valores existen las funciones \textbf{insert()} y \textbf{erase()}.
 
 Un ejemplo práctico del deque es para determinar si una palabra es palindromo. Se puede insertar la palabra en el deque y luego se puede comparar el carácter de enfrente con el de atrás e irlos sacando de dos en dos hasta que quede cero o un valor en el deque.
 
@@ -1944,7 +2084,7 @@ Este método busca el valor más bajo y lo intercambia con el valor en el primer
 
 Por ejemplo, si tenemos el arreglo {5, 2, 3, 9, 6} y lo queremos ordenar con este método, intercambiaremos 2 con 5 para obtener {2, 5, 3, 9, 6}. Como sabemos que 2 era el valor más bajo, el arreglo antes del 5 esta ordenado y lo podemos ignorar. Esto significa que ahora solo tenemos que ordenar {5, 3, 9, 6}. Podemos ver que el valor más bajo es 3 y lo podemos intercambiar con el primer lugar para obtener {3, 5, 9, 6}. Nuestro arreglo original es ahora {2, 3, 5, 9, 6}.
 
-Despues solo tendriamos que ordenar {5, 9, 6}, pero como 5 ya esta en el primer lugar podemos saltarnos ese valor y ordenar {9, 6}. Al intercambiar estos valores, obtendriamos el arreglo ordenado {2, 3, 5, 6, 9}.
+Después solo tendriamos que ordenar {5, 9, 6}, pero como 5 ya esta en el primer lugar podemos saltarnos ese valor y ordenar {9, 6}. Al intercambiar estos valores, obtendriamos el arreglo ordenado {2, 3, 5, 6, 9}.
 
 Este método puede ser implementado con dos ciclos for, uno que va de 0 a N y otro que va del valor actual a N. El segundo ciclo buscará el valor mas bajo de los valores que faltan de ordenarse y el primer ciclo lo ira poniendo en su lugar correcto.
 
@@ -2245,9 +2385,9 @@ int main() {
 }
 \end{lstlisting}
 
-Como se puede ver, los structs siempre deben ir antes de nuestra función main y deben tener un punto y coma despues de su llave de cierre. Luego dentro de las llaves debe tener una lista de todas las variables que se desean agrupar.
+Como se puede ver, los structs siempre deben ir antes de nuestra función main y deben tener un punto y coma después de su llave de cierre. Luego dentro de las llaves debe tener una lista de todas las variables que se desean agrupar.
 
-Para crear una instancia de un struct, se debe poner el nombre del struct como el tipo de dato seguido por el nombre especifico de esa instancia:
+Para crear una instancia de un struct, se debe poner el nombre del struct como el tipo de dato seguido por el nombre específico de esa instancia:
 
 \begin{lstlisting}[language=C++, title=Instanciamiento]
 #include <iostream>
@@ -2267,7 +2407,7 @@ int main() {
 }
 \end{lstlisting}
 
-Como se puede observar, se crearon dos clientes, \textbf{jorge} y \textbf{pablo}. Podemos modificar sus datos escribiendo el nombre de cada variable despues de un punto:
+Como se puede observar, se crearon dos clientes, \textbf{jorge} y \textbf{pablo}. Podemos modificar sus datos escribiendo el nombre de cada variable después de un punto:
 
 \begin{lstlisting}[language=C++, title=Modificando valores]
 #include <iostream>
@@ -2375,7 +2515,7 @@ Como se puede observar en ambos grafos, existe una raíz o nodo con la mayor can
 
 Cada nodo se puede considerar como "hijo" de otro nodo excepto la raíz, y cada nodo se puede considerar como "padre" de otro nodo excepto las hojas. En el primer grafo con la raíz y las hojas señaladas, se puede decir que 2, 3, 4 y 9 son hijos de 1 y que 1 es padre de 2, 3, 4 y 9.
 
-Esta relación de padre y hijo es util será util después para optimizar operaciones relacionados con grafos.
+Esta relación de padre y hijo será útil después para optimizar operaciones relacionados con grafos.
 
 \subsection{Grafos dirigidos y cíclicos}
 
@@ -2514,11 +2654,11 @@ Primero declararemos un arreglo de 7 vectores de enteros. Podemos ver que el nod
 
 Estamos guardando 7 vectores porque el tamaño de cada uno puede variar. Este método es muy efectivo para guardar un grafo porque no consume mucho espacio y funciona para grafos dirigidos.
 
-Sin embargo si un nodo tiene muchisimas ramas entonces la busqueda de una union entre dos nodos sería muy lento porque en el peor de los casos se tendrá que iterar sobre todos los ramas. Esto tiene complejidad de tiempo de O(E) y complejidad de espacio de O(E) donde E es la cantidad de ramas del grafo.
+Sin embargo si un nodo tiene muchisimas ramas entonces la busqueda de una unión entre dos nodos sería muy lento porque en el peor de los casos se tendrá que iterar sobre todos los ramas. Esto tiene complejidad de tiempo de O(E) y complejidad de espacio de O(E) donde E es la cantidad de ramas del grafo.
 
 Si quisieramos mejorar nuestra complejidad de tiempo, tendríamos que empeorar nuestra complejidad de espacio. Para hacer esto podemos guardar el grafo en una matriz de adyacencia.
 
-Una matriz de adyacencia consiste en un arreglo 2d de tamaño V * V donde V es la cantidad de vertices. En cada espacio, indicamos si hay o no hay una conexion entre cada nodo.
+Una matriz de adyacencia consiste en un arreglo 2d de tamaño V * V donde V es la cantidad de vertices. En cada espacio, indicamos si hay o no hay una conexión entre cada nodo.
 
 Para el ejemplo que habiamos dado antes, podemos crear la siguiente matriz donde un 0 significa que no hay conexión y un 1 significa que existe una rama entre esos dos nodos:
 
@@ -2565,7 +2705,7 @@ Los problemas de grafos más comunes y más faciles tienden a ser esos que ocurr
 
 Un ejemplo común es pensar en un plano como la vista superficial de un laberinto, y construir un arreglo bidimensional de booleanos donde verdadero es una pared u obstaculo y falso es un camino libre.
 
-Aqui hay un ejemplo donde cada 1 se ha pintado de negro y cada 0 se ha dejado en blanco:
+Aquí hay un ejemplo donde cada 1 se ha pintado de negro y cada 0 se ha dejado en blanco:
 
 \begin{figure}[H]
     \centering
@@ -3137,7 +3277,7 @@ Si corremos el código podemos ver que nos despliega el mismo camino que habiamo
 
 Como hemos visto anteriormente es conveniente trabajar con structs en lugar de guardar los datos en pares de pares o usar variables sueltos. El struct es algo que se conoce como un objeto; existen varios tipos de objetos y pueden ser vistos como estructuras que almacenan datos. Estos objetos son útiles porque se pueden crear varios 'instancias' o copias de ellos que actuan de manera independiente. Es decir, contienen datos distintos pero siguen la misma estructura.
 
-Como hemos visto con los structs cada objeto puede ser construido (instancializado) o destruido (esto tiende a ocurrir despues de que termina nuestro programa), y cada objeto puede ser declarado con un nombre único.
+Como hemos visto con los structs cada objeto puede ser construido (instancializado) o destruido (esto tiende a ocurrir después de que termina nuestro programa), y cada objeto puede ser declarado con un nombre único.
 
 \subsection{Uniones}
 
@@ -3145,11 +3285,11 @@ La unión es un objeto parecido a un struct con la única diferencia siendo que 
 
 Debido a la naturaleza de esta estructura, es sumamente raro encontrarlo en código real debido a que tiene pocas aplicaciones y porque el ahorro de memoria tiende a ser insignificante.
 
-Si se tiene un int, un float y un long long int en un struct este ocuparía un espacio de 16 bytes para guardar los 4 bytes del int, los 4 bytes del float y los 8 bytes del long long int, pero una union con estas tres variables solo ocupará 8 bytes porque este es el tamaño del dato mas grande (el long long int).
+Si se tiene un int, un float y un long long int en un struct este ocuparía un espacio de 16 bytes para guardar los 4 bytes del int, los 4 bytes del float y los 8 bytes del long long int, pero una unión con estas tres variables solo ocupará 8 bytes porque este es el tamaño del dato mas grande (el long long int).
 
-Una desventaja de este tipo de dato es que no se puede saber cual es la variable que esta siendo guardado, asi que se debe usar otra variable o tener un contexto especifico. Debido a estas limitaciones la union es una estructura raramente usada.
+Una desventaja de este tipo de dato es que no se puede saber cual es la variable que esta siendo guardado, asi que se debe usar otra variable o tener un contexto específico. Debido a estas limitaciones la unión es una estructura raramente usada.
 
-Aqui se presenta el ejemplo de un código que almacena una dirección (arriba, abajo, izquierda o derecha). Como siempre se tendran dos arreglos distintos con uno para guardar direcciones horizontales y uno que guarda direcciones verticales, entonces se puede crear una union que guarda arriba o abajo en un booleano o derecha o izquierda en otra:
+Aquí se presenta el ejemplo de un código que almacena una dirección (arriba, abajo, izquierda o derecha). Como siempre se tendran dos arreglos distintos con uno para guardar direcciones horizontales y uno que guarda direcciones verticales, entonces se puede crear una unión que guarda arriba o abajo en un booleano o derecha o izquierda en otra:
 
 \begin{lstlisting}[language=C++, title=Uniones]
 #include <iostream>
@@ -3247,7 +3387,7 @@ int main() {
 }
 \end{lstlisting}
 
-Podemos ver que ambos clientes tienen las mismas funciones pero cada funcion es especifico a cada cliente, una llamada a imprimeSaldo solo imprime el saldo de ese cliente y no de todos.
+Podemos ver que ambos clientes tienen las mismas funciones pero cada función es específico a cada cliente, una llamada a imprimeSaldo solo imprime el saldo de ese cliente y no de todos.
 
 La razón por la que existen las variables privadas es para asegurar que esta variable solo este modificada correctamente. Si fueramos a llamar a deposita con un número negativo se perdería dinero asi que es recomendable hacer unas pruebas dentro de esta función, hacer la variable dinero privada y crear otras funciones que manejan esta variable.
 
@@ -3347,7 +3487,7 @@ int main() {
 
 Podemos ver que también nos ayuda a simplificar el código que escribimos dentro de la función main.
 
-Tambien existen los destructores que son funciones especiales que se corren a la hora de borrarse una clase. Una clase solo se tiende a borrar al final de su ejecución, pero más adelante veremos otros casos donde se pueden borrar manualmente.
+También existen los destructores que son funciones especiales que se corren a la hora de borrarse una clase. Una clase solo se tiende a borrar al final de su ejecución, pero más adelante veremos otros casos donde se pueden borrar manualmente.
 
 Para declarar el destructor se debe escribir una función sin parametros y sin tipos con un tilde seguido por el nombre de la clase.
 
@@ -3438,9 +3578,9 @@ int main() {
 }
 \end{lstlisting}
 
-Aqui podemos ver que la función suma es sobrecargada y que la primera vez que se llama utiliza la función de arriba porque sabe que los parámetros son dos enteros, mientras que las otras dos veces corre la función de abajo porque los parámetros son cáracteres.
+Podemos ver que la función suma es sobrecargada y que la primera vez que se llama utiliza la función de arriba porque sabe que los parámetros son dos enteros, mientras que las otras dos veces corre la función de abajo porque los parámetros son cáracteres.
 
-El sobrecargamiento tambien permite la llamada de la misma función, asi que se puede crear una función general que es llamada por las funciones que sobrecargan:
+El sobrecargamiento también permite la llamada de la misma función, asi que se puede crear una función general que es llamada por las funciones que sobrecargan:
 
 \begin{lstlisting}[language=C++, title=Sobrecargamiento]
 #include <iostream>
@@ -3538,9 +3678,9 @@ Se debe crear una función con nombre operator\textbf{(signo)} y este debe regre
 
 Suele suceder que ocupas crear varias clases especificas con diferencias pequeñas. Para evitar tener que copiar el mismo código muchas veces se puede crear una clase general que contiene variables y funciones que se comparten entre otras clases especificas que "heredan" esta clase general.
 
-Para heredar una clase se debe escribir dos puntos, public y el nombre de la clase general despues de la clase que hereda estas propiedades. Para llamar el constructor de una clase heredada se debe hacer algo parecido donde se pone dos puntos, el nombre del constructor de la clase que hereda y las variables que se desean pasar a ese constructor original.
+Para heredar una clase se debe escribir dos puntos, public y el nombre de la clase general después de la clase que hereda estas propiedades. Para llamar el constructor de una clase heredada se debe hacer algo parecido donde se pone dos puntos, el nombre del constructor de la clase que hereda y las variables que se desean pasar a ese constructor original.
 
-Aqui podemos ver un ejemplo de un código donde se tiene dos clases, la clase Miembro contiene todas las funciones y variables de la clase Cliente, pero le hacemos unas modificaciones para que solo miembros reciben ciertas ventajas. Por ejemplo, no se puede modificar la variable puntos de un cliente porque esta clase no la tiene, pero la variable nombre si es igual para las dos clases.
+Aquí podemos ver un ejemplo de un código donde se tiene dos clases, la clase Miembro contiene todas las funciones y variables de la clase Cliente, pero le hacemos unas modificaciones para que solo miembros reciben ciertas ventajas. Por ejemplo, no se puede modificar la variable puntos de un cliente porque esta clase no la tiene, pero la variable nombre si es igual para las dos clases.
 
 \begin{lstlisting}[language=C++, title=Heredación]
 #include <iostream>
@@ -3663,7 +3803,7 @@ int main() {
 
 \subsection{Punteros}
 
-Los punteros son variables especiales que guardan estas direcciones o referencias para diversas aplicaciones. Es recomendable indicarle a un puntero el tipo de variable que se encuentra en la posicion de memoria que guardará.
+Los punteros son variables especiales que guardan estas direcciones o referencias para diversas aplicaciones. Es recomendable indicarle a un puntero el tipo de variable que se encuentra en la posición de memoria que guardará.
 
 Para declarar un puntero se debe escribir el tipo de variable que se referenciará, una estrella y el nombre de ese puntero: \textbf{\lstinline{tipo* nombre;}}
 
@@ -3729,7 +3869,7 @@ Si corremos el código podemos ver que la función intercambiar no modifico las 
 
 \subsection{Referencias}
 
-Otra manera de modificar los parámetros originales de una función es declarando los parámetros como referencias. Esto se puede hacer escribiendo un \lstinline{&} en lugar de un * despues del tipo de dato. Esto automaticamente le indica a la función que quieres que ese variable sea la original y no una copia.
+Otra manera de modificar los parámetros originales de una función es declarando los parámetros como referencias. Esto se puede hacer escribiendo un \lstinline{&} en lugar de un * después del tipo de dato. Esto automaticamente le indica a la función que quieres que ese variable sea la original y no una copia.
 
 \begin{lstlisting}[language=C++, title=Funciones con referencias]
 #include <iostream>
@@ -3781,7 +3921,7 @@ Con esta misma notación podemos modificar el contenido de la estructura.
 
 \subsection{Puntero this}
 
-El puntero this es un puntero especial que existe dentro de las clases que tiene una referencia a esa misma clase. Este puntero es util porque permite la distinción entre las variables que estan dentro de una clase y otras variables externas con el mismo nombre.
+El puntero this es un puntero especial que existe dentro de las clases que tiene una referencia a esa misma clase. Este puntero es útil porque permite la distinción entre las variables que estan dentro de una clase y otras variables externas con el mismo nombre.
 
 Un ejemplo sería tener una clase Punto que contiene una variable X y Y. Si creamos un constructor que tiene parametros con los mismos nombres no podemos modificar las variables internas de la clase a menos de que se usará el puntero this:
 
@@ -3863,7 +4003,208 @@ int main() {
 }     
 \end{lstlisting}
 
-Este código ahorra la mitad del espacio creando dos arreglos de tamaño 1000 y borrando uno despues de que haya sido utilizado.
+Este código ahorra la mitad del espacio creando dos arreglos de tamaño 1000 y borrando uno después de que haya sido utilizado.
+
+\section{Errores comunes}
+
+\subsection{Falta de inicialización}
+Este error es uno de los más graves y más dificiles de detectar debido a que la lógica puede estar completamente correcta, el programa se compila sin errores y en algunos casos tus variables te podrán dar los resultados correctos.
+
+Esto pasa cuando defines una variable pero no le das un valor inicial. Por ejemplo:
+
+\begin{lstlisting}[language=C++, title=Error de inicialización]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int i = 1;
+	int suma;
+	while(i <= 100) {
+		suma += i;
+		i++;
+	}
+	cout << suma << endl;
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Suma-Imposible}{Liga al código}\\
+
+Este programa suma los números de 1 a 100 y los va guardando en la variable suma. Se esperaría que el resultado fuera 5050, pero si lo corres te despliega -1428474. Si vuelves a correr el código, ahora ves 82934. Este valor siempre cambia.
+
+Esto ocurre debido a que nunca inicializamos o le damos un valor inicial a la variable suma. A la hora de declarar la variable, le estamos asegurando un espacio en la memoria del sistema pero esto no significa que ese espacio tenga guardado un cero. Puede ser que algún proceso anterior haya tenido que usar ese espacio y que haya dejado un valor que no nos interesa ahí.
+
+La razón por la que siempre cambia es porque la memoria siempre esta siendo utilizado por otros procesos (Google Chrome, Word, etc.) y cada vez que corre el programa agarrara el primer espacio libre que encuentra para la variable suma, que no siempre será la misma.
+
+Existe una posibilidad de que tu compilador automaticamente detecte que suma no fue inicializado y le asigna el valor de cero después, esto puede provocar que el programa funcione en tu computadora pero a la hora de probarlo en otra falla.
+
+Entonces para asegurar que esto nunca pase, siempre debes de tener la costumbre de inicializar tus variables a menos que sabes que serán sobreescritos por otro valor o leidos desde la consola usando $cin$.
+
+\subsection{Ciclos con otras variables}
+Este error pasa muy seguido cuando se utilizan ciclos for anidados y cuando uno olvida que haya declarado una variable antes.
+
+Digamos que vas tan mal en matemáticas que se te olvidaron las tablas multiplicativas por completo, y túquieres crear un programa que los genera. Puedes hacer esto con dos ciclos for anidados, uno que calcule las filas y otra que calcule las columnas.
+
+\begin{lstlisting}[language=C++, title=Ciclos con otras variables]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	for(int i = 0; i <= 12; i++) {
+		for(int j = 0; i <= 12; i++) {
+			cout << i * j << "\t";
+		}
+		cout << endl;
+	}
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Tablas-de-Falsedad}{Liga al código}\\
+
+Al parecer este código esta bien, pero si miras fijamente verás que en el segundo ciclo estamos modificando i en lugar de j. El compilador asume que sabes lo que estas haciendo, asi que no te arroja ningun error al tener distintos variables en un solo ciclo.
+
+Para asegurar que esto no pase, siempre debes asegurarte de que solo estes modificando una variable por ciclo y que no hayas usado una variable con ese mismo nombre antes.
+
+\subsection{Error por uno}
+Este error tiende a ser muy facil de arreglar y ocurre por fallas de lógica.
+
+Digamos que quieres encontrar la suma de todos los cuadrados $1^2 + 2^2 + 3^2 ... + n^2$, y creas un programa para calcularlo.
+
+\begin{lstlisting}[language=C++, title=Error por uno]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	int suma = 0;
+	for(int i = 0; i < n; i++) {
+		suma += i * i;
+	}
+	cout << suma << endl;
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Sumás-Cuadrados}{Liga al código}\\
+
+Corres tu programa con $n = 3$, y ya sabes que $1^2 + 2^2 + 3^2 = 1 + 4 + 9 = 14$, pero te dice que es 5. Ahora corres tu programa con $n = 4$ y ahora observas que la respuesta es 14 cuando debía ser 30. Esto ocurre porque estas contando de $0$ a $n-1$ (nota que el for tiene la expresión i < n cuando debía ser i <= n).
+
+Esto pasó porque el for loop cuenta hasta n pero no lo incluye en la suma, y estos tipos de errores suelen ocurrir cuando se utilizan ciclos que inician desde 1 o cuando se debe incluir el ultimo valor en el proceso.
+
+\subsection{Segmentation fault}
+Este error es algo común y suele pasar cuando quieres sacar un valor que esta fuera de un arreglo.
+
+Digamos que tenemos un código que le pregunta al usuario un valor y luego despliega el factorial de ese valor. El código asume que el usuario seleccionará un número entre 0 y 10, para luego desplegar su factorial el cual esta guardado en un arreglo.
+
+\begin{lstlisting}[language=C++, title=Error de segmentación]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int factoriales[] = {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800};
+	cout << "Que factorial quisieras?" << endl;
+	int deseado;
+	cin >> deseado;
+	if(deseado < 0) {
+		cout << "No existe " << deseado << "!";
+	} else {
+		cout << deseado << "! es " << factoriales[deseado] << endl;
+	}
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Indices-Inexistentes}{Liga al código}\\
+
+¿Ahora qué pasa si el usuario quiere saber el valor de 25565 factorial? Si ejecutas el código con tal valor verás que el programa se cierra inesperadamente y regresa el siguiente error: [1] 12937 segmentation fault (core dumped).
+
+Esto ocurre porque estas intentando accesar el elemento 25565 de un arreglo que solo tiene 10 valores, lo que pasa es que estas intentando ver un lugar que no existe en la memoria de tu programa.
+
+El 95\% de las veces que verás un segmentation fault, será porque estas intentando modificar o ver un valor que esta fuera de un arreglo. Siempre debes asegurarte que un arreglo tiene suficiente espacio para guardar todos los posibles valores que ocupes.
+
+\subsection{Sobreflujos}
+Este error pasa cuando tienes un valor que es demasiado grande para una variable.
+
+Ahora vamos a mejorar el código que habiamos hecho del factorial. En lugar de guardar los primeros 10 valores en un arreglo, vamos a generar cada valor con un ciclo.
+
+Para checar que todo este bien, voy a desplegar los primeros 18 factoriales.
+
+\begin{lstlisting}[language=C++, title=Sobreflujo]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int factorial = 1;
+	for(int i = 1; i < 18; i++) {
+		factorial *= i;
+		cout << factorial << endl;
+	}
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Sobrefactorial}{Liga al código}\\
+
+Corres este código y te topas con una sorpresa, 17! es aparentemente -288522240. ¿Cómo fue que un factorial te dio un número negativo si siempre incrementa?
+
+Lo que esta pasando es que el valor de 17! es demasiado grande para ser guardado en un valor de tipo int, si buscas en línea encontraras que un int solo puede guardar valores de -2,147,483,648 a 2,147,483,647, y 17! tiene un valor de 355,687,428,096,000.
+
+El programa no te arroja ningun error, simplemente lo que hace es que cuando un número es más grande del valor máximo de 2,147,483,647, se traslapa a -2,147,483,648 y sigue sumando desde ese valor. Eso significa que si quiero guardo el valor de 2,147,483,649 en un int, me guardará en realidad el valor -2,147,483,647.
+
+Si sigues imprimiendo más números, verás que se vuelven a hacer positivos y negativos debido a este traslape.
+
+Para solucionar esto, debes reemplazar int por otro tipo de dato que pueda guardar números más grandes, como long long int o double.
+
+\subsection{Errores de redondeo}
+Este error pasa cuando se dividen dos enteros.
+
+Sabes que $\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + ... = 1$ y quisieras comprobarlo creando un programa. Lo implementas con el siguiente código:
+
+\begin{lstlisting}[language=C++, title=Error de redondeo]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int suma = 0;
+	int potencia = 2;
+	for(int i = 1; i < 30; i++) {
+		suma += 1 / potencia;
+		potencia *= 2;
+	}
+	cout << suma << endl;
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Suma-Fraccional}{Liga al código}\\
+
+Pero cuando lo corres, te dice que tu suma es cero. Revisas la variable de potencia y te das cuenta que ese sí esta bien, pero la variable de suma se queda en cero.
+
+Esto ocurre debido a que 1 y potencia estan siendo guardados como enteros, y cuando se dividen dos enteros el resultado siempre será otro entero redondeado para abajo. Es decir si hago $5 / 2$, esto me dará $2$ porque el valor de $2.5$ fue redondeado hacia abajo. Como potencia siempre es mayor que 1, esta división siempre se redondeara para abajo y dará cero.
+
+Para corregir esto, se deben cambiar las variables de potencia y de suma de enteros a un tipo de dato flotante, es decir un número que permite puntos decimales.
+
+\subsection{Faltas de memoria}
+Esto sucede cuando tu programa ocupa demasiado espacio continuo y ocasiona un error.
+
+A veces sucede que tienes que crear un arreglo con 10 millones de valores (es verdad, sí vas a ocupar algo asi!) y te darás cuenta que tu programa deja de funcionar.
+
+\begin{lstlisting}[language=C++, title=Faltas de memoria]
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int arreglo[10000000];
+	for(int i = 0; i < 10000000; i++) {
+		arreglo[i] = i;
+	}
+	cout << "Arreglo llenado" << endl;
+}
+\end{lstlisting}
+\href{https://repl.it/@Jamesscn/Arreglo-no-arreglado}{Liga al código}\\
+
+Por suerte, esto se puede arreglar. Si cuentas los bytes, te darás cuenta que son 4 millones de bytes o 4 megabytes, y las computadoras modernas tienden a tener hasta 16 gigabytes de memoria RAM, asi que no debe haber problema para conseguir 4 megabytes de memoria.
+
+El problema viene del hecho que a la hora de crear un arreglo, el sistema busca 4 megabytes de espacio que estén libres y juntos dentro de la memoria del programa. Esto se puede arreglar preguntandole a tu sistema si puedes guardar estos 4 megabytes en una area especial extra de memoria llamado el heap, que viene siendo una area publica con muchisimo espacio, en lugar del espacio limitado que fue asignado a tu programa.
+
+Para hacer que el programa busque dentro del heap, debes cambiar el arreglo a un puntero y utilizar \textbf{malloc}, \textbf{new} o alguna función que te permite obtener espacio del heap.
 
 \section{Notas finales}
 
