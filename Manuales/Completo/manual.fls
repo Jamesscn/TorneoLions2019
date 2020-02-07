@@ -146,7 +146,10 @@ INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/vscode.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/vscode.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/vscode.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+<<<<<<< HEAD
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+=======
+>>>>>>> master
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/nsquared.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/nsquared.png
 INPUT /home/james/Documents/Lions/TorneoLions2019/Manuales/Completo/nsquared.png
@@ -244,5 +247,8 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+<<<<<<< HEAD
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+=======
+>>>>>>> master
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
